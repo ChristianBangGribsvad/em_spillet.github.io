@@ -13,13 +13,18 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # Next11
 
+![next11](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_NEXT11.png?raw=true)
+
 -----------
 
 # Fredriksborg Gymnasium - 2014 - X
+
+![friends](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_GYM.png?raw=true)
 
 -----------
 
 # Sædbanken
 
+![sædbanken](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_ESB.png?raw=true)
 
 
