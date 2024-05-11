@@ -13,7 +13,11 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 # Next11
 
+-----------
+
 # Fredriksborg Gymnasium - 2014 - X
+
+-----------
 
 # Sædbanken
 
