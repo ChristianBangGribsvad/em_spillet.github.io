@@ -1,5 +1,5 @@
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/Kasper-Schmeichel-Leicester-City.jpg)
+![Octocat](https://github.githubassets.com/images/Kasper-Schmeichel-Leicester-City.jpg)
 
 -------------------------------
 layout: default
