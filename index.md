@@ -1,11 +1,7 @@
 
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
+![Octocat](https://github.githubassets.com/images/icons/emoji/Kasper-Schmeichel-Leicester-City.jpg)
 
 -------------------------------
----
 layout: default
 ---
 
