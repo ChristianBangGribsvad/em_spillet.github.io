@@ -23,3 +23,15 @@ jobs:
 
     - name: Run script
       run: python main.py
+
+    - name: Commit changes
+      run: |
+        git config --global user.email "actions@example.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "Update files via workflow"
+        
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
