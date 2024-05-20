@@ -2,6 +2,7 @@ import requests
 import json
 import pickle
 import os
+import pdb
 cwd = os.getcwd()
 
 def process_match(match):
@@ -41,6 +42,7 @@ def load_results(filename):
         b = pickle.load(handle)
     return b
 
+# Function that fetches the largest index of downloaded data
 def get_highest_result_number():
     n_file = 0
     for i in range(100):
