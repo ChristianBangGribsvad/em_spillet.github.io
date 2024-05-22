@@ -348,3 +348,34 @@ def eval_groups(predictions_df , results):
             points += 5
             
     return points
+
+def dk_finish(results, predictions_df):
+    # Eval DK finish
+    dk_finish = ""
+    df_finish_pred = predictions_df.iloc[0,55] 
+    points = 0
+    results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" not in results[x][0]}
+
+    last16teams = [k for k,v in results_dict.keys() if "LAST_16" in k]
+    quarterteams = [k for k,v in results_dict.keys() if "QUARTER_FINALS" in k]
+    semiteams = [k for k,v in results_dict.keys() if "SEMI_FINALS" in k]
+    finalteams = [k for k,v in results_dict.keys() if "FINAL" in k]
+
+    if "Denmark" not in last16teams:
+        dk_finish = "Group play"
+    elif "Denmark" not in quarterteams:
+        dk_finish = "Round of 16"
+    elif "Denmark" not in semiteams:
+        dk_finish = "Quarter final"
+    elif "Denmark" not in finalteams:
+        dk_finish = "Semi final"
+    elif "Denmark" in finalteams:
+        dk_finish = "Final"
+    else:
+        print("HELP, could not find which stage DK finished in")
+    
+    if len(dk_finish) > 0:
+        if dk_finish == df_finish_pred:
+            points += 15
+            
+    return points
