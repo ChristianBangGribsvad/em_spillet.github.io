@@ -29,5 +29,5 @@ There should be whitespace between paragraphs. We recommend including a README, 
 ![sædbanken](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_ESB.png?raw=true)
 
 ## Sædbanken participants:
-- [Sarah omputer](./pages/Sarah_omputer.md)
+- [Sarah omputer](./pages/Sarah_omputer.html)
 
