@@ -11,7 +11,7 @@ predictions_df = pd.read_csv("EM spillet 2024.csv")
 # Iterate over each row in the DataFrame
 for index, row in predictions_df.iterrows():
     name = row['Your Name']
-    savename = row['Your Name'].replace(" ","")
+    savename = row['Your Name'].replace(" ","_")
     
     group = row['Which team(s) do you belong to?']
     group = group.replace(";"," and ")
