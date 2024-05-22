@@ -10,7 +10,7 @@ all_teams = predictions_df["Which team(s) do you belong to?"].str.split(';').exp
 
 #%%
 # Read the content of the existing markdown file
-with open(existing_markdown_path, 'r',encoding='utf-8') as existing_file:
+with open(existing_markdown_path, 'r',encoding='UTF-8') as existing_file:
     existing_content = existing_file.readlines()
 #%%
 
@@ -32,7 +32,7 @@ for team in all_teams:
             
             #print(filtered_df)
             # Generate the new links content for the filtered DataFrame
-            new_links = [f"- [{row['Your Name']}]({output_directory}/{row['Your Name'].replace(' ','_')}.md)\n" for _, row in filtered_df.iterrows()]
+            new_links = [f"- [{row['Your Name']}]({output_directory}/{row['Your Name'].replace(' ','_')}.html)\n" for _, row in filtered_df.iterrows()]
         
             #new_links = [f"- [{row['Your Name']}]({output_directory}/{row['Your Name']}.md)\n" for _, row in predictions_df.iterrows()]
             
@@ -40,5 +40,5 @@ for team in all_teams:
             existing_content = existing_content[:insertion_point] + new_links + existing_content[insertion_point:]
 
 # Write the updated content back to the file
-    with open(existing_markdown_path, 'w',encoding='utf-8') as existing_file:
+    with open(existing_markdown_path, 'w',encoding='UTF-8') as existing_file:
         existing_file.writelines(existing_content)

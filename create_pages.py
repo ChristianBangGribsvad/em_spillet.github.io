@@ -32,7 +32,7 @@ See your results in the table below:
     output_file_path = output_directory + f"{savename}.md"
     
     # Write the markdown content to the file
-    with open(output_file_path, 'w') as file:
+    with open(output_file_path, 'w',encoding='UTF-8') as file:
         file.write(markdown_content)
 
 print("Markdown pages have been created successfully.")

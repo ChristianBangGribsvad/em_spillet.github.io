@@ -1,7 +1,7 @@
 
 #Results of Sarah omputer 
 
-Part of Frederikborg Gymnasium and Sædbanken
+Part of Frederikborg Gymnasium and SÃ¦dbanken
 
 See your results in the table below:
 
