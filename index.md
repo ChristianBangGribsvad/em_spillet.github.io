@@ -1,4 +1,6 @@
-
+- [Sarah Mobil test](./pages/Sarah Mobil test.md)
+- [Sarah omputer](./pages/Sarah omputer.md)
+- [Test](./pages/Test.md)
 ![Kasper](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/Kasper-Schmeichel-Leicester-City.jpg?raw=true)
 
 -------------------------------
@@ -15,16 +17,20 @@ There should be whitespace between paragraphs. We recommend including a README, 
 
 ![next11](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_NEXT11.png?raw=true)
 
+## Next11 participants
 -----------
 
-# Fredriksborg Gymnasium - 2014 - X
+# Frederiksborg Gymnasium
 
 ![friends](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_GYM.png?raw=true)
 
+## Frederiksborg Gymnasium participants
 -----------
 
-# Sædbanken
+# S�dbanken
 
-![sædbanken](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_ESB.png?raw=true)
+![s�dbanken](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_ESB.png?raw=true)
 
+## S�dbanken participants
+- [Sarah omputer](./pages/Sarah omputer.md)
 
