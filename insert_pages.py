@@ -32,7 +32,7 @@ for team in all_teams:
             
             #print(filtered_df)
             # Generate the new links content for the filtered DataFrame
-            new_links = [f"- [{row['Your Name']}]({output_directory}/{row['Your Name']}.md)\n" for _, row in filtered_df.iterrows()]
+            new_links = [f"- [{row['Your Name']}]({output_directory}/{row['Your Name'].replace(' ','_')}.md)\n" for _, row in filtered_df.iterrows()]
         
             #new_links = [f"- [{row['Your Name']}]({output_directory}/{row['Your Name']}.md)\n" for _, row in predictions_df.iterrows()]
             

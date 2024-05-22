@@ -2,8 +2,8 @@ import os
 import pandas as pd
 
 # Define the directory containing images and the output directory for markdown files
-image_directory = './plots'
-output_directory = './pages'
+image_directory = './plots/'
+output_directory = './pages/'
 
 predictions_df = pd.read_csv("EM spillet 2024.csv")
 #%%
@@ -11,9 +11,11 @@ predictions_df = pd.read_csv("EM spillet 2024.csv")
 # Iterate over each row in the DataFrame
 for index, row in predictions_df.iterrows():
     name = row['Your Name']
+    savename = row['Your Name'].replace(" ","")
+    
     group = row['Which team(s) do you belong to?']
     group = group.replace(";"," and ")
-    image_path = os.path.join(image_directory, f"{name}_table.png")
+    image_path = image_directory + f"{savename}_table.png"
     
     # Create markdown content
     markdown_content = f"""
@@ -27,7 +29,7 @@ See your results in the table below:
 
 """
     # Define the output file path
-    output_file_path = os.path.join(output_directory, f"{name}.md")
+    output_file_path = output_directory + f"{savename}.md"
     
     # Write the markdown content to the file
     with open(output_file_path, 'w') as file:

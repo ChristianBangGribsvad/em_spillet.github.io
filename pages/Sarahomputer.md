@@ -5,5 +5,5 @@ Part of Frederikborg Gymnasium and Sædbanken
 
 See your results in the table below:
 
-![Sarah omputer](./plots\Sarah omputer_table.png)
+![Sarah omputer](./plots/Sarahomputer_table.png)
 
