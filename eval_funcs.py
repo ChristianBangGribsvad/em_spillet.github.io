@@ -13,6 +13,8 @@ def eval_match_predictions(predictions_df , results):
     results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" in results[x][0]}
     # Select the group stage matches in predictions
     predictions = predictions_df.iloc[:,3:39]
+    # To save points from each prediction
+    predictions_df = predictions_df.append({x: 0 for x in predictions_df.columns},ignore_index=True)
     
     # Initialize empty points var
     points = 0
@@ -35,41 +37,51 @@ def eval_match_predictions(predictions_df , results):
             ### 15 points, correct score for both teams
             if pred == res:
                 points += 15
+                predictions_df.iloc[1,i+3] = 15
         
             ### 10 points, correct outcome and score for one team
             # Home team wins and correct score of home team    
             elif res[0]>res[2] and pred[0]>pred[2] and res[0] == pred[0]:
                 points += 10
+                predictions_df.iloc[1,i+3] = 10
             # Home team wins and correct score of away team  
             elif res[0]>res[2] and pred[0]>pred[2] and res[2] == pred[2]:
                 points += 10
+                predictions_df.iloc[1,i+3] = 10
             # Away team wins and correct score of home team  
             elif res[0]<res[2] and pred[0]<pred[2] and res[0] == pred[0]:
                 points += 10
+                predictions_df.iloc[1,i+3] = 10
             # Away team wins and correct score of away team  
             elif res[0]<res[2] and pred[0]<pred[2] and res[2] == pred[2]:
                 points += 10
+                predictions_df.iloc[1,i+3] = 10
             
             ### 5 points, correct outcome (winner or tie)
             # Home team wins
             elif res[0]>res[2] and pred[0]>pred[2]:
                 points += 5
+                predictions_df.iloc[1,i+3] = 5
             # Away team wins
             elif res[0]<res[2] and pred[0]<pred[2]:
                 points += 5
+                predictions_df.iloc[1,i+3] = 5
             # Tie
             elif res[0]==res[2] and pred[0]==pred[2]:
                 points += 5   
+                predictions_df.iloc[1,i+3] = 5
                 
             ### 2 points, correct score for one team
             # Home team correct score
             elif res[0]==pred[0]:
                 points += 2
+                predictions_df.iloc[1,i+3] = 2
             # Away team correct score
             elif res[2]==pred[2]:
                 points += 2
+                predictions_df.iloc[1,i+3] = 2
                 
-    return points
+    return points , predictions_df
 
 # Based on results_dict, find group winners
 def find_group_winners(results):

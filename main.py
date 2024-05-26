@@ -46,7 +46,8 @@ if __name__ == "__main__":
                  
             # Calc totalt score as of today 
             points = 0
-            points += eval_match_predictions(user_df , results)
+            points_match , user_df = eval_match_predictions(user_df , results)
+            points += points_match
             
             # Only eval when group stage is finished (so intermediate standings not are counted)
             results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" in results[x][0]}
@@ -78,26 +79,27 @@ if __name__ == "__main__":
             #if finale_loser == predictions_df[predictions_df["Your Name"] == "Test"].iloc[0,52]:
                 #points += 15
 
+            # Save in user_dfs
+            user_df.to_pickle("data/user_dfs/"+user)
+            
             # Load data frame containing group results
             for group in user_df.iloc[0,2].split(";"):
-                if group not in os.listdir("data"):
+                if group not in os.listdir("data/group_dfs"):
                     # Create an empty df
                     df_results = pd.DataFrame()
                 else:
-                    df_results = pd.read_pickle("data/"+group) 
+                    df_results = pd.read_pickle("data/group_dfs/"+group) 
                 
                 # Upload dataframe with new results
                 df_results.loc[date,user] = points
-                df_results.to_pickle("data/"+group)
+                df_results.to_pickle("data/group_dfs/"+group)
     
     pdb.set_trace()
        
     # Save plots in "pages/" and save names with _ (use replace func)
-    for group in os.listdir("data"):
-        df_results = pd.read_pickle("data/"+user) 
+    for group in os.listdir("data/group_dfs"):
+        df_results = pd.read_pickle("data/group_dfs"+user) 
         plot(df_results,group)
-
-    
     
     #predictions[results[0][0]]
         
