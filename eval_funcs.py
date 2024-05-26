@@ -16,10 +16,18 @@ def eval_match_predictions(predictions_df , results):
     
     # Initialize empty points var
     points = 0
-    for i in range(len(predictions)):
+    for i in range(len(predictions.columns)):
         pred = predictions.iloc[0,i]
         res = results_dict[predictions.columns[i]]
-    
+
+        # If empty prediction we skip
+        if pred != pred or "None" in res:
+            continue
+        
+        # Make sure no white space messes up the eval        
+        pred = pred.replace(" ","")
+        res = res.replace(" ","")
+                
         # Check for nan (to be able to do temporary standings)
         if res != res or pred != pred:
             continue
@@ -315,10 +323,8 @@ def find_group_winners(results):
     return all_group_res
 
 def eval_groups(predictions_df , results):
-    # Convert results to a dict (and select only group stage matches)
-    results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" in results[x][0]}
     # Compute group stage winners based on results
-    all_group_res = find_group_winners(results_dict)
+    all_group_res = find_group_winners(results)
     
     # If no groups are finished we skip eval_groups()
     if list(all_group_res.keys())[0] == "Skip":
@@ -338,13 +344,10 @@ def eval_groups(predictions_df , results):
         res2nd = all_group_res[list(all_group_res.keys())[i]]["2nd"]
         
         if res1st == pred1st and res2nd == pred2nd:
-            print(pred1st, pred2nd)
             points += 15
         elif res1st == pred2nd and res2nd == pred1st:
-            print(pred1st, pred2nd)
             points += 10
         elif res1st == pred1st or res2nd == pred2nd:
-            print(pred1st, pred2nd)
             points += 5
             
     return points
@@ -354,12 +357,13 @@ def dk_finish(results, predictions_df):
     dk_finish = ""
     df_finish_pred = predictions_df.iloc[0,55] 
     points = 0
+    # Select only knockout matches from results
     results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" not in results[x][0]}
 
-    last16teams = [k for k,v in results_dict.keys() if "LAST_16" in k]
-    quarterteams = [k for k,v in results_dict.keys() if "QUARTER_FINALS" in k]
-    semiteams = [k for k,v in results_dict.keys() if "SEMI_FINALS" in k]
-    finalteams = [k for k,v in results_dict.keys() if "FINAL" in k]
+    last16teams = [k for k in results_dict.keys() if "LAST_16" in k]
+    quarterteams = [k for k in results_dict.keys() if "QUARTER_FINALS" in k]
+    semiteams = [k for k in results_dict.keys() if "SEMI_FINALS" in k]
+    finalteams = [k for k in results_dict.keys() if "FINAL" in k]
 
     if "Denmark" not in last16teams:
         dk_finish = "Group play"
@@ -378,4 +382,21 @@ def dk_finish(results, predictions_df):
         if dk_finish == df_finish_pred:
             points += 15
             
+    return points
+
+def dk_goals_scored(results,predictions_df):
+    # Find DK goals
+    points = 0
+    results_dict = {results[x][0]:results[x][1] for x in range(len(results))}
+    dk_matches = {k:v for k,v in results_dict.items() if "Denmark" in k}
+    dk_goals = 0
+    for k,v in dk_matches.items():
+        if "Denmark" in k.split("-")[0]:
+            dk_goals += int(v.split("-")[0])
+        elif "Denmark" in k.split("-")[1]:
+            dk_goals += int(v.split("-")[1])
+            
+    if predictions_df.iloc[:,-1] == dk_goals:
+        points = 20
+
     return points
