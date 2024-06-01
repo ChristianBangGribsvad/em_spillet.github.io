@@ -45,44 +45,40 @@ if __name__ == "__main__":
             user_df = predictions_df[predictions_df["Your Name"] == user]
                  
             # Calc totalt score as of today 
-            points = 0
-            points_match , user_df = eval_match_predictions(user_df , results)
-            points += points_match
-            
-            # Only eval when group stage is finished (so intermediate standings not are counted)
-            results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" in results[x][0]}
-            if len([k for k,v in results_dict.items() if "None" in v[1]]) == 0:
-                points += eval_groups(user_df , results)
+            user_df = eval_match_predictions(user_df , results)
+  
+            # Add group stage winners points
+            user_df = eval_groups(user_df , results)
 
-            # Only eval when group stage is finished (ie round of 16 matches are in results)
-            if len({results[x][0]:results[x][1] for x in range(len(results)) if "LAST_16" not in results[x][0]}) > 1:
-                # Add also DK knock out stage 
-                points += dk_finish(results, user_df)
+            # Add DK finishing-stage points
+            user_df , dk_end = dk_finish(results, user_df)
             
-            # Eval when DK is out
             # Add DK goals
-            #points += dk_goals_scored(results, user_df)
+            if len(dk_end) > 0:
+                # Only when DK is out
+                user_df = dk_goals_scored(results, user_df)
             
             # Add Top scorer
-            #if topscorer == user_df.iloc[0,53]:
-                #points += 20
+            if topscorer == user_df.iloc[0,53]:
+                user_df.iloc[1,53] = 20
             
             # Add Topscorer goals
-            #if topscorer_goals == user_df.iloc[0,54]:
-                #points += 10
+            if topscorer_goals == user_df.iloc[0,54]:
+                user_df.iloc[1,54]= 10
             
             # Add finale winner team
-            #if finale_winner == predictions_df[predictions_df["Your Name"] == "Test"].iloc[0,51]:
-                #points += 25
+            if finale_winner == user_df.iloc[0,51]:
+                user_df.iloc[1,51]= 25
             
             # Add finale loser team
-            #if finale_loser == predictions_df[predictions_df["Your Name"] == "Test"].iloc[0,52]:
-                #points += 15
+            if finale_loser == user_df.iloc[0,52]:
+                user_df.iloc[1,52]= 15
 
             # Save in user_dfs
             user_df.to_pickle("data/user_dfs/"+user)
             
             # Load data frame containing group results
+            
             for group in user_df.iloc[0,2].split(";"):
                 if group not in os.listdir("data/group_dfs"):
                     # Create an empty df
@@ -91,14 +87,17 @@ if __name__ == "__main__":
                     df_results = pd.read_pickle("data/group_dfs/"+group) 
                 
                 # Upload dataframe with new results
-                df_results.loc[date,user] = points
+                df_results.loc[date,user] = user_df.loc[1].sum()
                 df_results.to_pickle("data/group_dfs/"+group)
+            
+            # Check if anythin goes wrong in points addition (ie there is an error if you have less point today than you had yesterday)
+            if len(df_results) > 1:
+                if df_results.iloc[-1,0] < df_results.iloc[-2,0]:
+                    pdb.set_trace()
     
-    pdb.set_trace()
-       
     # Save plots in "pages/" and save names with _ (use replace func)
     for group in os.listdir("data/group_dfs"):
-        df_results = pd.read_pickle("data/group_dfs"+user) 
+        df_results = pd.read_pickle("data/group_dfs/"+group) 
         plot(df_results,group)
     
     #predictions[results[0][0]]

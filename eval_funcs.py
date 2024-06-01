@@ -81,7 +81,7 @@ def eval_match_predictions(predictions_df , results):
                 points += 2
                 predictions_df.iloc[1,i+3] = 2
                 
-    return points , predictions_df
+    return predictions_df
 
 # Based on results_dict, find group winners
 def find_group_winners(results):
@@ -130,10 +130,10 @@ def find_group_winners(results):
             # If None value is present in current group we skip current group and go to next group
             print("Skipping",group_name," due to None values")
             
-            if group_name == all_group_names[-1]:
-                return {"Skip":0}
-            else:
-                continue                           
+            #if group_name == all_group_names[-1]:
+                #return {"Skip":0}
+            #else:
+            continue                           
         ### Find 1st and 2nd place in group
         
         # Sort group after points
@@ -338,16 +338,10 @@ def eval_groups(predictions_df , results):
     # Compute group stage winners based on results
     all_group_res = find_group_winners(results)
     
-    # If no groups are finished we skip eval_groups()
-    if list(all_group_res.keys())[0] == "Skip":
-        print("No groups are finished, we skip eval_groups()")
-        return 0
-    
     # Select the group winners in predictions
     predictions = predictions_df.iloc[:,39:51]
     
     # Give points
-    points = 0
     for i in range(6):
         pred1st = predictions.iloc[0,0 + i*2]
         pred2nd = predictions.iloc[0,1 + i*2]
@@ -355,50 +349,54 @@ def eval_groups(predictions_df , results):
         res1st = all_group_res[list(all_group_res.keys())[i]]["1st"]
         res2nd = all_group_res[list(all_group_res.keys())[i]]["2nd"]
         
+        # If current group is not finished we skip it
+        if res1st == "":
+            continue
+        
         if res1st == pred1st and res2nd == pred2nd:
-            points += 15
+            predictions_df.iloc[1,39 + i*2] = 7.5
+            predictions_df.iloc[1,39 + 1 + i*2] = 7.5
         elif res1st == pred2nd and res2nd == pred1st:
-            points += 10
-        elif res1st == pred1st or res2nd == pred2nd:
-            points += 5
+            predictions_df.iloc[1,39 + i*2] = 5
+            predictions_df.iloc[1,39 + 1 + i*2] = 5
+        elif res1st == pred1st:
+            predictions_df.iloc[1,39 + i*2] = 5
+        elif res2nd == pred2nd:
+            predictions_df.iloc[1,39 + 1 + i*2] = 5
             
-    return points
+    return predictions_df
 
 def dk_finish(results, predictions_df):
     # Eval DK finish
     dk_finish = ""
     df_finish_pred = predictions_df.iloc[0,55] 
-    points = 0
     # Select only knockout matches from results
     results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" not in results[x][0]}
 
     last16teams = [k for k in results_dict.keys() if "LAST_16" in k]
     quarterteams = [k for k in results_dict.keys() if "QUARTER_FINALS" in k]
     semiteams = [k for k in results_dict.keys() if "SEMI_FINALS" in k]
-    finalteams = [k for k in results_dict.keys() if "FINAL" in k]
+    finalteams = [k for k in results_dict.keys() if "FINAL " in k]
 
-    if "Denmark" not in last16teams:
+    if "Denmark" not in last16teams and len(last16teams) > 1:
         dk_finish = "Group play"
-    elif "Denmark" not in quarterteams:
+    elif "Denmark" not in quarterteams and len(quarterteams) > 1:
         dk_finish = "Round of 16"
-    elif "Denmark" not in semiteams:
+    elif "Denmark" not in semiteams and len(semiteams) > 1:
         dk_finish = "Quarter final"
-    elif "Denmark" not in finalteams:
+    elif "Denmark" not in finalteams and "None" not in finalteams[0]:
         dk_finish = "Semi final"
     elif "Denmark" in finalteams:
         dk_finish = "Final"
-    else:
-        print("HELP, could not find which stage DK finished in")
     
     if len(dk_finish) > 0:
         if dk_finish == df_finish_pred:
-            points += 15
+            predictions_df.iloc[1,55] = 15
             
-    return points
+    return predictions_df , dk_finish
 
 def dk_goals_scored(results,predictions_df):
     # Find DK goals
-    points = 0
     results_dict = {results[x][0]:results[x][1] for x in range(len(results))}
     dk_matches = {k:v for k,v in results_dict.items() if "Denmark" in k}
     dk_goals = 0
@@ -408,7 +406,7 @@ def dk_goals_scored(results,predictions_df):
         elif "Denmark" in k.split("-")[1]:
             dk_goals += int(v.split("-")[1])
             
-    if predictions_df.iloc[:,-1] == dk_goals:
-        points = 20
+    if predictions_df.iloc[0,-1] == dk_goals:
+        predictions_df.iloc[1,-1] = 20
 
-    return points
+    return predictions_df
