@@ -13,8 +13,8 @@ def eval_match_predictions(predictions_df , results):
     results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" in results[x][0]}
     # Select the group stage matches in predictions
     predictions = predictions_df.iloc[:,3:39]
-    # To save points from each prediction
-    predictions_df = predictions_df.append({x: 0 for x in predictions_df.columns},ignore_index=True)
+    # Add extra row to save points from each prediction
+    predictions_df.loc[len(predictions_df), predictions_df.columns] = [0]*len(predictions_df.columns)
     
     # Initialize empty points var
     points = 0
@@ -260,8 +260,8 @@ def find_group_winners(results):
                         all_group_res[group_name]["1st"] = "---"
                         all_group_res[group_name]["2nd"] = "---"
             
-        elif sum(np.array(list(group_stand.values())) == max(list(group_stand.values()))) == 3:
-            # The scenario where 3 teams have max points - look into goal difference
+        elif sum(np.array(list(group_stand.values())) == max(list(group_stand.values()))) >= 3:
+            # The scenario where 3 or 4 teams have max points - look into goal difference
             equal_teams = np.array(list(group_stand.keys()))[np.array(list(group_stand.values())) == max(list(group_stand.values()))].tolist()
             equal_points = {team:group_eval[team]["goals_for"]-group_eval[team]["goals_against"] for team in equal_teams}
             equal_points = dict(sorted(equal_points.items(), key=lambda item: item[1], reverse = True))
@@ -332,6 +332,7 @@ def find_group_winners(results):
                     print("Its a coin toss - manual assign:",list(equal_goals.keys())[0],"-",list(equal_goals.keys())[1],"-",list(equal_goals.keys())[2]) 
                     all_group_res[group_name]["1st"] = "---"
                     all_group_res[group_name]["2nd"] = "---"
+        
     return all_group_res
 
 def eval_groups(predictions_df , results):
@@ -378,18 +379,19 @@ def dk_finish(results, predictions_df):
     semiteams = [k for k in results_dict.keys() if "SEMI_FINALS" in k]
     finalteams = [k for k in results_dict.keys() if "FINAL " in k]
 
-    if "Denmark" not in last16teams and len(last16teams) > 1:
+    if len([x for x in last16teams if "Denmark" in x]) < 1 and len([x for x in results_dict.keys() if "LAST_16" and "None" in x]) < 1:
         dk_finish = "Group play"
-    elif "Denmark" not in quarterteams and len(quarterteams) > 1:
+    elif len([x for x in quarterteams if "Denmark" in x]) < 1 and len([x for x in results_dict.keys() if "QUARTER_FINALS" and "None" in x]) < 1:
         dk_finish = "Round of 16"
-    elif "Denmark" not in semiteams and len(semiteams) > 1:
+    elif len([x for x in semiteams if "Denmark" in x]) < 1 and len([x for x in results_dict.keys() if "SEMI_FINALS" and "None" in x]) < 1:
         dk_finish = "Quarter final"
-    elif "Denmark" not in finalteams and "None" not in finalteams[0]:
+    elif len([x for x in finalteams if "Denmark" in x]) < 1 and "None" not in finalteams[0]:
         dk_finish = "Semi final"
     elif "Denmark" in finalteams:
         dk_finish = "Final"
     
     if len(dk_finish) > 0:
+        print("Denmark finishes at ",dk_finish)
         if dk_finish == df_finish_pred:
             predictions_df.iloc[1,55] = 15
             

@@ -18,6 +18,9 @@ if __name__ == "__main__":
     
     results = get_results()
     
+    with open('test_results.pkl', 'rb') as f:
+        test_results = pickle.load(f)
+    
     if not testing:
         results = get_results()
         date = date.today()
@@ -33,17 +36,21 @@ if __name__ == "__main__":
     
     # Simulate days are going by and results are coming in
     
-    for day in range(12):
+    for day in range(13):
         date = "June "+str(day+1)
+
+        if day < 12:
+            n_matches = 4
+        else:
+            n_matches = 3
     
-        for i in range(3):
-            list_var = list( results[day*3:day*3+3][i])
-            list_var[1] = str(random.randint(0,4))+" - "+str(random.randint(0,4))
-            results[day*3 + i] = tuple(list_var)
+        for i in range(n_matches):
+            results[day*4 + i] = test_results[day*4 + i]
         
         for user in predictions_df["Your Name"]:
             user_df = predictions_df[predictions_df["Your Name"] == user]
-                 
+            user_df = user_df.reset_index(drop=True)    
+            
             # Calc totalt score as of today 
             user_df = eval_match_predictions(user_df , results)
   
@@ -55,6 +62,7 @@ if __name__ == "__main__":
             
             # Add DK goals
             if len(dk_end) > 0:
+                print("DENMARK is out at",dk_end," at day",day)
                 # Only when DK is out
                 user_df = dk_goals_scored(results, user_df)
             
@@ -93,7 +101,7 @@ if __name__ == "__main__":
             # Check if anythin goes wrong in points addition (ie there is an error if you have less point today than you had yesterday)
             if len(df_results) > 1:
                 if df_results.iloc[-1,0] < df_results.iloc[-2,0]:
-                    pdb.set_trace()
+                    print("ERROR- something went wrong in adding points")
     
     # Save plots in "pages/" and save names with _ (use replace func)
     for group in os.listdir("data/group_dfs"):
