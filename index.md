@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-ko with 0 points part of Friends and Family [see their predictions](./pages/.html)
+ko with 0 points part of Friends and Family [see their predictions](./pages/.html)Test na with 0.0 points part of Friends and Family [see their predictions](./pages/Test_na.html)Sarah Mobil test na with 0.0 points part of Frederikborg Gymnasium [see their predictions](./pages/Sarah Mobil test_na.html)Sarah omputer na with 0.0 points part of Frederikborg Gymnasium and Sædbanken [see their predictions](./pages/Sarah omputer_na.html)TESTER-SHH na with 0.0 points part of European Sperm Bank [see their predictions](./pages/TESTER-SHH_na.html)
 
 # Friends and Family
  

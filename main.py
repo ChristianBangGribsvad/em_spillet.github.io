@@ -107,6 +107,9 @@ if __name__ == "__main__":
                 else:
                     df_results = pd.read_pickle("data/group_dfs/"+group) 
                 
+                # Plot user df
+                plot_user(user_df)
+                
                 # Upload dataframe with new results
                 df_results.loc[date,user] = user_df.loc[2].sum()
                 df_results.to_pickle("data/group_dfs/"+group)
@@ -120,7 +123,7 @@ if __name__ == "__main__":
                 if user_val > max_val:
                     todays_schmeichel = {user_df.at[0,"d_name"]:{"value":user_val,"group":user_df.at[0,"Which team(s) do you belong to?"].replace(";"," and "),"fname":user_df.at[0,"f_name"]}}
                     max_val = user_val
-                elif user == max_val:
+                elif user_val == max_val:
                     todays_schmeichel[user_df.at[0,"d_name"]] = {"value":user_val,"group":user_df.at[0,"Which team(s) do you belong to?"].replace(";"," and "),"fname":user_df.at[0,"f_name"]}
             
             
@@ -128,6 +131,8 @@ if __name__ == "__main__":
             if len(df_results) > 1:
                 if df_results.iloc[-1,0] < df_results.iloc[-2,0]:
                     print("ERROR- something went wrong in adding points")
+                    
+        print(date,todays_schmeichel)
     
     # Save plots in "pages/" and save names with _ (use replace func)
     for group in os.listdir("data/group_dfs"):
@@ -135,9 +140,6 @@ if __name__ == "__main__":
         plot_group_progress(df_results,group) 
         plot_best_round(df_results,group)
         plot_standings(df_results,group)
-        
-    # Plot also user_df
-    
     
     create_pages(predictions_df)
     update_pages(predictions_df,todays_schmeichel)    
