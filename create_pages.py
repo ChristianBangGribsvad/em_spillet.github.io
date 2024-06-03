@@ -4,7 +4,7 @@ import pandas as pd
 def create_pages(predictions_df):
     
     # Define the directory containing images and the output directory for markdown files
-    image_directory = './plots/'
+    image_directory = './user_plots/'
     output_directory = './pages/'
     
     
@@ -15,7 +15,7 @@ def create_pages(predictions_df):
         
         group = row['Which team(s) do you belong to?']
         group = group.replace(";"," and ")
-        table_path = image_directory + f"{savename}_table.png"
+        table_path = image_directory + f"{savename}.svg"
         
         # Create markdown content
         markdown_content = f"""---

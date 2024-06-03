@@ -135,7 +135,10 @@ if __name__ == "__main__":
         plot_standings(df_results,group)
         
     # Plot also user_df
-
+    
+    
+    create_pages(predictions_df)
+    update_pages(predictions_df,todays_schmeichel)    
 
 
     #predictions[results[0][0]]
