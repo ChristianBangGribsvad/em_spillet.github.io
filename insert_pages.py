@@ -29,7 +29,8 @@ def update_pages(predictions_df,todays_schmeichel):
         members =  [f"- [{row['d_name']}]({pages_loc}/{row['f_name']}.html)\n" for _, row in filtered_df.iterrows()]
         for s in members:
             team_string.append(s)
-        team_string.append("-----------\n")        
+        team_string.append("\n")
+        team_string.append("-----------\n \n")        
         
     #print(team_string)
     s_string = []
