@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="113.611793pt" height="63.838125pt" viewBox="0 0 113.611793 63.838125" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="231.174375pt" height="84.958125pt" viewBox="0 0 231.174375 84.958125" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-<<<<<<< HEAD
-    <dc:date>2024-06-03T22:18:51.123014</dc:date>
-=======
-    <dc:date>2024-06-03T22:16:46.191175</dc:date>
->>>>>>> aac2b7f695bce06080630692ae05486c7be074b2
+    <dc:date>2024-06-03T22:35:47.166535</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.8.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.8.0, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -25,9 +21,9 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 63.838125 
-L 113.611793 63.838125 
-L 113.611793 0 
+   <path d="M 0 84.958125 
+L 231.174375 84.958125 
+L 231.174375 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
@@ -35,16 +31,16 @@ z
   <g id="axes_1">
    <g id="table_1">
     <g id="patch_2">
-     <path d="M 38.752313 30.433096 
-L 55.528313 30.433096 
-L 55.528313 23.004525 
-L 38.752313 23.004525 
+     <path d="M 112.374375 35.426925 
+L 223.974375 35.426925 
+L 223.974375 23.426925 
+L 112.374375 23.426925 
 z
 " style="fill: #b22222; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_1">
      <!-- Points -->
-     <g transform="translate(41.818594 27.546623) scale(0.03 -0.03)">
+     <g transform="translate(150.435312 32.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-50" d="M 588 4666 
 L 2584 4666 
@@ -185,16 +181,16 @@ z
      </g>
     </g>
     <g id="patch_3">
-     <path d="M 7.2 37.861668 
-L 38.752313 37.861668 
-L 38.752313 30.433096 
-L 7.2 30.433096 
+     <path d="M 7.2 47.426925 
+L 112.374375 47.426925 
+L 112.374375 35.426925 
+L 7.2 35.426925 
 z
 " style="fill: #b22222; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_2">
      <!-- TESTER-SHH na -->
-     <g transform="translate(10.355231 34.975195) scale(0.03 -0.03)">
+     <g transform="translate(17.717437 44.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-54" d="M 31 4666 
 L 4331 4666 
@@ -354,16 +350,16 @@ z
      </g>
     </g>
     <g id="patch_4">
-     <path d="M 38.752313 37.861668 
-L 55.528313 37.861668 
-L 55.528313 30.433096 
-L 38.752313 30.433096 
+     <path d="M 112.374375 47.426925 
+L 223.974375 47.426925 
+L 223.974375 35.426925 
+L 112.374375 35.426925 
 z
 " style="fill: #ffffff; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_3">
      <!-- 104.0 -->
-     <g transform="translate(42.846094 34.975195) scale(0.03 -0.03)">
+     <g transform="translate(153.860312 44.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-31" d="M 794 531 
 L 1825 531 
@@ -437,7 +433,7 @@ z
    </g>
    <g id="text_4">
     <!-- Standings -->
-    <g transform="translate(38.416793 16.318125) scale(0.12 -0.12)">
+    <g transform="translate(110.142375 16.318125) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-64" d="M 2919 2988 
 L 2919 4863 

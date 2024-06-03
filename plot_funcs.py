@@ -10,6 +10,7 @@ import os
 from matplotlib.font_manager import FontProperties
 import random
 import matplotlib as mpl
+import pdb
 
 def plot_group_progress(df_results,group_name):
     xs = df_results.index.tolist()
@@ -72,7 +73,6 @@ def plot_standings(df_results,group_name):
     for (row, col), cell in table.get_celld().items():
         if (row == 0) or (col == -1):
             cell.set_text_props(fontproperties=FontProperties(weight='bold'))
-    plt.tight_layout()
     plt.savefig('pages/group_plots/standing_'+group_name.replace(" ","_")+'.svg',bbox_inches="tight")
     
 def plot_user(user_df):
@@ -96,11 +96,12 @@ def plot_user(user_df):
 
     fig, ax = plt.subplots()
     ax.axis('off')
-    the_table = ax.table(cellText = trans_df.values,colWidths=[0.6,0.15,0.15,0.15] ,colLabels = trans_df.columns, loc='center', cellColours=colors)
+    the_table = ax.table(cellText = trans_df.values,colWidths=[0.65,0.15,0.15,0.10] ,colLabels = trans_df.columns, loc='center', cellColours=colors)
     the_table.auto_set_font_size(False)
     the_table.set_fontsize(14)
     the_table.scale(2, 2)
     
+
     plt.savefig("pages/user_plots/"+user_df.at[0,"f_name"]+".svg",bbox_inches='tight', pad_inches=0)
-    
+    plt.close()
     

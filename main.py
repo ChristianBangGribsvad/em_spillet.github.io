@@ -115,8 +115,9 @@ if __name__ == "__main__":
                 df_results.to_pickle("data/group_dfs/"+group)
                 
                 # Todays Schmeichel (be careful not to count people in multiple groups twice)
-                if df_results.shape[0] > 1:
-                    user_val = df_results.loc[date,user] - df_results.at[df_results.index[df_results.shape[0]-2],user]
+                if df_results.shape[0] > 1 and date != "June 1":
+                    prev_date = df_results.index[np.where(np.array(df_results.index.tolist()) == date)[0][0]-1]
+                    user_val = df_results.loc[date,user] - df_results.at[prev_date,user]
                 else:
                     user_val = user_df.loc[2].sum()
                 
