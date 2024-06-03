@@ -1,14 +1,6 @@
-![Kasper](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/Kasper-Schmeichel-Leicester-City.jpg?raw=true)
+![Euro](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/Euros.png)
 
 -------------------------------
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
 # Today's Schmeichel(s):
 Sarah with 25 points part of Sædbanken [see their predictions](./pages/Test_na.html)
