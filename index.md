@@ -1,6 +1,5 @@
 ![Kasper](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/Euros.png)
 
-assets/images/Euros.png
 -------------------------------
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
