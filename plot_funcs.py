@@ -76,7 +76,7 @@ def plot_standings(df_results,group_name):
     plt.savefig('pages/group_plots/standing_'+group_name.replace(" ","_")+'.svg',bbox_inches="tight")
     
 def plot_user(user_df):
-    trans_df = user_df.iloc[:,3:-2].T
+    trans_df = user_df.iloc[:,4:-2].T
     trans_df.columns = ["Predictions", "Results","Points"]
     trans_df = trans_df.reset_index()
     colors = []
