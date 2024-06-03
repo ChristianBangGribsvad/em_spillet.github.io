@@ -16,7 +16,7 @@
  
 ![Friends and Family](./pages/group_plots/lines_Friends_and_Family.svg?raw=true)
  
-![Friends and Family](./pages/group_plots/standings_Friends_and_Family.svg?raw=true)
+![Friends and Family](./pages/group_plots/standing_Friends_and_Family.svg?raw=true)
  
 ## Friends and Family participants:
 - [Test na](./pages/Test_na.html)
@@ -29,7 +29,7 @@
  
 ![Frederikborg Gymnasium](./pages/group_plots/lines_Frederikborg_Gymnasium.svg?raw=true)
  
-![Frederikborg Gymnasium](./pages/group_plots/standings_Frederikborg_Gymnasium.svg?raw=true)
+![Frederikborg Gymnasium](./pages/group_plots/standing_Frederikborg_Gymnasium.svg?raw=true)
  
 ## Frederikborg Gymnasium participants:
 - [Sarah Mobil test na](./pages/Sarah_Mobil_test_na.html)
@@ -43,7 +43,7 @@
  
 ![Sædbanken](./pages/group_plots/lines_Sædbanken.svg?raw=true)
  
-![Sædbanken](./pages/group_plots/standings_Sædbanken.svg?raw=true)
+![Sædbanken](./pages/group_plots/standing_Sædbanken.svg?raw=true)
  
 ## Sædbanken participants:
 - [Sarah omputer na](./pages/Sarah_omputer_na.html)
@@ -56,7 +56,7 @@
  
 ![European Sperm Bank](./pages/group_plots/lines_European_Sperm_Bank.svg?raw=true)
  
-![European Sperm Bank](./pages/group_plots/standings_European_Sperm_Bank.svg?raw=true)
+![European Sperm Bank](./pages/group_plots/standing_European_Sperm_Bank.svg?raw=true)
  
 ## European Sperm Bank participants:
 - [TESTER-SHH na](./pages/TESTER-SHH_na.html)
