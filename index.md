@@ -7,11 +7,11 @@ ko with 0 points part of Friends and Family [see their predictions](./pages/.htm
 
 # Friends and Family
  
-![Friends and Family](./group_plots/bars_Friends and Family.svg?raw=true)
+![Friends and Family](./group_plots/bars_Friends_and_Family.svg?raw=true)
  
-![Friends and Family](./group_plots/lines_Friends and Family.svg?raw=true)
+![Friends and Family](./group_plots/lines_Friends_and_Family.svg?raw=true)
  
-![Friends and Family](./group_plots/standings_Friends and Family.svg?raw=true)
+![Friends and Family](./group_plots/standings_Friends_and_Family.svg?raw=true)
  
 ## Friends and Family participants:
 - [Test na](./pages/Test_na.html)
@@ -20,11 +20,11 @@ ko with 0 points part of Friends and Family [see their predictions](./pages/.htm
  
 # Frederikborg Gymnasium
  
-![Frederikborg Gymnasium](./group_plots/bars_Frederikborg Gymnasium.svg?raw=true)
+![Frederikborg Gymnasium](./group_plots/bars_Frederikborg_Gymnasium.svg?raw=true)
  
-![Frederikborg Gymnasium](./group_plots/lines_Frederikborg Gymnasium.svg?raw=true)
+![Frederikborg Gymnasium](./group_plots/lines_Frederikborg_Gymnasium.svg?raw=true)
  
-![Frederikborg Gymnasium](./group_plots/standings_Frederikborg Gymnasium.svg?raw=true)
+![Frederikborg Gymnasium](./group_plots/standings_Frederikborg_Gymnasium.svg?raw=true)
  
 ## Frederikborg Gymnasium participants:
 - [Sarah Mobil test na](./pages/Sarah Mobil test_na.html)
@@ -47,11 +47,11 @@ ko with 0 points part of Friends and Family [see their predictions](./pages/.htm
  
 # European Sperm Bank
  
-![European Sperm Bank](./group_plots/bars_European Sperm Bank.svg?raw=true)
+![European Sperm Bank](./group_plots/bars_European_Sperm_Bank.svg?raw=true)
  
-![European Sperm Bank](./group_plots/lines_European Sperm Bank.svg?raw=true)
+![European Sperm Bank](./group_plots/lines_European_Sperm_Bank.svg?raw=true)
  
-![European Sperm Bank](./group_plots/standings_European Sperm Bank.svg?raw=true)
+![European Sperm Bank](./group_plots/standings_European_Sperm_Bank.svg?raw=true)
  
 ## European Sperm Bank participants:
 - [TESTER-SHH na](./pages/TESTER-SHH_na.html)

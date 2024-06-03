@@ -28,7 +28,7 @@ Part of {group}
     
 See your results in the table below:
     
-![{name}]({table_path})
+![{name}]({table_path}?raw=true)
 
 [Back](https://christianbanggribsvad.github.io/em_spillet.github.io/)"""
         # Define the output file path
