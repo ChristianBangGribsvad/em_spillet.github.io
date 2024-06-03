@@ -107,19 +107,21 @@ if __name__ == "__main__":
                 else:
                     df_results = pd.read_pickle("data/group_dfs/"+group) 
                 
-                # Todays Schmeichel (be careful not to count people in multiple groups twice)
-                if df_results.shape[0] > 1:
-                    user_val = df_results.loc[date,user] - df_results.loc[-1,user]
-                else:
-                    user_val = user_df.loc[2].sum()
-                
-                if user_val > max_val and len(todays_schmeichel.keys()) == 1:
-                    todays_schmeichel
-                
-                
                 # Upload dataframe with new results
                 df_results.loc[date,user] = user_df.loc[2].sum()
                 df_results.to_pickle("data/group_dfs/"+group)
+                
+                # Todays Schmeichel (be careful not to count people in multiple groups twice)
+                if df_results.shape[0] > 1:
+                    user_val = df_results.loc[date,user] - df_results.at[df_results.index[df_results.shape[0]-2],user]
+                else:
+                    user_val = user_df.loc[2].sum()
+                
+                if user_val > max_val:
+                    todays_schmeichel = {user_df.at[0,"d_name"]:{"value":user_val,"group":user_df.at[0,"Which team(s) do you belong to?"].replace(";"," and "),"fname":user_df.at[0,"f_name"]}}
+                    max_val = user_val
+                elif user == max_val:
+                    todays_schmeichel[user_df.at[0,"d_name"]] = {"value":user_val,"group":user_df.at[0,"Which team(s) do you belong to?"].replace(";"," and "),"fname":user_df.at[0,"f_name"]}
             
             
             # Check if anythin goes wrong in points addition (ie there is an error if you have less point today than you had yesterday)
