@@ -1,4 +1,3 @@
-
 ---
 layout: default
 ---
@@ -11,4 +10,4 @@ See your results in the table below:
     
 ![Sarah Mobil test na](./plots/Sarah Mobil test_na_table.png)
 
-[back](./)
+[Back](https://christianbanggribsvad.github.io/em_spillet.github.io/)
