@@ -18,8 +18,7 @@ def create_pages(predictions_df):
         table_path = image_directory + f"{savename}_table.png"
         
         # Create markdown content
-        markdown_content = f"""
----
+        markdown_content = f"""---
 layout: default
 ---
 
@@ -31,7 +30,7 @@ See your results in the table below:
     
 ![{name}]({table_path})
 
-[back](./)"""
+[Back](https://christianbanggribsvad.github.io/em_spillet.github.io/)"""
         # Define the output file path
         output_file_path = output_directory + f"{savename}.md"
         
