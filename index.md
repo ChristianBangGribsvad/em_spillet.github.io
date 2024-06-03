@@ -1,4 +1,4 @@
-![Kasper](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/Euros.png)
+https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/Euros.png
 
 -------------------------------
 
