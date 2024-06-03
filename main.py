@@ -2,6 +2,8 @@ import pandas as pd
 from get_results import *
 from eval_funcs import *
 from plot_funcs import *
+from insert_pages import *
+from create_pages import *
 import pickle
 from datetime import date
 import os
@@ -33,8 +35,12 @@ if __name__ == "__main__":
             save_results(cwd + f"/results/data_{n_file+1}.pickle",datafile)
     
     predictions_df = pd.read_csv("EM spillet 2024.csv")
+    df_fname = pd.DataFrame({'f_name': [f"{row['First name']}"+"_"+f"{str(row['Last name'])[0:2]}" for _, row in predictions_df.iterrows()]})
+    df_dname = pd.DataFrame({'d_name': [f"{row['First name']}"+" "+f"{str(row['Last name'])[0:2]}" for _, row in predictions_df.iterrows()]})
+    predictions_df =predictions_df.join(df_fname)
+    predictions_df =predictions_df.join(df_dname)
     
-    # Simulate days are going by and results are coming in
+    #Simulate days are going by and results are coming in
     
     for day in range(13):
         date = "June "+str(day+1)
@@ -47,8 +53,8 @@ if __name__ == "__main__":
         for i in range(n_matches):
             results[day*4 + i] = test_results[day*4 + i]
         
-        for user in predictions_df["Your Name"]:
-            user_df = predictions_df[predictions_df["Your Name"] == user]
+        for user in predictions_df["d_name"]:
+            user_df = predictions_df[predictions_df["d_name"] == user]
             user_df = user_df.reset_index(drop=True)    
             
             # Calc totalt score as of today 
@@ -107,6 +113,12 @@ if __name__ == "__main__":
     for group in os.listdir("data/group_dfs"):
         df_results = pd.read_pickle("data/group_dfs/"+group) 
         plot(df_results,group)
+    
+    
+    todays_schmeichel={"Sarah":{"value":25,"fname":"Test_na","group":"Sædbanken"}}
+    
+    create_pages(predictions_df)
+    update_pages(predictions_df,todays_schmeichel)
     
     #predictions[results[0][0]]
         
