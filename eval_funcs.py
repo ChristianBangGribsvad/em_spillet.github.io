@@ -13,15 +13,17 @@ def eval_match_predictions(predictions_df , results):
     results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" in results[x][0]}
     # Select the group stage matches in predictions
     predictions = predictions_df.iloc[:,3:39]
+    # Add extra row to save correct result
+    predictions_df.loc[len(predictions_df), predictions_df.columns] = [0]*len(predictions_df.columns)
     # Add extra row to save points from each prediction
     predictions_df.loc[len(predictions_df), predictions_df.columns] = [0]*len(predictions_df.columns)
     
     # Initialize empty points var
     points = 0
-    for i in range(len(predictions.columns)):
-        pred = predictions.iloc[0,i]
-        res = results_dict[predictions.columns[i]]
-
+    for col_name in [x for x in predictions_df.columns if "Predictions" in x]:
+        pred = predictions_df.at[0,col_name]
+        res = results_dict[col_name]
+        
         # If empty prediction we skip
         if pred != pred or "None" in res:
             continue
@@ -34,52 +36,55 @@ def eval_match_predictions(predictions_df , results):
         if res != res or pred != pred:
             continue
         else:
+            # Save correct results
+            predictions_df.at[1,col_name] = res
+            
             ### 15 points, correct score for both teams
             if pred == res:
                 points += 15
-                predictions_df.iloc[1,i+3] = 15
+                predictions_df.at[2,col_name] = 15
         
             ### 10 points, correct outcome and score for one team
             # Home team wins and correct score of home team    
             elif res[0]>res[2] and pred[0]>pred[2] and res[0] == pred[0]:
                 points += 10
-                predictions_df.iloc[1,i+3] = 10
+                predictions_df.at[2,col_name] = 10
             # Home team wins and correct score of away team  
             elif res[0]>res[2] and pred[0]>pred[2] and res[2] == pred[2]:
                 points += 10
-                predictions_df.iloc[1,i+3] = 10
+                predictions_df.at[2,col_name] = 10
             # Away team wins and correct score of home team  
             elif res[0]<res[2] and pred[0]<pred[2] and res[0] == pred[0]:
                 points += 10
-                predictions_df.iloc[1,i+3] = 10
+                predictions_df.at[2,col_name] = 10
             # Away team wins and correct score of away team  
             elif res[0]<res[2] and pred[0]<pred[2] and res[2] == pred[2]:
                 points += 10
-                predictions_df.iloc[1,i+3] = 10
+                predictions_df.at[2,col_name] = 10
             
             ### 5 points, correct outcome (winner or tie)
             # Home team wins
             elif res[0]>res[2] and pred[0]>pred[2]:
                 points += 5
-                predictions_df.iloc[1,i+3] = 5
+                predictions_df.at[2,col_name] = 5
             # Away team wins
             elif res[0]<res[2] and pred[0]<pred[2]:
                 points += 5
-                predictions_df.iloc[1,i+3] = 5
+                predictions_df.at[2,col_name] = 5
             # Tie
             elif res[0]==res[2] and pred[0]==pred[2]:
                 points += 5   
-                predictions_df.iloc[1,i+3] = 5
+                predictions_df.at[2,col_name] = 5
                 
             ### 2 points, correct score for one team
             # Home team correct score
             elif res[0]==pred[0]:
                 points += 2
-                predictions_df.iloc[1,i+3] = 2
+                predictions_df.at[2,col_name] = 2
             # Away team correct score
             elif res[2]==pred[2]:
                 points += 2
-                predictions_df.iloc[1,i+3] = 2
+                predictions_df.at[2,col_name] = 2
                 
     return predictions_df
 
@@ -350,20 +355,23 @@ def eval_groups(predictions_df , results):
         res1st = all_group_res[list(all_group_res.keys())[i]]["1st"]
         res2nd = all_group_res[list(all_group_res.keys())[i]]["2nd"]
         
+        predictions_df.iloc[1,39 + i*2] = res1st
+        predictions_df.iloc[1,39 + 1 + i*2] = res2nd
+        
         # If current group is not finished we skip it
         if res1st == "":
             continue
         
         if res1st == pred1st and res2nd == pred2nd:
-            predictions_df.iloc[1,39 + i*2] = 7.5
-            predictions_df.iloc[1,39 + 1 + i*2] = 7.5
+            predictions_df.iloc[2,39 + i*2] = 7.5
+            predictions_df.iloc[2,39 + 1 + i*2] = 7.5
         elif res1st == pred2nd and res2nd == pred1st:
-            predictions_df.iloc[1,39 + i*2] = 5
-            predictions_df.iloc[1,39 + 1 + i*2] = 5
+            predictions_df.iloc[2,39 + i*2] = 5
+            predictions_df.iloc[2,39 + 1 + i*2] = 5
         elif res1st == pred1st:
-            predictions_df.iloc[1,39 + i*2] = 5
+            predictions_df.iloc[2,39 + i*2] = 5
         elif res2nd == pred2nd:
-            predictions_df.iloc[1,39 + 1 + i*2] = 5
+            predictions_df.iloc[2,39 + 1 + i*2] = 5
             
     return predictions_df
 
@@ -393,7 +401,9 @@ def dk_finish(results, predictions_df):
     if len(dk_finish) > 0:
         print("Denmark finishes at ",dk_finish)
         if dk_finish == df_finish_pred:
-            predictions_df.iloc[1,55] = 15
+            predictions_df.iloc[2,55] = 15
+            
+        predictions_df.iloc[1,55] = dk_finish
             
     return predictions_df , dk_finish
 
@@ -409,6 +419,7 @@ def dk_goals_scored(results,predictions_df):
             dk_goals += int(v.split("-")[1])
             
     if predictions_df.iloc[0,-1] == dk_goals:
-        predictions_df.iloc[1,-1] = 20
+        predictions_df.iloc[2,-1] = 20
+    predictions_df.iloc[1,-1] = dk_goals
 
     return predictions_df

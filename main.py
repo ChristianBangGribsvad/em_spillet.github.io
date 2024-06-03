@@ -7,6 +7,7 @@ from datetime import date
 import os
 cwd = os.getcwd()
 import pdb
+import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
     #### Fill out when final is finished
@@ -47,6 +48,8 @@ if __name__ == "__main__":
         for i in range(n_matches):
             results[day*4 + i] = test_results[day*4 + i]
         
+        todays_schmeichel = {"ko":{"value":0,"group":"Friends and Family","fname":""}}
+        
         for user in predictions_df["Your Name"]:
             user_df = predictions_df[predictions_df["Your Name"] == user]
             user_df = user_df.reset_index(drop=True)    
@@ -68,19 +71,25 @@ if __name__ == "__main__":
             
             # Add Top scorer
             if topscorer == user_df.iloc[0,53]:
-                user_df.iloc[1,53] = 20
+                user_df.iloc[2,53] = 20
+                user_df.iloc[1,53] = topscorer
             
             # Add Topscorer goals
             if topscorer_goals == user_df.iloc[0,54]:
-                user_df.iloc[1,54]= 10
+                user_df.iloc[2,54] = 10
+                user_df.iloc[1,54] = topscorer_goals
             
             # Add finale winner team
             if finale_winner == user_df.iloc[0,51]:
-                user_df.iloc[1,51]= 25
+                user_df.iloc[2,51] = 25
+                user_df.iloc[1,51] = finale_winner
             
             # Add finale loser team
             if finale_loser == user_df.iloc[0,52]:
-                user_df.iloc[1,52]= 15
+                user_df.iloc[2,52] = 15
+                user_df.iloc[1,52] = finale_loser
+            
+            # Check if user is todays schmeichel  !!!!!!!!!!  
 
             # Save in user_dfs
             user_df.to_pickle("data/user_dfs/"+user)
@@ -95,7 +104,7 @@ if __name__ == "__main__":
                     df_results = pd.read_pickle("data/group_dfs/"+group) 
                 
                 # Upload dataframe with new results
-                df_results.loc[date,user] = user_df.loc[1].sum()
+                df_results.loc[date,user] = user_df.loc[2].sum()
                 df_results.to_pickle("data/group_dfs/"+group)
             
             # Check if anythin goes wrong in points addition (ie there is an error if you have less point today than you had yesterday)
@@ -105,9 +114,15 @@ if __name__ == "__main__":
     
     # Save plots in "pages/" and save names with _ (use replace func)
     for group in os.listdir("data/group_dfs"):
-        df_results = pd.read_pickle("data/group_dfs/"+group) 
-        plot(df_results,group)
-    
+        df_results = pd.read_pickle("data/group_dfs/"+group)
+        plot_group_progress(df_results,group) 
+        plot_best_round(df_results,group)
+        plot_standings(df_results,group)
+        
+    # Plot also user_df
+
+
+
     #predictions[results[0][0]]
         
     

@@ -9,13 +9,12 @@ from pathlib import Path
 import os
 from matplotlib.font_manager import FontProperties
 import random
+import matplotlib as mpl
 
-def plot(df_results,group_name):
+def plot_group_progress(df_results,group_name):
     xs = df_results.index.tolist()
-    scores = df_results.index.tolist()
     
-    fig= plt.subplots(1,figsize=(12,6))
-
+    fig = plt.subplots(1,figsize=(12,6))
     for i in range(len(df_results.columns)):
         plt.plot(xs,df_results.iloc[:,i]+random.uniform(-0.1,0.1),label=str(df_results.columns[i]),marker='o',markersize=7)
     plt.grid()
@@ -26,8 +25,9 @@ def plot(df_results,group_name):
         plt.legend()
     plt.title('Standings')
     plt.tight_layout()
-    plt.savefig('pages/lines'+group_name+'.png')
+    plt.savefig('pages/lines_'+group_name.replace(" ","_")+'.svg')
     
+def plot_best_round(df_results,group_name):
     # Cannot plot improvement if we only have 1 row
     if len(df_results) > 1:
         # Compute best round
@@ -41,8 +41,10 @@ def plot(df_results,group_name):
         plt.ylabel('Points')
         plt.bar_label(bars)
         plt.tight_layout()
-        plt.savefig('pages/bars_'+group_name+'.png')
+        plt.savefig('pages/bars_'+group_name.replace(" ","_")+'.svg')
+    
 
+def plot_standings(df_results,group_name):
     sort_standing_names = df_results.iloc[-1,:].sort_values(ascending=False).index
     sort_standing_value = df_results.iloc[-1,:].sort_values(ascending=False)
 
@@ -71,4 +73,35 @@ def plot(df_results,group_name):
         if (row == 0) or (col == -1):
             cell.set_text_props(fontproperties=FontProperties(weight='bold'))
     plt.tight_layout()
-    plt.savefig('pages/standing_'+group_name+'.png',bbox_inches="tight")
+    plt.savefig('pages/standing_'+group_name.replace(" ","_")+'.svg',bbox_inches="tight")
+    
+def plot_user():
+    df_results = pd.read_pickle("data/user_dfs/Test")
+    trans_df = df_results.iloc[:,3:].T
+    trans_df.columns = ["Predictions", "Results","Points"]
+    trans_df = trans_df.reset_index()
+    colors = []
+    for _, row in trans_df.iterrows():
+        colors_in_column = [mpl.colormaps["autumn"](0)]*4
+        if row["Points"] == 2:
+            colors_in_column = [mpl.colormaps["Greens"](0.2)]*4
+        elif row["Points"] == 5:
+            colors_in_column = [mpl.colormaps["Greens"](0.4)]*4
+        if row["Points"] == 7.5:
+            colors_in_column = [mpl.colormaps["Greens"](0.6)]*4
+        elif row["Points"] == 10:
+            colors_in_column = [mpl.colormaps["Greens"](0.8)]*4
+        elif row["Points"] == 15:
+            colors_in_column = [mpl.colormaps["Greens"](0.99)]*4
+        colors.append(colors_in_column)
+
+    fig, ax = plt.subplots()
+    ax.axis('off')
+    the_table = ax.table(cellText = trans_df.values,colWidths=[0.6,0.15,0.15,0.15] ,colLabels = trans_df.columns, loc='center', cellColours=colors)
+    the_table.auto_set_font_size(False)
+    the_table.set_fontsize(14)
+    the_table.scale(2, 2)
+    
+    plt.savefig("tester_set.svg",bbox_inches='tight', pad_inches=0)
+    
+    
