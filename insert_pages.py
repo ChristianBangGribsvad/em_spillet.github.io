@@ -22,10 +22,11 @@ def update_pages(predictions_df,todays_schmeichel):
     team_string = []
     for team in all_teams:
         print(team)
+        team_savename = team.replace(" ","_")
         team_string.append(f"# {team}\n \n")
-        team_string.append(f"![{team}](./group_plots/bars_{team}.svg?raw=true)\n \n")
-        team_string.append(f"![{team}](./group_plots/lines_{team}.svg?raw=true)\n \n")
-        team_string.append(f"![{team}](./group_plots/standings_{team}.svg?raw=true)\n \n")
+        team_string.append(f"![{team}](./group_plots/bars_{team_savename}.svg?raw=true)\n \n")
+        team_string.append(f"![{team}](./group_plots/lines_{team_savename}.svg?raw=true)\n \n")
+        team_string.append(f"![{team}](./group_plots/standings_{team_savename}.svg?raw=true)\n \n")
         team_string.append(f"## {team} participants:\n")        
         filtered_df = predictions_df[predictions_df['Which team(s) do you belong to?'].str.contains(team)]
         members =  [f"- [{row['d_name']}]({pages_loc}/{row['f_name']}.html)\n" for _, row in filtered_df.iterrows()]
