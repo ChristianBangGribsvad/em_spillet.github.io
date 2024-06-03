@@ -24,9 +24,9 @@ def update_pages(predictions_df,todays_schmeichel):
         print(team)
         team_savename = team.replace(" ","_")
         team_string.append(f"# {team}\n \n")
-        team_string.append(f"![{team}](./group_plots/bars_{team_savename}.svg?raw=true)\n \n")
-        team_string.append(f"![{team}](./group_plots/lines_{team_savename}.svg?raw=true)\n \n")
-        team_string.append(f"![{team}](./group_plots/standings_{team_savename}.svg?raw=true)\n \n")
+        team_string.append(f"![{team}](./pages/group_plots/bars_{team_savename}.svg?raw=true)\n \n")
+        team_string.append(f"![{team}](./pages/group_plots/lines_{team_savename}.svg?raw=true)\n \n")
+        team_string.append(f"![{team}](./pages/group_plots/standings_{team_savename}.svg?raw=true)\n \n")
         team_string.append(f"## {team} participants:\n")        
         filtered_df = predictions_df[predictions_df['Which team(s) do you belong to?'].str.contains(team)]
         members =  [f"- [{row['d_name']}]({pages_loc}/{row['f_name']}.html)\n" for _, row in filtered_df.iterrows()]
@@ -39,8 +39,8 @@ def update_pages(predictions_df,todays_schmeichel):
     s_string = []
     for name in todays_schmeichel.keys():
         output_file_path = f"[see their predictions]({pages_loc}/{todays_schmeichel[name]['fname']}.html)"
-        s_string.append(f"{name} with {todays_schmeichel[name]['value']} points part of {todays_schmeichel[name]['group']} " + output_file_path)
-    
+        s_string.append(f"- {name} with {todays_schmeichel[name]['value']} points part of {todays_schmeichel[name]['group']} " + output_file_path)
+        s_string.append("\n")
     insertion_point = 0
     for i, line in enumerate(existing_content):
         if 'TEAMS' in line:
