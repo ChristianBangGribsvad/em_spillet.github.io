@@ -41,11 +41,10 @@ if __name__ == "__main__":
     predictions_df =predictions_df.join(df_fname)
     predictions_df =predictions_df.join(df_dname)
     
-    #Simulate days are going by and results are coming in
+    # Simulate days are going by and results are coming in
     
     for day in range(13):
         date = "June "+str(day+1)
-
         if day < 12:
             n_matches = 4
         else:
@@ -54,7 +53,8 @@ if __name__ == "__main__":
         for i in range(n_matches):
             results[day*4 + i] = test_results[day*4 + i]
         
-        todays_schmeichel = {"ko":{"value":0,"group":"Friends and Family","fname":""}}
+        max_val = 0
+        todays_schmeichel = {"ko":{"value":max_val,"group":"Friends and Family","fname":""}}
         
         for user in predictions_df["d_name"]:
             user_df = predictions_df[predictions_df["d_name"] == user]
@@ -95,23 +95,32 @@ if __name__ == "__main__":
                 user_df.iloc[2,52] = 15
                 user_df.iloc[1,52] = finale_loser
             
-            # Check if user is todays schmeichel  !!!!!!!!!!  
-
             # Save in user_dfs
             user_df.to_pickle("data/user_dfs/"+user)
             
             # Load data frame containing group results
             
-            for group in user_df.iloc[0,2].split(";"):
+            for group in user_df.at[0,"Which team(s) do you belong to?"].split(";"):
                 if group not in os.listdir("data/group_dfs"):
                     # Create an empty df
                     df_results = pd.DataFrame()
                 else:
                     df_results = pd.read_pickle("data/group_dfs/"+group) 
                 
+                # Todays Schmeichel (be careful not to count people in multiple groups twice)
+                if df_results.shape[0] > 1:
+                    user_val = df_results.loc[date,user] - df_results.loc[-1,user]
+                else:
+                    user_val = user_df.loc[2].sum()
+                
+                if user_val > max_val and len(todays_schmeichel.keys()) == 1:
+                    todays_schmeichel
+                
+                
                 # Upload dataframe with new results
                 df_results.loc[date,user] = user_df.loc[2].sum()
                 df_results.to_pickle("data/group_dfs/"+group)
+            
             
             # Check if anythin goes wrong in points addition (ie there is an error if you have less point today than you had yesterday)
             if len(df_results) > 1:

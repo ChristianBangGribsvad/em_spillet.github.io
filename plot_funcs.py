@@ -25,7 +25,7 @@ def plot_group_progress(df_results,group_name):
         plt.legend()
     plt.title('Standings')
     plt.tight_layout()
-    plt.savefig('pages/lines_'+group_name.replace(" ","_")+'.svg')
+    plt.savefig('pages/group_plots/lines_'+group_name.replace(" ","_")+'.svg')
     
 def plot_best_round(df_results,group_name):
     # Cannot plot improvement if we only have 1 row
@@ -41,7 +41,7 @@ def plot_best_round(df_results,group_name):
         plt.ylabel('Points')
         plt.bar_label(bars)
         plt.tight_layout()
-        plt.savefig('pages/bars_'+group_name.replace(" ","_")+'.svg')
+        plt.savefig('pages/group_plots/bars_'+group_name.replace(" ","_")+'.svg')
     
 
 def plot_standings(df_results,group_name):
@@ -73,11 +73,10 @@ def plot_standings(df_results,group_name):
         if (row == 0) or (col == -1):
             cell.set_text_props(fontproperties=FontProperties(weight='bold'))
     plt.tight_layout()
-    plt.savefig('pages/standing_'+group_name.replace(" ","_")+'.svg',bbox_inches="tight")
+    plt.savefig('pages/group_plots/standing_'+group_name.replace(" ","_")+'.svg',bbox_inches="tight")
     
-def plot_user():
-    df_results = pd.read_pickle("data/user_dfs/Test")
-    trans_df = df_results.iloc[:,3:].T
+def plot_user(user_df):
+    trans_df = user_df.iloc[:,3:-2].T
     trans_df.columns = ["Predictions", "Results","Points"]
     trans_df = trans_df.reset_index()
     colors = []
@@ -102,6 +101,6 @@ def plot_user():
     the_table.set_fontsize(14)
     the_table.scale(2, 2)
     
-    plt.savefig("tester_set.svg",bbox_inches='tight', pad_inches=0)
+    plt.savefig("pages/user_plots/"+user_df.at[0,"f_name"]+".svg",bbox_inches='tight', pad_inches=0)
     
     
