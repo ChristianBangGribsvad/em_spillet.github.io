@@ -1,4 +1,4 @@
-![Kasper](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/Kasper-Schmeichel-Leicester-City.jpg?raw=true)
+![Kasper](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/Euros.png)
 
 -------------------------------
 
