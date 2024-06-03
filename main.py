@@ -8,7 +8,6 @@ import pickle
 from datetime import date
 import os
 cwd = os.getcwd()
-import pdb
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
@@ -36,7 +35,7 @@ if __name__ == "__main__":
             save_results(cwd + f"/results/data_{n_file+1}.pickle",datafile)
     
     predictions_df = pd.read_csv("EM spillet 2024.csv")
-    df_fname = pd.DataFrame({'f_name': [f"{row['First name']}"+"_"+f"{str(row['Last name'])[0:2]}" for _, row in predictions_df.iterrows()]})
+    df_fname = pd.DataFrame({'f_name': [(f"{row['First name']}"+"_"+f"{str(row['Last name'])[0:2]}").replace(" ","_") for _, row in predictions_df.iterrows()]})
     df_dname = pd.DataFrame({'d_name': [f"{row['First name']}"+" "+f"{str(row['Last name'])[0:2]}" for _, row in predictions_df.iterrows()]})
     predictions_df =predictions_df.join(df_fname)
     predictions_df =predictions_df.join(df_dname)

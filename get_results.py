@@ -2,7 +2,6 @@ import requests
 import json
 import pickle
 import os
-import pdb
 cwd = os.getcwd()
 
 def process_match(match):

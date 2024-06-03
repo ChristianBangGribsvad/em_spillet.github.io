@@ -10,7 +10,6 @@ import os
 from matplotlib.font_manager import FontProperties
 import random
 import matplotlib as mpl
-import pdb
 
 def plot_group_progress(df_results,group_name):
     xs = df_results.index.tolist()
