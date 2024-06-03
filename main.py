@@ -75,24 +75,24 @@ if __name__ == "__main__":
                 user_df = dk_goals_scored(results, user_df)
             
             # Add Top scorer
-            if topscorer == user_df.iloc[0,53]:
-                user_df.iloc[2,53] = 20
-                user_df.iloc[1,53] = topscorer
+            if topscorer == user_df.iloc[0,54]:
+                user_df.iloc[2,54] = 20
+                user_df.iloc[1,54] = topscorer
             
             # Add Topscorer goals
-            if topscorer_goals == user_df.iloc[0,54]:
-                user_df.iloc[2,54] = 10
-                user_df.iloc[1,54] = topscorer_goals
+            if topscorer_goals == user_df.iloc[0,55]:
+                user_df.iloc[2,55] = 10
+                user_df.iloc[1,55] = topscorer_goals
             
             # Add finale winner team
-            if finale_winner == user_df.iloc[0,51]:
-                user_df.iloc[2,51] = 25
-                user_df.iloc[1,51] = finale_winner
+            if finale_winner == user_df.iloc[0,52]:
+                user_df.iloc[2,52] = 25
+                user_df.iloc[1,52] = finale_winner
             
             # Add finale loser team
-            if finale_loser == user_df.iloc[0,52]:
-                user_df.iloc[2,52] = 15
-                user_df.iloc[1,52] = finale_loser
+            if finale_loser == user_df.iloc[0,53]:
+                user_df.iloc[2,53] = 15
+                user_df.iloc[1,53] = finale_loser
             
             # Save in user_dfs
             user_df.to_pickle("data/user_dfs/"+user)

@@ -60,8 +60,8 @@ def plot_standings(df_results,group_name):
         cellText = val3,  
         rowLabels = val2,  
         colLabels = val1, 
-        rowColours =["firebrick"]*rows,  
-        colColours =["firebrick"]*cols, 
+        rowColours =["blue"]*rows,  
+        colColours =["blue"]*cols, 
         cellLoc ='center',  
         loc ='upper left')         
     

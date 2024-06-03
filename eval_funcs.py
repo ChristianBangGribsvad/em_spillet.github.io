@@ -354,23 +354,23 @@ def eval_groups(predictions_df , results):
         res1st = all_group_res[list(all_group_res.keys())[i]]["1st"]
         res2nd = all_group_res[list(all_group_res.keys())[i]]["2nd"]
         
-        predictions_df.iloc[1,39 + i*2] = res1st
-        predictions_df.iloc[1,39 + 1 + i*2] = res2nd
+        predictions_df.iloc[1,40 + i*2] = res1st
+        predictions_df.iloc[1,40 + 1 + i*2] = res2nd
         
         # If current group is not finished we skip it
         if res1st == "":
             continue
         
         if res1st == pred1st and res2nd == pred2nd:
-            predictions_df.iloc[2,39 + i*2] = 7.5
-            predictions_df.iloc[2,39 + 1 + i*2] = 7.5
+            predictions_df.iloc[2,40 + i*2] = 7.5
+            predictions_df.iloc[2,40 + 1 + i*2] = 7.5
         elif res1st == pred2nd and res2nd == pred1st:
-            predictions_df.iloc[2,39 + i*2] = 5
-            predictions_df.iloc[2,39 + 1 + i*2] = 5
+            predictions_df.iloc[2,40 + i*2] = 5
+            predictions_df.iloc[2,40 + 1 + i*2] = 5
         elif res1st == pred1st:
-            predictions_df.iloc[2,39 + i*2] = 5
+            predictions_df.iloc[2,40 + i*2] = 5
         elif res2nd == pred2nd:
-            predictions_df.iloc[2,39 + 1 + i*2] = 5
+            predictions_df.iloc[2,40 + 1 + i*2] = 5
             
     return predictions_df
 
@@ -400,9 +400,9 @@ def dk_finish(results, predictions_df):
     if len(dk_finish) > 0:
         print("Denmark finishes at ",dk_finish)
         if dk_finish == df_finish_pred:
-            predictions_df.iloc[2,55] = 15
+            predictions_df.iloc[2,56] = 15
             
-        predictions_df.iloc[1,55] = dk_finish
+        predictions_df.iloc[1,56] = dk_finish
             
     return predictions_df , dk_finish
 
