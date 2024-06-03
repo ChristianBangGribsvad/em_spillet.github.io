@@ -19,13 +19,19 @@ def create_pages(predictions_df):
         
         # Create markdown content
         markdown_content = f"""
+---
+layout: default
+---
+
 # Results of {name} 
     
 Part of {group}
     
 See your results in the table below:
     
-![{name}]({table_path})"""
+![{name}]({table_path})
+
+[back](./)"""
         # Define the output file path
         output_file_path = output_directory + f"{savename}.md"
         
