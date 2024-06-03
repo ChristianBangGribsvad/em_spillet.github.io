@@ -1,34 +1,44 @@
-![Kasper](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/Kasper-Schmeichel-Leicester-City.jpg?raw=true)
+![Kasper](./assets/images/euros 2.png)
 
 -------------------------------
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Today's Schmeichel(s):
+Sarah with 25 points part of Sædbanken [see their predictions](./pages/Test_na.html)
 
-[Link to another page](./another-page.html).
+# Friends and Family
+ 
+![Friends and Family](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_Friends and Family.svg?raw=true)
+ 
+## Friends and Family participants:
+- [Test na](./pages/Test_na.html)
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Next11
-
-![next11](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_NEXT11.png?raw=true)
-
-## Next11 participants:
 -----------
+ 
+# Frederikborg Gymnasium
+ 
+![Frederikborg Gymnasium](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_Frederikborg Gymnasium.svg?raw=true)
+ 
+## Frederikborg Gymnasium participants:
+- [Sarah Mobil test na](./pages/Sarah Mobil test_na.html)
+- [Sarah omputer na](./pages/Sarah omputer_na.html)
 
-# Fredriksborg Gymnasium - 2014 - X
-
-![friends](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_GYM.png?raw=true)
-
-## Frederiksborg Gymnasium participants:
 -----------
-
+ 
 # Sædbanken
-
-![sædbanken](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_ESB.png?raw=true)
-
+ 
+![Sædbanken](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_Sædbanken.svg?raw=true)
+ 
 ## Sædbanken participants:
-- [Sarah omputer](./pages/Sarah_omputer.html)
-- [Sarah omputer](./pages/Sarah_omputer.md)
+- [Sarah omputer na](./pages/Sarah omputer_na.html)
 
+-----------
+ 
+# European Sperm Bank
+ 
+![European Sperm Bank](https://github.com/ChristianBangGribsvad/em_spillet.github.io/blob/master/assets/images/lines_European Sperm Bank.svg?raw=true)
+ 
+## European Sperm Bank participants:
+- [TESTER-SHH na](./pages/TESTER-SHH_na.html)
+
+-----------
+ 
