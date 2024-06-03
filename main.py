@@ -102,7 +102,7 @@ if __name__ == "__main__":
             
             # Load data frame containing group results
             
-            for group in user_df.iloc[0,2].split(";"):
+            for group in user_df.at[0,"Which team(s) do you belong to?"].split(";"):
                 if group not in os.listdir("data/group_dfs"):
                     # Create an empty df
                     df_results = pd.DataFrame()
@@ -126,7 +126,10 @@ if __name__ == "__main__":
         plot_standings(df_results,group)
         
     # Plot also user_df
-
+    
+    
+    create_pages(predictions_df)
+    update_pages(predictions_df,todays_schmeichel)    
 
 
     #predictions[results[0][0]]
