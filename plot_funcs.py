@@ -10,9 +10,8 @@ import os
 from matplotlib.font_manager import FontProperties
 import random
 import matplotlib as mpl
-import pdb
 
-def plot_group_progress(df_results,group_name):
+def plot_group_progress(df_results,group_name,out_path='pages/group_plots/lines_'):
     xs = df_results.index.tolist()
     
     fig = plt.subplots(1,figsize=(12,6))
@@ -26,7 +25,8 @@ def plot_group_progress(df_results,group_name):
         plt.legend()
     plt.title('Standings')
     plt.tight_layout()
-    plt.savefig('pages/group_plots/lines_'+group_name.replace(" ","_")+'.svg')
+    plt.savefig(out_path+group_name.replace(" ","_")+'.svg')
+    plt.close()
     
 def plot_best_round(df_results,group_name):
     # Cannot plot improvement if we only have 1 row
@@ -43,6 +43,7 @@ def plot_best_round(df_results,group_name):
         plt.bar_label(bars)
         plt.tight_layout()
         plt.savefig('pages/group_plots/bars_'+group_name.replace(" ","_")+'.svg')
+        plt.close()
     
 
 def plot_standings(df_results,group_name):
@@ -61,8 +62,8 @@ def plot_standings(df_results,group_name):
         cellText = val3,  
         rowLabels = val2,  
         colLabels = val1, 
-        rowColours =["blue"]*rows,  
-        colColours =["blue"]*cols, 
+        rowColours =["dodgerblue"]*rows,  
+        colColours =["dodgerblue"]*cols, 
         cellLoc ='center',  
         loc ='upper left')         
     
@@ -74,6 +75,7 @@ def plot_standings(df_results,group_name):
         if (row == 0) or (col == -1):
             cell.set_text_props(fontproperties=FontProperties(weight='bold'))
     plt.savefig('pages/group_plots/standing_'+group_name.replace(" ","_")+'.svg',bbox_inches="tight")
+    plt.close()
     
 def plot_user(user_df):
     trans_df = user_df.iloc[:,4:-2].T

@@ -53,7 +53,7 @@ if __name__ == "__main__":
             results[day*4 + i] = test_results[day*4 + i]
         
         max_val = 0
-        todays_schmeichel = {"ko":{"value":max_val,"group":"Friends and Family","fname":""}}
+        todays_schmeichel = {"Nobody":{"value":max_val,"group":"Nobody","fname":""}}
         
         for user in predictions_df["d_name"]:
             user_df = predictions_df[predictions_df["d_name"] == user]
@@ -109,7 +109,6 @@ if __name__ == "__main__":
                 # Plot user df
                 plot_user(user_df)
                 
-                pdb.set_trace()
                 # Upload dataframe with new results
                 df_results.loc[date,user] = user_df.loc[2].sum()
                 df_results.to_pickle("data/group_dfs/"+group)
@@ -134,13 +133,32 @@ if __name__ == "__main__":
                     print("ERROR- something went wrong in adding points")
                     
         print(date,todays_schmeichel)
-    
-    # Save plots in "pages/" and save names with _ (use replace func)
-    for group in os.listdir("data/group_dfs"):
-        df_results = pd.read_pickle("data/group_dfs/"+group)
-        plot_group_progress(df_results,group) 
-        plot_best_round(df_results,group)
-        plot_standings(df_results,group)
+
+        # Create or load df with group averages
+        if "group_avg" not in os.listdir("data/"):
+            # Create an empty df
+            df_group_avg = pd.DataFrame()
+        else:
+            if date == "June 1":
+                df_group_avg = pd.DataFrame()
+            else:
+                df_group_avg = pd.read_pickle("data/group_avg")
+        
+        # Plot and save group results
+        for group in os.listdir("data/group_dfs"):
+            df_results = pd.read_pickle("data/group_dfs/"+group)
+            plot_group_progress(df_results,group) 
+            plot_best_round(df_results,group)
+            plot_standings(df_results,group)
+            
+            # Save group avg
+            df_group_avg.loc[date,group] = df_results.loc[date].mean()
+        
+        # Plot group averages
+        plot_group_progress(df_group_avg,"group_avg",out_path='pages/group_plots/')
+        
+        # Save group averages
+        df_group_avg.to_pickle("data/group_avg")
     
     create_pages(predictions_df)
     update_pages(predictions_df,todays_schmeichel)    
