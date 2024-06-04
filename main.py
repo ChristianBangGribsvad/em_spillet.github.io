@@ -109,6 +109,7 @@ if __name__ == "__main__":
                 # Plot user df
                 plot_user(user_df)
                 
+                pdb.set_trace()
                 # Upload dataframe with new results
                 df_results.loc[date,user] = user_df.loc[2].sum()
                 df_results.to_pickle("data/group_dfs/"+group)

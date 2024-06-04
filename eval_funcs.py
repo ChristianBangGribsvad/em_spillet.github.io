@@ -10,10 +10,8 @@ import random
 def eval_match_predictions(predictions_df , results):
     # Convert results to a dict (and select only group stage matches)
     results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" in results[x][0]}
-    # Select the group stage matches in predictions
-    predictions = predictions_df.iloc[:,3:39]
     # Add extra row to save correct result
-    predictions_df.loc[len(predictions_df), predictions_df.columns] = [0]*len(predictions_df.columns)
+    predictions_df.loc[len(predictions_df), predictions_df.columns] = ["-"]*len(predictions_df.columns)
     # Add extra row to save points from each prediction
     predictions_df.loc[len(predictions_df), predictions_df.columns] = [0]*len(predictions_df.columns)
     
@@ -342,42 +340,42 @@ def find_group_winners(results):
 def eval_groups(predictions_df , results):
     # Compute group stage winners based on results
     all_group_res = find_group_winners(results)
-    
-    # Select the group winners in predictions
-    predictions = predictions_df.iloc[:,39:51]
-    
+
+    group_winner_cols = [x for x in predictions_df.columns if "place" in x]
     # Give points
     for i in range(6):
-        pred1st = predictions.iloc[0,0 + i*2]
-        pred2nd = predictions.iloc[0,1 + i*2]
+        pred1st = predictions_df.at[0,group_winner_cols[i*2]]
+        pred2nd = predictions_df.at[0,group_winner_cols[i*2 + 1]]
         
         res1st = all_group_res[list(all_group_res.keys())[i]]["1st"]
         res2nd = all_group_res[list(all_group_res.keys())[i]]["2nd"]
-        
-        predictions_df.iloc[1,40 + i*2] = res1st
-        predictions_df.iloc[1,40 + 1 + i*2] = res2nd
         
         # If current group is not finished we skip it
         if res1st == "":
             continue
         
+        predictions_df.at[1,group_winner_cols[i*2]] = res1st
+        predictions_df.at[1,group_winner_cols[i*2 + 1]] = res2nd
+        
         if res1st == pred1st and res2nd == pred2nd:
-            predictions_df.iloc[2,40 + i*2] = 7.5
-            predictions_df.iloc[2,40 + 1 + i*2] = 7.5
+            predictions_df.at[2,group_winner_cols[i*2]] = 7.5
+            predictions_df.at[2,group_winner_cols[i*2 + 1]] = 7.5
         elif res1st == pred2nd and res2nd == pred1st:
-            predictions_df.iloc[2,40 + i*2] = 5
-            predictions_df.iloc[2,40 + 1 + i*2] = 5
+            predictions_df.at[2,group_winner_cols[i*2]] = 5
+            predictions_df.at[2,group_winner_cols[i*2+1]] = 5
         elif res1st == pred1st:
-            predictions_df.iloc[2,40 + i*2] = 5
+            predictions_df.at[2,group_winner_cols[i*2]] = 5
         elif res2nd == pred2nd:
-            predictions_df.iloc[2,40 + 1 + i*2] = 5
+            predictions_df.at[2,group_winner_cols[i*2 + 1]] = 5
             
     return predictions_df
 
 def dk_finish(results, predictions_df):
     # Eval DK finish
     dk_finish = ""
-    df_finish_pred = predictions_df.iloc[0,55] 
+    
+    col = [x for x in predictions_df.columns if "Which round does Denmark reach" in x]
+    df_finish_pred = predictions_df.at[0,col[0]] 
     # Select only knockout matches from results
     results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" not in results[x][0]}
 
@@ -400,9 +398,9 @@ def dk_finish(results, predictions_df):
     if len(dk_finish) > 0:
         print("Denmark finishes at ",dk_finish)
         if dk_finish == df_finish_pred:
-            predictions_df.iloc[2,56] = 15
+            predictions_df.at[2,col[0]] = 15
             
-        predictions_df.iloc[1,56] = dk_finish
+        predictions_df.at[1,col[0]] = dk_finish
             
     return predictions_df , dk_finish
 
@@ -416,9 +414,10 @@ def dk_goals_scored(results,predictions_df):
             dk_goals += int(v.split("-")[0])
         elif "Denmark" in k.split("-")[1]:
             dk_goals += int(v.split("-")[1])
-            
-    if predictions_df.iloc[0,-1] == dk_goals:
-        predictions_df.iloc[2,-1] = 20
-    predictions_df.iloc[1,-1] = dk_goals
+    
+    col = [x for x in predictions_df.columns if "How many goals does Denmark score" in x]        
+    if predictions_df.at[0,col[0]] == dk_goals:
+        predictions_df.at[2,col[0]] = 20
+    predictions_df.at[1,col[0]] = dk_goals
 
     return predictions_df

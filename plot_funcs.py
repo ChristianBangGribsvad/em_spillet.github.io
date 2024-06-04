@@ -10,6 +10,7 @@ import os
 from matplotlib.font_manager import FontProperties
 import random
 import matplotlib as mpl
+import pdb
 
 def plot_group_progress(df_results,group_name):
     xs = df_results.index.tolist()
@@ -81,7 +82,9 @@ def plot_user(user_df):
     colors = []
     for _, row in trans_df.iterrows():
         colors_in_column = [mpl.colormaps["autumn"](0)]*4
-        if row["Points"] == 2:
+        if row["Results"] == "-":
+            colors_in_column = [mpl.colormaps["Greys"](0.3)]*4
+        elif row["Points"] == 2:
             colors_in_column = [mpl.colormaps["Greens"](0.2)]*4
         elif row["Points"] == 5:
             colors_in_column = [mpl.colormaps["Greens"](0.4)]*4
@@ -89,7 +92,7 @@ def plot_user(user_df):
             colors_in_column = [mpl.colormaps["Greens"](0.6)]*4
         elif row["Points"] == 10:
             colors_in_column = [mpl.colormaps["Greens"](0.8)]*4
-        elif row["Points"] == 15:
+        elif row["Points"] == 15 or row["Points"] == 20:
             colors_in_column = [mpl.colormaps["Greens"](0.99)]*4
         colors.append(colors_in_column)
 
