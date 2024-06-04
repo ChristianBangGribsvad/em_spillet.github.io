@@ -5,7 +5,7 @@
 # Today's Schmeichel(s):
 - TESTER-SHH na with 20.0 points part of European Sperm Bank [see their predictions](./pages/TESTER-SHH_na.html)
 
-# The best Group
+# The Best Group
 ![Group avg](./pages/group_plots/group_avg.svg?raw=true)
 
 
