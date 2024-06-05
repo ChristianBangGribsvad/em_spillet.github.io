@@ -17,7 +17,7 @@ def plot_group_progress(df_results,group_name,out_path='pages/group_plots/lines_
     fig = plt.subplots(1,figsize=(12,6))
     for i in range(len(df_results.columns)):
         plt.plot(xs,df_results.iloc[:,i]+random.uniform(-0.1,0.1),label=str(df_results.columns[i]),marker='o',markersize=7)
-    plt.grid(linestyles = "--")
+    plt.grid(linestyle= "--")
     plt.ylabel('Score')
     if len(df_results.columns) > 10:
         plt.legend(ncol=2)
