@@ -396,7 +396,6 @@ def dk_finish(results, predictions_df):
         dk_finish = "Final"
     
     if len(dk_finish) > 0:
-        print("Denmark finishes at ",dk_finish)
         if dk_finish == df_finish_pred:
             predictions_df.at[2,col[0]] = 15
             

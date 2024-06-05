@@ -147,6 +147,7 @@ if __name__ == "__main__":
         # Plot and save group results
         for group in os.listdir("data/group_dfs"):
             df_results = pd.read_pickle("data/group_dfs/"+group)
+
             plot_group_progress(df_results,group) 
             plot_best_round(df_results,group)
             plot_standings(df_results,group)
@@ -159,6 +160,7 @@ if __name__ == "__main__":
         
         # Save group averages
         df_group_avg.to_pickle("data/group_avg")
+        
     
     create_pages(predictions_df)
     update_pages(predictions_df,todays_schmeichel)    
