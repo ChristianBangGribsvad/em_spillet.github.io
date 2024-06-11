@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<<<<<<< HEAD
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="213.06375pt" height="102.626925pt" viewBox="0 0 213.06375 102.626925" xmlns="http://www.w3.org/2000/svg" version="1.1">
+=======
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="177.165pt" height="84.958125pt" viewBox="0 0 177.165 84.958125" xmlns="http://www.w3.org/2000/svg" version="1.1">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/standing_Frederiksborg_Gymnasium.svg
     <dc:date>2024-06-11T15:33:02.621706</dc:date>
+========
+    <dc:date>2024-06-11T00:41:30.739585</dc:date>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/standing_Frederikborg_Gymnasium.svg
+=======
+    <dc:date>2024-06-11T00:41:31.122008</dc:date>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.8.0, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.9.0, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -21,26 +33,44 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
+<<<<<<< HEAD
    <path d="M 0 102.626925 
 L 213.06375 102.626925 
 L 213.06375 -0 
 L 0 -0 
+=======
+   <path d="M 0 84.958125 
+L 177.165 84.958125 
+L 177.165 0 
+L 0 0 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="table_1">
     <g id="patch_2">
+<<<<<<< HEAD
      <path d="M 94.26375 35.426925 
 L 205.86375 35.426925 
 L 205.86375 23.426925 
 L 94.26375 23.426925 
+=======
+     <path d="M 58.365 35.426925 
+L 169.965 35.426925 
+L 169.965 23.426925 
+L 58.365 23.426925 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 z
 " style="fill: #1e90ff; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_1">
      <!-- Points -->
+<<<<<<< HEAD
      <g transform="translate(132.324688 32.1863) scale(0.1 -0.1)">
+=======
+     <g transform="translate(96.425937 32.1863) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       <defs>
        <path id="DejaVuSans-Bold-50" d="M 588 4666 
 L 2584 4666 
@@ -182,15 +212,24 @@ z
     </g>
     <g id="patch_3">
      <path d="M 7.2 47.426925 
+<<<<<<< HEAD
 L 94.26375 47.426925 
 L 94.26375 35.426925 
+=======
+L 58.365 47.426925 
+L 58.365 35.426925 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 L 7.2 35.426925 
 z
 " style="fill: #1e90ff; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_2">
      <!-- Alan Ce -->
+<<<<<<< HEAD
      <g transform="translate(15.906375 44.1863) scale(0.1 -0.1)">
+=======
+     <g transform="translate(12.3165 44.1863) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       <defs>
        <path id="DejaVuSans-Bold-41" d="M 3419 850 
 L 1538 850 
@@ -306,17 +345,70 @@ z
      </g>
     </g>
     <g id="patch_4">
+<<<<<<< HEAD
      <path d="M 94.26375 47.426925 
 L 205.86375 47.426925 
 L 205.86375 35.426925 
 L 94.26375 35.426925 
+=======
+     <path d="M 58.365 47.426925 
+L 169.965 47.426925 
+L 169.965 35.426925 
+L 58.365 35.426925 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 z
 " style="fill: #ffffff; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_3">
+<<<<<<< HEAD
      <!-- 0.0 -->
      <g transform="translate(142.112188 44.1863) scale(0.1 -0.1)">
       <defs>
+=======
+     <!-- 114.0 -->
+     <g transform="translate(99.850937 44.1863) scale(0.1 -0.1)">
+      <defs>
+       <path id="DejaVuSans-31" d="M 794 531 
+L 1825 531 
+L 1825 4091 
+L 703 3866 
+L 703 4441 
+L 1819 4666 
+L 2450 4666 
+L 2450 531 
+L 3481 531 
+L 3481 0 
+L 794 0 
+L 794 531 
+z
+" transform="scale(0.015625)"/>
+       <path id="DejaVuSans-34" d="M 2419 4116 
+L 825 1625 
+L 2419 1625 
+L 2419 4116 
+z
+M 2253 4666 
+L 3047 4666 
+L 3047 1625 
+L 3713 1625 
+L 3713 1100 
+L 3047 1100 
+L 3047 0 
+L 2419 0 
+L 2419 1100 
+L 313 1100 
+L 313 1709 
+L 2253 4666 
+z
+" transform="scale(0.015625)"/>
+       <path id="DejaVuSans-2e" d="M 684 794 
+L 1344 794 
+L 1344 0 
+L 684 0 
+L 684 794 
+z
+" transform="scale(0.015625)"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
        <path id="DejaVuSans-30" d="M 2034 4250 
 Q 1547 4250 1301 3770 
 Q 1056 3291 1056 2328 
@@ -338,6 +430,7 @@ Q 422 3509 836 4129
 Q 1250 4750 2034 4750 
 z
 " transform="scale(0.015625)"/>
+<<<<<<< HEAD
        <path id="DejaVuSans-2e" d="M 684 794 
 L 1344 794 
 L 1344 0 
@@ -364,6 +457,22 @@ z
      <g transform="translate(15.906375 56.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-53" d="M 3834 4519 
+=======
+      </defs>
+      <use xlink:href="#DejaVuSans-31"/>
+      <use xlink:href="#DejaVuSans-31" x="63.623047"/>
+      <use xlink:href="#DejaVuSans-34" x="127.246094"/>
+      <use xlink:href="#DejaVuSans-2e" x="190.869141"/>
+      <use xlink:href="#DejaVuSans-30" x="222.65625"/>
+     </g>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- Standings -->
+    <g transform="translate(56.133 16.318125) scale(0.12 -0.12)">
+     <defs>
+      <path id="DejaVuSans-Bold-53" d="M 3834 4519 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 L 3834 3531 
 Q 3450 3703 3084 3790 
 Q 2719 3878 2394 3878 
@@ -394,6 +503,7 @@ Q 2588 4750 2994 4692
 Q 3400 4634 3834 4519 
 z
 " transform="scale(0.015625)"/>
+<<<<<<< HEAD
        <path id="DejaVuSans-Bold-62" d="M 2400 722 
 Q 2759 722 2948 984 
 Q 3138 1247 3138 1747 
@@ -727,6 +837,8 @@ z
     <!-- Standings -->
     <g transform="translate(92.03175 16.318125) scale(0.12 -0.12)">
      <defs>
+=======
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       <path id="DejaVuSans-Bold-64" d="M 2919 2988 
 L 2919 4863 
 L 4044 4863 

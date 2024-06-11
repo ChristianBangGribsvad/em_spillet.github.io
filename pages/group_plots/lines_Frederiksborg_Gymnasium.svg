@@ -6,11 +6,19 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
     <dc:date>2024-06-11T15:33:02.497744</dc:date>
+========
+    <dc:date>2024-06-11T00:41:30.465714</dc:date>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
+=======
+    <dc:date>2024-06-11T00:41:30.880666</dc:date>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.8.0, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.9.0, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -30,16 +38,25 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
+<<<<<<< HEAD
     <path d="M 62.39 404.12 
 L 853.2 404.12 
 L 853.2 26.88 
 L 62.39 26.88 
+=======
+    <path d="M 50.87 404.12 
+L 853.2 404.12 
+L 853.2 26.88 
+L 50.87 26.88 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
       <path d="M 107.691694 404.12 
 L 107.691694 26.88 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
@@ -47,16 +64,177 @@ L 107.691694 26.88
      <g id="line2d_2">
       <defs>
        <path id="me416ad5dcd" d="M 0 0 
+========
+      <path d="M 87.339545 404.12 
+L 87.339545 26.88 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m78ecef63a6" d="M 0 0 
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
+=======
+      <path d="M 87.339545 404.12 
+L 87.339545 26.88 
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m4f7baf73ba" d="M 0 0 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 L 0 3.5 
 " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#me416ad5dcd" x="107.691694" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
       <!-- 2022-07 -->
       <g transform="translate(86.800287 418.718437) scale(0.1 -0.1)">
+========
+       <use xlink:href="#m78ecef63a6" x="87.339545" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+       <use xlink:href="#m4f7baf73ba" x="87.339545" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_1">
+      <!-- June 1 -->
+      <g transform="translate(71.68017 418.718437) scale(0.1 -0.1)">
+       <defs>
+        <path id="DejaVuSans-4a" d="M 628 4666 
+L 1259 4666 
+L 1259 325 
+Q 1259 -519 939 -900 
+Q 619 -1281 -91 -1281 
+L -331 -1281 
+L -331 -750 
+L -134 -750 
+Q 284 -750 456 -515 
+Q 628 -281 628 325 
+L 628 4666 
+z
+" transform="scale(0.015625)"/>
+        <path id="DejaVuSans-75" d="M 544 1381 
+L 544 3500 
+L 1119 3500 
+L 1119 1403 
+Q 1119 906 1312 657 
+Q 1506 409 1894 409 
+Q 2359 409 2629 706 
+Q 2900 1003 2900 1516 
+L 2900 3500 
+L 3475 3500 
+L 3475 0 
+L 2900 0 
+L 2900 538 
+Q 2691 219 2414 64 
+Q 2138 -91 1772 -91 
+Q 1169 -91 856 284 
+Q 544 659 544 1381 
+z
+M 1991 3584 
+L 1991 3584 
+z
+" transform="scale(0.015625)"/>
+        <path id="DejaVuSans-6e" d="M 3513 2113 
+L 3513 0 
+L 2938 0 
+L 2938 2094 
+Q 2938 2591 2744 2837 
+Q 2550 3084 2163 3084 
+Q 1697 3084 1428 2787 
+Q 1159 2491 1159 1978 
+L 1159 0 
+L 581 0 
+L 581 3500 
+L 1159 3500 
+L 1159 2956 
+Q 1366 3272 1645 3428 
+Q 1925 3584 2291 3584 
+Q 2894 3584 3203 3211 
+Q 3513 2838 3513 2113 
+z
+" transform="scale(0.015625)"/>
+        <path id="DejaVuSans-65" d="M 3597 1894 
+L 3597 1613 
+L 953 1613 
+Q 991 1019 1311 708 
+Q 1631 397 2203 397 
+Q 2534 397 2845 478 
+Q 3156 559 3463 722 
+L 3463 178 
+Q 3153 47 2828 -22 
+Q 2503 -91 2169 -91 
+Q 1331 -91 842 396 
+Q 353 884 353 1716 
+Q 353 2575 817 3079 
+Q 1281 3584 2069 3584 
+Q 2775 3584 3186 3129 
+Q 3597 2675 3597 1894 
+z
+M 3022 2063 
+Q 3016 2534 2758 2815 
+Q 2500 3097 2075 3097 
+Q 1594 3097 1305 2825 
+Q 1016 2553 972 2059 
+L 3022 2063 
+z
+" transform="scale(0.015625)"/>
+        <path id="DejaVuSans-20" transform="scale(0.015625)"/>
+        <path id="DejaVuSans-31" d="M 794 531 
+L 1825 531 
+L 1825 4091 
+L 703 3866 
+L 703 4441 
+L 1819 4666 
+L 2450 4666 
+L 2450 531 
+L 3481 531 
+L 3481 0 
+L 794 0 
+L 794 531 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-31" x="249.560547"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 148.122121 404.12 
+L 148.122121 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m78ecef63a6" x="148.122121" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="148.122121" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_2">
+      <!-- June 2 -->
+      <g transform="translate(132.462746 418.718437) scale(0.1 -0.1)">
+<<<<<<< HEAD
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
+=======
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
        <defs>
         <path id="DejaVuSans-32" d="M 1228 531 
 L 3431 531 
@@ -82,6 +260,7 @@ Q 2828 2175 2409 1742
 Q 1991 1309 1228 531 
 z
 " transform="scale(0.015625)"/>
+<<<<<<< HEAD
         <path id="DejaVuSans-30" d="M 2034 4250 
 Q 1547 4250 1301 3770 
 Q 1056 3291 1056 2328 
@@ -131,20 +310,57 @@ z
       </g>
      </g>
     </g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
     <g id="xtick_2">
      <g id="line2d_3">
       <path d="M 198.295081 404.12 
 L 198.295081 26.88 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+========
+=======
+       </defs>
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-32" x="249.560547"/>
+      </g>
+     </g>
+    </g>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 208.904697 404.12 
+L 208.904697 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
      <g id="line2d_4">
       <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#me416ad5dcd" x="198.295081" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+========
+       <use xlink:href="#m78ecef63a6" x="208.904697" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
       </g>
      </g>
      <g id="text_2">
       <!-- 2023-01 -->
       <g transform="translate(177.403675 418.718437) scale(0.1 -0.1)">
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="208.904697" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <!-- June 3 -->
+      <g transform="translate(193.245322 418.718437) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
        <defs>
         <path id="DejaVuSans-33" d="M 2597 2516 
 Q 3050 2419 3304 2112 
@@ -178,6 +394,7 @@ Q 3450 3153 3228 2886
 Q 3006 2619 2597 2516 
 z
 " transform="scale(0.015625)"/>
+<<<<<<< HEAD
         <path id="DejaVuSans-31" d="M 794 531 
 L 1825 531 
 L 1825 4091 
@@ -224,11 +441,22 @@ L 287.421239 26.88
        <use xlink:href="#DejaVuSans-2d" x="254.492188"/>
        <use xlink:href="#DejaVuSans-30" x="290.576172"/>
        <use xlink:href="#DejaVuSans-37" x="354.199219"/>
+=======
+       </defs>
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-33" x="249.560547"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       </g>
      </g>
     </g>
     <g id="xtick_4">
      <g id="line2d_7">
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
       <path d="M 378.024626 404.12 
 L 378.024626 26.88 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
@@ -236,11 +464,34 @@ L 378.024626 26.88
      <g id="line2d_8">
       <g>
        <use xlink:href="#me416ad5dcd" x="378.024626" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+========
+      <path d="M 269.687273 404.12 
+L 269.687273 26.88 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m78ecef63a6" x="269.687273" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
       </g>
      </g>
      <g id="text_4">
       <!-- 2024-01 -->
       <g transform="translate(357.13322 418.718437) scale(0.1 -0.1)">
+=======
+      <path d="M 269.687273 404.12 
+L 269.687273 26.88 
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="269.687273" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <!-- June 4 -->
+      <g transform="translate(254.027898 418.718437) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
        <defs>
         <path id="DejaVuSans-34" d="M 2419 4116 
 L 825 1625 
@@ -262,6 +513,7 @@ L 2253 4666
 z
 " transform="scale(0.015625)"/>
        </defs>
+<<<<<<< HEAD
        <use xlink:href="#DejaVuSans-32"/>
        <use xlink:href="#DejaVuSans-30" x="63.623047"/>
        <use xlink:href="#DejaVuSans-32" x="127.246094"/>
@@ -269,11 +521,21 @@ z
        <use xlink:href="#DejaVuSans-2d" x="254.492188"/>
        <use xlink:href="#DejaVuSans-30" x="290.576172"/>
        <use xlink:href="#DejaVuSans-31" x="354.199219"/>
+=======
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-34" x="249.560547"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       </g>
      </g>
     </g>
     <g id="xtick_5">
      <g id="line2d_9">
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
       <path d="M 467.643194 404.12 
 L 467.643194 26.88 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
@@ -281,6 +543,15 @@ L 467.643194 26.88
      <g id="line2d_10">
       <g>
        <use xlink:href="#me416ad5dcd" x="467.643194" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+========
+      <path d="M 330.469848 404.12 
+L 330.469848 26.88 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m78ecef63a6" x="330.469848" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
       </g>
      </g>
      <g id="text_5">
@@ -310,6 +581,20 @@ L 558.246582 26.88
      <g id="text_6">
       <!-- 2025-01 -->
       <g transform="translate(537.355175 418.718437) scale(0.1 -0.1)">
+=======
+      <path d="M 330.469848 404.12 
+L 330.469848 26.88 
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="330.469848" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <!-- June 5 -->
+      <g transform="translate(314.810473 418.718437) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
        <defs>
         <path id="DejaVuSans-35" d="M 691 4666 
 L 3169 4666 
@@ -337,6 +622,7 @@ L 691 4666
 z
 " transform="scale(0.015625)"/>
        </defs>
+<<<<<<< HEAD
        <use xlink:href="#DejaVuSans-32"/>
        <use xlink:href="#DejaVuSans-30" x="63.623047"/>
        <use xlink:href="#DejaVuSans-32" x="127.246094"/>
@@ -347,15 +633,39 @@ z
       </g>
      </g>
     </g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
     <g id="xtick_7">
      <g id="line2d_13">
       <path d="M 647.37274 404.12 
 L 647.37274 26.88 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+========
+=======
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-35" x="249.560547"/>
+      </g>
+     </g>
+    </g>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 391.252424 404.12 
+L 391.252424 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
      <g id="line2d_14">
       <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#me416ad5dcd" x="647.37274" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+========
+       <use xlink:href="#m78ecef63a6" x="391.252424" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
       </g>
      </g>
      <g id="text_7">
@@ -385,6 +695,18 @@ L 737.976127 26.88
      <g id="text_8">
       <!-- 2026-01 -->
       <g transform="translate(717.084721 418.718437) scale(0.1 -0.1)">
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="391.252424" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <!-- June 6 -->
+      <g transform="translate(375.593049 418.718437) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
        <defs>
         <path id="DejaVuSans-36" d="M 2113 2584 
 Q 1688 2584 1439 2293 
@@ -417,6 +739,7 @@ Q 3103 4656 3366 4563
 z
 " transform="scale(0.015625)"/>
        </defs>
+<<<<<<< HEAD
        <use xlink:href="#DejaVuSans-32"/>
        <use xlink:href="#DejaVuSans-30" x="63.623047"/>
        <use xlink:href="#DejaVuSans-32" x="127.246094"/>
@@ -427,15 +750,39 @@ z
       </g>
      </g>
     </g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
     <g id="xtick_9">
      <g id="line2d_17">
       <path d="M 827.102285 404.12 
 L 827.102285 26.88 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+========
+=======
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-36" x="249.560547"/>
+      </g>
+     </g>
+    </g>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 452.035 404.12 
+L 452.035 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
      <g id="line2d_18">
       <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#me416ad5dcd" x="827.102285" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+========
+       <use xlink:href="#m78ecef63a6" x="452.035" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
       </g>
      </g>
      <g id="text_9">
@@ -496,20 +843,78 @@ z
       </g>
      </g>
     </g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
     <g id="ytick_2">
      <g id="line2d_21">
       <path d="M 62.39 346.549101 
 L 853.2 346.549101 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+========
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="452.035" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <!-- June 7 -->
+      <g transform="translate(436.375625 418.718437) scale(0.1 -0.1)">
+       <defs>
+        <path id="DejaVuSans-37" d="M 525 4666 
+L 3525 4666 
+L 3525 4397 
+L 1831 0 
+L 1172 0 
+L 2766 4134 
+L 525 4134 
+L 525 4666 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-37" x="249.560547"/>
+      </g>
+     </g>
+    </g>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 512.817576 404.12 
+L 512.817576 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
      <g id="line2d_22">
       <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#me591b4a8ac" x="62.39" y="346.549101" style="stroke: #000000; stroke-width: 0.8"/>
+========
+       <use xlink:href="#m78ecef63a6" x="512.817576" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
       </g>
      </g>
      <g id="text_11">
       <!-- −0.08 -->
       <g transform="translate(24.744687 350.34832) scale(0.1 -0.1)">
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="512.817576" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <!-- June 8 -->
+      <g transform="translate(497.158201 418.718437) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
        <defs>
         <path id="DejaVuSans-38" d="M 2034 2216 
 Q 1584 2216 1326 1975 
@@ -551,22 +956,336 @@ Q 1172 3844 1172 3481
 z
 " transform="scale(0.015625)"/>
        </defs>
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#DejaVuSans-2212"/>
        <use xlink:href="#DejaVuSans-30" x="83.789062"/>
        <use xlink:href="#DejaVuSans-2e" x="147.412109"/>
        <use xlink:href="#DejaVuSans-30" x="179.199219"/>
        <use xlink:href="#DejaVuSans-38" x="242.822266"/>
+========
+=======
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-38" x="249.560547"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <path d="M 573.600152 404.12 
+L 573.600152 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m78ecef63a6" x="573.600152" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="573.600152" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_9">
+      <!-- June 9 -->
+      <g transform="translate(557.940777 418.718437) scale(0.1 -0.1)">
+       <defs>
+        <path id="DejaVuSans-39" d="M 703 97 
+L 703 672 
+Q 941 559 1184 500 
+Q 1428 441 1663 441 
+Q 2288 441 2617 861 
+Q 2947 1281 2994 2138 
+Q 2813 1869 2534 1725 
+Q 2256 1581 1919 1581 
+Q 1219 1581 811 2004 
+Q 403 2428 403 3163 
+Q 403 3881 828 4315 
+Q 1253 4750 1959 4750 
+Q 2769 4750 3195 4129 
+Q 3622 3509 3622 2328 
+Q 3622 1225 3098 567 
+Q 2575 -91 1691 -91 
+Q 1453 -91 1209 -44 
+Q 966 3 703 97 
+z
+M 1959 2075 
+Q 2384 2075 2632 2365 
+Q 2881 2656 2881 3163 
+Q 2881 3666 2632 3958 
+Q 2384 4250 1959 4250 
+Q 1534 4250 1286 3958 
+Q 1038 3666 1038 3163 
+Q 1038 2656 1286 2365 
+Q 1534 2075 1959 2075 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-39" x="249.560547"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_19">
+      <path d="M 634.382727 404.12 
+L 634.382727 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m78ecef63a6" x="634.382727" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="634.382727" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- June 10 -->
+      <g transform="translate(615.542102 418.718437) scale(0.1 -0.1)">
+       <defs>
+        <path id="DejaVuSans-30" d="M 2034 4250 
+Q 1547 4250 1301 3770 
+Q 1056 3291 1056 2328 
+Q 1056 1369 1301 889 
+Q 1547 409 2034 409 
+Q 2525 409 2770 889 
+Q 3016 1369 3016 2328 
+Q 3016 3291 2770 3770 
+Q 2525 4250 2034 4250 
+z
+M 2034 4750 
+Q 2819 4750 3233 4129 
+Q 3647 3509 3647 2328 
+Q 3647 1150 3233 529 
+Q 2819 -91 2034 -91 
+Q 1250 -91 836 529 
+Q 422 1150 422 2328 
+Q 422 3509 836 4129 
+Q 1250 4750 2034 4750 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-31" x="249.560547"/>
+       <use xlink:href="#DejaVuSans-30" x="313.183594"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_21">
+      <path d="M 695.165303 404.12 
+L 695.165303 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m78ecef63a6" x="695.165303" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="695.165303" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_11">
+      <!-- June 11 -->
+      <g transform="translate(676.324678 418.718437) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-31" x="249.560547"/>
+       <use xlink:href="#DejaVuSans-31" x="313.183594"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_23">
+      <path d="M 755.947879 404.12 
+L 755.947879 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m78ecef63a6" x="755.947879" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="755.947879" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_12">
+      <!-- June 12 -->
+      <g transform="translate(737.107254 418.718437) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-31" x="249.560547"/>
+       <use xlink:href="#DejaVuSans-32" x="313.183594"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_25">
+      <path d="M 816.730455 404.12 
+L 816.730455 26.88 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m78ecef63a6" x="816.730455" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m4f7baf73ba" x="816.730455" y="404.12" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_13">
+      <!-- June 13 -->
+      <g transform="translate(797.88983 418.718437) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-4a"/>
+       <use xlink:href="#DejaVuSans-75" x="29.492188"/>
+       <use xlink:href="#DejaVuSans-6e" x="92.871094"/>
+       <use xlink:href="#DejaVuSans-65" x="156.25"/>
+       <use xlink:href="#DejaVuSans-20" x="217.773438"/>
+       <use xlink:href="#DejaVuSans-31" x="249.560547"/>
+       <use xlink:href="#DejaVuSans-33" x="313.183594"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_27">
+<<<<<<< HEAD
+      <path d="M 50.87 347.070134 
+L 853.2 347.070134 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_28">
+      <defs>
+       <path id="m9f04ac8500" d="M 0 0 
+=======
+      <path d="M 50.87 387.308746 
+L 853.2 387.308746 
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_28">
+      <defs>
+       <path id="mea34e5dc92" d="M 0 0 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+<<<<<<< HEAD
+       <use xlink:href="#m9f04ac8500" x="50.87" y="347.070134" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+       <use xlink:href="#mea34e5dc92" x="50.87" y="387.308746" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_14">
+      <!-- 20 -->
+<<<<<<< HEAD
+      <g transform="translate(31.145 350.869353) scale(0.1 -0.1)">
+=======
+      <g transform="translate(31.145 391.107965) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+       <use xlink:href="#DejaVuSans-32"/>
+       <use xlink:href="#DejaVuSans-30" x="63.623047"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_29">
+<<<<<<< HEAD
+      <path d="M 50.87 285.89909 
+L 853.2 285.89909 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#m9f04ac8500" x="50.87" y="285.89909" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+      <path d="M 50.87 314.341628 
+L 853.2 314.341628 
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#mea34e5dc92" x="50.87" y="314.341628" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_15">
+      <!-- 40 -->
+<<<<<<< HEAD
+      <g transform="translate(31.145 289.698308) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-34"/>
+       <use xlink:href="#DejaVuSans-30" x="63.623047"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
+=======
+      <g transform="translate(31.145 318.140847) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-34"/>
+       <use xlink:href="#DejaVuSans-30" x="63.623047"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       </g>
      </g>
     </g>
     <g id="ytick_3">
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
      <g id="line2d_23">
       <path d="M 62.39 289.62911 
 L 853.2 289.62911 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+========
+     <g id="line2d_31">
+      <path d="M 50.87 224.728045 
+L 853.2 224.728045 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
      <g id="line2d_24">
       <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#me591b4a8ac" x="62.39" y="289.62911" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
@@ -578,17 +1297,52 @@ L 853.2 289.62911
        <use xlink:href="#DejaVuSans-2e" x="147.412109"/>
        <use xlink:href="#DejaVuSans-30" x="179.199219"/>
        <use xlink:href="#DejaVuSans-36" x="242.822266"/>
+========
+       <use xlink:href="#m9f04ac8500" x="50.87" y="224.728045" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+     <g id="line2d_31">
+      <path d="M 50.87 241.37451 
+L 853.2 241.37451 
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#mea34e5dc92" x="50.87" y="241.37451" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_16">
+      <!-- 60 -->
+<<<<<<< HEAD
+      <g transform="translate(31.145 228.527264) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-36"/>
+       <use xlink:href="#DejaVuSans-30" x="63.623047"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
+=======
+      <g transform="translate(31.145 245.173729) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-36"/>
+       <use xlink:href="#DejaVuSans-30" x="63.623047"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       </g>
      </g>
     </g>
     <g id="ytick_4">
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
      <g id="line2d_25">
       <path d="M 62.39 232.70912 
 L 853.2 232.70912 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+========
+     <g id="line2d_33">
+      <path d="M 50.87 163.557 
+L 853.2 163.557 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
      <g id="line2d_26">
       <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#me591b4a8ac" x="62.39" y="232.70912" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
@@ -600,17 +1354,52 @@ L 853.2 232.70912
        <use xlink:href="#DejaVuSans-2e" x="147.412109"/>
        <use xlink:href="#DejaVuSans-30" x="179.199219"/>
        <use xlink:href="#DejaVuSans-34" x="242.822266"/>
+========
+       <use xlink:href="#m9f04ac8500" x="50.87" y="163.557" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+     <g id="line2d_33">
+      <path d="M 50.87 168.407392 
+L 853.2 168.407392 
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_34">
+      <g>
+       <use xlink:href="#mea34e5dc92" x="50.87" y="168.407392" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_17">
+      <!-- 80 -->
+<<<<<<< HEAD
+      <g transform="translate(31.145 167.356219) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-38"/>
+       <use xlink:href="#DejaVuSans-30" x="63.623047"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
+=======
+      <g transform="translate(31.145 172.206611) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-38"/>
+       <use xlink:href="#DejaVuSans-30" x="63.623047"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       </g>
      </g>
     </g>
     <g id="ytick_5">
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
      <g id="line2d_27">
       <path d="M 62.39 175.789129 
 L 853.2 175.789129 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+========
+     <g id="line2d_35">
+      <path d="M 50.87 102.385955 
+L 853.2 102.385955 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
      <g id="line2d_28">
       <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#me591b4a8ac" x="62.39" y="175.789129" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
@@ -622,17 +1411,47 @@ L 853.2 175.789129
        <use xlink:href="#DejaVuSans-2e" x="147.412109"/>
        <use xlink:href="#DejaVuSans-30" x="179.199219"/>
        <use xlink:href="#DejaVuSans-32" x="242.822266"/>
+========
+       <use xlink:href="#m9f04ac8500" x="50.87" y="102.385955" style="stroke: #000000; stroke-width: 0.8"/>
+=======
+     <g id="line2d_35">
+      <path d="M 50.87 95.440274 
+L 853.2 95.440274 
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+     </g>
+     <g id="line2d_36">
+      <g>
+       <use xlink:href="#mea34e5dc92" x="50.87" y="95.440274" style="stroke: #000000; stroke-width: 0.8"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+      </g>
+     </g>
+     <g id="text_18">
+      <!-- 100 -->
+<<<<<<< HEAD
+      <g transform="translate(24.7825 106.185174) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-31"/>
+       <use xlink:href="#DejaVuSans-30" x="63.623047"/>
+       <use xlink:href="#DejaVuSans-30" x="127.246094"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
       </g>
      </g>
     </g>
     <g id="ytick_6">
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
      <g id="line2d_29">
       <path d="M 62.39 118.869138 
 L 853.2 118.869138 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+========
+     <g id="line2d_37">
+      <path d="M 50.87 41.21491 
+L 853.2 41.21491 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-width: 0.8"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
      <g id="line2d_30">
       <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
        <use xlink:href="#me591b4a8ac" x="62.39" y="118.869138" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
@@ -643,6 +1462,17 @@ L 853.2 118.869138
        <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
        <use xlink:href="#DejaVuSans-30" x="95.410156"/>
        <use xlink:href="#DejaVuSans-30" x="159.033203"/>
+========
+       <use xlink:href="#m9f04ac8500" x="50.87" y="41.21491" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <!-- 120 -->
+      <g transform="translate(24.7825 45.014129) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-31"/>
+       <use xlink:href="#DejaVuSans-32" x="63.623047"/>
+       <use xlink:href="#DejaVuSans-30" x="127.246094"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
       </g>
      </g>
     </g>
@@ -670,6 +1500,18 @@ L 853.2 61.949147
     <g id="text_17">
      <!-- Score -->
      <g transform="translate(18.665 229.502344) rotate(-90) scale(0.1 -0.1)">
+=======
+      <g transform="translate(24.7825 99.239493) scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-31"/>
+       <use xlink:href="#DejaVuSans-30" x="63.623047"/>
+       <use xlink:href="#DejaVuSans-30" x="127.246094"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_19">
+     <!-- Score -->
+     <g transform="translate(18.702813 229.502344) rotate(-90) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       <defs>
        <path id="DejaVuSans-53" d="M 3425 4513 
 L 3425 3897 
@@ -761,6 +1603,7 @@ Q 2541 3569 2628 3553
 L 2631 2963 
 z
 " transform="scale(0.015625)"/>
+<<<<<<< HEAD
        <path id="DejaVuSans-65" d="M 3597 1894 
 L 3597 1613 
 L 953 1613 
@@ -786,6 +1629,8 @@ Q 1016 2553 972 2059
 L 3022 2063 
 z
 " transform="scale(0.015625)"/>
+=======
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       </defs>
       <use xlink:href="#DejaVuSans-53"/>
       <use xlink:href="#DejaVuSans-63" x="63.476562"/>
@@ -795,11 +1640,49 @@ z
      </g>
     </g>
    </g>
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
    <g id="line2d_33">
     <path d="M 457.795 314.017141 
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
     <defs>
      <path id="mc9ab2aa7f1" d="M 0 3.5 
+========
+   <g id="line2d_39">
+    <path d="M 87.339545 355.999601 
+L 148.122121 334.589736 
+L 208.904697 328.472631 
+L 269.687273 294.828556 
+L 330.469848 288.711452 
+L 391.252424 212.247646 
+L 452.035 196.954885 
+L 512.817576 74.612795 
+=======
+   <g id="line2d_37">
+    <path d="M 87.339545 386.972727 
+L 148.122121 379.676015 
+L 208.904697 372.379304 
+L 269.687273 328.599033 
+L 330.469848 277.52205 
+L 391.252424 241.038491 
+L 452.035 113.346035 
+L 512.817576 58.620696 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
+L 573.600152 44.027273 
+L 634.382727 44.027273 
+L 695.165303 44.027273 
+L 755.947879 44.027273 
+L 816.730455 44.027273 
+<<<<<<< HEAD
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="m1bedb8aac0" d="M 0 3.5 
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
+=======
+" clip-path="url(#pc462f53bf6)" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="mf9b0693cbf" d="M 0 3.5 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
 C 3.131218 1.81853 3.5 0.928211 3.5 0 
 C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
@@ -811,6 +1694,8 @@ C -1.81853 3.131218 -0.928211 3.5 0 3.5
 z
 " style="stroke: #1f77b4"/>
     </defs>
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
     <g clip-path="url(#pa0e31065c8)">
      <use xlink:href="#mc9ab2aa7f1" x="457.795" y="314.017141" style="fill: #1f77b4; stroke: #1f77b4"/>
     </g>
@@ -820,6 +1705,41 @@ z
 " clip-path="url(#pa0e31065c8)" style="fill: none; stroke: #ff7f0e; stroke-width: 1.5; stroke-linecap: square"/>
     <defs>
      <path id="m241b312838" d="M 0 3.5 
+========
+    <g clip-path="url(#p32f90d2f1b)">
+     <use xlink:href="#m1bedb8aac0" x="87.339545" y="355.999601" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="148.122121" y="334.589736" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="208.904697" y="328.472631" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="269.687273" y="294.828556" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="330.469848" y="288.711452" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="391.252424" y="212.247646" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="452.035" y="196.954885" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="512.817576" y="74.612795" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="573.600152" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="634.382727" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="695.165303" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="755.947879" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#m1bedb8aac0" x="816.730455" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+    </g>
+   </g>
+   <g id="line2d_40">
+    <path d="M 87.339545 386.972727 
+L 148.122121 371.679966 
+L 208.904697 359.445757 
+L 269.687273 353.328653 
+L 330.469848 322.74313 
+L 391.252424 246.279324 
+L 452.035 203.459593 
+L 512.817576 157.581309 
+L 573.600152 126.995787 
+L 634.382727 126.995787 
+L 695.165303 126.995787 
+L 755.947879 126.995787 
+L 816.730455 126.995787 
+" clip-path="url(#p32f90d2f1b)" style="fill: none; stroke: #ff7f0e; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="mf3d0527224" d="M 0 3.5 
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
 C 0.928211 3.5 1.81853 3.131218 2.474874 2.474874 
 C 3.131218 1.81853 3.5 0.928211 3.5 0 
 C 3.5 -0.928211 3.131218 -1.81853 2.474874 -2.474874 
@@ -831,6 +1751,7 @@ C -1.81853 3.131218 -0.928211 3.5 0 3.5
 z
 " style="stroke: #ff7f0e"/>
     </defs>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
     <g clip-path="url(#pa0e31065c8)">
      <use xlink:href="#m241b312838" x="457.795" y="386.972727" style="fill: #ff7f0e; stroke: #ff7f0e"/>
     </g>
@@ -893,11 +1814,48 @@ z
     </defs>
     <g clip-path="url(#pa0e31065c8)">
      <use xlink:href="#m98bc4f3f77" x="457.795" y="219.5047" style="fill: #9467bd; stroke: #9467bd"/>
+========
+    <g clip-path="url(#p32f90d2f1b)">
+     <use xlink:href="#mf3d0527224" x="87.339545" y="386.972727" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="148.122121" y="371.679966" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="208.904697" y="359.445757" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="269.687273" y="353.328653" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="330.469848" y="322.74313" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="391.252424" y="246.279324" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="452.035" y="203.459593" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="512.817576" y="157.581309" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="573.600152" y="126.995787" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="634.382727" y="126.995787" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="695.165303" y="126.995787" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="755.947879" y="126.995787" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+     <use xlink:href="#mf3d0527224" x="816.730455" y="126.995787" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
     </g>
    </g>
    <g id="patch_3">
     <path d="M 62.39 404.12 
 L 62.39 26.88 
+=======
+    <g clip-path="url(#pc462f53bf6)">
+     <use xlink:href="#mf9b0693cbf" x="87.339545" y="386.972727" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="148.122121" y="379.676015" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="208.904697" y="372.379304" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="269.687273" y="328.599033" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="330.469848" y="277.52205" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="391.252424" y="241.038491" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="452.035" y="113.346035" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="512.817576" y="58.620696" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="573.600152" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="634.382727" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="695.165303" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="755.947879" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+     <use xlink:href="#mf9b0693cbf" x="816.730455" y="44.027273" style="fill: #1f77b4; stroke: #1f77b4"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 50.87 404.12 
+L 50.87 26.88 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
@@ -906,11 +1864,16 @@ L 853.2 26.88
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_5">
+<<<<<<< HEAD
     <path d="M 62.39 404.12 
+=======
+    <path d="M 50.87 404.12 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 L 853.2 404.12 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_6">
+<<<<<<< HEAD
     <path d="M 62.39 26.88 
 L 853.2 26.88 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
@@ -918,6 +1881,15 @@ L 853.2 26.88
    <g id="text_18">
     <!-- Standings -->
     <g transform="translate(427.94125 20.88) scale(0.12 -0.12)">
+=======
+    <path d="M 50.87 26.88 
+L 853.2 26.88 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_20">
+    <!-- Standings -->
+    <g transform="translate(422.18125 20.88) scale(0.12 -0.12)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
      <defs>
       <path id="DejaVuSans-74" d="M 1172 4494 
 L 1172 3500 
@@ -973,6 +1945,7 @@ Q 2591 3584 2966 3190
 Q 3341 2797 3341 1997 
 z
 " transform="scale(0.015625)"/>
+<<<<<<< HEAD
       <path id="DejaVuSans-6e" d="M 3513 2113 
 L 3513 0 
 L 2938 0 
@@ -992,6 +1965,8 @@ Q 2894 3584 3203 3211
 Q 3513 2838 3513 2113 
 z
 " transform="scale(0.015625)"/>
+=======
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       <path id="DejaVuSans-64" d="M 2906 2969 
 L 2906 4863 
 L 3481 4863 
@@ -1110,6 +2085,7 @@ z
    </g>
    <g id="legend_1">
     <g id="patch_7">
+<<<<<<< HEAD
      <path d="M 750.120313 108.270625 
 L 846.2 108.270625 
 Q 848.2 108.270625 848.2 106.270625 
@@ -1119,21 +2095,50 @@ L 750.120313 31.88
 Q 748.120313 31.88 748.120313 33.88 
 L 748.120313 106.270625 
 Q 748.120313 108.270625 750.120313 108.270625 
+=======
+     <path d="M 57.87 49.558125 
+L 128.268438 49.558125 
+Q 130.268438 49.558125 130.268438 47.558125 
+L 130.268438 33.88 
+Q 130.268438 31.88 128.268438 31.88 
+L 57.87 31.88 
+Q 55.87 31.88 55.87 33.88 
+L 55.87 47.558125 
+Q 55.87 49.558125 57.87 49.558125 
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
 z
 " style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
     </g>
     <g id="line2d_38">
+<<<<<<< HEAD
      <path d="M 752.120313 39.978437 
 L 762.120313 39.978437 
 L 772.120313 39.978437 
 " style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
      <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
       <use xlink:href="#mc9ab2aa7f1" x="762.120313" y="39.978437" style="fill: #1f77b4; stroke: #1f77b4"/>
+========
+      <use xlink:href="#m1bedb8aac0" x="69.87" y="39.978437" style="fill: #1f77b4; stroke: #1f77b4"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
     </g>
     <g id="text_19">
      <!-- Alan Ce -->
      <g transform="translate(780.120313 43.478437) scale(0.1 -0.1)">
+=======
+     <path d="M 59.87 39.978438 
+L 69.87 39.978438 
+L 79.87 39.978438 
+" style="fill: none; stroke: #1f77b4; stroke-width: 1.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#mf9b0693cbf" x="69.87" y="39.978438" style="fill: #1f77b4; stroke: #1f77b4"/>
+     </g>
+    </g>
+    <g id="text_21">
+     <!-- Alan Ce -->
+     <g transform="translate(87.87 43.478438) scale(0.1 -0.1)">
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
       <defs>
        <path id="DejaVuSans-41" d="M 2188 4044 
 L 1331 1722 
@@ -1158,7 +2163,10 @@ L 603 0
 L 603 4863 
 z
 " transform="scale(0.015625)"/>
+<<<<<<< HEAD
        <path id="DejaVuSans-20" transform="scale(0.015625)"/>
+=======
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
        <path id="DejaVuSans-43" d="M 4122 4306 
 L 4122 3641 
 Q 3803 3938 3442 4084 
@@ -1190,6 +2198,7 @@ z
       <use xlink:href="#DejaVuSans-65" x="322.460938"/>
      </g>
     </g>
+<<<<<<< HEAD
     <g id="line2d_39">
      <path d="M 752.120313 54.656563 
 L 762.120313 54.656563 
@@ -1430,7 +2439,11 @@ L 762.120313 98.690938
 L 772.120313 98.690938 
 " style="fill: none; stroke: #9467bd; stroke-width: 1.5; stroke-linecap: square"/>
      <g>
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
       <use xlink:href="#m98bc4f3f77" x="762.120313" y="98.690938" style="fill: #9467bd; stroke: #9467bd"/>
+========
+      <use xlink:href="#mf3d0527224" x="69.87" y="54.656563" style="fill: #ff7f0e; stroke: #ff7f0e"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
      </g>
     </g>
     <g id="text_23">
@@ -1450,12 +2463,24 @@ L 772.120313 98.690938
       <use xlink:href="#DejaVuSans-72" x="555.126953"/>
      </g>
     </g>
+=======
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
    </g>
   </g>
  </g>
  <defs>
+<<<<<<< HEAD
+<<<<<<<< HEAD:pages/group_plots/lines_Frederiksborg_Gymnasium.svg
   <clipPath id="pa0e31065c8">
    <rect x="62.39" y="26.88" width="790.81" height="377.24"/>
+========
+  <clipPath id="p32f90d2f1b">
+   <rect x="50.87" y="26.88" width="802.33" height="377.24"/>
+>>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/lines_Frederikborg_Gymnasium.svg
+=======
+  <clipPath id="pc462f53bf6">
+   <rect x="50.87" y="26.88" width="802.33" height="377.24"/>
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
   </clipPath>
  </defs>
 </svg>

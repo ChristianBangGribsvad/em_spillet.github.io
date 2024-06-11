@@ -9,7 +9,6 @@ from datetime import date
 import os
 cwd = os.getcwd()
 import matplotlib.pyplot as plt
-import pdb
 import sys
 
 if __name__ == "__main__":
@@ -52,6 +51,7 @@ if __name__ == "__main__":
                 # In this case we have already detected the duplicate so we move on
                 continue
             else:
+<<<<<<< HEAD
                 # Find the instances of this duplicate
                 first_name = predictions_df.at[idx,"First name"]
                 first_name_indexes = first_name == predictions_df["First name"]
@@ -62,6 +62,27 @@ if __name__ == "__main__":
     # Remove the detected duplicates
     if len(idx_remove["idx"]) > 0:
         predictions_df = predictions_df.drop(idx_remove["idx"])
+=======
+                df_group_avg = pd.read_pickle("data/group_avg")
+        
+        # Plot and save group results
+        for group in os.listdir("data/group_dfs"):
+            df_results = pd.read_pickle("data/group_dfs/"+group)
+
+            plot_group_progress(df_results,group) 
+            plot_best_round(df_results,group)
+            plot_standings(df_results,group)
+            
+            # Save group avg
+            df_group_avg.loc[date,group] = df_results.loc[date].mean()
+        
+        # Plot group averages
+        plot_group_progress(df_group_avg,"group_avg",out_path='pages/group_plots/')
+        
+        # Save group averages
+        df_group_avg.to_pickle("data/group_avg")
+        
+>>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1
     
     # Initialise todays schmeichel
     max_val = 0
