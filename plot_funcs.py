@@ -11,6 +11,7 @@ from matplotlib.font_manager import FontProperties
 import random
 import matplotlib as mpl
 
+
 def plot_group_progress(df_results,group_name,out_path='pages/group_plots/lines_'):
     xs = df_results.index.tolist()
     

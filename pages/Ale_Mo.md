@@ -2,12 +2,12 @@
 layout: default
 ---
 
-# Results of TESTER-SHH na 
+# Results of Ale Mo 
     
 Part of European Sperm Bank
     
 See your results in the table below:
     
-![TESTER-SHH na](./user_plots/TESTER-SHH_na.svg?raw=true)
+![Ale Mo](./user_plots/Ale_Mo.svg?raw=true)
 
 [Back](https://christianbanggribsvad.github.io/em_spillet.github.io/)

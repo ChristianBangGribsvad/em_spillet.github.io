@@ -2,12 +2,12 @@
 layout: default
 ---
 
-# Results of Sarah Mobil test na 
+# Results of Oscar Kh 
     
-Part of Frederikborg Gymnasium
+Part of Friends and Family
     
 See your results in the table below:
     
-![Sarah Mobil test na](./user_plots/Sarah Mobil test_na.svg?raw=true)
+![Oscar Kh](./user_plots/Oscar_Kh.svg?raw=true)
 
 [Back](https://christianbanggribsvad.github.io/em_spillet.github.io/)

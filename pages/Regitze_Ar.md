@@ -2,12 +2,12 @@
 layout: default
 ---
 
-# Results of Sarah omputer na 
+# Results of Regitze Ar 
     
-Part of Frederikborg Gymnasium and Sædbanken
+Part of GeH Fys
     
 See your results in the table below:
     
-![Sarah omputer na](./user_plots/Sarah omputer_na.svg?raw=true)
+![Regitze Ar](./user_plots/Regitze_Ar.svg?raw=true)
 
 [Back](https://christianbanggribsvad.github.io/em_spillet.github.io/)

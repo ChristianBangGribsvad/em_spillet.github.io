@@ -26,6 +26,7 @@ if __name__ == "__main__":
     n_file = get_highest_result_number()
     
     prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
+    
     if prev_results[0] != results:
         print("New results saved")
         save_results(cwd + f"/results/data_{n_file+1}.pickle",datafile)
@@ -57,6 +58,7 @@ if __name__ == "__main__":
                 idx_remove["first name"] += [first_name]
                 idx_remove["last name"] += [predictions_df.at[idx,"Last name"]]
                 idx_remove["idx"] += [np.where(np.array(first_name_indexes.tolist()) > 0)[0][0]]
+                
                 
     # Remove the detected duplicates
     if len(idx_remove["idx"]) > 0:

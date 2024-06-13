@@ -2,12 +2,12 @@
 layout: default
 ---
 
-# Results of Test na 
+# Results of Tobias Hø 
     
-Part of Friends and Family
+Part of GeH Fys
     
 See your results in the table below:
     
-![Test na](./user_plots/Test_na.svg?raw=true)
+![Tobias Hø](./user_plots/Tobias_Hø.svg?raw=true)
 
 [Back](https://christianbanggribsvad.github.io/em_spillet.github.io/)

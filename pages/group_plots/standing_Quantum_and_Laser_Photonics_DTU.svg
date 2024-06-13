@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="194.495625pt" height="84.958125pt" viewBox="0 0 194.495625 84.958125" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="198.380625pt" height="84.958125pt" viewBox="0 0 198.380625 84.958125" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-<<<<<<< HEAD:pages/group_plots/standing_Quantum_and_Laser_Photonics_DTU.svg
-    <dc:date>2024-06-11T15:33:03.443734</dc:date>
-=======
-    <dc:date>2024-06-11T00:41:29.687984</dc:date>
->>>>>>> 0df0b289a79132c92e8c26fb107dff610c0b39e1:pages/group_plots/standing_Sædbanken.svg
+    <dc:date>2024-06-13T09:44:16.129747</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.9.0, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.5.2, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -26,8 +22,8 @@
  <g id="figure_1">
   <g id="patch_1">
    <path d="M 0 84.958125 
-L 194.495625 84.958125 
-L 194.495625 0 
+L 198.380625 84.958125 
+L 198.380625 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
@@ -35,16 +31,16 @@ z
   <g id="axes_1">
    <g id="table_1">
     <g id="patch_2">
-     <path d="M 75.695625 35.426925 
-L 187.295625 35.426925 
-L 187.295625 23.426925 
-L 75.695625 23.426925 
+     <path d="M 79.580625 35.426925 
+L 191.180625 35.426925 
+L 191.180625 23.426925 
+L 79.580625 23.426925 
 z
 " style="fill: #1e90ff; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_1">
      <!-- Points -->
-     <g transform="translate(113.756563 32.1863) scale(0.1 -0.1)">
+     <g transform="translate(117.641563 32.1863)scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-50" d="M 588 4666 
 L 2584 4666 
@@ -186,15 +182,15 @@ z
     </g>
     <g id="patch_3">
      <path d="M 7.2 47.426925 
-L 75.695625 47.426925 
-L 75.695625 35.426925 
+L 79.580625 47.426925 
+L 79.580625 35.426925 
 L 7.2 35.426925 
 z
 " style="fill: #1e90ff; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_2">
      <!-- Matias BN -->
-     <g transform="translate(14.049563 44.1863) scale(0.1 -0.1)">
+     <g transform="translate(14.438063 44.1863)scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-4d" d="M 588 4666 
 L 2119 4666 
@@ -304,16 +300,16 @@ z
      </g>
     </g>
     <g id="patch_4">
-     <path d="M 75.695625 47.426925 
-L 187.295625 47.426925 
-L 187.295625 35.426925 
-L 75.695625 35.426925 
+     <path d="M 79.580625 47.426925 
+L 191.180625 47.426925 
+L 191.180625 35.426925 
+L 79.580625 35.426925 
 z
 " style="fill: #ffffff; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_3">
      <!-- 0.0 -->
-     <g transform="translate(123.544063 44.1863) scale(0.1 -0.1)">
+     <g transform="translate(127.429063 44.1863)scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-30" d="M 2034 4250 
 Q 1547 4250 1301 3770 
@@ -349,10 +345,79 @@ z
       <use xlink:href="#DejaVuSans-30" x="95.410156"/>
      </g>
     </g>
+    <g id="patch_5">
+     <path d="M 7.2 59.426925 
+L 79.580625 59.426925 
+L 79.580625 47.426925 
+L 7.2 47.426925 
+z
+" style="fill: #1e90ff; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <!-- Mattias Ra -->
+     <g transform="translate(14.438063 56.1863)scale(0.1 -0.1)">
+      <defs>
+       <path id="DejaVuSans-Bold-52" d="M 2297 2597 
+Q 2675 2597 2839 2737 
+Q 3003 2878 3003 3200 
+Q 3003 3519 2839 3656 
+Q 2675 3794 2297 3794 
+L 1791 3794 
+L 1791 2597 
+L 2297 2597 
+z
+M 1791 1766 
+L 1791 0 
+L 588 0 
+L 588 4666 
+L 2425 4666 
+Q 3347 4666 3776 4356 
+Q 4206 4047 4206 3378 
+Q 4206 2916 3982 2619 
+Q 3759 2322 3309 2181 
+Q 3556 2125 3751 1926 
+Q 3947 1728 4147 1325 
+L 4800 0 
+L 3519 0 
+L 2950 1159 
+Q 2778 1509 2601 1637 
+Q 2425 1766 2131 1766 
+L 1791 1766 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#DejaVuSans-Bold-4d"/>
+      <use xlink:href="#DejaVuSans-Bold-61" x="99.511719"/>
+      <use xlink:href="#DejaVuSans-Bold-74" x="166.992188"/>
+      <use xlink:href="#DejaVuSans-Bold-74" x="214.794922"/>
+      <use xlink:href="#DejaVuSans-Bold-69" x="262.597656"/>
+      <use xlink:href="#DejaVuSans-Bold-61" x="296.875"/>
+      <use xlink:href="#DejaVuSans-Bold-73" x="364.355469"/>
+      <use xlink:href="#DejaVuSans-Bold-20" x="423.876953"/>
+      <use xlink:href="#DejaVuSans-Bold-52" x="458.691406"/>
+      <use xlink:href="#DejaVuSans-Bold-61" x="535.693359"/>
+     </g>
+    </g>
+    <g id="patch_6">
+     <path d="M 79.580625 59.426925 
+L 191.180625 59.426925 
+L 191.180625 47.426925 
+L 79.580625 47.426925 
+z
+" style="fill: #ffffff; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <!-- 0.0 -->
+     <g transform="translate(127.429063 56.1863)scale(0.1 -0.1)">
+      <use xlink:href="#DejaVuSans-30"/>
+      <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
+      <use xlink:href="#DejaVuSans-30" x="95.410156"/>
+     </g>
+    </g>
    </g>
-   <g id="text_4">
+   <g id="text_6">
     <!-- Standings -->
-    <g transform="translate(73.463625 16.318125) scale(0.12 -0.12)">
+    <g transform="translate(77.348625 16.318125)scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-53" d="M 3834 4519 
 L 3834 3531 
