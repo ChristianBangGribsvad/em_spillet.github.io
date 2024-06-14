@@ -3,13 +3,26 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Christian Is with 15 points part of Friends and Family [see their predictions](./pages/Christian_Is.html)
-- Tobias Bo with 15 points part of Friends and Family [see their predictions](./pages/Tobias_Bo.html)
-- Christina Br with 15 points part of European Sperm Bank [see their predictions](./pages/Christina_Br.html)
-- Mathas Po with 15 points part of Next11 [see their predictions](./pages/Mathas_Po.html)
-- Line Bi with 15 points part of GeH Fys [see their predictions](./pages/Line_Bi.html)
-- Andreas An with 15 points part of GeH Fys [see their predictions](./pages/Andreas_An.html)
-- RIKKE GR with 15 points part of Next11 [see their predictions](./pages/RIKKE_GR.html)
+- Silje Br with 10 points part of European Sperm Bank [see their predictions](./pages/Silje_Br.html)
+- Kenneth Sc with 10 points part of Friends and Family [see their predictions](./pages/Kenneth_Sc.html)
+- Laurits Pi with 10 points part of Friends and Family [see their predictions](./pages/Laurits_Pi.html)
+- Jonas Bo with 10 points part of Friends and Family [see their predictions](./pages/Jonas_Bo.html)
+- Sarah Gy with 10 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sarah_Gy.html)
+- Matias BN with 10 points part of Frederiksborg Gymnasium and Quantum and Laser Photonics DTU [see their predictions](./pages/Matias_BN.html)
+- Emma Hu with 10 points part of European Sperm Bank [see their predictions](./pages/Emma_Hu.html)
+- Ale Mo with 10 points part of European Sperm Bank [see their predictions](./pages/Ale_Mo.html)
+- Mattias Ra with 10 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Mattias_Ra.html)
+- Regitze Ar with 10 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
+- Oscar En with 10 points part of Frederiksborg Gymnasium [see their predictions](./pages/Oscar_En.html)
+- Simon Bo with 10 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
+- Kristian Se with 10 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Kristian_Se.html)
+- Bart He with 10 points part of European Sperm Bank [see their predictions](./pages/Bart_He.html)
+- Bjarke Ha with 10 points part of Frederiksborg Gymnasium and GeH Fys [see their predictions](./pages/Bjarke_Ha.html)
+- Emma Fa with 10 points part of European Sperm Bank [see their predictions](./pages/Emma_Fa.html)
+- IT  Or with 10 points part of European Sperm Bank [see their predictions](./pages/IT__Or.html)
+- Ayman Ka with 10 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Ayman_Ka.html)
+- Mathias  Th with 10 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
+- Salty Gu with 10 points part of Next11 [see their predictions](./pages/Salty_Gu.html)
 
 
 # European Sperm Bank
