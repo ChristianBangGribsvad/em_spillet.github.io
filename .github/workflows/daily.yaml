@@ -2,7 +2,7 @@ name: Daily Job
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs at 12:00 AM UTC (adjust as needed)
+    - cron: "15 * * * *" # Runs at 12:00 AM UTC (adjust as needed)
 
 jobs:
   run_script:
