@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-13T13:56:38.935836</dc:date>
+    <dc:date>2024-06-14T08:06:56.649074</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.5.2, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.7.4, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -40,7 +40,7 @@ z
     </g>
     <g id="text_1">
      <!-- Points -->
-     <g transform="translate(126.217812 32.1863)scale(0.1 -0.1)">
+     <g transform="translate(126.217812 32.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-50" d="M 588 4666 
 L 2584 4666 
@@ -190,7 +190,7 @@ z
     </g>
     <g id="text_2">
      <!-- Martin Ba -->
-     <g transform="translate(15.295687 44.1863)scale(0.1 -0.1)">
+     <g transform="translate(15.295687 44.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-4d" d="M 588 4666 
 L 2119 4666 
@@ -313,7 +313,7 @@ z
     </g>
     <g id="text_3">
      <!-- 0.0 -->
-     <g transform="translate(136.005313 44.1863)scale(0.1 -0.1)">
+     <g transform="translate(136.005313 44.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-30" d="M 2034 4250 
 Q 1547 4250 1301 3770 
@@ -359,7 +359,7 @@ z
     </g>
     <g id="text_4">
      <!-- Maren St -->
-     <g transform="translate(15.295687 56.1863)scale(0.1 -0.1)">
+     <g transform="translate(15.295687 56.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-65" d="M 4031 1759 
 L 4031 1441 
@@ -438,7 +438,7 @@ z
     </g>
     <g id="text_5">
      <!-- 0.0 -->
-     <g transform="translate(136.005313 56.1863)scale(0.1 -0.1)">
+     <g transform="translate(136.005313 56.1863) scale(0.1 -0.1)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="95.410156"/>
@@ -454,7 +454,7 @@ z
     </g>
     <g id="text_6">
      <!-- Jakob Ve -->
-     <g transform="translate(15.295687 68.1863)scale(0.1 -0.1)">
+     <g transform="translate(15.295687 68.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-4a" d="M 588 4666 
 L 1791 4666 
@@ -540,7 +540,7 @@ z
     </g>
     <g id="text_7">
      <!-- 0.0 -->
-     <g transform="translate(136.005313 68.1863)scale(0.1 -0.1)">
+     <g transform="translate(136.005313 68.1863) scale(0.1 -0.1)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="95.410156"/>
@@ -556,7 +556,7 @@ z
     </g>
     <g id="text_8">
      <!-- Mathas Po -->
-     <g transform="translate(15.295687 80.1863)scale(0.1 -0.1)">
+     <g transform="translate(15.295687 80.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-68" d="M 4056 2131 
 L 4056 0 
@@ -602,7 +602,7 @@ z
     </g>
     <g id="text_9">
      <!-- 0.0 -->
-     <g transform="translate(136.005313 80.1863)scale(0.1 -0.1)">
+     <g transform="translate(136.005313 80.1863) scale(0.1 -0.1)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="95.410156"/>
@@ -618,7 +618,7 @@ z
     </g>
     <g id="text_10">
      <!-- Christian Gr -->
-     <g transform="translate(15.295687 92.1863)scale(0.1 -0.1)">
+     <g transform="translate(15.295687 92.1863) scale(0.1 -0.1)">
       <defs>
        <path id="DejaVuSans-Bold-43" d="M 4288 256 
 Q 3956 84 3597 -3 
@@ -691,7 +691,7 @@ z
     </g>
     <g id="text_11">
      <!-- 0.0 -->
-     <g transform="translate(136.005313 92.1863)scale(0.1 -0.1)">
+     <g transform="translate(136.005313 92.1863) scale(0.1 -0.1)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="95.410156"/>
@@ -700,7 +700,7 @@ z
    </g>
    <g id="text_12">
     <!-- Standings -->
-    <g transform="translate(85.924875 16.318125)scale(0.12 -0.12)">
+    <g transform="translate(85.924875 16.318125) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-64" d="M 2919 2988 
 L 2919 4863 

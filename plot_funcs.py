@@ -39,7 +39,7 @@ def plot_best_round(df_results,group_name):
         fig= plt.subplots(1,figsize=(12,6))
         bars = plt.bar(y_pos, best_round.values,color=["dodgerblue"])
         plt.xticks(y_pos,best_round.index.to_list(),rotation=60)
-        plt.title('Best round ('+df_results.index[-2]+' to '+df_results.index[-1]+')')
+        plt.title('Best round ('+str(df_results.index[-2])+' to '+str(df_results.index[-1])+')')
         plt.ylabel('Points')
         plt.bar_label(bars)
         plt.tight_layout()

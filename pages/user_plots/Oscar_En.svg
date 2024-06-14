@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-13T13:56:32.947417</dc:date>
+    <dc:date>2024-06-14T08:06:13.516897</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.5.2, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.7.4, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -40,7 +40,7 @@ z
     </g>
     <g id="text_1">
      <!-- index -->
-     <g transform="translate(212.975344 15.863125)scale(0.14 -0.14)">
+     <g transform="translate(212.975344 15.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-69" d="M 603 3500 
 L 1178 3500 
@@ -158,7 +158,7 @@ z
     </g>
     <g id="text_2">
      <!-- Predictions -->
-     <g transform="translate(479.406031 15.863125)scale(0.14 -0.14)">
+     <g transform="translate(479.406031 15.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-50" d="M 1259 4147 
 L 1259 2394 
@@ -316,7 +316,7 @@ z
     </g>
     <g id="text_3">
      <!-- Results -->
-     <g transform="translate(599.685625 15.863125)scale(0.14 -0.14)">
+     <g transform="translate(599.685625 15.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-52" d="M 2841 2188 
 Q 3044 2119 3236 1894 
@@ -395,7 +395,7 @@ z
     </g>
     <g id="text_4">
      <!-- Points -->
-     <g transform="translate(693.218125 15.863125)scale(0.14 -0.14)">
+     <g transform="translate(693.218125 15.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-50"/>
       <use xlink:href="#DejaVuSans-6f" x="56.677734"/>
       <use xlink:href="#DejaVuSans-69" x="117.859375"/>
@@ -414,7 +414,7 @@ z
     </g>
     <g id="text_5">
      <!-- Group A Predictions [Germany - Scotland] -->
-     <g transform="translate(125.363838 39.863125)scale(0.14 -0.14)">
+     <g transform="translate(125.363838 39.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-47" d="M 3809 666 
 L 3809 1919 
@@ -677,7 +677,7 @@ z
     </g>
     <g id="text_6">
      <!-- 3-1 -->
-     <g transform="translate(537.812463 39.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 39.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-33" d="M 2597 2516 
 Q 3050 2419 3304 2112 
@@ -741,7 +741,7 @@ z
     </g>
     <g id="text_7">
      <!-- - -->
-     <g transform="translate(662.763463 39.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 39.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -755,7 +755,7 @@ z
     </g>
     <g id="text_8">
      <!-- 0 -->
-     <g transform="translate(733.9021 39.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 39.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-30" d="M 2034 4250 
 Q 1547 4250 1301 3770 
@@ -792,7 +792,7 @@ z
     </g>
     <g id="text_9">
      <!-- Group A Predictions [Hungary - Switzerland] -->
-     <g transform="translate(109.136963 63.863125)scale(0.14 -0.14)">
+     <g transform="translate(109.136963 63.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-48" d="M 628 4666 
 L 1259 4666 
@@ -928,7 +928,7 @@ z
     </g>
     <g id="text_10">
      <!-- 2-2 -->
-     <g transform="translate(537.812463 63.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 63.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-32" d="M 1228 531 
 L 3431 531 
@@ -970,7 +970,7 @@ z
     </g>
     <g id="text_11">
      <!-- - -->
-     <g transform="translate(662.763463 63.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 63.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -984,7 +984,7 @@ z
     </g>
     <g id="text_12">
      <!-- 0 -->
-     <g transform="translate(733.9021 63.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 63.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -998,7 +998,7 @@ z
     </g>
     <g id="text_13">
      <!-- Group A Predictions [Germany - Hungary] -->
-     <g transform="translate(126.451025 87.863125)scale(0.14 -0.14)">
+     <g transform="translate(126.451025 87.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -1050,7 +1050,7 @@ z
     </g>
     <g id="text_14">
      <!-- 3-0 -->
-     <g transform="translate(537.812463 87.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 87.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-33"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -1066,7 +1066,7 @@ z
     </g>
     <g id="text_15">
      <!-- - -->
-     <g transform="translate(662.763463 87.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 87.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -1080,7 +1080,7 @@ z
     </g>
     <g id="text_16">
      <!-- 0 -->
-     <g transform="translate(733.9021 87.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 87.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -1094,7 +1094,7 @@ z
     </g>
     <g id="text_17">
      <!-- Group A Predictions [Scotland - Switzerland] -->
-     <g transform="translate(108.049775 111.863125)scale(0.14 -0.14)">
+     <g transform="translate(108.049775 111.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -1151,7 +1151,7 @@ z
     </g>
     <g id="text_18">
      <!-- 2-1 -->
-     <g transform="translate(537.812463 111.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 111.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-31" x="99.707031"/>
@@ -1167,7 +1167,7 @@ z
     </g>
     <g id="text_19">
      <!-- - -->
-     <g transform="translate(662.763463 111.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 111.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -1181,7 +1181,7 @@ z
     </g>
     <g id="text_20">
      <!-- 0 -->
-     <g transform="translate(733.9021 111.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 111.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -1195,7 +1195,7 @@ z
     </g>
     <g id="text_21">
      <!-- Group A Predictions [Switzerland - Germany] -->
-     <g transform="translate(104.57165 135.863125)scale(0.14 -0.14)">
+     <g transform="translate(104.57165 135.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -1251,7 +1251,7 @@ z
     </g>
     <g id="text_22">
      <!-- 1-3 -->
-     <g transform="translate(537.812463 135.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 135.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-33" x="99.707031"/>
@@ -1267,7 +1267,7 @@ z
     </g>
     <g id="text_23">
      <!-- - -->
-     <g transform="translate(662.763463 135.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 135.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -1281,7 +1281,7 @@ z
     </g>
     <g id="text_24">
      <!-- 0 -->
-     <g transform="translate(733.9021 135.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 135.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -1295,7 +1295,7 @@ z
     </g>
     <g id="text_25">
      <!-- Group A Predictions [Scotland - Hungary] -->
-     <g transform="translate(129.92915 159.863125)scale(0.14 -0.14)">
+     <g transform="translate(129.92915 159.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -1348,7 +1348,7 @@ z
     </g>
     <g id="text_26">
      <!-- 1-1 -->
-     <g transform="translate(537.812463 159.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 159.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-31" x="99.707031"/>
@@ -1364,7 +1364,7 @@ z
     </g>
     <g id="text_27">
      <!-- - -->
-     <g transform="translate(662.763463 159.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 159.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -1378,7 +1378,7 @@ z
     </g>
     <g id="text_28">
      <!-- 0 -->
-     <g transform="translate(733.9021 159.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 159.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -1392,7 +1392,7 @@ z
     </g>
     <g id="text_29">
      <!-- Group B Predictions [Spain - Croatia] -->
-     <g transform="translate(161.116338 183.863125)scale(0.14 -0.14)">
+     <g transform="translate(161.116338 183.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-42" d="M 1259 2228 
 L 1259 519 
@@ -1497,7 +1497,7 @@ z
     </g>
     <g id="text_30">
      <!-- 2-1 -->
-     <g transform="translate(537.812463 183.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 183.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-31" x="99.707031"/>
@@ -1513,7 +1513,7 @@ z
     </g>
     <g id="text_31">
      <!-- - -->
-     <g transform="translate(662.763463 183.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 183.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -1527,7 +1527,7 @@ z
     </g>
     <g id="text_32">
      <!-- 0 -->
-     <g transform="translate(733.9021 183.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 183.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -1541,7 +1541,7 @@ z
     </g>
     <g id="text_33">
      <!-- Group B Predictions [Italy - Albania] -->
-     <g transform="translate(167.90415 207.863125)scale(0.14 -0.14)">
+     <g transform="translate(167.90415 207.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-49" d="M 628 4666 
 L 1259 4666 
@@ -1626,7 +1626,7 @@ z
     </g>
     <g id="text_34">
      <!-- 4-0 -->
-     <g transform="translate(537.812463 207.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 207.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-34" d="M 2419 4116 
 L 825 1625 
@@ -1663,7 +1663,7 @@ z
     </g>
     <g id="text_35">
      <!-- - -->
-     <g transform="translate(662.763463 207.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 207.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -1677,7 +1677,7 @@ z
     </g>
     <g id="text_36">
      <!-- 0 -->
-     <g transform="translate(733.9021 207.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 207.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -1691,7 +1691,7 @@ z
     </g>
     <g id="text_37">
      <!-- Group B Predictions [Croatia - Albania] -->
-     <g transform="translate(147.958525 231.863125)scale(0.14 -0.14)">
+     <g transform="translate(147.958525 231.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -1743,7 +1743,7 @@ z
     </g>
     <g id="text_38">
      <!-- 2-2 -->
-     <g transform="translate(537.812463 231.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 231.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-32" x="99.707031"/>
@@ -1759,7 +1759,7 @@ z
     </g>
     <g id="text_39">
      <!-- - -->
-     <g transform="translate(662.763463 231.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 231.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -1773,7 +1773,7 @@ z
     </g>
     <g id="text_40">
      <!-- 0 -->
-     <g transform="translate(733.9021 231.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 231.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -1787,7 +1787,7 @@ z
     </g>
     <g id="text_41">
      <!-- Group B Predictions [Spain - Italy] -->
-     <g transform="translate(181.061963 255.863125)scale(0.14 -0.14)">
+     <g transform="translate(181.061963 255.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -1835,7 +1835,7 @@ z
     </g>
     <g id="text_42">
      <!-- 2-0 -->
-     <g transform="translate(537.812463 255.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 255.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -1851,7 +1851,7 @@ z
     </g>
     <g id="text_43">
      <!-- - -->
-     <g transform="translate(662.763463 255.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 255.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -1865,7 +1865,7 @@ z
     </g>
     <g id="text_44">
      <!-- 0 -->
-     <g transform="translate(733.9021 255.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 255.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -1879,7 +1879,7 @@ z
     </g>
     <g id="text_45">
      <!-- Group B Predictions [Albania - Spain] -->
-     <g transform="translate(159.160713 279.863125)scale(0.14 -0.14)">
+     <g transform="translate(159.160713 279.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -1929,7 +1929,7 @@ z
     </g>
     <g id="text_46">
      <!-- 1-3 -->
-     <g transform="translate(537.812463 279.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 279.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-33" x="99.707031"/>
@@ -1945,7 +1945,7 @@ z
     </g>
     <g id="text_47">
      <!-- - -->
-     <g transform="translate(662.763463 279.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 279.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -1959,7 +1959,7 @@ z
     </g>
     <g id="text_48">
      <!-- 0 -->
-     <g transform="translate(733.9021 279.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 279.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -1973,7 +1973,7 @@ z
     </g>
     <g id="text_49">
      <!-- Group B Predictions [Croatia - Italy] -->
-     <g transform="translate(169.859775 303.863125)scale(0.14 -0.14)">
+     <g transform="translate(169.859775 303.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -2023,7 +2023,7 @@ z
     </g>
     <g id="text_50">
      <!-- 0-1 -->
-     <g transform="translate(537.812463 303.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 303.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-31" x="99.707031"/>
@@ -2039,7 +2039,7 @@ z
     </g>
     <g id="text_51">
      <!-- - -->
-     <g transform="translate(662.763463 303.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 303.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -2053,7 +2053,7 @@ z
     </g>
     <g id="text_52">
      <!-- 0 -->
-     <g transform="translate(733.9021 303.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 303.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -2067,7 +2067,7 @@ z
     </g>
     <g id="text_53">
      <!-- Group C Predictions [Slovenia - Denmark] -->
-     <g transform="translate(126.451025 327.863125)scale(0.14 -0.14)">
+     <g transform="translate(126.451025 327.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-76" d="M 191 3500 
 L 800 3500 
@@ -2165,7 +2165,7 @@ z
     </g>
     <g id="text_54">
      <!-- 1-2 -->
-     <g transform="translate(537.812463 327.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 327.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-32" x="99.707031"/>
@@ -2181,7 +2181,7 @@ z
     </g>
     <g id="text_55">
      <!-- - -->
-     <g transform="translate(662.763463 327.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 327.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -2195,7 +2195,7 @@ z
     </g>
     <g id="text_56">
      <!-- 0 -->
-     <g transform="translate(733.9021 327.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 327.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -2209,7 +2209,7 @@ z
     </g>
     <g id="text_57">
      <!-- Group C Predictions [Serbia - England] -->
-     <g transform="translate(148.931963 351.863125)scale(0.14 -0.14)">
+     <g transform="translate(148.931963 351.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-45" d="M 628 4666 
 L 3578 4666 
@@ -2277,7 +2277,7 @@ z
     </g>
     <g id="text_58">
      <!-- 0-3 -->
-     <g transform="translate(537.812463 351.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 351.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-33" x="99.707031"/>
@@ -2293,7 +2293,7 @@ z
     </g>
     <g id="text_59">
      <!-- - -->
-     <g transform="translate(662.763463 351.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 351.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -2307,7 +2307,7 @@ z
     </g>
     <g id="text_60">
      <!-- 0 -->
-     <g transform="translate(733.9021 351.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 351.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -2321,7 +2321,7 @@ z
     </g>
     <g id="text_61">
      <!-- Group C Predictions [Slovenia - Serbia] -->
-     <g transform="translate(146.182275 375.863125)scale(0.14 -0.14)">
+     <g transform="translate(146.182275 375.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -2373,7 +2373,7 @@ z
     </g>
     <g id="text_62">
      <!-- 1-3 -->
-     <g transform="translate(537.812463 375.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 375.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-33" x="99.707031"/>
@@ -2389,7 +2389,7 @@ z
     </g>
     <g id="text_63">
      <!-- - -->
-     <g transform="translate(662.763463 375.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 375.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -2403,7 +2403,7 @@ z
     </g>
     <g id="text_64">
      <!-- 0 -->
-     <g transform="translate(733.9021 375.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 375.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -2417,7 +2417,7 @@ z
     </g>
     <g id="text_65">
      <!-- Group C Predictions [Denmark - England] -->
-     <g transform="translate(129.200713 399.863125)scale(0.14 -0.14)">
+     <g transform="translate(129.200713 399.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -2469,7 +2469,7 @@ z
     </g>
     <g id="text_66">
      <!-- 3-1 -->
-     <g transform="translate(537.812463 399.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 399.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-33"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-31" x="99.707031"/>
@@ -2485,7 +2485,7 @@ z
     </g>
     <g id="text_67">
      <!-- - -->
-     <g transform="translate(662.763463 399.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 399.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -2499,7 +2499,7 @@ z
     </g>
     <g id="text_68">
      <!-- 0 -->
-     <g transform="translate(733.9021 399.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 399.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -2513,7 +2513,7 @@ z
     </g>
     <g id="text_69">
      <!-- Group C Predictions [England - Slovenia] -->
-     <g transform="translate(133.960712 423.863125)scale(0.14 -0.14)">
+     <g transform="translate(133.960712 423.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -2566,7 +2566,7 @@ z
     </g>
     <g id="text_70">
      <!-- 4-0 -->
-     <g transform="translate(537.812463 423.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 423.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-34"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -2582,7 +2582,7 @@ z
     </g>
     <g id="text_71">
      <!-- - -->
-     <g transform="translate(662.763463 423.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 423.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -2596,7 +2596,7 @@ z
     </g>
     <g id="text_72">
      <!-- 0 -->
-     <g transform="translate(733.9021 423.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 423.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -2610,7 +2610,7 @@ z
     </g>
     <g id="text_73">
      <!-- Group C Predictions [Denmark - Serbia] -->
-     <g transform="translate(141.422275 447.863125)scale(0.14 -0.14)">
+     <g transform="translate(141.422275 447.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -2661,7 +2661,7 @@ z
     </g>
     <g id="text_74">
      <!-- 2-0 -->
-     <g transform="translate(537.812463 447.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 447.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -2677,7 +2677,7 @@ z
     </g>
     <g id="text_75">
      <!-- - -->
-     <g transform="translate(662.763463 447.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 447.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -2691,7 +2691,7 @@ z
     </g>
     <g id="text_76">
      <!-- 0 -->
-     <g transform="translate(733.9021 447.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 447.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -2705,7 +2705,7 @@ z
     </g>
     <g id="text_77">
      <!-- Group D Predictions [Poland - Netherlands] -->
-     <g transform="translate(117.307275 471.863125)scale(0.14 -0.14)">
+     <g transform="translate(117.307275 471.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-4e" d="M 628 4666 
 L 1478 4666 
@@ -2794,7 +2794,7 @@ z
     </g>
     <g id="text_78">
      <!-- 0-3 -->
-     <g transform="translate(537.812463 471.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 471.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-33" x="99.707031"/>
@@ -2810,7 +2810,7 @@ z
     </g>
     <g id="text_79">
      <!-- - -->
-     <g transform="translate(662.763463 471.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 471.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -2824,7 +2824,7 @@ z
     </g>
     <g id="text_80">
      <!-- 0 -->
-     <g transform="translate(733.9021 471.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 471.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -2838,7 +2838,7 @@ z
     </g>
     <g id="text_81">
      <!-- Group D Predictions [Austria - France] -->
-     <g transform="translate(153.366025 495.863125)scale(0.14 -0.14)">
+     <g transform="translate(153.366025 495.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-46" d="M 628 4666 
 L 3309 4666 
@@ -2904,7 +2904,7 @@ z
     </g>
     <g id="text_82">
      <!-- 0-3 -->
-     <g transform="translate(537.812463 495.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 495.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-33" x="99.707031"/>
@@ -2920,7 +2920,7 @@ z
     </g>
     <g id="text_83">
      <!-- - -->
-     <g transform="translate(662.763463 495.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 495.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -2934,7 +2934,7 @@ z
     </g>
     <g id="text_84">
      <!-- 0 -->
-     <g transform="translate(733.9021 495.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 495.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -2948,7 +2948,7 @@ z
     </g>
     <g id="text_85">
      <!-- Group D Predictions [Poland - Austria] -->
-     <g transform="translate(153.193213 519.863125)scale(0.14 -0.14)">
+     <g transform="translate(153.193213 519.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -2999,7 +2999,7 @@ z
     </g>
     <g id="text_86">
      <!-- 0-0 -->
-     <g transform="translate(537.812463 519.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 519.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -3015,7 +3015,7 @@ z
     </g>
     <g id="text_87">
      <!-- - -->
-     <g transform="translate(662.763463 519.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 519.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3029,7 +3029,7 @@ z
     </g>
     <g id="text_88">
      <!-- 0 -->
-     <g transform="translate(733.9021 519.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 519.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3043,7 +3043,7 @@ z
     </g>
     <g id="text_89">
      <!-- Group D Predictions [Netherlands - France] -->
-     <g transform="translate(117.480088 543.863125)scale(0.14 -0.14)">
+     <g transform="translate(117.480088 543.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -3098,7 +3098,7 @@ z
     </g>
     <g id="text_90">
      <!-- 1-2 -->
-     <g transform="translate(537.812463 543.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 543.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-32" x="99.707031"/>
@@ -3114,7 +3114,7 @@ z
     </g>
     <g id="text_91">
      <!-- - -->
-     <g transform="translate(662.763463 543.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 543.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3128,7 +3128,7 @@ z
     </g>
     <g id="text_92">
      <!-- 0 -->
-     <g transform="translate(733.9021 543.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 543.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3142,7 +3142,7 @@ z
     </g>
     <g id="text_93">
      <!-- Group D Predictions [Netherlands - Austria] -->
-     <g transform="translate(114.58165 567.863125)scale(0.14 -0.14)">
+     <g transform="translate(114.58165 567.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -3198,7 +3198,7 @@ z
     </g>
     <g id="text_94">
      <!-- 2-1 -->
-     <g transform="translate(537.812463 567.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 567.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-31" x="99.707031"/>
@@ -3214,7 +3214,7 @@ z
     </g>
     <g id="text_95">
      <!-- - -->
-     <g transform="translate(662.763463 567.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 567.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3228,7 +3228,7 @@ z
     </g>
     <g id="text_96">
      <!-- 0 -->
-     <g transform="translate(733.9021 567.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 567.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3242,7 +3242,7 @@ z
     </g>
     <g id="text_97">
      <!-- Group D Predictions [France - Poland] -->
-     <g transform="translate(156.09165 591.863125)scale(0.14 -0.14)">
+     <g transform="translate(156.09165 591.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -3292,7 +3292,7 @@ z
     </g>
     <g id="text_98">
      <!-- 4-0 -->
-     <g transform="translate(537.812463 591.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 591.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-34"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -3308,7 +3308,7 @@ z
     </g>
     <g id="text_99">
      <!-- - -->
-     <g transform="translate(662.763463 591.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 591.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3322,7 +3322,7 @@ z
     </g>
     <g id="text_100">
      <!-- 0 -->
-     <g transform="translate(733.9021 591.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 591.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3336,7 +3336,7 @@ z
     </g>
     <g id="text_101">
      <!-- Group E Predictions [Romania - Ukraine] -->
-     <g transform="translate(136.025713 615.863125)scale(0.14 -0.14)">
+     <g transform="translate(136.025713 615.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-55" d="M 556 4666 
 L 1191 4666 
@@ -3407,7 +3407,7 @@ z
     </g>
     <g id="text_102">
      <!-- 0-2 -->
-     <g transform="translate(537.812463 615.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 615.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-32" x="99.707031"/>
@@ -3423,7 +3423,7 @@ z
     </g>
     <g id="text_103">
      <!-- - -->
-     <g transform="translate(662.763463 615.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 615.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3437,7 +3437,7 @@ z
     </g>
     <g id="text_104">
      <!-- 0 -->
-     <g transform="translate(733.9021 615.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 615.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3451,7 +3451,7 @@ z
     </g>
     <g id="text_105">
      <!-- Group E Predictions [Belgium - Slovakia] -->
-     <g transform="translate(135.131025 639.863125)scale(0.14 -0.14)">
+     <g transform="translate(135.131025 639.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -3504,7 +3504,7 @@ z
     </g>
     <g id="text_106">
      <!-- 3-0 -->
-     <g transform="translate(537.812463 639.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 639.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-33"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -3520,7 +3520,7 @@ z
     </g>
     <g id="text_107">
      <!-- - -->
-     <g transform="translate(662.763463 639.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 639.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3534,7 +3534,7 @@ z
     </g>
     <g id="text_108">
      <!-- 0 -->
-     <g transform="translate(733.9021 639.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 639.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3548,7 +3548,7 @@ z
     </g>
     <g id="text_109">
      <!-- Group E Predictions [Slovakia - Ukraine] -->
-     <g transform="translate(138.462588 663.863125)scale(0.14 -0.14)">
+     <g transform="translate(138.462588 663.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -3601,7 +3601,7 @@ z
     </g>
     <g id="text_110">
      <!-- 0-0 -->
-     <g transform="translate(537.812463 663.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 663.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -3617,7 +3617,7 @@ z
     </g>
     <g id="text_111">
      <!-- - -->
-     <g transform="translate(662.763463 663.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 663.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3631,7 +3631,7 @@ z
     </g>
     <g id="text_112">
      <!-- 0 -->
-     <g transform="translate(733.9021 663.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 663.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3645,7 +3645,7 @@ z
     </g>
     <g id="text_113">
      <!-- Group E Predictions [Belgium - Romania] -->
-     <g transform="translate(132.69415 687.863125)scale(0.14 -0.14)">
+     <g transform="translate(132.69415 687.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -3697,7 +3697,7 @@ z
     </g>
     <g id="text_114">
      <!-- 2-1 -->
-     <g transform="translate(537.812463 687.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 687.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-31" x="99.707031"/>
@@ -3713,7 +3713,7 @@ z
     </g>
     <g id="text_115">
      <!-- - -->
-     <g transform="translate(662.763463 687.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 687.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3727,7 +3727,7 @@ z
     </g>
     <g id="text_116">
      <!-- 0 -->
-     <g transform="translate(733.9021 687.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 687.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3741,7 +3741,7 @@ z
     </g>
     <g id="text_117">
      <!-- Group E Predictions [Slovakia - Romania] -->
-     <g transform="translate(131.305088 711.863125)scale(0.14 -0.14)">
+     <g transform="translate(131.305088 711.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -3794,7 +3794,7 @@ z
     </g>
     <g id="text_118">
      <!-- 1-0 -->
-     <g transform="translate(537.812463 711.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 711.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -3810,7 +3810,7 @@ z
     </g>
     <g id="text_119">
      <!-- - -->
-     <g transform="translate(662.763463 711.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 711.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3824,7 +3824,7 @@ z
     </g>
     <g id="text_120">
      <!-- 0 -->
-     <g transform="translate(733.9021 711.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 711.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3838,7 +3838,7 @@ z
     </g>
     <g id="text_121">
      <!-- Group E Predictions [Ukraine - Belgium] -->
-     <g transform="translate(139.85165 735.863125)scale(0.14 -0.14)">
+     <g transform="translate(139.85165 735.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -3890,7 +3890,7 @@ z
     </g>
     <g id="text_122">
      <!-- 0-2 -->
-     <g transform="translate(537.812463 735.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 735.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-32" x="99.707031"/>
@@ -3906,7 +3906,7 @@ z
     </g>
     <g id="text_123">
      <!-- - -->
-     <g transform="translate(662.763463 735.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 735.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -3920,7 +3920,7 @@ z
     </g>
     <g id="text_124">
      <!-- 0 -->
-     <g transform="translate(733.9021 735.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 735.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -3934,7 +3934,7 @@ z
     </g>
     <g id="text_125">
      <!-- Group F Predictions [Turkey - Georgia] -->
-     <g transform="translate(151.648838 759.863125)scale(0.14 -0.14)">
+     <g transform="translate(151.648838 759.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-54" d="M -19 4666 
 L 3928 4666 
@@ -3998,7 +3998,7 @@ z
     </g>
     <g id="text_126">
      <!-- 2-0 -->
-     <g transform="translate(537.812463 759.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 759.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -4014,7 +4014,7 @@ z
     </g>
     <g id="text_127">
      <!-- - -->
-     <g transform="translate(662.763463 759.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 759.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4028,7 +4028,7 @@ z
     </g>
     <g id="text_128">
      <!-- 0 -->
-     <g transform="translate(733.9021 759.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 759.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4042,7 +4042,7 @@ z
     </g>
     <g id="text_129">
      <!-- Group F Predictions [Portugal - Czechia] -->
-     <g transform="translate(139.355088 783.863125)scale(0.14 -0.14)">
+     <g transform="translate(139.355088 783.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4095,7 +4095,7 @@ z
     </g>
     <g id="text_130">
      <!-- 2-1 -->
-     <g transform="translate(537.812463 783.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 783.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-31" x="99.707031"/>
@@ -4111,7 +4111,7 @@ z
     </g>
     <g id="text_131">
      <!-- - -->
-     <g transform="translate(662.763463 783.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 783.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4125,7 +4125,7 @@ z
     </g>
     <g id="text_132">
      <!-- 0 -->
-     <g transform="translate(733.9021 783.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 783.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4139,7 +4139,7 @@ z
     </g>
     <g id="text_133">
      <!-- Group F Predictions [Georgia - Czechia] -->
-     <g transform="translate(142.4329 807.863125)scale(0.14 -0.14)">
+     <g transform="translate(142.4329 807.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4191,7 +4191,7 @@ z
     </g>
     <g id="text_134">
      <!-- 0-0 -->
-     <g transform="translate(537.812463 807.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 807.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
@@ -4207,7 +4207,7 @@ z
     </g>
     <g id="text_135">
      <!-- - -->
-     <g transform="translate(662.763463 807.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 807.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4221,7 +4221,7 @@ z
     </g>
     <g id="text_136">
      <!-- 0 -->
-     <g transform="translate(733.9021 807.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 807.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4235,7 +4235,7 @@ z
     </g>
     <g id="text_137">
      <!-- Group F Predictions [Turkey - Portugal] -->
-     <g transform="translate(148.571025 831.863125)scale(0.14 -0.14)">
+     <g transform="translate(148.571025 831.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4287,7 +4287,7 @@ z
     </g>
     <g id="text_138">
      <!-- 2-3 -->
-     <g transform="translate(537.812463 831.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 831.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-33" x="99.707031"/>
@@ -4303,7 +4303,7 @@ z
     </g>
     <g id="text_139">
      <!-- - -->
-     <g transform="translate(662.763463 831.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 831.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4317,7 +4317,7 @@ z
     </g>
     <g id="text_140">
      <!-- 0 -->
-     <g transform="translate(733.9021 831.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 831.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4331,7 +4331,7 @@ z
     </g>
     <g id="text_141">
      <!-- Group F Predictions [Georgia - Portugal] -->
-     <g transform="translate(139.236963 855.863125)scale(0.14 -0.14)">
+     <g transform="translate(139.236963 855.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4384,7 +4384,7 @@ z
     </g>
     <g id="text_142">
      <!-- 0-3 -->
-     <g transform="translate(537.812463 855.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 855.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-33" x="99.707031"/>
@@ -4400,7 +4400,7 @@ z
     </g>
     <g id="text_143">
      <!-- - -->
-     <g transform="translate(662.763463 855.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 855.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4414,7 +4414,7 @@ z
     </g>
     <g id="text_144">
      <!-- 0 -->
-     <g transform="translate(733.9021 855.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 855.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4428,7 +4428,7 @@ z
     </g>
     <g id="text_145">
      <!-- Group F Predictions [Czechia - Turkey] -->
-     <g transform="translate(151.766963 879.863125)scale(0.14 -0.14)">
+     <g transform="translate(151.766963 879.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4479,7 +4479,7 @@ z
     </g>
     <g id="text_146">
      <!-- 1-1 -->
-     <g transform="translate(537.812463 879.863125)scale(0.14 -0.14)">
+     <g transform="translate(537.812463 879.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-31" x="99.707031"/>
@@ -4495,7 +4495,7 @@ z
     </g>
     <g id="text_147">
      <!-- - -->
-     <g transform="translate(662.763463 879.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 879.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4509,7 +4509,7 @@ z
     </g>
     <g id="text_148">
      <!-- 0 -->
-     <g transform="translate(733.9021 879.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 879.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4523,7 +4523,7 @@ z
     </g>
     <g id="text_149">
      <!-- Group A 1st place -->
-     <g transform="translate(292.9329 903.863125)scale(0.14 -0.14)">
+     <g transform="translate(292.9329 903.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4553,7 +4553,7 @@ z
     </g>
     <g id="text_150">
      <!-- Germany -->
-     <g transform="translate(496.3309 903.863125)scale(0.14 -0.14)">
+     <g transform="translate(496.3309 903.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-65" x="77.490234"/>
       <use xlink:href="#DejaVuSans-72" x="139.013672"/>
@@ -4573,7 +4573,7 @@ z
     </g>
     <g id="text_151">
      <!-- - -->
-     <g transform="translate(662.763463 903.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 903.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4587,7 +4587,7 @@ z
     </g>
     <g id="text_152">
      <!-- 0 -->
-     <g transform="translate(733.9021 903.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 903.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4601,7 +4601,7 @@ z
     </g>
     <g id="text_153">
      <!-- Group A 2nd place -->
-     <g transform="translate(287.95415 927.863125)scale(0.14 -0.14)">
+     <g transform="translate(287.95415 927.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4631,7 +4631,7 @@ z
     </g>
     <g id="text_154">
      <!-- Scotland -->
-     <g transform="translate(499.809025 927.863125)scale(0.14 -0.14)">
+     <g transform="translate(499.809025 927.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-53"/>
       <use xlink:href="#DejaVuSans-63" x="63.476562"/>
       <use xlink:href="#DejaVuSans-6f" x="118.457031"/>
@@ -4652,7 +4652,7 @@ z
     </g>
     <g id="text_155">
      <!-- - -->
-     <g transform="translate(662.763463 927.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 927.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4666,7 +4666,7 @@ z
     </g>
     <g id="text_156">
      <!-- 0 -->
-     <g transform="translate(733.9021 927.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 927.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4680,7 +4680,7 @@ z
     </g>
     <g id="text_157">
      <!-- Group B 1st place -->
-     <g transform="translate(292.904463 951.863125)scale(0.14 -0.14)">
+     <g transform="translate(292.904463 951.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4710,7 +4710,7 @@ z
     </g>
     <g id="text_158">
      <!-- Spain -->
-     <g transform="translate(521.561525 951.863125)scale(0.14 -0.14)">
+     <g transform="translate(521.561525 951.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-53"/>
       <use xlink:href="#DejaVuSans-70" x="63.476562"/>
       <use xlink:href="#DejaVuSans-61" x="126.953125"/>
@@ -4728,7 +4728,7 @@ z
     </g>
     <g id="text_159">
      <!-- - -->
-     <g transform="translate(662.763463 951.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 951.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4742,7 +4742,7 @@ z
     </g>
     <g id="text_160">
      <!-- 0 -->
-     <g transform="translate(733.9021 951.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 951.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4756,7 +4756,7 @@ z
     </g>
     <g id="text_161">
      <!-- Group B 2nd place -->
-     <g transform="translate(287.925713 975.863125)scale(0.14 -0.14)">
+     <g transform="translate(287.925713 975.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4786,7 +4786,7 @@ z
     </g>
     <g id="text_162">
      <!-- Italy -->
-     <g transform="translate(530.304962 975.863125)scale(0.14 -0.14)">
+     <g transform="translate(530.304962 975.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-49"/>
       <use xlink:href="#DejaVuSans-74" x="29.492188"/>
       <use xlink:href="#DejaVuSans-61" x="68.701172"/>
@@ -4804,7 +4804,7 @@ z
     </g>
     <g id="text_163">
      <!-- - -->
-     <g transform="translate(662.763463 975.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 975.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4818,7 +4818,7 @@ z
     </g>
     <g id="text_164">
      <!-- 0 -->
-     <g transform="translate(733.9021 975.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 975.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4832,7 +4832,7 @@ z
     </g>
     <g id="text_165">
      <!-- Group C 1st place -->
-     <g transform="translate(292.733838 999.863125)scale(0.14 -0.14)">
+     <g transform="translate(292.733838 999.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4862,7 +4862,7 @@ z
     </g>
     <g id="text_166">
      <!-- Denmark -->
-     <g transform="translate(496.333088 999.863125)scale(0.14 -0.14)">
+     <g transform="translate(496.333088 999.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-44"/>
       <use xlink:href="#DejaVuSans-65" x="77.001953"/>
       <use xlink:href="#DejaVuSans-6e" x="138.525391"/>
@@ -4882,7 +4882,7 @@ z
     </g>
     <g id="text_167">
      <!-- - -->
-     <g transform="translate(662.763463 999.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 999.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4896,7 +4896,7 @@ z
     </g>
     <g id="text_168">
      <!-- 0 -->
-     <g transform="translate(733.9021 999.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 999.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4910,7 +4910,7 @@ z
     </g>
     <g id="text_169">
      <!-- Group C 2nd place -->
-     <g transform="translate(287.755088 1023.863125)scale(0.14 -0.14)">
+     <g transform="translate(287.755088 1023.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -4940,7 +4940,7 @@ z
     </g>
     <g id="text_170">
      <!-- England -->
-     <g transform="translate(503.842775 1023.863125)scale(0.14 -0.14)">
+     <g transform="translate(503.842775 1023.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-45"/>
       <use xlink:href="#DejaVuSans-6e" x="63.183594"/>
       <use xlink:href="#DejaVuSans-67" x="126.5625"/>
@@ -4960,7 +4960,7 @@ z
     </g>
     <g id="text_171">
      <!-- - -->
-     <g transform="translate(662.763463 1023.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1023.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -4974,7 +4974,7 @@ z
     </g>
     <g id="text_172">
      <!-- 0 -->
-     <g transform="translate(733.9021 1023.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1023.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -4988,7 +4988,7 @@ z
     </g>
     <g id="text_173">
      <!-- Group D 1st place -->
-     <g transform="translate(291.729775 1047.863125)scale(0.14 -0.14)">
+     <g transform="translate(291.729775 1047.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -5018,7 +5018,7 @@ z
     </g>
     <g id="text_174">
      <!-- France -->
-     <g transform="translate(514.121837 1047.863125)scale(0.14 -0.14)">
+     <g transform="translate(514.121837 1047.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-46"/>
       <use xlink:href="#DejaVuSans-72" x="50.269531"/>
       <use xlink:href="#DejaVuSans-61" x="91.382812"/>
@@ -5037,7 +5037,7 @@ z
     </g>
     <g id="text_175">
      <!-- - -->
-     <g transform="translate(662.763463 1047.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1047.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -5051,7 +5051,7 @@ z
     </g>
     <g id="text_176">
      <!-- 0 -->
-     <g transform="translate(733.9021 1047.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1047.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -5065,7 +5065,7 @@ z
     </g>
     <g id="text_177">
      <!-- Group D 2nd place -->
-     <g transform="translate(286.751025 1071.863125)scale(0.14 -0.14)">
+     <g transform="translate(286.751025 1071.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -5095,7 +5095,7 @@ z
     </g>
     <g id="text_178">
      <!-- Netherland -->
-     <g transform="translate(482.630587 1071.863125)scale(0.14 -0.14)">
+     <g transform="translate(482.630587 1071.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-4e"/>
       <use xlink:href="#DejaVuSans-65" x="74.804688"/>
       <use xlink:href="#DejaVuSans-74" x="136.328125"/>
@@ -5118,7 +5118,7 @@ z
     </g>
     <g id="text_179">
      <!-- - -->
-     <g transform="translate(662.763463 1071.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1071.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -5132,7 +5132,7 @@ z
     </g>
     <g id="text_180">
      <!-- 0 -->
-     <g transform="translate(733.9021 1071.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1071.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -5146,7 +5146,7 @@ z
     </g>
     <g id="text_181">
      <!-- Group E 1st place -->
-     <g transform="translate(293.663525 1095.863125)scale(0.14 -0.14)">
+     <g transform="translate(293.663525 1095.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -5176,7 +5176,7 @@ z
     </g>
     <g id="text_182">
      <!-- Belgium -->
-     <g transform="translate(503.282775 1095.863125)scale(0.14 -0.14)">
+     <g transform="translate(503.282775 1095.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-42"/>
       <use xlink:href="#DejaVuSans-65" x="68.603516"/>
       <use xlink:href="#DejaVuSans-6c" x="130.126953"/>
@@ -5196,7 +5196,7 @@ z
     </g>
     <g id="text_183">
      <!-- - -->
-     <g transform="translate(662.763463 1095.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1095.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -5210,7 +5210,7 @@ z
     </g>
     <g id="text_184">
      <!-- 0 -->
-     <g transform="translate(733.9021 1095.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1095.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -5224,7 +5224,7 @@ z
     </g>
     <g id="text_185">
      <!-- Group E 2nd place -->
-     <g transform="translate(288.684775 1119.863125)scale(0.14 -0.14)">
+     <g transform="translate(288.684775 1119.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -5254,7 +5254,7 @@ z
     </g>
     <g id="text_186">
      <!-- Ukraine -->
-     <g transform="translate(506.614338 1119.863125)scale(0.14 -0.14)">
+     <g transform="translate(506.614338 1119.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-55"/>
       <use xlink:href="#DejaVuSans-6b" x="73.193359"/>
       <use xlink:href="#DejaVuSans-72" x="131.103516"/>
@@ -5274,7 +5274,7 @@ z
     </g>
     <g id="text_187">
      <!-- - -->
-     <g transform="translate(662.763463 1119.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1119.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -5288,7 +5288,7 @@ z
     </g>
     <g id="text_188">
      <!-- 0 -->
-     <g transform="translate(733.9021 1119.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1119.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -5302,7 +5302,7 @@ z
     </g>
     <g id="text_189">
      <!-- Group F 1st place -->
-     <g transform="translate(294.457588 1143.863125)scale(0.14 -0.14)">
+     <g transform="translate(294.457588 1143.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -5332,7 +5332,7 @@ z
     </g>
     <g id="text_190">
      <!-- Portugal -->
-     <g transform="translate(502.705275 1143.863125)scale(0.14 -0.14)">
+     <g transform="translate(502.705275 1143.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-50"/>
       <use xlink:href="#DejaVuSans-6f" x="56.677734"/>
       <use xlink:href="#DejaVuSans-72" x="117.859375"/>
@@ -5353,7 +5353,7 @@ z
     </g>
     <g id="text_191">
      <!-- - -->
-     <g transform="translate(662.763463 1143.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1143.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -5367,7 +5367,7 @@ z
     </g>
     <g id="text_192">
      <!-- 0 -->
-     <g transform="translate(733.9021 1143.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1143.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -5381,7 +5381,7 @@ z
     </g>
     <g id="text_193">
      <!-- Group F 2nd place -->
-     <g transform="translate(289.478838 1167.863125)scale(0.14 -0.14)">
+     <g transform="translate(289.478838 1167.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-47"/>
       <use xlink:href="#DejaVuSans-72" x="77.490234"/>
       <use xlink:href="#DejaVuSans-6f" x="116.353516"/>
@@ -5411,7 +5411,7 @@ z
     </g>
     <g id="text_194">
      <!-- Turkey -->
-     <g transform="translate(515.11715 1167.863125)scale(0.14 -0.14)">
+     <g transform="translate(515.11715 1167.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-54"/>
       <use xlink:href="#DejaVuSans-75" x="45.958984"/>
       <use xlink:href="#DejaVuSans-72" x="109.337891"/>
@@ -5430,7 +5430,7 @@ z
     </g>
     <g id="text_195">
      <!-- - -->
-     <g transform="translate(662.763463 1167.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1167.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -5444,7 +5444,7 @@ z
     </g>
     <g id="text_196">
      <!-- 0 -->
-     <g transform="translate(733.9021 1167.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1167.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -5458,7 +5458,7 @@ z
     </g>
     <g id="text_197">
      <!-- UEFA EURO 2024 final winner -->
-     <g transform="translate(211.5054 1191.863125)scale(0.14 -0.14)">
+     <g transform="translate(211.5054 1191.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-4f" d="M 2522 4238 
 Q 1834 4238 1429 3725 
@@ -5542,7 +5542,7 @@ z
     </g>
     <g id="text_198">
      <!-- Denmark -->
-     <g transform="translate(496.333088 1191.863125)scale(0.14 -0.14)">
+     <g transform="translate(496.333088 1191.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-44"/>
       <use xlink:href="#DejaVuSans-65" x="77.001953"/>
       <use xlink:href="#DejaVuSans-6e" x="138.525391"/>
@@ -5562,7 +5562,7 @@ z
     </g>
     <g id="text_199">
      <!-- - -->
-     <g transform="translate(662.763463 1191.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1191.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -5576,7 +5576,7 @@ z
     </g>
     <g id="text_200">
      <!-- 0 -->
-     <g transform="translate(733.9021 1191.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1191.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -5590,7 +5590,7 @@ z
     </g>
     <g id="text_201">
      <!-- UEFA EURO 2024 final loser -->
-     <g transform="translate(224.8404 1215.863125)scale(0.14 -0.14)">
+     <g transform="translate(224.8404 1215.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-55"/>
       <use xlink:href="#DejaVuSans-45" x="73.193359"/>
       <use xlink:href="#DejaVuSans-46" x="136.376953"/>
@@ -5629,7 +5629,7 @@ z
     </g>
     <g id="text_202">
      <!-- England -->
-     <g transform="translate(503.842775 1215.863125)scale(0.14 -0.14)">
+     <g transform="translate(503.842775 1215.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-45"/>
       <use xlink:href="#DejaVuSans-6e" x="63.183594"/>
       <use xlink:href="#DejaVuSans-67" x="126.5625"/>
@@ -5649,7 +5649,7 @@ z
     </g>
     <g id="text_203">
      <!-- - -->
-     <g transform="translate(662.763463 1215.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1215.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -5663,7 +5663,7 @@ z
     </g>
     <g id="text_204">
      <!-- 0 -->
-     <g transform="translate(733.9021 1215.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1215.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -5677,9 +5677,9 @@ z
     </g>
     <g id="text_205">
      <!--  -->
-     <g transform="translate(417.8304 1232.024656)scale(0.14 -0.14)"/>
+     <g transform="translate(417.8304 1232.024656) scale(0.14 -0.14)"/>
      <!-- Who is going to be the topscore throughout the UEFA EURO 2024? (20 points) -->
-     <g transform="translate(-127.651162 1247.701594)scale(0.14 -0.14)">
+     <g transform="translate(-127.651162 1247.701594) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-57" d="M 213 4666 
 L 850 4666 
@@ -5843,7 +5843,7 @@ z
     </g>
     <g id="text_206">
      <!-- Phil Foden -->
-     <g transform="translate(488.650588 1239.863125)scale(0.14 -0.14)">
+     <g transform="translate(488.650588 1239.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-50"/>
       <use xlink:href="#DejaVuSans-68" x="60.302734"/>
       <use xlink:href="#DejaVuSans-69" x="123.681641"/>
@@ -5866,7 +5866,7 @@ z
     </g>
     <g id="text_207">
      <!-- - -->
-     <g transform="translate(662.763463 1239.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1239.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -5880,7 +5880,7 @@ z
     </g>
     <g id="text_208">
      <!-- 0 -->
-     <g transform="translate(733.9021 1239.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1239.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -5894,7 +5894,7 @@ z
     </g>
     <g id="text_209">
      <!-- How many goals does the topscorer score? (10 points) -->
-     <g transform="translate(35.67415 1263.863125)scale(0.14 -0.14)">
+     <g transform="translate(35.67415 1263.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-48"/>
       <use xlink:href="#DejaVuSans-6f" x="75.195312"/>
       <use xlink:href="#DejaVuSans-77" x="136.376953"/>
@@ -5959,7 +5959,7 @@ z
     </g>
     <g id="text_210">
      <!-- 7.0 -->
-     <g transform="translate(538.414025 1263.863125)scale(0.14 -0.14)">
+     <g transform="translate(538.414025 1263.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-37" d="M 525 4666 
 L 3525 4666 
@@ -5994,7 +5994,7 @@ z
     </g>
     <g id="text_211">
      <!-- - -->
-     <g transform="translate(662.763463 1263.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1263.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -6008,7 +6008,7 @@ z
     </g>
     <g id="text_212">
      <!-- 0 -->
-     <g transform="translate(733.9021 1263.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1263.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -6022,7 +6022,7 @@ z
     </g>
     <g id="text_213">
      <!-- Which round does Denmark reach? (15 points) -->
-     <g transform="translate(91.241025 1287.863125)scale(0.14 -0.14)">
+     <g transform="translate(91.241025 1287.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-35" d="M 691 4666 
 L 3169 4666 
@@ -6105,7 +6105,7 @@ z
     </g>
     <g id="text_214">
      <!-- Final -->
-     <g transform="translate(528.410588 1287.863125)scale(0.14 -0.14)">
+     <g transform="translate(528.410588 1287.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-46"/>
       <use xlink:href="#DejaVuSans-69" x="50.269531"/>
       <use xlink:href="#DejaVuSans-6e" x="78.052734"/>
@@ -6123,7 +6123,7 @@ z
     </g>
     <g id="text_215">
      <!-- - -->
-     <g transform="translate(662.763463 1287.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1287.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -6137,7 +6137,7 @@ z
     </g>
     <g id="text_216">
      <!-- 0 -->
-     <g transform="translate(733.9021 1287.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1287.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>
@@ -6151,7 +6151,7 @@ z
     </g>
     <g id="text_217">
      <!-- How many goals does Denmark score in total? (20 points) -->
-     <g transform="translate(11.390713 1311.863125)scale(0.14 -0.14)">
+     <g transform="translate(11.390713 1311.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-48"/>
       <use xlink:href="#DejaVuSans-6f" x="75.195312"/>
       <use xlink:href="#DejaVuSans-77" x="136.376953"/>
@@ -6219,7 +6219,7 @@ z
     </g>
     <g id="text_218">
      <!-- 15.0 -->
-     <g transform="translate(529.506525 1311.863125)scale(0.14 -0.14)">
+     <g transform="translate(529.506525 1311.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-35" x="63.623047"/>
       <use xlink:href="#DejaVuSans-2e" x="127.246094"/>
@@ -6236,7 +6236,7 @@ z
     </g>
     <g id="text_219">
      <!-- - -->
-     <g transform="translate(662.763463 1311.863125)scale(0.14 -0.14)">
+     <g transform="translate(662.763463 1311.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-2d"/>
      </g>
     </g>
@@ -6250,7 +6250,7 @@ z
     </g>
     <g id="text_220">
      <!-- 0 -->
-     <g transform="translate(733.9021 1311.863125)scale(0.14 -0.14)">
+     <g transform="translate(733.9021 1311.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
      </g>
     </g>

@@ -41,6 +41,38 @@
 - Thomas Pe with 0 points part of GeH Fys [see their predictions](./pages/Thomas_Pe.html)
 - Isabella Is with 0 points part of Friends and Family [see their predictions](./pages/Isabella_Is.html)
 - Stinne Ra with 0 points part of European Sperm Bank [see their predictions](./pages/Stinne_Ra.html)
+- Simon Bo with 0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
+- Rasmus  Kj with 0 points part of GeH Fys [see their predictions](./pages/Rasmus__Kj.html)
+- Line Bi with 0 points part of GeH Fys [see their predictions](./pages/Line_Bi.html)
+- mathilde  ho with 0 points part of GeH Fys [see their predictions](./pages/mathilde__ho.html)
+- Christine Jo with 0 points part of GeH Fys [see their predictions](./pages/Christine_Jo.html)
+- Kristian Se with 0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Kristian_Se.html)
+- Bart He with 0 points part of European Sperm Bank [see their predictions](./pages/Bart_He.html)
+- Morten Sa with 0 points part of European Sperm Bank [see their predictions](./pages/Morten_Sa.html)
+- Andreas An with 0 points part of GeH Fys [see their predictions](./pages/Andreas_An.html)
+- Marianne Ol with 0 points part of GeH Fys [see their predictions](./pages/Marianne_Ol.html)
+- Hiroshi Hi with 0 points part of European Sperm Bank [see their predictions](./pages/Hiroshi_Hi.html)
+- Bjarke Ha with 0 points part of Frederiksborg Gymnasium and GeH Fys [see their predictions](./pages/Bjarke_Ha.html)
+- Pernille Li with 0 points part of European Sperm Bank [see their predictions](./pages/Pernille_Li.html)
+- Kseniia Sv with 0 points part of European Sperm Bank [see their predictions](./pages/Kseniia_Sv.html)
+- Bob Ju with 0 points part of GeH Fys [see their predictions](./pages/Bob_Ju.html)
+- Bettina Ag with 0 points part of European Sperm Bank [see their predictions](./pages/Bettina_Ag.html)
+- Emma Fa with 0 points part of European Sperm Bank [see their predictions](./pages/Emma_Fa.html)
+- Lars "Winner" Br with 0 points part of European Sperm Bank [see their predictions](./pages/Lars__Winner__Br.html)
+- Julie Aa with 0 points part of European Sperm Bank [see their predictions](./pages/Julie_Aa.html)
+- IT  Or with 0 points part of European Sperm Bank [see their predictions](./pages/IT__Or.html)
+- Jonas  Co with 0 points part of European Sperm Bank [see their predictions](./pages/Jonas__Co.html)
+- Frederik Ha with 0 points part of Friends and Family [see their predictions](./pages/Frederik_Ha.html)
+- Luhin Ak with 0 points part of European Sperm Bank [see their predictions](./pages/Luhin_Ak.html)
+- Marianne Æg with 0 points part of GeH Fys [see their predictions](./pages/Marianne_Æg.html)
+- Sif Ma with 0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sif_Ma.html)
+- Helene Cl with 0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Helene_Cl.html)
+- Carine Pl with 0 points part of European Sperm Bank [see their predictions](./pages/Carine_Pl.html)
+- CamJams Gr with 0 points part of Friends and Family [see their predictions](./pages/CamJams_Gr.html)
+- Jesper Mø with 0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Jesper_Mø.html)
+- Ebbe Ottar Je with 0 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
+- Joachim Gl with 0 points part of Friends and Family [see their predictions](./pages/Joachim_Gl.html)
+- Ayman Ka with 0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Ayman_Ka.html)
 
 
 # European Sperm Bank
@@ -66,6 +98,19 @@
 - [Christina Br](./pages/Christina_Br.html)
 - [Ale Mo](./pages/Ale_Mo.html)
 - [Stinne Ra](./pages/Stinne_Ra.html)
+- [Bart He](./pages/Bart_He.html)
+- [Morten Sa](./pages/Morten_Sa.html)
+- [Hiroshi Hi](./pages/Hiroshi_Hi.html)
+- [Pernille Li](./pages/Pernille_Li.html)
+- [Kseniia Sv](./pages/Kseniia_Sv.html)
+- [Bettina Ag](./pages/Bettina_Ag.html)
+- [Emma Fa](./pages/Emma_Fa.html)
+- [Lars "Winner" Br](./pages/Lars__Winner__Br.html)
+- [Julie Aa](./pages/Julie_Aa.html)
+- [IT  Or](./pages/IT__Or.html)
+- [Jonas  Co](./pages/Jonas__Co.html)
+- [Luhin Ak](./pages/Luhin_Ak.html)
+- [Carine Pl](./pages/Carine_Pl.html)
 
 -----------
  
@@ -84,6 +129,9 @@
 - [Matias BN](./pages/Matias_BN.html)
 - [Christian Gr](./pages/Christian_Gr.html)
 - [Oscar En](./pages/Oscar_En.html)
+- [Bjarke Ha](./pages/Bjarke_Ha.html)
+- [Sif Ma](./pages/Sif_Ma.html)
+- [Helene Cl](./pages/Helene_Cl.html)
 
 -----------
  
@@ -123,6 +171,10 @@
 - [Christian Gr](./pages/Christian_Gr.html)
 - [Oscar Kh](./pages/Oscar_Kh.html)
 - [Isabella Is](./pages/Isabella_Is.html)
+- [Frederik Ha](./pages/Frederik_Ha.html)
+- [CamJams Gr](./pages/CamJams_Gr.html)
+- [Ebbe Ottar Je](./pages/Ebbe_Ottar_Je.html)
+- [Joachim Gl](./pages/Joachim_Gl.html)
 
 -----------
  
@@ -137,6 +189,10 @@
 ## Quantum and Laser Photonics DTU participants:
 - [Matias BN](./pages/Matias_BN.html)
 - [Mattias Ra](./pages/Mattias_Ra.html)
+- [Simon Bo](./pages/Simon_Bo.html)
+- [Kristian Se](./pages/Kristian_Se.html)
+- [Jesper Mø](./pages/Jesper_Mø.html)
+- [Ayman Ka](./pages/Ayman_Ka.html)
 
 -----------
  
@@ -152,6 +208,15 @@
 - [Tobias Hø](./pages/Tobias_Hø.html)
 - [Regitze Ar](./pages/Regitze_Ar.html)
 - [Thomas Pe](./pages/Thomas_Pe.html)
+- [Rasmus  Kj](./pages/Rasmus__Kj.html)
+- [Line Bi](./pages/Line_Bi.html)
+- [mathilde  ho](./pages/mathilde__ho.html)
+- [Christine Jo](./pages/Christine_Jo.html)
+- [Andreas An](./pages/Andreas_An.html)
+- [Marianne Ol](./pages/Marianne_Ol.html)
+- [Bjarke Ha](./pages/Bjarke_Ha.html)
+- [Bob Ju](./pages/Bob_Ju.html)
+- [Marianne Æg](./pages/Marianne_Æg.html)
 
 -----------
  

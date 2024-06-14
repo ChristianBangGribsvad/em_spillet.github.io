@@ -33,12 +33,12 @@ if __name__ == "__main__":
     else:
         # If results have not changed, we exit script
         print("No updates so we exit the script")
-        eval_res = True
+        eval_res = False
     
     # Only execute rest of main if we have new results
     if eval_res:
         predictions_df = pd.read_csv("EM spillet 2024.csv")
-        df_fname = pd.DataFrame({'f_name': [(f"{row['First name']}"+"_"+f"{str(row['Last name'])[0:2]}").replace(" ","_") for _, row in predictions_df.iterrows()]})
+        df_fname = pd.DataFrame({'f_name': [(f"{row['First name']}"+"_"+f"{str(row['Last name'])[0:2]}").replace(" ","_").replace('"',"_") for _, row in predictions_df.iterrows()]})
         df_dname = pd.DataFrame({'d_name': [f"{row['First name']}"+" "+f"{str(row['Last name'])[0:2]}" for _, row in predictions_df.iterrows()]})
         predictions_df =predictions_df.join(df_fname)
         predictions_df =predictions_df.join(df_dname)
@@ -111,7 +111,7 @@ if __name__ == "__main__":
                 user_df.iloc[1,53] = finale_loser
             
             # Save in user_dfs
-            user_df.to_pickle("data/user_dfs/"+user)
+            user_df.to_pickle("data/user_dfs/"+user_df.at[0,"f_name"])
             
             # Load data frame containing group results
             for group in user_df.at[0,"Which team(s) do you belong to?"].split(";"):
