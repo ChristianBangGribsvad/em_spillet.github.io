@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-14T21:26:52.835886</dc:date>
+    <dc:date>2024-06-15T13:26:20.687460</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -818,7 +818,7 @@ L 464.256 72
 L 464.256 48 
 L 0 48 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_9">
      <!-- Group A Predictions [Hungary - Switzerland] -->
@@ -954,7 +954,7 @@ L 571.392 72
 L 571.392 48 
 L 464.256 48 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_10">
      <!-- 2-2 -->
@@ -996,12 +996,14 @@ L 678.528 72
 L 678.528 48 
 L 571.392 48 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_11">
-     <!-- - -->
-     <g transform="translate(662.763463 63.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-2d"/>
+     <!-- 0-1 -->
+     <g transform="translate(644.948463 63.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-30"/>
+      <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
+      <use xlink:href="#DejaVuSans-31" x="99.707031"/>
      </g>
     </g>
     <g id="patch_13">
@@ -1010,7 +1012,7 @@ L 749.952 72
 L 749.952 48 
 L 678.528 48 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_12">
      <!-- 0 -->
