@@ -3,14 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Lukas Ha with 20.0 points part of European Sperm Bank [see their predictions](./pages/Lukas_Ha.html)
-- Stinne Bi with 20.0 points part of European Sperm Bank [see their predictions](./pages/Stinne_Bi.html)
-- Jakob Ve with 20.0 points part of Next11 [see their predictions](./pages/Jakob_Ve.html)
-- Christina Br with 20.0 points part of European Sperm Bank [see their predictions](./pages/Christina_Br.html)
-- Line Bi with 20.0 points part of GeH Fys [see their predictions](./pages/Line_Bi.html)
-- Frederik Ha with 20.0 points part of Friends and Family [see their predictions](./pages/Frederik_Ha.html)
-- Carine Pl with 20.0 points part of European Sperm Bank [see their predictions](./pages/Carine_Pl.html)
-- Ebbe Ottar Je with 20.0 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
+- Carine Pl with 25.0 points part of European Sperm Bank [see their predictions](./pages/Carine_Pl.html)
+- Ebbe Ottar Je with 25.0 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
 
 
 # European Sperm Bank
