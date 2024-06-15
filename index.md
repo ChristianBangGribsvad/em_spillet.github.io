@@ -3,22 +3,15 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Martin Ba with 15.0 points part of Next11 [see their predictions](./pages/Martin_Ba.html)
-- Kenneth Sc with 15.0 points part of Friends and Family [see their predictions](./pages/Kenneth_Sc.html)
-- Stinne Bi with 15.0 points part of European Sperm Bank [see their predictions](./pages/Stinne_Bi.html)
-- Jakob Ve with 15.0 points part of Next11 [see their predictions](./pages/Jakob_Ve.html)
-- Jonas Bo with 15.0 points part of Friends and Family [see their predictions](./pages/Jonas_Bo.html)
-- Christina Br with 15.0 points part of European Sperm Bank [see their predictions](./pages/Christina_Br.html)
-- Simon Bo with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
-- Line Bi with 15.0 points part of GeH Fys [see their predictions](./pages/Line_Bi.html)
-- Pernille Li with 15.0 points part of European Sperm Bank [see their predictions](./pages/Pernille_Li.html)
-- Lars "Winner" Br with 15.0 points part of European Sperm Bank [see their predictions](./pages/Lars__Winner__Br.html)
-- Julie Aa with 15.0 points part of European Sperm Bank [see their predictions](./pages/Julie_Aa.html)
-- IT  Or with 15.0 points part of European Sperm Bank [see their predictions](./pages/IT__Or.html)
-- Luhin Ak with 15.0 points part of European Sperm Bank [see their predictions](./pages/Luhin_Ak.html)
-- CamJams Gr with 15.0 points part of Friends and Family [see their predictions](./pages/CamJams_Gr.html)
-- Jesper Mø with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Jesper_Mø.html)
-- Joachim Gl with 15.0 points part of Friends and Family [see their predictions](./pages/Joachim_Gl.html)
+- Lukas Ha with 15.0 points part of European Sperm Bank [see their predictions](./pages/Lukas_Ha.html)
+- Sebastian Le with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sebastian_Le.html)
+- Steffen Jø with 15.0 points part of European Sperm Bank [see their predictions](./pages/Steffen_Jø.html)
+- Morten Sa with 15.0 points part of European Sperm Bank [see their predictions](./pages/Morten_Sa.html)
+- Andreas An with 15.0 points part of GeH Fys [see their predictions](./pages/Andreas_An.html)
+- Jonas  Co with 15.0 points part of European Sperm Bank [see their predictions](./pages/Jonas__Co.html)
+- Helene Cl with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Helene_Cl.html)
+- Carine Pl with 15.0 points part of European Sperm Bank [see their predictions](./pages/Carine_Pl.html)
+- Ebbe Ottar Je with 15.0 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
 
 
 # European Sperm Bank
