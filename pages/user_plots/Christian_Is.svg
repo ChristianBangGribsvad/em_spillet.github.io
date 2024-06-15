@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-15T14:28:21.430163</dc:date>
+    <dc:date>2024-06-15T15:27:09.124815</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -970,8 +970,24 @@ z
 " style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_11">
-     <!-- 1-2 -->
+     <!-- 1-3 -->
      <g transform="translate(644.948463 63.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-31"/>
+      <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
+      <use xlink:href="#DejaVuSans-33" x="99.707031"/>
+     </g>
+    </g>
+    <g id="patch_13">
+     <path d="M 678.528 72 
+L 749.952 72 
+L 749.952 48 
+L 678.528 48 
+z
+" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <!-- 2 -->
+     <g transform="translate(733.9021 63.863125) scale(0.14 -0.14)">
       <defs>
        <path id="DejaVuSans-32" d="M 1228 531 
 L 3431 531 
@@ -998,22 +1014,6 @@ Q 1991 1309 1228 531
 z
 " transform="scale(0.015625)"/>
       </defs>
-      <use xlink:href="#DejaVuSans-31"/>
-      <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
-      <use xlink:href="#DejaVuSans-32" x="99.707031"/>
-     </g>
-    </g>
-    <g id="patch_13">
-     <path d="M 678.528 72 
-L 749.952 72 
-L 749.952 48 
-L 678.528 48 
-z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
-    </g>
-    <g id="text_12">
-     <!-- 2 -->
-     <g transform="translate(733.9021 63.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-32"/>
      </g>
     </g>

@@ -3,15 +3,15 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Lukas Ha with 15.0 points part of European Sperm Bank [see their predictions](./pages/Lukas_Ha.html)
-- Sebastian Le with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sebastian_Le.html)
-- Steffen Jø with 15.0 points part of European Sperm Bank [see their predictions](./pages/Steffen_Jø.html)
-- Morten Sa with 15.0 points part of European Sperm Bank [see their predictions](./pages/Morten_Sa.html)
-- Andreas An with 15.0 points part of GeH Fys [see their predictions](./pages/Andreas_An.html)
-- Jonas  Co with 15.0 points part of European Sperm Bank [see their predictions](./pages/Jonas__Co.html)
-- Helene Cl with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Helene_Cl.html)
-- Carine Pl with 15.0 points part of European Sperm Bank [see their predictions](./pages/Carine_Pl.html)
-- Ebbe Ottar Je with 15.0 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
+- Lukas Ha with 10.0 points part of European Sperm Bank [see their predictions](./pages/Lukas_Ha.html)
+- Sebastian Le with 10.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sebastian_Le.html)
+- Steffen Jø with 10.0 points part of European Sperm Bank [see their predictions](./pages/Steffen_Jø.html)
+- Morten Sa with 10.0 points part of European Sperm Bank [see their predictions](./pages/Morten_Sa.html)
+- Andreas An with 10.0 points part of GeH Fys [see their predictions](./pages/Andreas_An.html)
+- Jonas  Co with 10.0 points part of European Sperm Bank [see their predictions](./pages/Jonas__Co.html)
+- Helene Cl with 10.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Helene_Cl.html)
+- Carine Pl with 10.0 points part of European Sperm Bank [see their predictions](./pages/Carine_Pl.html)
+- Ebbe Ottar Je with 10.0 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
 
 
 # European Sperm Bank
