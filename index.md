@@ -3,8 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Carine Pl with 35.0 points part of European Sperm Bank [see their predictions](./pages/Carine_Pl.html)
-- Ebbe Ottar Je with 35.0 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
+- Bjarke Ha with 15.0 points part of Frederiksborg Gymnasium and GeH Fys [see their predictions](./pages/Bjarke_Ha.html)
+- Bettina Ag with 15.0 points part of European Sperm Bank [see their predictions](./pages/Bettina_Ag.html)
 
 
 # European Sperm Bank
