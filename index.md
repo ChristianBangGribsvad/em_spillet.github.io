@@ -3,14 +3,20 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Signe Æb with 15.0 points part of European Sperm Bank [see their predictions](./pages/Signe_Æb.html)
-- Alan Ce with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Alan_Ce.html)
-- Mathas Po with 15.0 points part of Next11 [see their predictions](./pages/Mathas_Po.html)
-- mathilde  ho with 15.0 points part of GeH Fys [see their predictions](./pages/mathilde__ho.html)
-- Kseniia Sv with 15.0 points part of European Sperm Bank [see their predictions](./pages/Kseniia_Sv.html)
-- Bob Ju with 15.0 points part of GeH Fys [see their predictions](./pages/Bob_Ju.html)
-- Lars "Winner" Br with 15.0 points part of European Sperm Bank [see their predictions](./pages/Lars__Winner__Br.html)
-- Ayman Ka with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Ayman_Ka.html)
+- Laurits Pi with 15.0 points part of Friends and Family [see their predictions](./pages/Laurits_Pi.html)
+- Christian Is with 15.0 points part of Friends and Family [see their predictions](./pages/Christian_Is.html)
+- Christian Gr with 15.0 points part of Next11 and Frederiksborg Gymnasium and Friends and Family [see their predictions](./pages/Christian_Gr.html)
+- Regitze Ar with 15.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
+- Thomas Pe with 15.0 points part of GeH Fys [see their predictions](./pages/Thomas_Pe.html)
+- Isabella Is with 15.0 points part of Friends and Family [see their predictions](./pages/Isabella_Is.html)
+- Simon Bo with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
+- Kristian Se with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Kristian_Se.html)
+- Pernille Li with 15.0 points part of European Sperm Bank [see their predictions](./pages/Pernille_Li.html)
+- Helene Cl with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Helene_Cl.html)
+- CamJams Gr with 15.0 points part of Friends and Family [see their predictions](./pages/CamJams_Gr.html)
+- Mathias  Th with 15.0 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
+- Hanne Ho with 15.0 points part of GeH Fys [see their predictions](./pages/Hanne_Ho.html)
+- RIKKE GR with 15.0 points part of Next11 [see their predictions](./pages/RIKKE_GR.html)
 
 
 # European Sperm Bank
