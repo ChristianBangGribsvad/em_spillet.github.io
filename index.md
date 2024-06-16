@@ -3,11 +3,9 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Laurits Pi with 30.0 points part of Friends and Family [see their predictions](./pages/Laurits_Pi.html)
-- Christian Is with 30.0 points part of Friends and Family [see their predictions](./pages/Christian_Is.html)
-- Christian Gr with 30.0 points part of Next11 and Frederiksborg Gymnasium and Friends and Family [see their predictions](./pages/Christian_Gr.html)
-- Simon Bo with 30.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
-- Mathias  Th with 30.0 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
+- Matias BN with 25.0 points part of Frederiksborg Gymnasium and Quantum and Laser Photonics DTU [see their predictions](./pages/Matias_BN.html)
+- Tobias Hø with 25.0 points part of GeH Fys [see their predictions](./pages/Tobias_Hø.html)
+- Ebbe Ottar Je with 25.0 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
 
 
 # European Sperm Bank
