@@ -3,8 +3,14 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Bjarke Ha with 15.0 points part of Frederiksborg Gymnasium and GeH Fys [see their predictions](./pages/Bjarke_Ha.html)
-- Bettina Ag with 15.0 points part of European Sperm Bank [see their predictions](./pages/Bettina_Ag.html)
+- Signe Æb with 15.0 points part of European Sperm Bank [see their predictions](./pages/Signe_Æb.html)
+- Alan Ce with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Alan_Ce.html)
+- Mathas Po with 15.0 points part of Next11 [see their predictions](./pages/Mathas_Po.html)
+- mathilde  ho with 15.0 points part of GeH Fys [see their predictions](./pages/mathilde__ho.html)
+- Kseniia Sv with 15.0 points part of European Sperm Bank [see their predictions](./pages/Kseniia_Sv.html)
+- Bob Ju with 15.0 points part of GeH Fys [see their predictions](./pages/Bob_Ju.html)
+- Lars "Winner" Br with 15.0 points part of European Sperm Bank [see their predictions](./pages/Lars__Winner__Br.html)
+- Ayman Ka with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Ayman_Ka.html)
 
 
 # European Sperm Bank
