@@ -3,20 +3,11 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Laurits Pi with 15.0 points part of Friends and Family [see their predictions](./pages/Laurits_Pi.html)
-- Christian Is with 15.0 points part of Friends and Family [see their predictions](./pages/Christian_Is.html)
-- Christian Gr with 15.0 points part of Next11 and Frederiksborg Gymnasium and Friends and Family [see their predictions](./pages/Christian_Gr.html)
-- Regitze Ar with 15.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
-- Thomas Pe with 15.0 points part of GeH Fys [see their predictions](./pages/Thomas_Pe.html)
-- Isabella Is with 15.0 points part of Friends and Family [see their predictions](./pages/Isabella_Is.html)
-- Simon Bo with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
-- Kristian Se with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Kristian_Se.html)
-- Pernille Li with 15.0 points part of European Sperm Bank [see their predictions](./pages/Pernille_Li.html)
-- Helene Cl with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Helene_Cl.html)
-- CamJams Gr with 15.0 points part of Friends and Family [see their predictions](./pages/CamJams_Gr.html)
-- Mathias  Th with 15.0 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
-- Hanne Ho with 15.0 points part of GeH Fys [see their predictions](./pages/Hanne_Ho.html)
-- RIKKE GR with 15.0 points part of Next11 [see their predictions](./pages/RIKKE_GR.html)
+- Laurits Pi with 30.0 points part of Friends and Family [see their predictions](./pages/Laurits_Pi.html)
+- Christian Is with 30.0 points part of Friends and Family [see their predictions](./pages/Christian_Is.html)
+- Christian Gr with 30.0 points part of Next11 and Frederiksborg Gymnasium and Friends and Family [see their predictions](./pages/Christian_Gr.html)
+- Simon Bo with 30.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
+- Mathias  Th with 30.0 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
 
 
 # European Sperm Bank
