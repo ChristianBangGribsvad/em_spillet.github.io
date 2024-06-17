@@ -3,7 +3,11 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Laurits Pi with 32.0 points part of Friends and Family [see their predictions](./pages/Laurits_Pi.html)
+- Petrica Ju with 15.0 points part of European Sperm Bank [see their predictions](./pages/Petrica_Ju.html)
+- Mikkel  Di with 15.0 points part of European Sperm Bank [see their predictions](./pages/Mikkel__Di.html)
+- Emma Hu with 15.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Hu.html)
+- Mathas Po with 15.0 points part of Next11 [see their predictions](./pages/Mathas_Po.html)
+- Anne Hv with 15.0 points part of European Sperm Bank [see their predictions](./pages/Anne_Hv.html)
 
 
 # European Sperm Bank
