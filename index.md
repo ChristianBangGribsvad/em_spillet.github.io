@@ -3,7 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- lea bo with 17.0 points part of Next11 [see their predictions](./pages/lea_bo.html)
+- Bettina Ag with 25.0 points part of European Sperm Bank [see their predictions](./pages/Bettina_Ag.html)
+- lea bo with 25.0 points part of Next11 [see their predictions](./pages/lea_bo.html)
 
 
 # European Sperm Bank
