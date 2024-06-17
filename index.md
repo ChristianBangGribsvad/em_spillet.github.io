@@ -3,11 +3,21 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Petrica Ju with 15.0 points part of European Sperm Bank [see their predictions](./pages/Petrica_Ju.html)
-- Mikkel  Di with 15.0 points part of European Sperm Bank [see their predictions](./pages/Mikkel__Di.html)
-- Emma Hu with 15.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Hu.html)
-- Mathas Po with 15.0 points part of Next11 [see their predictions](./pages/Mathas_Po.html)
-- Anne Hv with 15.0 points part of European Sperm Bank [see their predictions](./pages/Anne_Hv.html)
+- Silje Br with 10.0 points part of European Sperm Bank [see their predictions](./pages/Silje_Br.html)
+- Lennart Me with 10.0 points part of European Sperm Bank [see their predictions](./pages/Lennart_Me.html)
+- Ernst  Bø with 10.0 points part of Friends and Family [see their predictions](./pages/Ernst__Bø.html)
+- Jeanett Ja with 10.0 points part of European Sperm Bank [see their predictions](./pages/Jeanett_Ja.html)
+- Regitze Ar with 10.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
+- Line Bi with 10.0 points part of GeH Fys [see their predictions](./pages/Line_Bi.html)
+- Kristian Se with 10.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Kristian_Se.html)
+- Bart He with 10.0 points part of European Sperm Bank [see their predictions](./pages/Bart_He.html)
+- Hiroshi Hi with 10.0 points part of European Sperm Bank [see their predictions](./pages/Hiroshi_Hi.html)
+- Bjarke Ha with 10.0 points part of Frederiksborg Gymnasium and GeH Fys [see their predictions](./pages/Bjarke_Ha.html)
+- Bettina Ag with 10.0 points part of European Sperm Bank [see their predictions](./pages/Bettina_Ag.html)
+- Julie Aa with 10.0 points part of European Sperm Bank [see their predictions](./pages/Julie_Aa.html)
+- IT  Or with 10.0 points part of European Sperm Bank [see their predictions](./pages/IT__Or.html)
+- Ayman Ka with 10.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Ayman_Ka.html)
+- RIKKE GR with 10.0 points part of Next11 [see their predictions](./pages/RIKKE_GR.html)
 
 
 # European Sperm Bank
