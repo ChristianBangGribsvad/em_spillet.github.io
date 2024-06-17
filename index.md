@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- lea bo with 15.0 points part of Next11 [see their predictions](./pages/lea_bo.html)
+- lea bo with 17.0 points part of Next11 [see their predictions](./pages/lea_bo.html)
 
 
 # European Sperm Bank
