@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Mads To with 17.0 points part of European Sperm Bank [see their predictions](./pages/Mads_To.html)
+- Julie Aa with 20.0 points part of European Sperm Bank [see their predictions](./pages/Julie_Aa.html)
 
 
 # European Sperm Bank
