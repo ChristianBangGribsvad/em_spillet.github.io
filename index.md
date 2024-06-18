@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Julie Aa with 20.0 points part of European Sperm Bank [see their predictions](./pages/Julie_Aa.html)
+- Isabella Is with 30.0 points part of Friends and Family [see their predictions](./pages/Isabella_Is.html)
 
 
 # European Sperm Bank
