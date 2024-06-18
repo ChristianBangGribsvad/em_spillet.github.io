@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-18T18:33:36.025567</dc:date>
+    <dc:date>2024-06-18T19:23:34.611890</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -4086,7 +4086,7 @@ L 464.256 792
 L 464.256 768 
 L 0 768 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_129">
      <!-- Group F Predictions [Portugal - Czechia] -->
@@ -4139,7 +4139,7 @@ L 571.392 792
 L 571.392 768 
 L 464.256 768 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_130">
      <!-- 3-1 -->
@@ -4155,12 +4155,14 @@ L 678.528 792
 L 678.528 768 
 L 571.392 768 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_131">
-     <!-- - -->
-     <g transform="translate(662.763463 783.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-2d"/>
+     <!-- 0-0 -->
+     <g transform="translate(644.948463 783.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-30"/>
+      <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
+      <use xlink:href="#DejaVuSans-30" x="99.707031"/>
      </g>
     </g>
     <g id="patch_133">
@@ -4169,7 +4171,7 @@ L 749.952 792
 L 749.952 768 
 L 678.528 768 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_132">
      <!-- 0 -->

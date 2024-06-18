@@ -3,8 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Laurits Pi with 15.0 points part of Friends and Family [see their predictions](./pages/Laurits_Pi.html)
-- Mads To with 15.0 points part of European Sperm Bank [see their predictions](./pages/Mads_To.html)
+- Mads To with 17.0 points part of European Sperm Bank [see their predictions](./pages/Mads_To.html)
 
 
 # European Sperm Bank
