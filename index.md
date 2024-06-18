@@ -3,13 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Lukas Ha with 15.0 points part of European Sperm Bank [see their predictions](./pages/Lukas_Ha.html)
-- Petrica Ju with 15.0 points part of European Sperm Bank [see their predictions](./pages/Petrica_Ju.html)
-- Sarah Gy with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sarah_Gy.html)
-- Hiroshi Hi with 15.0 points part of European Sperm Bank [see their predictions](./pages/Hiroshi_Hi.html)
-- Carine Pl with 15.0 points part of European Sperm Bank [see their predictions](./pages/Carine_Pl.html)
-- Joachim Gl with 15.0 points part of Friends and Family [see their predictions](./pages/Joachim_Gl.html)
-- Andreas Ku with 15.0 points part of Next11 [see their predictions](./pages/Andreas_Ku.html)
+- Laurits Pi with 15.0 points part of Friends and Family [see their predictions](./pages/Laurits_Pi.html)
+- Mads To with 15.0 points part of European Sperm Bank [see their predictions](./pages/Mads_To.html)
 
 
 # European Sperm Bank
