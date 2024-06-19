@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Oscar En with 25.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Oscar_En.html)
+- Emma Hu with 35.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Hu.html)
 
 
 # European Sperm Bank
