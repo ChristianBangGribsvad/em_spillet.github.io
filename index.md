@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Simon Bo with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
+- Oscar En with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Oscar_En.html)
 
 
 # European Sperm Bank
