@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Emma Hu with 35.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Hu.html)
+- Bart He with 35.0 points part of European Sperm Bank [see their predictions](./pages/Bart_He.html)
 
 
 # European Sperm Bank
