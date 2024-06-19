@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Isabella Is with 30.0 points part of Friends and Family [see their predictions](./pages/Isabella_Is.html)
+- Simon Bo with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
 
 
 # European Sperm Bank
