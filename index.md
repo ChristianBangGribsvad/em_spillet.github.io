@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Oscar En with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Oscar_En.html)
+- Oscar En with 25.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Oscar_En.html)
 
 
 # European Sperm Bank
