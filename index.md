@@ -3,8 +3,12 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Matias BN with 30.0 points part of Frederiksborg Gymnasium and Quantum and Laser Photonics DTU [see their predictions](./pages/Matias_BN.html)
-- Stinne Ra with 30.0 points part of European Sperm Bank [see their predictions](./pages/Stinne_Ra.html)
+- Jeanett Ja with 30.0 points part of European Sperm Bank [see their predictions](./pages/Jeanett_Ja.html)
+- Regitze Ar with 30.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
+- Andreas An with 30.0 points part of GeH Fys [see their predictions](./pages/Andreas_An.html)
+- Kseniia Sv with 30.0 points part of European Sperm Bank [see their predictions](./pages/Kseniia_Sv.html)
+- Marianne Æg with 30.0 points part of GeH Fys [see their predictions](./pages/Marianne_Æg.html)
+- Mathias  Th with 30.0 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
 
 
 # European Sperm Bank
