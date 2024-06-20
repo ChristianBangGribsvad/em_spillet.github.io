@@ -3,7 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Mathias  Th with 45.0 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
+- Jeanett Ja with 45.0 points part of European Sperm Bank [see their predictions](./pages/Jeanett_Ja.html)
+- Marianne Æg with 45.0 points part of GeH Fys [see their predictions](./pages/Marianne_Æg.html)
 
 
 # European Sperm Bank
