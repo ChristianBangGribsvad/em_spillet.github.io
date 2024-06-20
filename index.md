@@ -3,10 +3,11 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Maren St with 15.0 points part of Next11 [see their predictions](./pages/Maren_St.html)
-- Emma Hu with 15.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Hu.html)
-- Christina Br with 15.0 points part of European Sperm Bank [see their predictions](./pages/Christina_Br.html)
-- Andreas Ku with 15.0 points part of Next11 [see their predictions](./pages/Andreas_Ku.html)
+- Martin Ba with 15.0 points part of Next11 [see their predictions](./pages/Martin_Ba.html)
+- Marianne Ol with 15.0 points part of GeH Fys [see their predictions](./pages/Marianne_Ol.html)
+- Emma Fa with 15.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Fa.html)
+- IT  Or with 15.0 points part of European Sperm Bank [see their predictions](./pages/IT__Or.html)
+- Luhin Ak with 15.0 points part of European Sperm Bank [see their predictions](./pages/Luhin_Ak.html)
 
 
 # European Sperm Bank
