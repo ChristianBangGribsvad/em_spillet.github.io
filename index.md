@@ -3,7 +3,10 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Bart He with 35.0 points part of European Sperm Bank [see their predictions](./pages/Bart_He.html)
+- Maren St with 15.0 points part of Next11 [see their predictions](./pages/Maren_St.html)
+- Emma Hu with 15.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Hu.html)
+- Christina Br with 15.0 points part of European Sperm Bank [see their predictions](./pages/Christina_Br.html)
+- Andreas Ku with 15.0 points part of Next11 [see their predictions](./pages/Andreas_Ku.html)
 
 
 # European Sperm Bank
