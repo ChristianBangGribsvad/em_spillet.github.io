@@ -3,11 +3,28 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Martin Ba with 15.0 points part of Next11 [see their predictions](./pages/Martin_Ba.html)
-- Marianne Ol with 15.0 points part of GeH Fys [see their predictions](./pages/Marianne_Ol.html)
-- Emma Fa with 15.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Fa.html)
-- IT  Or with 15.0 points part of European Sperm Bank [see their predictions](./pages/IT__Or.html)
-- Luhin Ak with 15.0 points part of European Sperm Bank [see their predictions](./pages/Luhin_Ak.html)
+- Signe Æb with 15.0 points part of European Sperm Bank [see their predictions](./pages/Signe_Æb.html)
+- Kenneth Sc with 15.0 points part of Friends and Family [see their predictions](./pages/Kenneth_Sc.html)
+- Ernst  Bø with 15.0 points part of Friends and Family [see their predictions](./pages/Ernst__Bø.html)
+- Sebastian Le with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sebastian_Le.html)
+- Jeanett Ja with 15.0 points part of European Sperm Bank [see their predictions](./pages/Jeanett_Ja.html)
+- Matias BN with 15.0 points part of Frederiksborg Gymnasium and Quantum and Laser Photonics DTU [see their predictions](./pages/Matias_BN.html)
+- Regitze Ar with 15.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
+- Stinne Ra with 15.0 points part of European Sperm Bank [see their predictions](./pages/Stinne_Ra.html)
+- Simon Bo with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
+- Rasmus  Kj with 15.0 points part of GeH Fys [see their predictions](./pages/Rasmus__Kj.html)
+- Line Bi with 15.0 points part of GeH Fys [see their predictions](./pages/Line_Bi.html)
+- mathilde  ho with 15.0 points part of GeH Fys [see their predictions](./pages/mathilde__ho.html)
+- Kristian Se with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Kristian_Se.html)
+- Bart He with 15.0 points part of European Sperm Bank [see their predictions](./pages/Bart_He.html)
+- Andreas An with 15.0 points part of GeH Fys [see their predictions](./pages/Andreas_An.html)
+- Kseniia Sv with 15.0 points part of European Sperm Bank [see their predictions](./pages/Kseniia_Sv.html)
+- Lars "Winner" Br with 15.0 points part of European Sperm Bank [see their predictions](./pages/Lars__Winner__Br.html)
+- Marianne Æg with 15.0 points part of GeH Fys [see their predictions](./pages/Marianne_Æg.html)
+- Helene Cl with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Helene_Cl.html)
+- Mathias  Th with 15.0 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
+- Lisbeth Ul with 15.0 points part of GeH Fys [see their predictions](./pages/Lisbeth_Ul.html)
+- Hanne Ho with 15.0 points part of GeH Fys [see their predictions](./pages/Hanne_Ho.html)
 
 
 # European Sperm Bank
