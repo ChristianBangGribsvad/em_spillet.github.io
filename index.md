@@ -3,16 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Alan Ce with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Alan_Ce.html)
-- Kenneth Sc with 15.0 points part of Friends and Family [see their predictions](./pages/Kenneth_Sc.html)
-- Sarah Gy with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sarah_Gy.html)
-- Oscar Kh with 15.0 points part of Friends and Family [see their predictions](./pages/Oscar_Kh.html)
-- Isabella Is with 15.0 points part of Friends and Family [see their predictions](./pages/Isabella_Is.html)
-- Stinne Ra with 15.0 points part of European Sperm Bank [see their predictions](./pages/Stinne_Ra.html)
-- Simon Bo with 15.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
-- CamJams Gr with 15.0 points part of Friends and Family [see their predictions](./pages/CamJams_Gr.html)
-- Joachim Gl with 15.0 points part of Friends and Family [see their predictions](./pages/Joachim_Gl.html)
-- Mathias  Th with 15.0 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
+- Stinne Ra with 30.0 points part of European Sperm Bank [see their predictions](./pages/Stinne_Ra.html)
 
 
 # European Sperm Bank

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-21T15:32:29.524380</dc:date>
+    <dc:date>2024-06-21T16:32:16.259524</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -2985,7 +2985,7 @@ L 464.256 528
 L 464.256 504 
 L 0 504 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_85">
      <!-- Group D Predictions [Poland - Austria] -->
@@ -3036,7 +3036,7 @@ L 571.392 528
 L 571.392 504 
 L 464.256 504 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_86">
      <!-- 1-1 -->
@@ -3052,12 +3052,14 @@ L 678.528 528
 L 678.528 504 
 L 571.392 504 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_87">
-     <!-- - -->
-     <g transform="translate(662.763463 519.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-2d"/>
+     <!-- 0-1 -->
+     <g transform="translate(644.948463 519.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-30"/>
+      <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
+      <use xlink:href="#DejaVuSans-31" x="99.707031"/>
      </g>
     </g>
     <g id="patch_89">
@@ -3066,12 +3068,12 @@ L 749.952 528
 L 749.952 504 
 L 678.528 504 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_88">
-     <!-- 0 -->
+     <!-- 2 -->
      <g transform="translate(733.9021 519.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-30"/>
+      <use xlink:href="#DejaVuSans-32"/>
      </g>
     </g>
     <g id="patch_90">
