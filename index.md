@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Stinne Ra with 30.0 points part of European Sperm Bank [see their predictions](./pages/Stinne_Ra.html)
+- Sarah Gy with 30.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sarah_Gy.html)
 
 
 # European Sperm Bank
