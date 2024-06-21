@@ -3,8 +3,14 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Jeanett Ja with 45.0 points part of European Sperm Bank [see their predictions](./pages/Jeanett_Ja.html)
-- Marianne Æg with 45.0 points part of GeH Fys [see their predictions](./pages/Marianne_Æg.html)
+- Silje Br with 15.0 points part of European Sperm Bank [see their predictions](./pages/Silje_Br.html)
+- Laurits Pi with 15.0 points part of Friends and Family [see their predictions](./pages/Laurits_Pi.html)
+- Christina Br with 15.0 points part of European Sperm Bank [see their predictions](./pages/Christina_Br.html)
+- Line Bi with 15.0 points part of GeH Fys [see their predictions](./pages/Line_Bi.html)
+- Christine Jo with 15.0 points part of GeH Fys [see their predictions](./pages/Christine_Jo.html)
+- Jonas  Co with 15.0 points part of European Sperm Bank [see their predictions](./pages/Jonas__Co.html)
+- Frederik Ha with 15.0 points part of Friends and Family [see their predictions](./pages/Frederik_Ha.html)
+- Lisbeth Ul with 15.0 points part of GeH Fys [see their predictions](./pages/Lisbeth_Ul.html)
 
 
 # European Sperm Bank
