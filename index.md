@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Sarah Gy with 30.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sarah_Gy.html)
+- Simon Bo with 30.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
 
 
 # European Sperm Bank
