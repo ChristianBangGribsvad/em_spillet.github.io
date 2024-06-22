@@ -3,11 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Petrica Ju with 30.0 points part of European Sperm Bank [see their predictions](./pages/Petrica_Ju.html)
-- Matias BN with 30.0 points part of Frederiksborg Gymnasium and Quantum and Laser Photonics DTU [see their predictions](./pages/Matias_BN.html)
-- Bart He with 30.0 points part of European Sperm Bank [see their predictions](./pages/Bart_He.html)
-- Ayman Ka with 30.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Ayman_Ka.html)
-- Salty Gu with 30.0 points part of Next11 [see their predictions](./pages/Salty_Gu.html)
+- Regitze Ar with 30.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
+- Jesper Mø with 30.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Jesper_Mø.html)
 
 
 # European Sperm Bank
