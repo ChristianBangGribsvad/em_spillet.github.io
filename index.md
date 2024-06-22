@@ -3,11 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Signe Æb with 35.0 points part of European Sperm Bank [see their predictions](./pages/Signe_Æb.html)
-- Emma Hu with 35.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Hu.html)
-- Regitze Ar with 35.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
-- Jesper Mø with 35.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Jesper_Mø.html)
-- RIKKE GR with 35.0 points part of Next11 [see their predictions](./pages/RIKKE_GR.html)
+- Signe Æb with 40.0 points part of European Sperm Bank [see their predictions](./pages/Signe_Æb.html)
+- Regitze Ar with 40.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
 
 
 # European Sperm Bank
