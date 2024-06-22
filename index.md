@@ -3,7 +3,14 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Simon Bo with 30.0 points part of Quantum and Laser Photonics DTU [see their predictions](./pages/Simon_Bo.html)
+- Sarah Gy with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sarah_Gy.html)
+- Mikkel  Di with 15.0 points part of European Sperm Bank [see their predictions](./pages/Mikkel__Di.html)
+- Emma Hu with 15.0 points part of European Sperm Bank [see their predictions](./pages/Emma_Hu.html)
+- Oscar En with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Oscar_En.html)
+- Frederik Ha with 15.0 points part of Friends and Family [see their predictions](./pages/Frederik_Ha.html)
+- Luhin Ak with 15.0 points part of European Sperm Bank [see their predictions](./pages/Luhin_Ak.html)
+- Helene Cl with 15.0 points part of Frederiksborg Gymnasium [see their predictions](./pages/Helene_Cl.html)
+- Mathias  Th with 15.0 points part of GeH Fys [see their predictions](./pages/Mathias__Th.html)
 
 
 # European Sperm Bank
