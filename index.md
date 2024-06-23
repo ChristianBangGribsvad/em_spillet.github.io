@@ -3,8 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Signe Æb with 25.0 points part of European Sperm Bank [see their predictions](./pages/Signe_Æb.html)
-- Marianne Ol with 25.0 points part of GeH Fys [see their predictions](./pages/Marianne_Ol.html)
+- Lars "Winner" Br with 35.0 points part of European Sperm Bank [see their predictions](./pages/Lars__Winner__Br.html)
+- Frederik Ha with 35.0 points part of Friends and Family [see their predictions](./pages/Frederik_Ha.html)
 
 
 # European Sperm Bank

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-23T20:26:44.385955</dc:date>
+    <dc:date>2024-06-23T21:25:51.068512</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -1299,11 +1299,11 @@ z
 " style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_23">
-     <!-- 1-0 -->
+     <!-- 1-1 -->
      <g transform="translate(644.948463 135.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
-      <use xlink:href="#DejaVuSans-30" x="99.707031"/>
+      <use xlink:href="#DejaVuSans-31" x="99.707031"/>
      </g>
     </g>
     <g id="patch_25">
@@ -1326,7 +1326,7 @@ L 464.256 168
 L 464.256 144 
 L 0 144 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_25">
      <!-- Group A Predictions [Scotland - Hungary] -->
@@ -1379,7 +1379,7 @@ L 571.392 168
 L 571.392 144 
 L 464.256 144 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_26">
      <!-- 1-1 -->
@@ -1395,14 +1395,14 @@ L 678.528 168
 L 678.528 144 
 L 571.392 144 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_27">
-     <!-- 0-0 -->
+     <!-- 0-1 -->
      <g transform="translate(644.948463 159.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-30"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
-      <use xlink:href="#DejaVuSans-30" x="99.707031"/>
+      <use xlink:href="#DejaVuSans-31" x="99.707031"/>
      </g>
     </g>
     <g id="patch_29">
@@ -1411,12 +1411,12 @@ L 749.952 168
 L 749.952 144 
 L 678.528 144 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_28">
-     <!-- 5 -->
+     <!-- 2 -->
      <g transform="translate(733.9021 159.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-35"/>
+      <use xlink:href="#DejaVuSans-32"/>
      </g>
     </g>
     <g id="patch_30">
@@ -4602,7 +4602,7 @@ L 464.256 912
 L 464.256 888 
 L 0 888 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #4bb062; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_149">
      <!-- Group A 1st place -->
@@ -4632,7 +4632,7 @@ L 571.392 912
 L 571.392 888 
 L 464.256 888 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #4bb062; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_150">
      <!-- Germany -->
@@ -4652,22 +4652,18 @@ L 678.528 912
 L 678.528 888 
 L 571.392 888 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #4bb062; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_151">
-     <!-- Switzerland -->
-     <g transform="translate(586.152838 903.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-53"/>
-      <use xlink:href="#DejaVuSans-77" x="63.476562"/>
-      <use xlink:href="#DejaVuSans-69" x="145.263672"/>
-      <use xlink:href="#DejaVuSans-74" x="173.046875"/>
-      <use xlink:href="#DejaVuSans-7a" x="212.255859"/>
-      <use xlink:href="#DejaVuSans-65" x="264.746094"/>
-      <use xlink:href="#DejaVuSans-72" x="326.269531"/>
-      <use xlink:href="#DejaVuSans-6c" x="367.382812"/>
-      <use xlink:href="#DejaVuSans-61" x="395.166016"/>
-      <use xlink:href="#DejaVuSans-6e" x="456.445312"/>
-      <use xlink:href="#DejaVuSans-64" x="519.824219"/>
+     <!-- Germany -->
+     <g transform="translate(603.4669 903.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-47"/>
+      <use xlink:href="#DejaVuSans-65" x="77.490234"/>
+      <use xlink:href="#DejaVuSans-72" x="139.013672"/>
+      <use xlink:href="#DejaVuSans-6d" x="178.376953"/>
+      <use xlink:href="#DejaVuSans-61" x="275.789062"/>
+      <use xlink:href="#DejaVuSans-6e" x="337.068359"/>
+      <use xlink:href="#DejaVuSans-79" x="400.447266"/>
      </g>
     </g>
     <g id="patch_153">
@@ -4676,12 +4672,33 @@ L 749.952 912
 L 749.952 888 
 L 678.528 888 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #4bb062; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_152">
-     <!-- 5 -->
-     <g transform="translate(733.9021 903.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-35"/>
+     <!-- 7.5 -->
+     <g transform="translate(720.545225 903.863125) scale(0.14 -0.14)">
+      <defs>
+       <path id="DejaVuSans-37" d="M 525 4666 
+L 3525 4666 
+L 3525 4397 
+L 1831 0 
+L 1172 0 
+L 2766 4134 
+L 525 4134 
+L 525 4666 
+z
+" transform="scale(0.015625)"/>
+       <path id="DejaVuSans-2e" d="M 684 794 
+L 1344 794 
+L 1344 0 
+L 684 0 
+L 684 794 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#DejaVuSans-37"/>
+      <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
+      <use xlink:href="#DejaVuSans-35" x="95.410156"/>
      </g>
     </g>
     <g id="patch_154">
@@ -4690,7 +4707,7 @@ L 464.256 936
 L 464.256 912 
 L 0 912 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #4bb062; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_153">
      <!-- Group A 2nd place -->
@@ -4720,7 +4737,7 @@ L 571.392 936
 L 571.392 912 
 L 464.256 912 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #4bb062; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_154">
      <!-- Switzerland -->
@@ -4744,18 +4761,22 @@ L 678.528 936
 L 678.528 912 
 L 571.392 912 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #4bb062; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_155">
-     <!-- Germany -->
-     <g transform="translate(603.4669 927.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-47"/>
-      <use xlink:href="#DejaVuSans-65" x="77.490234"/>
-      <use xlink:href="#DejaVuSans-72" x="139.013672"/>
-      <use xlink:href="#DejaVuSans-6d" x="178.376953"/>
-      <use xlink:href="#DejaVuSans-61" x="275.789062"/>
-      <use xlink:href="#DejaVuSans-6e" x="337.068359"/>
-      <use xlink:href="#DejaVuSans-79" x="400.447266"/>
+     <!-- Switzerland -->
+     <g transform="translate(586.152838 927.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-53"/>
+      <use xlink:href="#DejaVuSans-77" x="63.476562"/>
+      <use xlink:href="#DejaVuSans-69" x="145.263672"/>
+      <use xlink:href="#DejaVuSans-74" x="173.046875"/>
+      <use xlink:href="#DejaVuSans-7a" x="212.255859"/>
+      <use xlink:href="#DejaVuSans-65" x="264.746094"/>
+      <use xlink:href="#DejaVuSans-72" x="326.269531"/>
+      <use xlink:href="#DejaVuSans-6c" x="367.382812"/>
+      <use xlink:href="#DejaVuSans-61" x="395.166016"/>
+      <use xlink:href="#DejaVuSans-6e" x="456.445312"/>
+      <use xlink:href="#DejaVuSans-64" x="519.824219"/>
      </g>
     </g>
     <g id="patch_157">
@@ -4764,12 +4785,14 @@ L 749.952 936
 L 749.952 912 
 L 678.528 912 
 z
-" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #4bb062; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_156">
-     <!-- 5 -->
-     <g transform="translate(733.9021 927.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-35"/>
+     <!-- 7.5 -->
+     <g transform="translate(720.545225 927.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-37"/>
+      <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
+      <use xlink:href="#DejaVuSans-35" x="95.410156"/>
      </g>
     </g>
     <g id="patch_158">
@@ -6129,13 +6152,6 @@ Q 2619 4750 2861 4703
 Q 3103 4656 3366 4563 
 z
 " transform="scale(0.015625)"/>
-       <path id="DejaVuSans-2e" d="M 684 794 
-L 1344 794 
-L 1344 0 
-L 684 0 
-L 684 794 
-z
-" transform="scale(0.015625)"/>
       </defs>
       <use xlink:href="#DejaVuSans-36"/>
       <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
@@ -6387,18 +6403,6 @@ z
     <g id="text_218">
      <!-- 7.0 -->
      <g transform="translate(538.414025 1311.863125) scale(0.14 -0.14)">
-      <defs>
-       <path id="DejaVuSans-37" d="M 525 4666 
-L 3525 4666 
-L 3525 4397 
-L 1831 0 
-L 1172 0 
-L 2766 4134 
-L 525 4134 
-L 525 4666 
-z
-" transform="scale(0.015625)"/>
-      </defs>
       <use xlink:href="#DejaVuSans-37"/>
       <use xlink:href="#DejaVuSans-2e" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="95.410156"/>
