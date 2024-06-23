@@ -3,8 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Signe Æb with 40.0 points part of European Sperm Bank [see their predictions](./pages/Signe_Æb.html)
-- Regitze Ar with 40.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
+- Bob Ju with 35.0 points part of GeH Fys [see their predictions](./pages/Bob_Ju.html)
 
 
 # European Sperm Bank
