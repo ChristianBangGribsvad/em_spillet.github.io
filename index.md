@@ -3,7 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Bob Ju with 35.0 points part of GeH Fys [see their predictions](./pages/Bob_Ju.html)
+- Signe Æb with 25.0 points part of European Sperm Bank [see their predictions](./pages/Signe_Æb.html)
+- Marianne Ol with 25.0 points part of GeH Fys [see their predictions](./pages/Marianne_Ol.html)
 
 
 # European Sperm Bank
