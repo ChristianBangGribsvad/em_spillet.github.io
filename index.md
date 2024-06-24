@@ -3,7 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Mathas Po with 40.0 points part of Next11 [see their predictions](./pages/Mathas_Po.html)
+- Petrica Ju with 35.0 points part of European Sperm Bank [see their predictions](./pages/Petrica_Ju.html)
+- Bettina Ag with 35.0 points part of European Sperm Bank [see their predictions](./pages/Bettina_Ag.html)
 
 
 # European Sperm Bank
