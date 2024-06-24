@@ -3,8 +3,8 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Petrica Ju with 35.0 points part of European Sperm Bank [see their predictions](./pages/Petrica_Ju.html)
-- Bettina Ag with 35.0 points part of European Sperm Bank [see their predictions](./pages/Bettina_Ag.html)
+- Jakob Ve with 45.0 points part of Next11 [see their predictions](./pages/Jakob_Ve.html)
+- Christina Br with 45.0 points part of European Sperm Bank [see their predictions](./pages/Christina_Br.html)
 
 
 # European Sperm Bank
