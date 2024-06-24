@@ -3,8 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Lars "Winner" Br with 35.0 points part of European Sperm Bank [see their predictions](./pages/Lars__Winner__Br.html)
-- Frederik Ha with 35.0 points part of Friends and Family [see their predictions](./pages/Frederik_Ha.html)
+- Mathas Po with 40.0 points part of Next11 [see their predictions](./pages/Mathas_Po.html)
 
 
 # European Sperm Bank
