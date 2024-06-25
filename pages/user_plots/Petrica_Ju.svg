@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-25T16:33:49.281260</dc:date>
+    <dc:date>2024-06-25T17:28:34.606946</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -3264,11 +3264,11 @@ z
 " style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_95">
-     <!-- 0-1 -->
+     <!-- 1-2 -->
      <g transform="translate(644.948463 567.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-30"/>
+      <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
-      <use xlink:href="#DejaVuSans-31" x="99.707031"/>
+      <use xlink:href="#DejaVuSans-32" x="99.707031"/>
      </g>
     </g>
     <g id="patch_97">
@@ -3291,7 +3291,7 @@ L 464.256 600
 L 464.256 576 
 L 0 576 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #157f3b; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_97">
      <!-- Group D Predictions [France - Poland] -->
@@ -3341,7 +3341,7 @@ L 571.392 600
 L 571.392 576 
 L 464.256 576 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #157f3b; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_98">
      <!-- 2-0 -->
@@ -3357,12 +3357,12 @@ L 678.528 600
 L 678.528 576 
 L 571.392 576 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #157f3b; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_99">
-     <!-- 0-0 -->
+     <!-- 1-0 -->
      <g transform="translate(644.948463 591.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-30"/>
+      <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
       <use xlink:href="#DejaVuSans-30" x="99.707031"/>
      </g>
@@ -3373,12 +3373,13 @@ L 749.952 600
 L 749.952 576 
 L 678.528 576 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #157f3b; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_100">
-     <!-- 2 -->
-     <g transform="translate(733.9021 591.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-32"/>
+     <!-- 10 -->
+     <g transform="translate(724.9946 591.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-31"/>
+      <use xlink:href="#DejaVuSans-30" x="63.623047"/>
      </g>
     </g>
     <g id="patch_102">
@@ -5085,7 +5086,7 @@ L 464.256 1056
 L 464.256 1032 
 L 0 1032 
 z
-" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_173">
      <!-- Group D 1st place -->
@@ -5115,7 +5116,7 @@ L 571.392 1056
 L 571.392 1032 
 L 464.256 1032 
 z
-" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_174">
      <!-- France -->
@@ -5134,18 +5135,17 @@ L 678.528 1056
 L 678.528 1032 
 L 571.392 1032 
 z
-" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_175">
-     <!-- Austria -->
-     <g transform="translate(618.3594 1047.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-41"/>
-      <use xlink:href="#DejaVuSans-75" x="68.408203"/>
-      <use xlink:href="#DejaVuSans-73" x="131.787109"/>
-      <use xlink:href="#DejaVuSans-74" x="183.886719"/>
-      <use xlink:href="#DejaVuSans-72" x="223.095703"/>
-      <use xlink:href="#DejaVuSans-69" x="264.208984"/>
-      <use xlink:href="#DejaVuSans-61" x="291.992188"/>
+     <!-- France -->
+     <g transform="translate(621.257838 1047.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-46"/>
+      <use xlink:href="#DejaVuSans-72" x="50.269531"/>
+      <use xlink:href="#DejaVuSans-61" x="91.382812"/>
+      <use xlink:href="#DejaVuSans-6e" x="152.662109"/>
+      <use xlink:href="#DejaVuSans-63" x="216.041016"/>
+      <use xlink:href="#DejaVuSans-65" x="271.021484"/>
      </g>
     </g>
     <g id="patch_177">
@@ -5154,12 +5154,12 @@ L 749.952 1056
 L 749.952 1032 
 L 678.528 1032 
 z
-" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #98d594; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_176">
-     <!-- 0 -->
+     <!-- 5 -->
      <g transform="translate(733.9021 1047.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-30"/>
+      <use xlink:href="#DejaVuSans-35"/>
      </g>
     </g>
     <g id="patch_178">
@@ -5224,14 +5224,15 @@ z
 " style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_179">
-     <!-- France -->
-     <g transform="translate(621.257838 1071.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-46"/>
-      <use xlink:href="#DejaVuSans-72" x="50.269531"/>
-      <use xlink:href="#DejaVuSans-61" x="91.382812"/>
-      <use xlink:href="#DejaVuSans-6e" x="152.662109"/>
-      <use xlink:href="#DejaVuSans-63" x="216.041016"/>
-      <use xlink:href="#DejaVuSans-65" x="271.021484"/>
+     <!-- Austria -->
+     <g transform="translate(618.3594 1071.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-41"/>
+      <use xlink:href="#DejaVuSans-75" x="68.408203"/>
+      <use xlink:href="#DejaVuSans-73" x="131.787109"/>
+      <use xlink:href="#DejaVuSans-74" x="183.886719"/>
+      <use xlink:href="#DejaVuSans-72" x="223.095703"/>
+      <use xlink:href="#DejaVuSans-69" x="264.208984"/>
+      <use xlink:href="#DejaVuSans-61" x="291.992188"/>
      </g>
     </g>
     <g id="patch_181">

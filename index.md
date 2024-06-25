@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Hiroshi Hi with 20.0 points part of European Sperm Bank [see their predictions](./pages/Hiroshi_Hi.html)
+- Bettina Ag with 32.0 points part of European Sperm Bank [see their predictions](./pages/Bettina_Ag.html)
 
 
 # European Sperm Bank
