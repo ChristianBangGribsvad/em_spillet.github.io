@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Kseniia Sv with 25.0 points part of European Sperm Bank [see their predictions](./pages/Kseniia_Sv.html)
+- Kseniia Sv with 37.0 points part of European Sperm Bank [see their predictions](./pages/Kseniia_Sv.html)
 
 
 # European Sperm Bank
