@@ -3,8 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Jakob Ve with 45.0 points part of Next11 [see their predictions](./pages/Jakob_Ve.html)
-- Christina Br with 45.0 points part of European Sperm Bank [see their predictions](./pages/Christina_Br.html)
+- Hiroshi Hi with 20.0 points part of European Sperm Bank [see their predictions](./pages/Hiroshi_Hi.html)
 
 
 # European Sperm Bank
