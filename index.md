@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Bettina Ag with 32.0 points part of European Sperm Bank [see their predictions](./pages/Bettina_Ag.html)
+- Kseniia Sv with 25.0 points part of European Sperm Bank [see their predictions](./pages/Kseniia_Sv.html)
 
 
 # European Sperm Bank
