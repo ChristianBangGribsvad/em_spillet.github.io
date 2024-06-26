@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Kseniia Sv with 37.0 points part of European Sperm Bank [see their predictions](./pages/Kseniia_Sv.html)
+- Christine Jo with 40.0 points part of GeH Fys [see their predictions](./pages/Christine_Jo.html)
 
 
 # European Sperm Bank
