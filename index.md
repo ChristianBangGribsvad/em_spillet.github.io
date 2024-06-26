@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Regitze Ar with 55.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
+- Regitze Ar with 65.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
 
 
 # European Sperm Bank
