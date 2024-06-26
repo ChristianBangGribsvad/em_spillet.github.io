@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Regitze Ar with 65.0 points part of GeH Fys [see their predictions](./pages/Regitze_Ar.html)
+- Thomas Pe with 62.0 points part of GeH Fys [see their predictions](./pages/Thomas_Pe.html)
 
 
 # European Sperm Bank

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-26T20:30:26.152207</dc:date>
+    <dc:date>2024-06-26T21:27:51.225992</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -4507,7 +4507,7 @@ L 464.256 888
 L 464.256 864 
 L 0 864 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_145">
      <!-- Group F Predictions [Czechia - Turkey] -->
@@ -4558,7 +4558,7 @@ L 571.392 888
 L 571.392 864 
 L 464.256 864 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_146">
      <!-- 1-2 -->
@@ -4574,14 +4574,14 @@ L 678.528 888
 L 678.528 864 
 L 571.392 864 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_147">
-     <!-- 1-1 -->
+     <!-- 1-2 -->
      <g transform="translate(644.948463 879.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
-      <use xlink:href="#DejaVuSans-31" x="99.707031"/>
+      <use xlink:href="#DejaVuSans-32" x="99.707031"/>
      </g>
     </g>
     <g id="patch_149">
@@ -4590,12 +4590,13 @@ L 749.952 888
 L 749.952 864 
 L 678.528 864 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_148">
-     <!-- 2 -->
-     <g transform="translate(733.9021 879.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-32"/>
+     <!-- 15 -->
+     <g transform="translate(724.9946 879.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-31"/>
+      <use xlink:href="#DejaVuSans-35" x="63.623047"/>
      </g>
     </g>
     <g id="patch_150">
