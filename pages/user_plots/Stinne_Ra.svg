@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-06-26T16:33:26.117829</dc:date>
+    <dc:date>2024-06-26T17:28:24.711200</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -3803,7 +3803,7 @@ L 464.256 720
 L 464.256 696 
 L 0 696 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_117">
      <!-- Group E Predictions [Slovakia - Romania] -->
@@ -3856,7 +3856,7 @@ L 571.392 720
 L 571.392 696 
 L 464.256 696 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_118">
      <!-- 1-1 -->
@@ -3872,14 +3872,14 @@ L 678.528 720
 L 678.528 696 
 L 571.392 696 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_119">
-     <!-- 1-0 -->
+     <!-- 1-1 -->
      <g transform="translate(644.948463 711.863125) scale(0.14 -0.14)">
       <use xlink:href="#DejaVuSans-31"/>
       <use xlink:href="#DejaVuSans-2d" x="63.623047"/>
-      <use xlink:href="#DejaVuSans-30" x="99.707031"/>
+      <use xlink:href="#DejaVuSans-31" x="99.707031"/>
      </g>
     </g>
     <g id="patch_121">
@@ -3888,12 +3888,13 @@ L 749.952 720
 L 749.952 696 
 L 678.528 696 
 z
-" style="fill: #d3eecd; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_120">
-     <!-- 2 -->
-     <g transform="translate(733.9021 711.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-32"/>
+     <!-- 15 -->
+     <g transform="translate(724.9946 711.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-31"/>
+      <use xlink:href="#DejaVuSans-35" x="63.623047"/>
      </g>
     </g>
     <g id="patch_122">
@@ -5352,16 +5353,15 @@ z
 " style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_183">
-     <!-- Slovakia -->
-     <g transform="translate(609.029713 1095.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-53"/>
-      <use xlink:href="#DejaVuSans-6c" x="63.476562"/>
-      <use xlink:href="#DejaVuSans-6f" x="91.259766"/>
-      <use xlink:href="#DejaVuSans-76" x="152.441406"/>
-      <use xlink:href="#DejaVuSans-61" x="211.621094"/>
-      <use xlink:href="#DejaVuSans-6b" x="272.900391"/>
-      <use xlink:href="#DejaVuSans-69" x="330.810547"/>
-      <use xlink:href="#DejaVuSans-61" x="358.59375"/>
+     <!-- Romania -->
+     <g transform="translate(606.592838 1095.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-52"/>
+      <use xlink:href="#DejaVuSans-6f" x="64.982422"/>
+      <use xlink:href="#DejaVuSans-6d" x="126.164062"/>
+      <use xlink:href="#DejaVuSans-61" x="223.576172"/>
+      <use xlink:href="#DejaVuSans-6e" x="284.855469"/>
+      <use xlink:href="#DejaVuSans-69" x="348.234375"/>
+      <use xlink:href="#DejaVuSans-61" x="376.017578"/>
      </g>
     </g>
     <g id="patch_185">

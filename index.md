@@ -3,7 +3,7 @@
 -------------------------------
 
 # Today's Schmeichel(s):
-- Christine Jo with 40.0 points part of GeH Fys [see their predictions](./pages/Christine_Jo.html)
+- Thomas Pe with 37.0 points part of GeH Fys [see their predictions](./pages/Thomas_Pe.html)
 
 
 # European Sperm Bank
