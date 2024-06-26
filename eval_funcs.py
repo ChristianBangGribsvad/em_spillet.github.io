@@ -350,6 +350,10 @@ def eval_groups(predictions_df , results):
         res1st = all_group_res[list(all_group_res.keys())[i]]["1st"]
         res2nd = all_group_res[list(all_group_res.keys())[i]]["2nd"]
         
+        # Manual set DK as Group 2nd (everything is equal with Slovenia except placement in qualification)
+        if i == 2:
+            res2nd = "Denmark"
+        
         # If current group is not finished we skip it
         if res1st == "":
             continue
