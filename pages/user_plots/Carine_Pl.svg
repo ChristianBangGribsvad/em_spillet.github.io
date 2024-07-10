@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2024-07-10T21:26:05.666139</dc:date>
+    <dc:date>2024-07-10T22:30:07.195435</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -6245,7 +6245,7 @@ L 464.256 1296
 L 464.256 1272 
 L 0 1272 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_213">
      <!-- Which round does Denmark reach? (15 points) -->
@@ -6301,7 +6301,7 @@ L 571.392 1296
 L 571.392 1272 
 L 464.256 1272 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_214">
      <!-- Round of 16 -->
@@ -6357,12 +6357,22 @@ L 678.528 1296
 L 678.528 1272 
 L 571.392 1272 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_215">
-     <!-- - -->
-     <g transform="translate(662.763463 1287.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-2d"/>
+     <!-- Round of 16 -->
+     <g transform="translate(583.309088 1287.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-52"/>
+      <use xlink:href="#DejaVuSans-6f" x="64.982422"/>
+      <use xlink:href="#DejaVuSans-75" x="126.164062"/>
+      <use xlink:href="#DejaVuSans-6e" x="189.542969"/>
+      <use xlink:href="#DejaVuSans-64" x="252.921875"/>
+      <use xlink:href="#DejaVuSans-20" x="316.398438"/>
+      <use xlink:href="#DejaVuSans-6f" x="348.185547"/>
+      <use xlink:href="#DejaVuSans-66" x="409.367188"/>
+      <use xlink:href="#DejaVuSans-20" x="444.572266"/>
+      <use xlink:href="#DejaVuSans-31" x="476.359375"/>
+      <use xlink:href="#DejaVuSans-36" x="539.982422"/>
      </g>
     </g>
     <g id="patch_217">
@@ -6371,12 +6381,13 @@ L 749.952 1296
 L 749.952 1272 
 L 678.528 1272 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #00471c; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_216">
-     <!-- 0 -->
-     <g transform="translate(733.9021 1287.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-30"/>
+     <!-- 15 -->
+     <g transform="translate(724.9946 1287.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-31"/>
+      <use xlink:href="#DejaVuSans-35" x="63.623047"/>
      </g>
     </g>
     <g id="patch_218">
@@ -6385,7 +6396,7 @@ L 464.256 1320
 L 464.256 1296 
 L 0 1296 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_217">
      <!-- How many goals does Denmark score in total? (20 points) -->
@@ -6453,7 +6464,7 @@ L 571.392 1320
 L 571.392 1296 
 L 464.256 1296 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_218">
      <!-- 6.0 -->
@@ -6469,12 +6480,12 @@ L 678.528 1320
 L 678.528 1296 
 L 571.392 1296 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_219">
-     <!-- - -->
-     <g transform="translate(662.763463 1311.863125) scale(0.14 -0.14)">
-      <use xlink:href="#DejaVuSans-2d"/>
+     <!-- 2 -->
+     <g transform="translate(658.9069 1311.863125) scale(0.14 -0.14)">
+      <use xlink:href="#DejaVuSans-32"/>
      </g>
     </g>
     <g id="patch_221">
@@ -6483,7 +6494,7 @@ L 749.952 1320
 L 749.952 1296 
 L 678.528 1296 
 z
-" style="fill: #cecece; stroke: #000000; stroke-linejoin: miter"/>
+" style="fill: #ff0000; stroke: #000000; stroke-linejoin: miter"/>
     </g>
     <g id="text_220">
      <!-- 0 -->
