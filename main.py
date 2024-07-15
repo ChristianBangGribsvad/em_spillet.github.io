@@ -27,13 +27,13 @@ if __name__ == "__main__":
     
     prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
     
-    #if prev_results[0] != results:
-        #print("New results saved")
-        #save_results(cwd + f"/results/data_{n_file+1}.pickle",datafile)
-    #else:
+    if prev_results[0] != results:
+        print("New results saved")
+        save_results(cwd + f"/results/data_{n_file+1}.pickle",datafile)
+    else:
         # If results have not changed, we exit script
-        #print("No updates so we exit the script")
-        #eval_res = False
+        print("No updates so we exit the script")
+        eval_res = False
     
     # Only execute rest of main if we have new results
     if eval_res:
