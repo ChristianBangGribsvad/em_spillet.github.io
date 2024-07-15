@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
     #### Fill out when final is finished
-    topscorer = ["Gakpo","Kane" ,"Musiala","Olmo","Schranz"]
+    topscorer = ["Cody Gakpo","Harry Kane" ,"Jamal Musiala"," Dani  Olmo","Ivan Schranz"]
     topscorer_goals = "3"
     finale_loser = "England"
     finale_winner = "Spain"
