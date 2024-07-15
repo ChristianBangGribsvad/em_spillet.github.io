@@ -12,10 +12,10 @@ import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
     #### Fill out when final is finished
-    topscorer = ""
-    topscorer_goals = ""
-    finale_loser = ""
-    finale_winner = ""
+    topscorer = ["Gakpo","Kane" ,"Musiala","Olmo","Schranz"]
+    topscorer_goals = "3"
+    finale_loser = "England"
+    finale_winner = "Spain"
     eval_res = True
     
     results = get_results()
@@ -27,13 +27,13 @@ if __name__ == "__main__":
     
     prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
     
-    if prev_results[0] != results:
-        print("New results saved")
-        save_results(cwd + f"/results/data_{n_file+1}.pickle",datafile)
-    else:
+    #if prev_results[0] != results:
+        #print("New results saved")
+        #save_results(cwd + f"/results/data_{n_file+1}.pickle",datafile)
+    #else:
         # If results have not changed, we exit script
-        print("No updates so we exit the script")
-        eval_res = False
+        #print("No updates so we exit the script")
+        #eval_res = False
     
     # Only execute rest of main if we have new results
     if eval_res:
@@ -91,24 +91,30 @@ if __name__ == "__main__":
                 user_df = dk_goals_scored(results, user_df)
             
             # Add Top scorer
-            if topscorer == user_df.iloc[0,54]:
+            if user_df.iloc[0,54] in topscorer:
                 user_df.iloc[2,54] = 20
-                user_df.iloc[1,54] = topscorer
+            user_df.iloc[1,54] = ",".join(topscorer)
             
             # Add Topscorer goals
             if topscorer_goals == user_df.iloc[0,55]:
                 user_df.iloc[2,55] = 10
-                user_df.iloc[1,55] = topscorer_goals
+            user_df.iloc[1,55] = topscorer_goals
             
             # Add finale winner team
             if finale_winner == user_df.iloc[0,52]:
                 user_df.iloc[2,52] = 25
-                user_df.iloc[1,52] = finale_winner
+            user_df.iloc[1,52] = finale_winner
             
             # Add finale loser team
             if finale_loser == user_df.iloc[0,53]:
                 user_df.iloc[2,53] = 15
-                user_df.iloc[1,53] = finale_loser
+            user_df.iloc[1,53] = finale_loser
+
+            # if finale teams are correct but wrong in placement
+            if finale_loser == user_df.iloc[0,52] and finale_winner == user_df.iloc[0,53]:
+                user_df.iloc[2,53] = 10
+            elif finale_loser == user_df.iloc[0,52] or finale_winner == user_df.iloc[0,53]:
+                user_df.iloc[2,53] = 5
             
             # Save in user_dfs
             user_df.to_pickle("data/user_dfs/"+user_df.at[0,"f_name"])
