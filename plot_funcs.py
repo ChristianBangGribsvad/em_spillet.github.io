@@ -95,7 +95,7 @@ def plot_user(user_df):
             colors_in_column = [mpl.colormaps["Greens"](0.6)]*4
         elif row["Points"] == 10:
             colors_in_column = [mpl.colormaps["Greens"](0.8)]*4
-        elif row["Points"] == 15 or row["Points"] == 20:
+        elif row["Points"] == 15 or row["Points"] == 20 or row["Points"] == 25:
             colors_in_column = [mpl.colormaps["Greens"](0.99)]*4
         colors.append(colors_in_column)
 
