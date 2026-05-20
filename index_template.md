@@ -1,4 +1,4 @@
-![Kasper](./assets/images/euros 2.png)
+![FIFA World Cup 2026](./assets/images/fifa.jpg)
 
 -------------------------------
 
