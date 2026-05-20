@@ -10,18 +10,19 @@ import random
 def eval_match_predictions(predictions_df , results):
     # Convert results to a dict (and select only group stage matches)
     results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" in results[x][0]}
-    # Add extra row to save correct result
-    predictions_df.loc[len(predictions_df), predictions_df.columns] = ["-"]*len(predictions_df.columns)
-    # Add extra row to save points from each prediction
-    predictions_df.loc[len(predictions_df), predictions_df.columns] = [0]*len(predictions_df.columns)
+    # Add extra row to save correct result, then a row for points.
+    # Cast to object first so mixed str/int/float columns don't raise a FutureWarning.
+    predictions_df = predictions_df.astype(object)
+    predictions_df.loc[len(predictions_df), predictions_df.columns] = ["-"] * len(predictions_df.columns)
+    predictions_df.loc[len(predictions_df), predictions_df.columns] = [0]   * len(predictions_df.columns)
     
     # Initialize empty points var
     points = 0
     for col_name in [x for x in predictions_df.columns if "Predictions" in x]:
         pred = predictions_df.at[0,col_name]
-        res = results_dict[col_name]
-        
-        # If empty prediction we skip
+        res = results_dict.get(col_name, "None - None")
+
+        # If empty prediction or match not yet played, skip
         if pred != pred or "None" in res:
             continue
         
@@ -94,8 +95,8 @@ def find_group_winners(results):
 
     for group_name in all_group_names:
         group_results = {k: v for k,v in results_dict.items() if k[:7] == group_name}
-        group_home_countries = [k.split("[")[-1].split("]")[0].split("-")[0].strip() for k in list(group_results.keys())]
-        group_away_countries = [k.split("[")[-1].split("]")[0].split("-")[1].strip() for k in list(group_results.keys())]
+        group_home_countries = [k.split("[")[-1].split("]")[0].split(" - ", 1)[0].strip() for k in list(group_results.keys())]
+        group_away_countries = [k.split("[")[-1].split("]")[0].split(" - ", 1)[1].strip() for k in list(group_results.keys())]
         group_countries = np.unique(group_home_countries + group_away_countries).tolist()
         
         group_eval = {country:{"points":0,"goals_for":0,"goals_against":0}  for country in group_countries}
@@ -103,8 +104,8 @@ def find_group_winners(results):
         # Variable to skip calc if None score is present
         skip_group = False
         for k,v in group_results.items():
-            home_team = k.split("[")[-1].split("]")[0].split("-")[0].strip()
-            away_team = k.split("[")[-1].split("]")[0].split("-")[1].strip()    
+            home_team = k.split("[")[-1].split("]")[0].split(" - ", 1)[0].strip()
+            away_team = k.split("[")[-1].split("]")[0].split(" - ", 1)[1].strip()    
             
             home_score = v.split("-")[0].strip()
             away_score = v.split("-")[1].strip()
@@ -161,9 +162,9 @@ def find_group_winners(results):
                 away_score = int(list(equal_teams_match.values())[0].split("-")[1])
                 
                 if home_score > away_score:
-                    all_group_res[group_name]["2nd"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split("-")[0].strip()
+                    all_group_res[group_name]["2nd"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split(" - ", 1)[0].strip()
                 elif home_score < away_score:
-                    all_group_res[group_name]["2nd"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split("-")[1].strip()
+                    all_group_res[group_name]["2nd"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split(" - ", 1)[1].strip()
                 elif home_score == away_score:
                     # The scenario where the 2 teams drew against each other - Look into goal difference
                     equal_points = {team:group_eval[team]["goals_for"]-group_eval[team]["goals_against"] for team in equal_teams}
@@ -230,11 +231,11 @@ def find_group_winners(results):
             away_score = int(list(equal_teams_match.values())[0].split("-")[1])
             
             if home_score > away_score:
-                all_group_res[group_name]["1st"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split("-")[0].strip()
-                all_group_res[group_name]["2nd"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split("-")[1].strip()
+                all_group_res[group_name]["1st"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split(" - ", 1)[0].strip()
+                all_group_res[group_name]["2nd"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split(" - ", 1)[1].strip()
             elif home_score < away_score:
-                all_group_res[group_name]["1st"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split("-")[1].strip()
-                all_group_res[group_name]["2nd"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split("-")[0].strip()
+                all_group_res[group_name]["1st"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split(" - ", 1)[1].strip()
+                all_group_res[group_name]["2nd"] = list(equal_teams_match.keys())[0].split("[")[-1].split("]")[0].split(" - ", 1)[0].strip()
             elif home_score == away_score:
                 # The scenario where the 2 teams drew against each other - Look into goal difference
                 equal_points = {team:group_eval[team]["goals_for"]-group_eval[team]["goals_against"] for team in equal_teams}
@@ -343,34 +344,38 @@ def eval_groups(predictions_df , results):
 
     group_winner_cols = [x for x in predictions_df.columns if "place" in x]
     # Give points
-    for i in range(6):
-        pred1st = predictions_df.at[0,group_winner_cols[i*2]]
-        pred2nd = predictions_df.at[0,group_winner_cols[i*2 + 1]]
-        
-        res1st = all_group_res[list(all_group_res.keys())[i]]["1st"]
-        res2nd = all_group_res[list(all_group_res.keys())[i]]["2nd"]
-        
-        # Manual set DK as Group 2nd (everything is equal with Slovenia except placement in qualification)
-        if i == 2:
-            res2nd = "Denmark"
-        
+    for i in range(len(group_winner_cols) // 2):
+        col_1st = group_winner_cols[i*2]
+        col_2nd = group_winner_cols[i*2 + 1]
+        # Derive group name from column e.g. "Group A 1st place" → "Group A"
+        group_name = " ".join(col_1st.split()[:2])
+
+        # Skip groups with no results yet (e.g. only a subset of groups in test)
+        if group_name not in all_group_res:
+            continue
+
+        pred1st = predictions_df.at[0, col_1st]
+        pred2nd = predictions_df.at[0, col_2nd]
+        res1st  = all_group_res[group_name]["1st"]
+        res2nd  = all_group_res[group_name]["2nd"]
+
         # If current group is not finished we skip it
         if res1st == "":
             continue
         
-        predictions_df.at[1,group_winner_cols[i*2]] = res1st
-        predictions_df.at[1,group_winner_cols[i*2 + 1]] = res2nd
-        
+        predictions_df.at[1, col_1st] = res1st
+        predictions_df.at[1, col_2nd] = res2nd
+
         if res1st == pred1st and res2nd == pred2nd:
-            predictions_df.at[2,group_winner_cols[i*2]] = 7.5
-            predictions_df.at[2,group_winner_cols[i*2 + 1]] = 7.5
+            predictions_df.at[2, col_1st] = 7.5
+            predictions_df.at[2, col_2nd] = 7.5
         elif res1st == pred2nd and res2nd == pred1st:
-            predictions_df.at[2,group_winner_cols[i*2]] = 5
-            predictions_df.at[2,group_winner_cols[i*2+1]] = 5
+            predictions_df.at[2, col_1st] = 5
+            predictions_df.at[2, col_2nd] = 5
         elif res1st == pred1st:
-            predictions_df.at[2,group_winner_cols[i*2]] = 5
+            predictions_df.at[2, col_1st] = 5
         elif res2nd == pred2nd:
-            predictions_df.at[2,group_winner_cols[i*2 + 1]] = 5
+            predictions_df.at[2, col_2nd] = 5
             
     return predictions_df
 

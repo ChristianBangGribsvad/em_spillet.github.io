@@ -1,34 +1,18 @@
 """
 WC 2026 Pipeline Integration Test
 ==================================
-Tests the full pipeline end-to-end with dummy WC 2026 data:
-  - Match-prediction scoring  (eval_match_predictions)
-  - SVG visualisation          (plot_user, plot_group_progress,
-                                plot_best_round, plot_standings)
-  - Markdown page generation   (create_pages, update_pages)
+Tests:
+  1. check_group_winners  - unit-tests for find_group_winners() tiebreaker logic
+  2. check_scoring        - match-prediction + group-winner scoring with known results
+  3. Full pipeline run    - 3 simulated match days (Groups A & B), file assertions
 
-Three simulated match days are processed in sequence so that
-incremental score accumulation is exercised.
-
-All output is written to  test/test-results/  which is deleted
-automatically once the test finishes (pass or fail).
+Output is written to  test/test-results/  and kept after the run so you can
+inspect the generated SVGs, markdown pages and pickled DataFrames.
 
 Usage
 -----
     cd <repo root>
     python test/test_pipeline.py
-
-Known issues printed at startup
---------------------------------
-  1. eval_groups() is hardcoded for exactly 6 groups (EURO 2024 logic)
-     and contains a hard-wired Denmark override.  Both must be fixed
-     before the WC 2026 launch.  The function is intentionally SKIPPED
-     in this test to avoid a guaranteed IndexError.
-
-  2. main.py scores special predictions (final winner/loser, top scorer,
-     home-country progression) by hardcoded column indices 52-55.  These
-     will point to wrong columns with the new WC CSV layout and must be
-     replaced with column-name lookups.
 """
 
 import sys
@@ -43,7 +27,7 @@ TEST_DIR   = os.path.join(SCRIPT_DIR, "test-results")
 
 sys.path.insert(0, ROOT)
 
-from eval_funcs   import eval_match_predictions, dk_finish
+from eval_funcs   import eval_match_predictions, eval_groups, find_group_winners
 from plot_funcs   import plot_user, plot_group_progress, plot_best_round, plot_standings
 from create_pages import create_pages
 from insert_pages import update_pages
@@ -76,9 +60,9 @@ def build_results(scored: dict) -> list:
 
 
 # ── Three days of incremental results ────────────────────────────────────────
-# Actual final standings (for reference):
-#   Group A: 1st Mexico (7 pts), 2nd South Korea (5 pts)
-#   Group B: 1st Canada (7 pts), 2nd Switzerland (7 pts, lower GD)
+# Final standings:
+#   Group A: 1st Mexico (7 pts, GD +4), 2nd South Korea (5 pts)
+#   Group B: 1st Canada (7 pts, GD +4), 2nd Switzerland (7 pts, GD +3)
 
 DAY1_SCORED = {
     "Group A Predictions [Mexico - South Africa]":       "2 - 1",
@@ -104,14 +88,16 @@ DAY3_SCORED = {
 }
 
 SIMULATED_DAYS = [
-    ("2026-06-12", DAY1_SCORED, 4),
-    ("2026-06-16", DAY2_SCORED, 8),
+    ("2026-06-12", DAY1_SCORED,  4),
+    ("2026-06-16", DAY2_SCORED,  8),
     ("2026-06-20", DAY3_SCORED, 12),
 ]
 
 
 # ── Directory setup / teardown ───────────────────────────────────────────────
 def setup():
+    if os.path.exists(TEST_DIR):
+        shutil.rmtree(TEST_DIR)
     for sub in ["data/user_dfs", "data/group_dfs",
                 "pages/user_plots", "pages/group_plots"]:
         os.makedirs(os.path.join(TEST_DIR, sub), exist_ok=True)
@@ -120,16 +106,181 @@ def setup():
                 os.path.join(TEST_DIR, "index_template.md"))
 
     os.chdir(TEST_DIR)
-    print(f"[setup] Temp dir: {TEST_DIR}")
+    print(f"[setup] Output dir: {TEST_DIR}")
 
 
 def teardown():
     os.chdir(ROOT)
-    shutil.rmtree(TEST_DIR)
-    print(f"[teardown] Removed {TEST_DIR}")
+    print(f"\n[teardown] Results kept at: {TEST_DIR}")
+    print("  data/user_dfs/     - per-participant pickles (3 rows: predictions, results, points)")
+    print("  data/group_dfs/    - per-team-group pickles (date-indexed cumulative scores)")
+    print("  pages/user_plots/  - per-participant SVGs")
+    print("  pages/group_plots/ - group line/bar/standings SVGs")
+    print("  pages/*.md         - participant markdown pages")
+    print("  index.md           - homepage")
 
 
-# ── One-day pipeline run ──────────────────────────────────────────────────────
+# ── 1. Group-winner unit tests ────────────────────────────────────────────────
+def check_group_winners() -> bool:
+    """
+    Unit-tests for find_group_winners() covering the main tiebreaker paths.
+
+    Case 1 (Group M) - Clear winner, clear 2nd: no ties at all.
+      Alpha 9 pts > Beta 6 > Gamma 3 > Delta 0
+      Expected: 1st=Alpha, 2nd=Beta
+
+    Case 2 (Group N) - 2-way tie for 1st, resolved by head-to-head result.
+      Alpha 6 pts = Beta 6 pts; Alpha beat Beta 1-0
+      Expected: 1st=Alpha, 2nd=Beta
+
+    Case 3 (Group O) - 2-way tie for 1st, h2h was a draw, resolved by goal difference.
+      Alpha 7 pts = Beta 7 pts; drew 2-2; Alpha GD +5 < Beta GD +7
+      Expected: 1st=Beta, 2nd=Alpha
+
+    Case 4 (Group P) - 3-way tie, resolved by goal difference.
+      Alpha 6 = Beta 6 = Gamma 6 (circular wins); Delta 0
+      GD: Gamma +3 > Alpha +2 > Beta +1
+      Expected: 1st=Gamma, 2nd=Alpha
+    """
+    cases = [
+        # (description, results_list, group_key, exp_1st, exp_2nd)
+        (
+            "Case 1: clear winner",
+            [
+                ("Group M Predictions [Alpha - Beta]",  "3 - 0"),
+                ("Group M Predictions [Gamma - Delta]", "2 - 0"),
+                ("Group M Predictions [Alpha - Gamma]", "2 - 0"),
+                ("Group M Predictions [Beta - Delta]",  "2 - 0"),
+                ("Group M Predictions [Alpha - Delta]", "1 - 0"),
+                ("Group M Predictions [Beta - Gamma]",  "2 - 1"),
+            ],
+            "Group M", "Alpha", "Beta",
+        ),
+        (
+            "Case 2: 2-way tie, head-to-head decides (Alpha beat Beta 1-0)",
+            [
+                ("Group N Predictions [Alpha - Beta]",  "1 - 0"),
+                ("Group N Predictions [Gamma - Delta]", "1 - 1"),
+                ("Group N Predictions [Alpha - Gamma]", "0 - 1"),
+                ("Group N Predictions [Beta - Delta]",  "2 - 1"),
+                ("Group N Predictions [Alpha - Delta]", "2 - 0"),
+                ("Group N Predictions [Beta - Gamma]",  "2 - 1"),
+            ],
+            # Points: Alpha=6, Beta=6, Gamma=4, Delta=1
+            "Group N", "Alpha", "Beta",
+        ),
+        (
+            "Case 3: 2-way tie, drew h2h 2-2, goal difference decides (Beta GD+7 > Alpha GD+5)",
+            [
+                ("Group O Predictions [Alpha - Beta]",  "2 - 2"),
+                ("Group O Predictions [Gamma - Delta]", "1 - 1"),
+                ("Group O Predictions [Alpha - Gamma]", "3 - 0"),
+                ("Group O Predictions [Beta - Delta]",  "4 - 0"),
+                ("Group O Predictions [Alpha - Delta]", "2 - 0"),
+                ("Group O Predictions [Beta - Gamma]",  "3 - 0"),
+            ],
+            # Points: Alpha=7, Beta=7, Gamma=1, Delta=1
+            # GD: Alpha=(2+3+2)-(2+0+0)=+5, Beta=(2+4+3)-(2+0+0)=+7
+            "Group O", "Beta", "Alpha",
+        ),
+        (
+            "Case 4: 3-way tie (circular wins), goal difference decides (Gamma GD+3 > Alpha GD+2 > Beta GD+1)",
+            [
+                ("Group P Predictions [Alpha - Beta]",  "2 - 1"),
+                ("Group P Predictions [Gamma - Delta]", "3 - 0"),
+                ("Group P Predictions [Beta - Gamma]",  "2 - 1"),
+                ("Group P Predictions [Alpha - Delta]", "2 - 0"),
+                ("Group P Predictions [Gamma - Alpha]", "2 - 1"),
+                ("Group P Predictions [Beta - Delta]",  "1 - 0"),
+            ],
+            # Points: Alpha=6, Beta=6, Gamma=6, Delta=0
+            # GD: Alpha=(2+2+1)-(1+0+2)=+2, Beta=(1+2+1)-(2+1+0)=+1, Gamma=(3+1+2)-(0+2+1)=+3
+            "Group P", "Gamma", "Alpha",
+        ),
+    ]
+
+    all_ok = True
+    print(f"\n{'='*60}")
+    print("GROUP WINNER UNIT TESTS")
+    print(f"{'='*60}")
+    for desc, results, group_key, exp_1st, exp_2nd in cases:
+        res = find_group_winners(results)
+        got_1st = res.get(group_key, {}).get("1st", "??")
+        got_2nd = res.get(group_key, {}).get("2nd", "??")
+        ok = (got_1st == exp_1st) and (got_2nd == exp_2nd)
+        all_ok &= ok
+        status = "PASS" if ok else "FAIL"
+        print(f"  [{status}]  {desc}")
+        if not ok:
+            print(f"         Expected 1st={exp_1st}, 2nd={exp_2nd}")
+            print(f"         Got      1st={got_1st}, 2nd={got_2nd}")
+    print("=" * 60)
+    return all_ok
+
+
+# ── 2. Scoring checks (match + group winners) ─────────────────────────────────
+def check_scoring(predictions_df: pd.DataFrame) -> bool:
+    """
+    Sanity checks against the Day-3 (fully resolved) results.
+
+    Match scoring for Mexico vs South Africa (actual 2-1):
+      Alice pred 2-1  -> exact score   -> 15 pts
+      Bob   pred 1-0  -> correct win only -> 5 pts
+      Carol pred 2-0  -> correct win + correct home score -> 10 pts
+
+    Group A result: Mexico 1st, South Korea 2nd
+      Alice: Mexico 1st + SK 2nd (both correct)  ->  7.5 + 7.5 = 15 pts
+      Bob:   Czechia 1st (wrong) + SK 2nd (right) ->  0   + 5   =  5 pts
+      Carol: Mexico 1st (right) + Czechia 2nd (wrong) -> 5 + 0  =  5 pts
+
+    Group B result: Canada 1st, Switzerland 2nd
+      Alice: Canada 1st + Switzerland 2nd (both correct) -> 7.5 + 7.5 = 15 pts
+      Bob:   Switzerland 1st + Canada 2nd (swapped)      ->  5  +  5  = 10 pts
+      Carol: Canada 1st (right) + Qatar 2nd (wrong)      ->  5  +  0  =  5 pts
+    """
+    results_day3 = build_results(DAY3_SCORED)
+    all_ok = True
+
+    # (name, exp_match_pts, exp_grp_a_pts, exp_grp_b_pts)
+    # Carol predicted 2-0 vs actual 2-1: correct outcome AND correct home score = 10 pts
+    expectations = [
+        ("Alice Sm", 15, 15.0, 15.0),
+        ("Bob Jo",    5,  5.0, 10.0),
+        ("Carol Da", 10,  5.0,  5.0),
+    ]
+
+    rows = []
+    for name, exp_match, exp_a, exp_b in expectations:
+        df = (predictions_df[predictions_df["d_name"] == name]
+              .reset_index(drop=True))
+        df = eval_match_predictions(df, results_day3)
+        df = eval_groups(df, results_day3)
+
+        col_match = "Group A Predictions [Mexico - South Africa]"
+        match_pts = df.at[2, col_match]
+        a_pts = df.at[2, "Group A 1st place"] + df.at[2, "Group A 2nd place"]
+        b_pts = df.at[2, "Group B 1st place"] + df.at[2, "Group B 2nd place"]
+
+        ok = (match_pts == exp_match) and (a_pts == exp_a) and (b_pts == exp_b)
+        all_ok &= ok
+        rows.append((name, match_pts, exp_match, a_pts, exp_a, b_pts, exp_b, ok))
+
+    print(f"\n{'='*60}")
+    print("SCORING CHECKS  (Day-3 results)")
+    print(f"{'='*60}")
+    print(f"  {'Name':<12}  {'MexSA':>8}  {'GrpA':>10}  {'GrpB':>10}  Status")
+    print(f"  {'-'*12}  {'-'*8}  {'-'*10}  {'-'*10}  ------")
+    for name, mp, emp, ap, eap, bp, ebp, ok in rows:
+        status = "PASS" if ok else "FAIL"
+        m_str = f"{mp:>3}{'+' if mp==emp else f'!={emp}'}"
+        a_str = f"{ap:>5}{'+' if ap==eap else f'!={eap}'}"
+        b_str = f"{bp:>5}{'+' if bp==ebp else f'!={ebp}'}"
+        print(f"  {name:<12}  {m_str:>8}  {a_str:>10}  {b_str:>10}  [{status}]")
+    print("=" * 60)
+    return all_ok
+
+
+# ── 3. Full pipeline run ──────────────────────────────────────────────────────
 def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict):
     results = build_results(scored)
 
@@ -140,18 +291,11 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict):
         user_df = (predictions_df[predictions_df["d_name"] == user]
                    .reset_index(drop=True))
 
-        # Score group-stage match predictions
         user_df = eval_match_predictions(user_df, results)
+        user_df = eval_groups(user_df, results)
 
-        # eval_groups is intentionally skipped — see module docstring for why.
-
-        # dk_finish / dk_goals_scored are no-ops: Denmark is not in Groups A/B
-        user_df, dk_end = dk_finish(results, user_df)
-
-        # Persist latest user evaluation
         user_df.to_pickle(f"data/user_dfs/{user_df.at[0, 'f_name']}")
 
-        # Update each team-group the participant belongs to
         for group in user_df.at[0, "Which team(s) do you belong to?"].split(";"):
             gfile = f"data/group_dfs/{group}"
             df_grp = pd.read_pickle(gfile) if os.path.isfile(gfile) else pd.DataFrame()
@@ -162,7 +306,6 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict):
             df_grp.loc[date_str, user] = total_score
             df_grp.to_pickle(gfile)
 
-            # Today's Schmeichel: points gained since previous day
             if df_grp.shape[0] > 1:
                 user_val = df_grp.loc[date_str, user] - df_grp.iloc[-2][user]
             else:
@@ -186,11 +329,10 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict):
                     "fname": user_df.at[0, "f_name"],
                 }
 
-    # Group-level plots
     for group in os.listdir("data/group_dfs"):
         df_grp = pd.read_pickle(f"data/group_dfs/{group}")
         plot_group_progress(df_grp, group)
-        plot_best_round(df_grp, group)   # skipped silently when only 1 row
+        plot_best_round(df_grp, group)
         plot_standings(df_grp, group)
 
     create_pages(predictions_df)
@@ -204,7 +346,6 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict):
 def assert_files(predictions_df: pd.DataFrame) -> bool:
     expected = []
 
-    # Per-participant: SVG table + markdown page
     for _, row in predictions_df.iterrows():
         fname = row["f_name"]
         expected += [
@@ -212,18 +353,16 @@ def assert_files(predictions_df: pd.DataFrame) -> bool:
             f"pages/{fname}.md",
         ]
 
-    # Per-team-group: line chart, bar chart, standings table
     groups = (predictions_df["Which team(s) do you belong to?"]
               .str.split(";").explode().unique())
     for group in groups:
         g = group.replace(" ", "_")
         expected += [
             f"pages/group_plots/lines_{g}.svg",
-            f"pages/group_plots/bars_{g}.svg",    # created from day 2 onward
+            f"pages/group_plots/bars_{g}.svg",
             f"pages/group_plots/standing_{g}.svg",
         ]
 
-    # Homepage
     expected.append("index.md")
 
     passes, failures = [], []
@@ -234,33 +373,14 @@ def assert_files(predictions_df: pd.DataFrame) -> bool:
             failures.append(path)
 
     print(f"\n{'='*60}")
-    print(f"FILE ASSERTIONS  —  {len(passes)} passed / {len(failures)} failed")
+    print(f"FILE ASSERTIONS  - {len(passes)} passed / {len(failures)} failed")
     for p in passes:
         print(f"  PASS  {p}")
     for f in failures:
-        print(f"  FAIL  {f}  ← missing")
+        print(f"  FAIL  {f}  <- missing")
     print("=" * 60)
 
     return len(failures) == 0
-
-
-# ── Scoring smoke-check ───────────────────────────────────────────────────────
-def check_scoring(predictions_df: pd.DataFrame):
-    """
-    Quick sanity check: Alice predicted Mexico 2-1 South Africa exactly right
-    on Day 1 → should earn 15 points for that match.
-    """
-    results_day1 = build_results(DAY1_SCORED)
-    alice_df = (predictions_df[predictions_df["d_name"] == "Alice Sm"]
-                .reset_index(drop=True))
-    alice_df = eval_match_predictions(alice_df, results_day1)
-
-    col = "Group A Predictions [Mexico - South Africa]"
-    pts = alice_df.at[2, col]
-    ok  = (pts == 15)
-    status = "PASS" if ok else "FAIL"
-    print(f"\nSCORING CHECK  —  Alice exact score (Mexico 2-1 SA) → {pts} pts  [{status}]")
-    return ok
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -269,19 +389,11 @@ def main():
     print("WC 2026 Pipeline Integration Test")
     print("=" * 60)
 
-    print("\n⚠  KNOWN ISSUES TO FIX BEFORE WC 2026 LAUNCH:")
-    print("   1. eval_groups() hardcoded 'for i in range(6)' → must be")
-    print("      range(12) (or dynamic) for the 12 WC groups.")
-    print("   2. eval_groups() contains 'if i == 2: res2nd = Denmark'")
-    print("      — EURO 2024 hack that must be removed.")
-    print("   3. main.py scores special predictions via hardcoded column")
-    print("      indices 52-55.  New WC CSV has different column count;")
-    print("      replace iloc references with column-name lookups.\n")
+    # Group-winner unit tests run before filesystem setup (no side effects)
+    all_ok = check_group_winners()
 
     setup()
-    all_ok = True
     try:
-        # Load dummy CSV and derive name columns (same logic as main.py)
         predictions_df = pd.read_csv(os.path.join(SCRIPT_DIR, "test_data.csv"))
         predictions_df["f_name"] = [
             f"{r['First name']}_{str(r['Last name'])[:2]}".replace(" ", "_").replace('"', "_")
@@ -292,21 +404,18 @@ def main():
             for _, r in predictions_df.iterrows()
         ]
 
-        # Scoring smoke-check (does not require filesystem setup)
         all_ok &= check_scoring(predictions_df)
 
-        # Simulate 3 match days
         for date_str, scored, n_played in SIMULATED_DAYS:
-            print(f"\n--- Day {date_str}  ({n_played}/12 group matches resolved) ---")
+            print(f"\n--- Day {date_str}  ({n_played}/12 Group A+B matches resolved) ---")
             run_day(predictions_df.copy(), date_str, scored)
 
-        # Verify all expected output files were created
         all_ok &= assert_files(predictions_df)
 
         if all_ok:
-            print("\n✅  All checks passed.\n")
+            print("\n[PASS]  All checks passed.\n")
         else:
-            print("\n❌  One or more checks failed — see output above.\n")
+            print("\n[FAIL]  One or more checks failed - see output above.\n")
             raise SystemExit(1)
 
     finally:

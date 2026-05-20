@@ -12,10 +12,10 @@ import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
     #### Fill out when final is finished
-    topscorer = ["Cody Gakpo","Harry Kane" ,"Jamal Musiala"," Dani  Olmo","Ivan Schranz"]
-    topscorer_goals = "3"
-    finale_loser = "England"
-    finale_winner = "Spain"
+    topscorer = []       # e.g. ["Player Name"]
+    topscorer_goals = None  # e.g. "5"
+    finale_loser = None  # e.g. "France"
+    finale_winner = None # e.g. "Brazil"
     eval_res = True
     
     results = get_results()
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     
     # Only execute rest of main if we have new results
     if eval_res:
-        predictions_df = pd.read_csv("EM spillet 2024.csv")
+        predictions_df = pd.read_csv("WC spillet 2026.csv")
         df_fname = pd.DataFrame({'f_name': [(f"{row['First name']}"+"_"+f"{str(row['Last name'])[0:2]}").replace(" ","_").replace('"',"_") for _, row in predictions_df.iterrows()]})
         df_dname = pd.DataFrame({'d_name': [f"{row['First name']}"+" "+f"{str(row['Last name'])[0:2]}" for _, row in predictions_df.iterrows()]})
         predictions_df =predictions_df.join(df_fname)
@@ -81,40 +81,38 @@ if __name__ == "__main__":
             # Add group stage winners points
             user_df = eval_groups(user_df , results)
 
-            # Add DK finishing-stage points
-            user_df , dk_end = dk_finish(results, user_df)
-            
-            # Add DK goals
-            if len(dk_end) > 0:
-                print("DENMARK is out at",dk_end," at day",date)
-                # Only when DK is out
-                user_df = dk_goals_scored(results, user_df)
-            
-            # Add Top scorer
-            if user_df.iloc[0,54] in topscorer:
-                user_df.iloc[2,54] = 20
-            user_df.iloc[1,54] = ",".join(topscorer)
-            
-            # Add Topscorer goals
-            if topscorer_goals == user_df.iloc[0,55]:
-                user_df.iloc[2,55] = 10
-            user_df.iloc[1,55] = topscorer_goals
-            
-            # Add finale winner team
-            if finale_winner == user_df.iloc[0,52]:
-                user_df.iloc[2,52] = 25
-            user_df.iloc[1,52] = finale_winner
-            
-            # Add finale loser team
-            if finale_loser == user_df.iloc[0,53]:
-                user_df.iloc[2,53] = 15
-            user_df.iloc[1,53] = finale_loser
+            col_winner = "FIFA World Cup 2026 final winner"
+            col_loser  = "FIFA World Cup 2026 final loser"
+            col_scorer = "Who is going to be the top scorer throughout FIFA World Cup 2026? (20 points)"
+            col_scorer_goals = "How many goals does the top scorer score? (10 points)"
 
-            # if finale teams are correct but wrong in placement
-            if finale_loser == user_df.iloc[0,52] and finale_winner == user_df.iloc[0,53]:
-                user_df.iloc[2,53] = 10
-            elif finale_loser == user_df.iloc[0,52] or finale_winner == user_df.iloc[0,53]:
-                user_df.iloc[2,53] = 5
+            # Add Top scorer
+            if topscorer:
+                if user_df.at[0, col_scorer] in topscorer:
+                    user_df.at[2, col_scorer] = 20
+                user_df.at[1, col_scorer] = ",".join(topscorer)
+
+            # Add Top scorer goals
+            if topscorer_goals is not None:
+                if topscorer_goals == user_df.at[0, col_scorer_goals]:
+                    user_df.at[2, col_scorer_goals] = 10
+                user_df.at[1, col_scorer_goals] = topscorer_goals
+
+            # Add final winner/loser (only once final result is known)
+            if finale_winner is not None and finale_loser is not None:
+                user_df.at[1, col_winner] = finale_winner
+                user_df.at[1, col_loser]  = finale_loser
+
+                if finale_winner == user_df.at[0, col_winner]:
+                    user_df.at[2, col_winner] = 25
+                if finale_loser == user_df.at[0, col_loser]:
+                    user_df.at[2, col_loser] = 15
+
+                # Correct teams but swapped placement
+                if finale_loser == user_df.at[0, col_winner] and finale_winner == user_df.at[0, col_loser]:
+                    user_df.at[2, col_loser] = 10
+                elif finale_loser == user_df.at[0, col_winner] or finale_winner == user_df.at[0, col_loser]:
+                    user_df.at[2, col_loser] = 5
             
             # Save in user_dfs
             user_df.to_pickle("data/user_dfs/"+user_df.at[0,"f_name"])

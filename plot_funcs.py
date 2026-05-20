@@ -55,7 +55,7 @@ def plot_standings(df_results,group_name):
     rows = len(sort_standing_names)
     val1 = ["Points"] 
     val2 = [sort_standing_names[i].format(rows) for i in range(rows)] 
-    val3 = [[str(sort_standing_value[r])] for r in range(rows)]
+    val3 = [[str(sort_standing_value.iloc[r])] for r in range(rows)]
     
     fig, ax = plt.subplots(1,figsize=(2,1)) 
     ax.set_axis_off() 
