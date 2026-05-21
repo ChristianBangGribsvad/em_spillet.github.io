@@ -25,7 +25,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT       = os.path.dirname(SCRIPT_DIR)
 TEST_DIR   = os.path.join(SCRIPT_DIR, "test-results")
 
-sys.path.insert(0, ROOT)
+sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 
 from eval_funcs   import eval_match_predictions, eval_groups, find_group_winners
 from plot_funcs   import plot_user, plot_group_progress, plot_best_round, plot_standings

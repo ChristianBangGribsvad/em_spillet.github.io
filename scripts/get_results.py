@@ -20,12 +20,12 @@ def process_match(match):
     return matchid,score
 
 def get_results():
-    # Specify competition in endpoint, in this case World Cup (WC) 
+    # Specify competition in endpoint, in this case World Cup (WC)
     uri = 'https://api.football-data.org/v4/competitions/WC/matches'
     headers = { 'X-Auth-Token': '242e02ff31ea497fbe4b85978fe70b81' }
-    
+
     response = requests.get(uri, headers=headers)
-    
+
     matches  = response.json()["matches"]
     results = []
     for m in matches:

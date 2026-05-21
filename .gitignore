@@ -4,5 +4,6 @@ Gemfile.lock
 *.gem
 .jekyll-cache
 *.pyc
+__pycache__/
 test-results/
-CLAUDE.md
+.claude/
