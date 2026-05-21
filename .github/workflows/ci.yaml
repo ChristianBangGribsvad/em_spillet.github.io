@@ -2,8 +2,9 @@ on:
   push:
   pull_request:
     types: [opened, synchronize]
+
 jobs:
-  build:
+  jekyll-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -13,3 +14,17 @@ jobs:
           bundler-cache: true
       - name: Build Jekyll site
         run: bundle exec jekyll build
+
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run pipeline tests
+        run: python test/test_pipeline.py
+        env:
+          MPLBACKEND: Agg
