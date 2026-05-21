@@ -2,17 +2,16 @@ function createForm() {
   var form = FormApp.create('FIFA World Cup 2026 - Forudsigelser');
   form.setDescription('Udfyld dine forudsigelser inden turneringen starter den 11. juni 2026.');
 
-  var GOALS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  var scoreValidation = FormApp.createTextValidation()
+    .requireTextMatchesPattern('^\\d+\\s*-\\s*\\d+$')
+    .build();
 
-  function addMatch(homeTitle, homeHelp, awayTitle, awayHelp) {
-    var hq = form.addListItem();
-    hq.setTitle(homeTitle).setHelpText(homeHelp)
-      .setChoices(GOALS.map(function(g) { return hq.createChoice(g); }))
-      .setRequired(true);
-    var aq = form.addListItem();
-    aq.setTitle(awayTitle).setHelpText(awayHelp)
-      .setChoices(GOALS.map(function(g) { return aq.createChoice(g); }))
-      .setRequired(true);
+  function addMatch(title, homeTeam, awayTeam) {
+    form.addTextItem()
+        .setTitle(title)
+        .setHelpText(homeTeam + ' goals - ' + awayTeam + ' goals  (e.g. 2 - 1)')
+        .setValidation(scoreValidation)
+        .setRequired(true);
   }
 
   // ── Personal info ──────────────────────────────────────────────────
@@ -24,110 +23,110 @@ function createForm() {
   tq.setTitle('Which team(s) do you belong to?')
     .setChoices([
       tq.createChoice('Danica Ejendomme'),
-      tq.createChoice('European Sperm Bank'),
+      tq.createChoice('Novo Nordisk'),
+      tq.createChoice('Quantum and Laser Photonics DTU'),
+      tq.createChoice('GeH Fys'),
       tq.createChoice('Frederiksborg Gymnasium'),
       tq.createChoice('Friends and Family'),
-      tq.createChoice('GeH Fys'),
-      tq.createChoice('Quantum and Laser Photonics DTU'),
     ])
     .setRequired(true);
 
   // ── Group stage predictions ─────────────────────────────────────────
   form.addSectionHeaderItem().setTitle('Group A');
-  addMatch('Group A Predictions [Mexico - South Africa] (home)', 'Mexico goals', 'Group A Predictions [Mexico - South Africa] (away)', 'South Africa goals');
-  addMatch('Group A Predictions [South Korea - Czechia] (home)', 'South Korea goals', 'Group A Predictions [South Korea - Czechia] (away)', 'Czechia goals');
-  addMatch('Group A Predictions [Czechia - South Africa] (home)', 'Czechia goals', 'Group A Predictions [Czechia - South Africa] (away)', 'South Africa goals');
-  addMatch('Group A Predictions [Mexico - South Korea] (home)', 'Mexico goals', 'Group A Predictions [Mexico - South Korea] (away)', 'South Korea goals');
-  addMatch('Group A Predictions [Czechia - Mexico] (home)', 'Czechia goals', 'Group A Predictions [Czechia - Mexico] (away)', 'Mexico goals');
-  addMatch('Group A Predictions [South Africa - South Korea] (home)', 'South Africa goals', 'Group A Predictions [South Africa - South Korea] (away)', 'South Korea goals');
+  addMatch('Group A Predictions [Mexico - South Africa]', 'Mexico', 'South Africa');
+  addMatch('Group A Predictions [South Korea - Czechia]', 'South Korea', 'Czechia');
+  addMatch('Group A Predictions [Czechia - South Africa]', 'Czechia', 'South Africa');
+  addMatch('Group A Predictions [Mexico - South Korea]', 'Mexico', 'South Korea');
+  addMatch('Group A Predictions [Czechia - Mexico]', 'Czechia', 'Mexico');
+  addMatch('Group A Predictions [South Africa - South Korea]', 'South Africa', 'South Korea');
 
   form.addSectionHeaderItem().setTitle('Group B');
-  addMatch('Group B Predictions [Canada - Bosnia-Herzegovina] (home)', 'Canada goals', 'Group B Predictions [Canada - Bosnia-Herzegovina] (away)', 'Bosnia-Herzegovina goals');
-  addMatch('Group B Predictions [Qatar - Switzerland] (home)', 'Qatar goals', 'Group B Predictions [Qatar - Switzerland] (away)', 'Switzerland goals');
-  addMatch('Group B Predictions [Switzerland - Bosnia-Herzegovina] (home)', 'Switzerland goals', 'Group B Predictions [Switzerland - Bosnia-Herzegovina] (away)', 'Bosnia-Herzegovina goals');
-  addMatch('Group B Predictions [Canada - Qatar] (home)', 'Canada goals', 'Group B Predictions [Canada - Qatar] (away)', 'Qatar goals');
-  addMatch('Group B Predictions [Switzerland - Canada] (home)', 'Switzerland goals', 'Group B Predictions [Switzerland - Canada] (away)', 'Canada goals');
-  addMatch('Group B Predictions [Bosnia-Herzegovina - Qatar] (home)', 'Bosnia-Herzegovina goals', 'Group B Predictions [Bosnia-Herzegovina - Qatar] (away)', 'Qatar goals');
+  addMatch('Group B Predictions [Canada - Bosnia-Herzegovina]', 'Canada', 'Bosnia-Herzegovina');
+  addMatch('Group B Predictions [Qatar - Switzerland]', 'Qatar', 'Switzerland');
+  addMatch('Group B Predictions [Switzerland - Bosnia-Herzegovina]', 'Switzerland', 'Bosnia-Herzegovina');
+  addMatch('Group B Predictions [Canada - Qatar]', 'Canada', 'Qatar');
+  addMatch('Group B Predictions [Switzerland - Canada]', 'Switzerland', 'Canada');
+  addMatch('Group B Predictions [Bosnia-Herzegovina - Qatar]', 'Bosnia-Herzegovina', 'Qatar');
 
   form.addSectionHeaderItem().setTitle('Group C');
-  addMatch('Group C Predictions [Brazil - Morocco] (home)', 'Brazil goals', 'Group C Predictions [Brazil - Morocco] (away)', 'Morocco goals');
-  addMatch('Group C Predictions [Haiti - Scotland] (home)', 'Haiti goals', 'Group C Predictions [Haiti - Scotland] (away)', 'Scotland goals');
-  addMatch('Group C Predictions [Scotland - Morocco] (home)', 'Scotland goals', 'Group C Predictions [Scotland - Morocco] (away)', 'Morocco goals');
-  addMatch('Group C Predictions [Brazil - Haiti] (home)', 'Brazil goals', 'Group C Predictions [Brazil - Haiti] (away)', 'Haiti goals');
-  addMatch('Group C Predictions [Morocco - Haiti] (home)', 'Morocco goals', 'Group C Predictions [Morocco - Haiti] (away)', 'Haiti goals');
-  addMatch('Group C Predictions [Scotland - Brazil] (home)', 'Scotland goals', 'Group C Predictions [Scotland - Brazil] (away)', 'Brazil goals');
+  addMatch('Group C Predictions [Brazil - Morocco]', 'Brazil', 'Morocco');
+  addMatch('Group C Predictions [Haiti - Scotland]', 'Haiti', 'Scotland');
+  addMatch('Group C Predictions [Scotland - Morocco]', 'Scotland', 'Morocco');
+  addMatch('Group C Predictions [Brazil - Haiti]', 'Brazil', 'Haiti');
+  addMatch('Group C Predictions [Morocco - Haiti]', 'Morocco', 'Haiti');
+  addMatch('Group C Predictions [Scotland - Brazil]', 'Scotland', 'Brazil');
 
   form.addSectionHeaderItem().setTitle('Group D');
-  addMatch('Group D Predictions [United States - Paraguay] (home)', 'United States goals', 'Group D Predictions [United States - Paraguay] (away)', 'Paraguay goals');
-  addMatch('Group D Predictions [Australia - Turkey] (home)', 'Australia goals', 'Group D Predictions [Australia - Turkey] (away)', 'Turkey goals');
-  addMatch('Group D Predictions [United States - Australia] (home)', 'United States goals', 'Group D Predictions [United States - Australia] (away)', 'Australia goals');
-  addMatch('Group D Predictions [Turkey - Paraguay] (home)', 'Turkey goals', 'Group D Predictions [Turkey - Paraguay] (away)', 'Paraguay goals');
-  addMatch('Group D Predictions [Turkey - United States] (home)', 'Turkey goals', 'Group D Predictions [Turkey - United States] (away)', 'United States goals');
-  addMatch('Group D Predictions [Paraguay - Australia] (home)', 'Paraguay goals', 'Group D Predictions [Paraguay - Australia] (away)', 'Australia goals');
+  addMatch('Group D Predictions [United States - Paraguay]', 'United States', 'Paraguay');
+  addMatch('Group D Predictions [Australia - Turkey]', 'Australia', 'Turkey');
+  addMatch('Group D Predictions [United States - Australia]', 'United States', 'Australia');
+  addMatch('Group D Predictions [Turkey - Paraguay]', 'Turkey', 'Paraguay');
+  addMatch('Group D Predictions [Turkey - United States]', 'Turkey', 'United States');
+  addMatch('Group D Predictions [Paraguay - Australia]', 'Paraguay', 'Australia');
 
   form.addSectionHeaderItem().setTitle('Group E');
-  addMatch('Group E Predictions [Germany - Curaçao] (home)', 'Germany goals', 'Group E Predictions [Germany - Curaçao] (away)', 'Curaçao goals');
-  addMatch('Group E Predictions [Ivory Coast - Ecuador] (home)', 'Ivory Coast goals', 'Group E Predictions [Ivory Coast - Ecuador] (away)', 'Ecuador goals');
-  addMatch('Group E Predictions [Germany - Ivory Coast] (home)', 'Germany goals', 'Group E Predictions [Germany - Ivory Coast] (away)', 'Ivory Coast goals');
-  addMatch('Group E Predictions [Ecuador - Curaçao] (home)', 'Ecuador goals', 'Group E Predictions [Ecuador - Curaçao] (away)', 'Curaçao goals');
-  addMatch('Group E Predictions [Ecuador - Germany] (home)', 'Ecuador goals', 'Group E Predictions [Ecuador - Germany] (away)', 'Germany goals');
-  addMatch('Group E Predictions [Curaçao - Ivory Coast] (home)', 'Curaçao goals', 'Group E Predictions [Curaçao - Ivory Coast] (away)', 'Ivory Coast goals');
+  addMatch('Group E Predictions [Germany - Curaçao]', 'Germany', 'Curaçao');
+  addMatch('Group E Predictions [Ivory Coast - Ecuador]', 'Ivory Coast', 'Ecuador');
+  addMatch('Group E Predictions [Germany - Ivory Coast]', 'Germany', 'Ivory Coast');
+  addMatch('Group E Predictions [Ecuador - Curaçao]', 'Ecuador', 'Curaçao');
+  addMatch('Group E Predictions [Ecuador - Germany]', 'Ecuador', 'Germany');
+  addMatch('Group E Predictions [Curaçao - Ivory Coast]', 'Curaçao', 'Ivory Coast');
 
   form.addSectionHeaderItem().setTitle('Group F');
-  addMatch('Group F Predictions [Netherlands - Japan] (home)', 'Netherlands goals', 'Group F Predictions [Netherlands - Japan] (away)', 'Japan goals');
-  addMatch('Group F Predictions [Sweden - Tunisia] (home)', 'Sweden goals', 'Group F Predictions [Sweden - Tunisia] (away)', 'Tunisia goals');
-  addMatch('Group F Predictions [Netherlands - Sweden] (home)', 'Netherlands goals', 'Group F Predictions [Netherlands - Sweden] (away)', 'Sweden goals');
-  addMatch('Group F Predictions [Tunisia - Japan] (home)', 'Tunisia goals', 'Group F Predictions [Tunisia - Japan] (away)', 'Japan goals');
-  addMatch('Group F Predictions [Tunisia - Netherlands] (home)', 'Tunisia goals', 'Group F Predictions [Tunisia - Netherlands] (away)', 'Netherlands goals');
-  addMatch('Group F Predictions [Japan - Sweden] (home)', 'Japan goals', 'Group F Predictions [Japan - Sweden] (away)', 'Sweden goals');
+  addMatch('Group F Predictions [Netherlands - Japan]', 'Netherlands', 'Japan');
+  addMatch('Group F Predictions [Sweden - Tunisia]', 'Sweden', 'Tunisia');
+  addMatch('Group F Predictions [Netherlands - Sweden]', 'Netherlands', 'Sweden');
+  addMatch('Group F Predictions [Tunisia - Japan]', 'Tunisia', 'Japan');
+  addMatch('Group F Predictions [Tunisia - Netherlands]', 'Tunisia', 'Netherlands');
+  addMatch('Group F Predictions [Japan - Sweden]', 'Japan', 'Sweden');
 
   form.addSectionHeaderItem().setTitle('Group G');
-  addMatch('Group G Predictions [Belgium - Egypt] (home)', 'Belgium goals', 'Group G Predictions [Belgium - Egypt] (away)', 'Egypt goals');
-  addMatch('Group G Predictions [Iran - New Zealand] (home)', 'Iran goals', 'Group G Predictions [Iran - New Zealand] (away)', 'New Zealand goals');
-  addMatch('Group G Predictions [Belgium - Iran] (home)', 'Belgium goals', 'Group G Predictions [Belgium - Iran] (away)', 'Iran goals');
-  addMatch('Group G Predictions [New Zealand - Egypt] (home)', 'New Zealand goals', 'Group G Predictions [New Zealand - Egypt] (away)', 'Egypt goals');
-  addMatch('Group G Predictions [New Zealand - Belgium] (home)', 'New Zealand goals', 'Group G Predictions [New Zealand - Belgium] (away)', 'Belgium goals');
-  addMatch('Group G Predictions [Egypt - Iran] (home)', 'Egypt goals', 'Group G Predictions [Egypt - Iran] (away)', 'Iran goals');
+  addMatch('Group G Predictions [Belgium - Egypt]', 'Belgium', 'Egypt');
+  addMatch('Group G Predictions [Iran - New Zealand]', 'Iran', 'New Zealand');
+  addMatch('Group G Predictions [Belgium - Iran]', 'Belgium', 'Iran');
+  addMatch('Group G Predictions [New Zealand - Egypt]', 'New Zealand', 'Egypt');
+  addMatch('Group G Predictions [New Zealand - Belgium]', 'New Zealand', 'Belgium');
+  addMatch('Group G Predictions [Egypt - Iran]', 'Egypt', 'Iran');
 
   form.addSectionHeaderItem().setTitle('Group H');
-  addMatch('Group H Predictions [Spain - Cape Verde Islands] (home)', 'Spain goals', 'Group H Predictions [Spain - Cape Verde Islands] (away)', 'Cape Verde Islands goals');
-  addMatch('Group H Predictions [Saudi Arabia - Uruguay] (home)', 'Saudi Arabia goals', 'Group H Predictions [Saudi Arabia - Uruguay] (away)', 'Uruguay goals');
-  addMatch('Group H Predictions [Spain - Saudi Arabia] (home)', 'Spain goals', 'Group H Predictions [Spain - Saudi Arabia] (away)', 'Saudi Arabia goals');
-  addMatch('Group H Predictions [Uruguay - Cape Verde Islands] (home)', 'Uruguay goals', 'Group H Predictions [Uruguay - Cape Verde Islands] (away)', 'Cape Verde Islands goals');
-  addMatch('Group H Predictions [Uruguay - Spain] (home)', 'Uruguay goals', 'Group H Predictions [Uruguay - Spain] (away)', 'Spain goals');
-  addMatch('Group H Predictions [Cape Verde Islands - Saudi Arabia] (home)', 'Cape Verde Islands goals', 'Group H Predictions [Cape Verde Islands - Saudi Arabia] (away)', 'Saudi Arabia goals');
+  addMatch('Group H Predictions [Spain - Cape Verde Islands]', 'Spain', 'Cape Verde Islands');
+  addMatch('Group H Predictions [Saudi Arabia - Uruguay]', 'Saudi Arabia', 'Uruguay');
+  addMatch('Group H Predictions [Spain - Saudi Arabia]', 'Spain', 'Saudi Arabia');
+  addMatch('Group H Predictions [Uruguay - Cape Verde Islands]', 'Uruguay', 'Cape Verde Islands');
+  addMatch('Group H Predictions [Uruguay - Spain]', 'Uruguay', 'Spain');
+  addMatch('Group H Predictions [Cape Verde Islands - Saudi Arabia]', 'Cape Verde Islands', 'Saudi Arabia');
 
   form.addSectionHeaderItem().setTitle('Group I');
-  addMatch('Group I Predictions [France - Senegal] (home)', 'France goals', 'Group I Predictions [France - Senegal] (away)', 'Senegal goals');
-  addMatch('Group I Predictions [Iraq - Norway] (home)', 'Iraq goals', 'Group I Predictions [Iraq - Norway] (away)', 'Norway goals');
-  addMatch('Group I Predictions [France - Iraq] (home)', 'France goals', 'Group I Predictions [France - Iraq] (away)', 'Iraq goals');
-  addMatch('Group I Predictions [Norway - Senegal] (home)', 'Norway goals', 'Group I Predictions [Norway - Senegal] (away)', 'Senegal goals');
-  addMatch('Group I Predictions [Norway - France] (home)', 'Norway goals', 'Group I Predictions [Norway - France] (away)', 'France goals');
-  addMatch('Group I Predictions [Senegal - Iraq] (home)', 'Senegal goals', 'Group I Predictions [Senegal - Iraq] (away)', 'Iraq goals');
+  addMatch('Group I Predictions [France - Senegal]', 'France', 'Senegal');
+  addMatch('Group I Predictions [Iraq - Norway]', 'Iraq', 'Norway');
+  addMatch('Group I Predictions [France - Iraq]', 'France', 'Iraq');
+  addMatch('Group I Predictions [Norway - Senegal]', 'Norway', 'Senegal');
+  addMatch('Group I Predictions [Norway - France]', 'Norway', 'France');
+  addMatch('Group I Predictions [Senegal - Iraq]', 'Senegal', 'Iraq');
 
   form.addSectionHeaderItem().setTitle('Group J');
-  addMatch('Group J Predictions [Argentina - Algeria] (home)', 'Argentina goals', 'Group J Predictions [Argentina - Algeria] (away)', 'Algeria goals');
-  addMatch('Group J Predictions [Austria - Jordan] (home)', 'Austria goals', 'Group J Predictions [Austria - Jordan] (away)', 'Jordan goals');
-  addMatch('Group J Predictions [Argentina - Austria] (home)', 'Argentina goals', 'Group J Predictions [Argentina - Austria] (away)', 'Austria goals');
-  addMatch('Group J Predictions [Jordan - Algeria] (home)', 'Jordan goals', 'Group J Predictions [Jordan - Algeria] (away)', 'Algeria goals');
-  addMatch('Group J Predictions [Jordan - Argentina] (home)', 'Jordan goals', 'Group J Predictions [Jordan - Argentina] (away)', 'Argentina goals');
-  addMatch('Group J Predictions [Algeria - Austria] (home)', 'Algeria goals', 'Group J Predictions [Algeria - Austria] (away)', 'Austria goals');
+  addMatch('Group J Predictions [Argentina - Algeria]', 'Argentina', 'Algeria');
+  addMatch('Group J Predictions [Austria - Jordan]', 'Austria', 'Jordan');
+  addMatch('Group J Predictions [Argentina - Austria]', 'Argentina', 'Austria');
+  addMatch('Group J Predictions [Jordan - Algeria]', 'Jordan', 'Algeria');
+  addMatch('Group J Predictions [Jordan - Argentina]', 'Jordan', 'Argentina');
+  addMatch('Group J Predictions [Algeria - Austria]', 'Algeria', 'Austria');
 
   form.addSectionHeaderItem().setTitle('Group K');
-  addMatch('Group K Predictions [Portugal - Congo DR] (home)', 'Portugal goals', 'Group K Predictions [Portugal - Congo DR] (away)', 'Congo DR goals');
-  addMatch('Group K Predictions [Uzbekistan - Colombia] (home)', 'Uzbekistan goals', 'Group K Predictions [Uzbekistan - Colombia] (away)', 'Colombia goals');
-  addMatch('Group K Predictions [Portugal - Uzbekistan] (home)', 'Portugal goals', 'Group K Predictions [Portugal - Uzbekistan] (away)', 'Uzbekistan goals');
-  addMatch('Group K Predictions [Colombia - Congo DR] (home)', 'Colombia goals', 'Group K Predictions [Colombia - Congo DR] (away)', 'Congo DR goals');
-  addMatch('Group K Predictions [Colombia - Portugal] (home)', 'Colombia goals', 'Group K Predictions [Colombia - Portugal] (away)', 'Portugal goals');
-  addMatch('Group K Predictions [Congo DR - Uzbekistan] (home)', 'Congo DR goals', 'Group K Predictions [Congo DR - Uzbekistan] (away)', 'Uzbekistan goals');
+  addMatch('Group K Predictions [Portugal - Congo DR]', 'Portugal', 'Congo DR');
+  addMatch('Group K Predictions [Uzbekistan - Colombia]', 'Uzbekistan', 'Colombia');
+  addMatch('Group K Predictions [Portugal - Uzbekistan]', 'Portugal', 'Uzbekistan');
+  addMatch('Group K Predictions [Colombia - Congo DR]', 'Colombia', 'Congo DR');
+  addMatch('Group K Predictions [Colombia - Portugal]', 'Colombia', 'Portugal');
+  addMatch('Group K Predictions [Congo DR - Uzbekistan]', 'Congo DR', 'Uzbekistan');
 
   form.addSectionHeaderItem().setTitle('Group L');
-  addMatch('Group L Predictions [England - Croatia] (home)', 'England goals', 'Group L Predictions [England - Croatia] (away)', 'Croatia goals');
-  addMatch('Group L Predictions [Ghana - Panama] (home)', 'Ghana goals', 'Group L Predictions [Ghana - Panama] (away)', 'Panama goals');
-  addMatch('Group L Predictions [England - Ghana] (home)', 'England goals', 'Group L Predictions [England - Ghana] (away)', 'Ghana goals');
-  addMatch('Group L Predictions [Panama - Croatia] (home)', 'Panama goals', 'Group L Predictions [Panama - Croatia] (away)', 'Croatia goals');
-  addMatch('Group L Predictions [Panama - England] (home)', 'Panama goals', 'Group L Predictions [Panama - England] (away)', 'England goals');
-  addMatch('Group L Predictions [Croatia - Ghana] (home)', 'Croatia goals', 'Group L Predictions [Croatia - Ghana] (away)', 'Ghana goals');
+  addMatch('Group L Predictions [England - Croatia]', 'England', 'Croatia');
+  addMatch('Group L Predictions [Ghana - Panama]', 'Ghana', 'Panama');
+  addMatch('Group L Predictions [England - Ghana]', 'England', 'Ghana');
+  addMatch('Group L Predictions [Panama - Croatia]', 'Panama', 'Croatia');
+  addMatch('Group L Predictions [Panama - England]', 'Panama', 'England');
+  addMatch('Group L Predictions [Croatia - Ghana]', 'Croatia', 'Ghana');
 
   // ── Group winners ───────────────────────────────────────────────────
   form.addSectionHeaderItem().setTitle('Group winners');

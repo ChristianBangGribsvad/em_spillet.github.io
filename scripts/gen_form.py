@@ -27,9 +27,6 @@ SOCIAL_GROUPS = [
     "Quantum and Laser Photonics DTU",
 ]
 
-# Goal options for each team's dropdown (0–9)
-GOAL_OPTIONS = [str(i) for i in range(10)]
-
 TOP_SCORER_GOALS = [str(i) for i in range(1, 16)]  # 1–15 goals
 
 # Top scorer candidates (sorted alphabetically for easy navigation)
@@ -122,21 +119,19 @@ def generate_gs(groups):
     w("  form.setDescription('Udfyld dine forudsigelser inden turneringen starter den 11. juni 2026.');")
     w()
 
-    # Goals array (0–9) — defined once and reused via helper
-    goal_opts_js = ", ".join(f"'{g}'" for g in GOAL_OPTIONS)
-    w(f"  var GOALS = [{goal_opts_js}];")
+    # Regex validation — enforces "number - number" format, defined once and reused
+    w("  var scoreValidation = FormApp.createTextValidation()")
+    w("    .requireTextMatchesPattern('^\\\\d+\\\\s*-\\\\s*\\\\d+$')")
+    w("    .build();")
     w()
 
-    # Helper: two consecutive goal dropdowns per match
-    w("  function addMatch(homeTitle, homeHelp, awayTitle, awayHelp) {")
-    w("    var hq = form.addListItem();")
-    w("    hq.setTitle(homeTitle).setHelpText(homeHelp)")
-    w("      .setChoices(GOALS.map(function(g) { return hq.createChoice(g); }))")
-    w("      .setRequired(true);")
-    w("    var aq = form.addListItem();")
-    w("    aq.setTitle(awayTitle).setHelpText(awayHelp)")
-    w("      .setChoices(GOALS.map(function(g) { return aq.createChoice(g); }))")
-    w("      .setRequired(true);")
+    # Helper: single text field per match with format validation
+    w("  function addMatch(title, homeTeam, awayTeam) {")
+    w("    form.addTextItem()")
+    w("        .setTitle(title)")
+    w("        .setHelpText(homeTeam + ' goals - ' + awayTeam + ' goals  (e.g. 2 - 1)')")
+    w("        .setValidation(scoreValidation)")
+    w("        .setRequired(true);")
     w("  }")
     w()
 
@@ -162,10 +157,8 @@ def generate_gs(groups):
     for group_name, data in groups.items():
         w(f"  form.addSectionHeaderItem().setTitle({js_str(group_name)});")
         for home, away in data["matches"]:
-            base  = f"{group_name} Predictions [{home} - {away}]"
-            h_title = js_str(base + " (home)")
-            a_title = js_str(base + " (away)")
-            w(f"  addMatch({h_title}, {js_str(home + ' goals')}, {a_title}, {js_str(away + ' goals')});")
+            title = f"{group_name} Predictions [{home} - {away}]"
+            w(f"  addMatch({js_str(title)}, {js_str(home)}, {js_str(away)});")
         w()
 
     # ── Group winner predictions ───────────────────────────────────────────────
