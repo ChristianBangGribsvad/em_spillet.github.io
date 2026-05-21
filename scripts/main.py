@@ -38,6 +38,17 @@ if __name__ == "__main__":
     # Only execute rest of main if we have new results
     if eval_res:
         predictions_df = pd.read_csv("data/WC spillet 2026.csv")
+
+        # Combine split home/away goal columns produced by the two-dropdown form
+        # e.g. "Group A Predictions [Mexico - South Africa] (home)" + "(away)" → "Group A Predictions [Mexico - South Africa]"
+        for col in list(predictions_df.columns):
+            if col.endswith(" (home)") and "Predictions [" in col:
+                base     = col[:-len(" (home)")]
+                away_col = base + " (away)"
+                if away_col in predictions_df.columns:
+                    predictions_df[base] = predictions_df[col].astype(str) + " - " + predictions_df[away_col].astype(str)
+                    predictions_df = predictions_df.drop(columns=[col, away_col])
+
         df_fname = pd.DataFrame({'f_name': [(f"{row['First name']}"+"_"+f"{str(row['Last name'])[0:2]}").replace(" ","_").replace('"',"_") for _, row in predictions_df.iterrows()]})
         df_dname = pd.DataFrame({'d_name': [f"{row['First name']}"+" "+f"{str(row['Last name'])[0:2]}" for _, row in predictions_df.iterrows()]})
         predictions_df =predictions_df.join(df_fname)
