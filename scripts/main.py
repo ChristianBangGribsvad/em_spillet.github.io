@@ -13,13 +13,11 @@ import matplotlib.pyplot as plt
 if __name__ == "__main__":
     #### Fill out when final is finished
     topscorer = []       # e.g. ["Player Name"]
-    topscorer_goals = None  # e.g. "5"
+    topscorer_goals = None  # e.g. 5  ← integer, NOT a string. pandas reads this CSV column as int64.
     finale_loser = None  # e.g. "France"
     finale_winner = None # e.g. "Brazil"
     eval_res = True
-
-    results = get_results()
-
+    
     results = get_results()
     date = date.today()
     datafile = [results,date]
@@ -58,10 +56,12 @@ if __name__ == "__main__":
                 else:
                     # Find the instances of this duplicate
                     first_name = predictions_df.at[idx,"First name"]
-                    first_name_indexes = first_name == predictions_df["First name"]
+                    last_name  = predictions_df.at[idx,"Last name"]
+                    name_match = ((predictions_df["First name"] == first_name) &
+                                  (predictions_df["Last name"]  == last_name))
                     idx_remove["first name"] += [first_name]
-                    idx_remove["last name"] += [predictions_df.at[idx,"Last name"]]
-                    idx_remove["idx"] += [np.where(np.array(first_name_indexes.tolist()) > 0)[0][0]]
+                    idx_remove["last name"] += [last_name]
+                    idx_remove["idx"] += [np.where(np.array(name_match.tolist()) > 0)[0][0]]
 
 
         # Remove the detected duplicates

@@ -1,11 +1,5 @@
 import pandas as pd
-from get_results import *
-import pickle
-from datetime import date
-import os
-cwd = os.getcwd()
 import numpy as np
-import random
 
 def eval_match_predictions(predictions_df , results):
     # Convert results to a dict (and select only group stage matches)
@@ -37,6 +31,9 @@ def eval_match_predictions(predictions_df , results):
             # Save correct results
             predictions_df.at[1,col_name] = res
 
+            home_res,  away_res  = int(res.split("-")[0]),  int(res.split("-")[1])
+            home_pred, away_pred = int(pred.split("-")[0]), int(pred.split("-")[1])
+
             ### 15 points, correct score for both teams
             if pred == res:
                 points += 15
@@ -44,43 +41,43 @@ def eval_match_predictions(predictions_df , results):
 
             ### 10 points, correct outcome and score for one team
             # Home team wins and correct score of home team
-            elif res[0]>res[2] and pred[0]>pred[2] and res[0] == pred[0]:
+            elif home_res > away_res and home_pred > away_pred and home_res == home_pred:
                 points += 10
                 predictions_df.at[2,col_name] = 10
             # Home team wins and correct score of away team
-            elif res[0]>res[2] and pred[0]>pred[2] and res[2] == pred[2]:
+            elif home_res > away_res and home_pred > away_pred and away_res == away_pred:
                 points += 10
                 predictions_df.at[2,col_name] = 10
             # Away team wins and correct score of home team
-            elif res[0]<res[2] and pred[0]<pred[2] and res[0] == pred[0]:
+            elif home_res < away_res and home_pred < away_pred and home_res == home_pred:
                 points += 10
                 predictions_df.at[2,col_name] = 10
             # Away team wins and correct score of away team
-            elif res[0]<res[2] and pred[0]<pred[2] and res[2] == pred[2]:
+            elif home_res < away_res and home_pred < away_pred and away_res == away_pred:
                 points += 10
                 predictions_df.at[2,col_name] = 10
 
             ### 5 points, correct outcome (winner or tie)
             # Home team wins
-            elif res[0]>res[2] and pred[0]>pred[2]:
+            elif home_res > away_res and home_pred > away_pred:
                 points += 5
                 predictions_df.at[2,col_name] = 5
             # Away team wins
-            elif res[0]<res[2] and pred[0]<pred[2]:
+            elif home_res < away_res and home_pred < away_pred:
                 points += 5
                 predictions_df.at[2,col_name] = 5
             # Tie
-            elif res[0]==res[2] and pred[0]==pred[2]:
+            elif home_res == away_res and home_pred == away_pred:
                 points += 5
                 predictions_df.at[2,col_name] = 5
 
             ### 2 points, correct score for one team
             # Home team correct score
-            elif res[0]==pred[0]:
+            elif home_res == home_pred:
                 points += 2
                 predictions_df.at[2,col_name] = 2
             # Away team correct score
-            elif res[2]==pred[2]:
+            elif away_res == away_pred:
                 points += 2
                 predictions_df.at[2,col_name] = 2
 
@@ -379,53 +376,3 @@ def eval_groups(predictions_df , results):
 
     return predictions_df
 
-def dk_finish(results, predictions_df):
-    # Eval DK finish
-    dk_finish = ""
-
-    col = [x for x in predictions_df.columns if "Which round does Denmark reach" in x]
-    df_finish_pred = predictions_df.at[0,col[0]]
-    # Select only knockout matches from results
-    results_dict = {results[x][0]:results[x][1] for x in range(len(results)) if "Group" not in results[x][0]}
-
-    last16teams = [k for k in results_dict.keys() if "LAST_16" in k]
-    quarterteams = [k for k in results_dict.keys() if "QUARTER_FINALS" in k]
-    semiteams = [k for k in results_dict.keys() if "SEMI_FINALS" in k]
-    finalteams = [k for k in results_dict.keys() if "FINAL " in k]
-
-    if len([x for x in last16teams if "Denmark" in x]) < 1 and len([x for x in results_dict.keys() if "LAST_16" and "None" in x]) < 1:
-        dk_finish = "Group play"
-    elif len([x for x in quarterteams if "Denmark" in x]) < 1 and len([x for x in results_dict.keys() if "QUARTER_FINALS" and "None" in x]) < 1:
-        dk_finish = "Round of 16"
-    elif len([x for x in semiteams if "Denmark" in x]) < 1 and len([x for x in results_dict.keys() if "SEMI_FINALS" and "None" in x]) < 1:
-        dk_finish = "Quarter final"
-    elif len([x for x in finalteams if "Denmark" in x]) < 1 and "None" not in finalteams[0]:
-        dk_finish = "Semi final"
-    elif "Denmark" in finalteams:
-        dk_finish = "Final"
-
-    if len(dk_finish) > 0:
-        if dk_finish == df_finish_pred:
-            predictions_df.at[2,col[0]] = 15
-
-        predictions_df.at[1,col[0]] = dk_finish
-
-    return predictions_df , dk_finish
-
-def dk_goals_scored(results,predictions_df):
-    # Find DK goals
-    results_dict = {results[x][0]:results[x][1] for x in range(len(results))}
-    dk_matches = {k:v for k,v in results_dict.items() if "Denmark" in k}
-    dk_goals = 0
-    for k,v in dk_matches.items():
-        if "Denmark" in k.split("-")[0]:
-            dk_goals += int(v.split("-")[0])
-        elif "Denmark" in k.split("-")[1]:
-            dk_goals += int(v.split("-")[1])
-
-    col = [x for x in predictions_df.columns if "How many goals does Denmark score" in x]
-    if predictions_df.at[0,col[0]] == dk_goals:
-        predictions_df.at[2,col[0]] = 20
-    predictions_df.at[1,col[0]] = dk_goals
-
-    return predictions_df
