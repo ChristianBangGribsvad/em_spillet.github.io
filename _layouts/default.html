@@ -1,41 +1,80 @@
-<!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
 
-{% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    {% include head-custom.html %}
-  </head>
-  <body>
-
-      <header>
-        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-        <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
-      </header>
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        {{ content }}
-
-      </section>
-      <footer>
-        {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
-      </footer>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="{{ '/' | relative_url }}">&#x26BD; {{ site.title }}</a>
+      <nav class="site-nav" id="group-nav" aria-label="Team groups"></nav>
     </div>
-  </body>
+  </header>
+
+  <main class="page-content">
+    <div class="content-wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>WC 2026 Prediction Game &middot; Updated hourly</p>
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var wrapper = document.querySelector('.content-wrapper');
+    if (!wrapper) return;
+
+    // 1. Wrap the Schmeichel heading + following content in a gold card
+    var schmeichelH1 = Array.from(wrapper.querySelectorAll('h1')).find(function (h) {
+      return h.textContent.indexOf('Schmeichel') !== -1;
+    });
+    if (schmeichelH1) {
+      var card = document.createElement('div');
+      card.className = 'schmeichel-card';
+      schmeichelH1.parentNode.insertBefore(card, schmeichelH1);
+      var node = schmeichelH1;
+      while (node) {
+        var next = node.nextSibling;
+        card.appendChild(node);
+        if (!next || (next.nodeType === 1 && next.tagName === 'H1')) break;
+        node = next;
+      }
+    }
+
+    // 2. Build sticky nav from team-group h1s (skip Schmeichel heading)
+    var nav = document.getElementById('group-nav');
+    wrapper.querySelectorAll('h1').forEach(function (h1) {
+      if (h1.textContent.indexOf('Schmeichel') !== -1) return;
+      var a = document.createElement('a');
+      a.href = '#' + h1.id;
+      a.textContent = h1.textContent;
+      nav.appendChild(a);
+    });
+
+    // 3. Wrap every 3 consecutive group-plot images into a CSS grid
+    var imgParas = Array.from(wrapper.querySelectorAll('p > img'))
+      .filter(function (img) { return img.src.indexOf('group_plots') !== -1; })
+      .map(function (img) { return img.closest('p'); });
+    for (var i = 0; i < imgParas.length; i += 3) {
+      var trio = imgParas.slice(i, i + 3);
+      if (trio.length < 1) break;
+      var grid = document.createElement('div');
+      grid.className = 'svg-grid';
+      trio[0].parentNode.insertBefore(grid, trio[0]);
+      trio.forEach(function (p) { grid.appendChild(p); });
+    }
+  });
+  </script>
+
+</body>
 </html>
