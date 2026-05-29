@@ -783,7 +783,7 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict,
 
     create_pages(predictions_df)
     create_group_pages(predictions_df)
-    update_pages(predictions_df, todays_schmeichel)
+    update_pages(predictions_df, todays_schmeichel, upcoming_matches=[])
 
     if exp_schmeichel_name is not None:
         day_ok &= check_schmeichel(todays_schmeichel, exp_schmeichel_name, exp_schmeichel_delta)

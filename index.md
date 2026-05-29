@@ -7,6 +7,15 @@ layout: default
 - Bob Johnson with 397 points part of Team Beta [see their predictions](./pages/Bob_Jo.html)
 
 
+# Next Matches
+
+<div class="next-matches">
+<p>Mexico vs South Africa &mdash; Thu 11 Jun, 21:00</p>
+<p>South Korea vs Czechia &mdash; Thu 11 Jun, 21:00</p>
+<p>Canada vs Bosnia-Herzegovina &mdash; Fri 12 Jun, 00:00</p>
+<p>Qatar vs Switzerland &mdash; Fri 12 Jun, 03:00</p>
+</div>
+
 # Groups
 {% for group in site.data.groups %}
 - [{{ group.name }}]({{ '/pages/' | append: group.slug | append: '.html' | absolute_url }})
