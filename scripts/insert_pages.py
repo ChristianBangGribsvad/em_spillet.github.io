@@ -1,6 +1,49 @@
 import os
 import pandas as pd
 
+_MEDALS  = {1: '🥇', 2: '🥈', 3: '🥉'}
+_CLASSES = {1: 'lb-gold', 2: 'lb-silver', 3: 'lb-bronze'}
+
+
+def compute_leaderboard(n=10):
+    """
+    Read every user_df pickle from data/user_dfs/ and return the top-n
+    participants sorted by total points as (rank, name, group, score) tuples.
+    """
+    entries = []
+    user_dir = "data/user_dfs"
+    if not os.path.isdir(user_dir):
+        return []
+    for fname in os.listdir(user_dir):
+        try:
+            df    = pd.read_pickle(os.path.join(user_dir, fname))
+            name  = df.at[0, 'd_name']
+            group = str(df.at[0, 'Which team(s) do you belong to?']).replace(';', ' &amp; ')
+            score = int(round(pd.to_numeric(df.loc[2], errors='coerce').sum()))
+            entries.append((name, group, score))
+        except Exception:
+            continue
+    entries.sort(key=lambda x: x[2], reverse=True)
+    return [(i + 1, name, group, score)
+            for i, (name, group, score) in enumerate(entries[:n])]
+
+
+def _leaderboard_block(entries):
+    if not entries:
+        return ['<div class="leaderboard"><p class="lb-empty"><em>No scores yet.</em></p></div>\n']
+    rows = []
+    for rank, name, group, score in entries:
+        css  = _CLASSES.get(rank, '')
+        icon = _MEDALS.get(rank, str(rank))
+        rows.append(
+            f'<div class="lb-row {css}">'
+            f'<span class="lb-pos">{icon}</span>'
+            f'<span class="lb-info">{name} <small>({group})</small></span>'
+            f'<span class="lb-pts">{score} pts</span>'
+            f'</div>\n'
+        )
+    return ['<div class="leaderboard">\n'] + rows + ['</div>\n']
+
 
 def create_group_pages(predictions_df):
     """
@@ -130,11 +173,17 @@ def update_pages(predictions_df, todays_schmeichel,
                                  "No matches scheduled in the next 24 hours.")
     yesterday_block = _div_block("yesterdays-results", recent_results,
                                  "No results yet.")
+    lb_block        = _leaderboard_block(compute_leaderboard())
 
     # ── Insert into template ──────────────────────────────────────────────────
     for i, line in enumerate(content):
         if "# Today's Schmeichel(s):" in line:
             content = content[:i + 1] + s_lines + content[i + 1:]
+            break
+
+    for i, line in enumerate(content):
+        if "LEADERBOARD" in line:
+            content = content[:i] + lb_block + content[i + 1:]
             break
 
     for i, line in enumerate(content):

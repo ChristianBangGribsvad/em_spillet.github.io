@@ -5,6 +5,10 @@ layout: default
 # Today's Schmeichel(s):
 
 
+# Leaderboard
+
+LEADERBOARD
+
 # Next Matches
 
 NEXT_MATCHES
@@ -13,13 +17,13 @@ NEXT_MATCHES
 
 YESTERDAY_RESULTS
 
-# Group vs Group
+# Team vs Team
 
-Average cumulative score per group over time — the higher the line, the better that group's participants are performing overall.
+Average cumulative score per team over time — the higher the line, the better that team's participants are performing overall.
 
-![Group vs Group](./pages/group_plots/group_avg.svg?raw=true)
+![Team vs Team](./pages/group_plots/group_avg.svg?raw=true)
 
-# Groups
+# Teams
 {% for group in site.data.groups %}
 - [{{ group.name }}]({{ '/pages/' | append: group.slug | append: '.html' | absolute_url }})
 {% endfor %}

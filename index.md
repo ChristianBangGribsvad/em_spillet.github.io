@@ -7,6 +7,14 @@ layout: default
 - Bob Johnson with 397 points part of Team Beta [see their predictions](./pages/Bob_Jo.html)
 
 
+# Leaderboard
+
+<div class="leaderboard">
+<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info">Alice Smith <small>(Team Alpha)</small></span><span class="lb-pts">937 pts</span></div>
+<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info">Bob Johnson <small>(Team Beta)</small></span><span class="lb-pts">769 pts</span></div>
+<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info">Carol Davis <small>(Team Alpha &amp; Team Beta)</small></span><span class="lb-pts">701 pts</span></div>
+</div>
+
 # Next Matches
 
 <div class="next-matches">
@@ -23,13 +31,13 @@ layout: default
 <p><em>No results yet.</em></p>
 </div>
 
-# Group vs Group
+# Team vs Team
 
-Average cumulative score per group over time — the higher the line, the better that group's participants are performing overall.
+Average cumulative score per team over time — the higher the line, the better that team's participants are performing overall.
 
-![Group vs Group](./pages/group_plots/group_avg.svg?raw=true)
+![Team vs Team](./pages/group_plots/group_avg.svg?raw=true)
 
-# Groups
+# Teams
 {% for group in site.data.groups %}
 - [{{ group.name }}]({{ '/pages/' | append: group.slug | append: '.html' | absolute_url }})
 {% endfor %}

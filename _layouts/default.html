@@ -209,6 +209,67 @@
     }
     .schmeichel-card li a:hover { text-decoration: underline !important; }
 
+    /* ── Leaderboard ────────────────────────────────────────── */
+    .leaderboard {
+      background: var(--white);
+      border-left: 5px solid var(--turf);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 0 var(--r) var(--r);
+      overflow: hidden;
+    }
+    .lb-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .lb-row:last-child { border-bottom: none; }
+    .lb-row:not(.lb-gold):not(.lb-silver):not(.lb-bronze):hover {
+      background: var(--off-white);
+    }
+    .lb-gold   { background: linear-gradient(90deg, rgba(212,175,55,0.18) 0%, transparent 65%); }
+    .lb-silver { background: linear-gradient(90deg, rgba(160,160,160,0.14) 0%, transparent 65%); }
+    .lb-bronze { background: linear-gradient(90deg, rgba(180,100,50,0.14) 0%, transparent 65%); }
+
+    .lb-pos {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      min-width: 2.2rem;
+      text-align: center;
+      color: var(--muted);
+    }
+    .lb-gold   .lb-pos { font-size: 1.35rem; }
+    .lb-silver .lb-pos { font-size: 1.2rem;  }
+    .lb-bronze .lb-pos { font-size: 1.1rem;  }
+
+    .lb-info {
+      flex: 1;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+    .lb-info small {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .lb-pts {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      white-space: nowrap;
+      color: var(--pitch);
+    }
+    .lb-gold   .lb-pts { color: #b8860b; }
+    .lb-silver .lb-pts { color: #707070; }
+    .lb-bronze .lb-pts { color: #a0522d; }
+
+    .lb-empty { padding: 0.75rem 1rem; color: var(--muted); font-style: italic; }
+
     /* ── Next Matches card body ─────────────────────────────── */
     .next-matches {
       background: var(--white);
