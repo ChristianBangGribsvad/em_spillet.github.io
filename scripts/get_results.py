@@ -38,7 +38,7 @@ def get_upcoming_matches():
         if window_start <= match_cph < window_end:
             home = m["homeTeam"]["name"]
             away = m["awayTeam"]["name"]
-            time_str = match_cph.strftime("%a %d %b, %H:%M")
+            time_str = match_cph.strftime("%a %d %B, %H:%M")
             upcoming.append(f"{home} vs {away} &mdash; {time_str}")
 
     return upcoming
