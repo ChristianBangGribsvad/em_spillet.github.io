@@ -497,6 +497,22 @@
       trio[0].parentNode.insertBefore(grid, trio[0]);
       trio.forEach(function (p) { grid.appendChild(p); });
     }
+
+    // 3. Unique background colour per section heading
+    //    Palette: all dark enough for WCAG AA white text (contrast >= 7:1)
+    var PALETTE = [
+      '#1e3a5f',  // deep navy
+      '#5c1f78',  // deep violet
+      '#8b1a1a',  // deep crimson
+      '#0d4d4d',  // dark teal
+      '#2d5a0d',  // dark moss
+      '#7a3a00'   // dark amber
+    ];
+    Array.from(wrapper.querySelectorAll('h1'))
+      .filter(function (h) { return !h.closest('.schmeichel-card'); })
+      .forEach(function (h, i) {
+        h.style.background = PALETTE[i % PALETTE.length];
+      });
   });
   </script>
 
