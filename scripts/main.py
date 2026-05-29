@@ -29,9 +29,10 @@ if __name__ == "__main__":
         print("New results saved")
         save_results(cwd + f"/results/data_{n_file+1}.pickle",datafile)
     else:
-        # If results have not changed, we exit script
+        # No new match results — still refresh the Next Matches section
         print("No updates so we exit the script")
         eval_res = False
+        update_next_matches_only()
 
     # Only execute rest of main if we have new results
     if eval_res:

@@ -43,6 +43,43 @@ def create_group_pages(predictions_df):
     print(f"Group pages written: {list(all_teams)}")
 
 
+def update_next_matches_only():
+    """
+    Replace only the <div class="next-matches"> block in the existing index.md.
+    Called every pipeline run so the section stays current even when no
+    game results have changed.
+    """
+    try:
+        from get_results import get_upcoming_matches
+        upcoming = get_upcoming_matches()
+    except Exception:
+        return  # If the API is unavailable, leave the file untouched
+
+    if upcoming:
+        inner = "".join(f"<p>{m}</p>\n" for m in upcoming)
+    else:
+        inner = "<p><em>No matches scheduled in the next 24 hours.</em></p>\n"
+
+    try:
+        with open("index.md", "r", encoding="UTF-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        return
+
+    new_lines, in_div = [], False
+    for line in lines:
+        if '<div class="next-matches">' in line:
+            in_div = True
+            new_lines += ['<div class="next-matches">\n', inner, '</div>\n']
+        elif '</div>' in line and in_div:
+            in_div = False
+        elif not in_div:
+            new_lines.append(line)
+
+    with open("index.md", "w", encoding="UTF-8") as f:
+        f.writelines(new_lines)
+
+
 def update_pages(predictions_df, todays_schmeichel, upcoming_matches=None):
     """Write index.md with Schmeichel, Next Matches, and Groups sections.
     Pass upcoming_matches=[] to skip the API call (e.g. in tests)."""

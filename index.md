@@ -11,9 +11,7 @@ layout: default
 
 <div class="next-matches">
 <p>Mexico vs South Africa &mdash; Thu 11 Jun, 21:00</p>
-<p>South Korea vs Czechia &mdash; Thu 11 Jun, 21:00</p>
-<p>Canada vs Bosnia-Herzegovina &mdash; Fri 12 Jun, 00:00</p>
-<p>Qatar vs Switzerland &mdash; Fri 12 Jun, 03:00</p>
+<p>South Korea vs Czechia &mdash; Fri 12 Jun, 04:00</p>
 </div>
 
 # Groups
