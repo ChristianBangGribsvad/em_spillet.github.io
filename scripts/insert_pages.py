@@ -43,56 +43,27 @@ def create_group_pages(predictions_df):
     print(f"Group pages written: {list(all_teams)}")
 
 
-def update_pages(predictions_df,todays_schmeichel):
+def update_pages(predictions_df, todays_schmeichel):
+    """Write index.md with today's Schmeichel section only.
+    Group data lives on the dedicated per-group pages; the front page is kept clean."""
 
-    existing_markdown_path = "index_template.md"
     pages_loc = "./pages"
-    output_directory = 'index.md'
 
+    with open("index_template.md", "r", encoding="UTF-8") as f:
+        content = f.readlines()
 
-
-
-    #%%
-    all_teams = predictions_df["Which team(s) do you belong to?"].str.split(';').explode().unique()
-
-    #%%
-    # Read the content of the existing markdown file
-    with open(existing_markdown_path, 'r',encoding='UTF-8') as existing_file:
-        existing_content = existing_file.readlines()
-    #%%
-
-    team_string = []
-    for team in all_teams:
-        print(team)
-        team_savename = team.replace(" ","_")
-        team_string.append(f"# {team}\n \n")
-        team_string.append(f"![{team}](./pages/group_plots/bars_{team_savename}.svg?raw=true)\n \n")
-        team_string.append(f"![{team}](./pages/group_plots/lines_{team_savename}.svg?raw=true)\n \n")
-        team_string.append(f"![{team}](./pages/group_plots/standing_{team_savename}.svg?raw=true)\n \n")
-        team_string.append(f"## {team} participants:\n")
-        filtered_df = predictions_df[predictions_df['Which team(s) do you belong to?'].str.contains(team)]
-        members =  [f"- [{row['d_name']}]({pages_loc}/{row['f_name']}.html)\n" for _, row in filtered_df.iterrows()]
-        for s in members:
-            team_string.append(s)
-        team_string.append("\n")
-        team_string.append("-----------\n \n")
-
-    #print(team_string)
-    s_string = []
+    s_lines = []
     for name in todays_schmeichel.keys():
-        output_file_path = f"[see their predictions]({pages_loc}/{todays_schmeichel[name]['fname']}.html)"
-        s_string.append(f"- {name} with {todays_schmeichel[name]['value']} points part of {todays_schmeichel[name]['group']} " + output_file_path)
-        s_string.append("\n")
-    insertion_point = 0
-    for i, line in enumerate(existing_content):
-        if 'TEAMS' in line:
-            insertion_point = i + 1
-            existing_content = existing_content[:insertion_point-1] + team_string + existing_content[insertion_point:]
-    for i, line in enumerate(existing_content):
-        if "# Today's Schmeichel(s):" in line:
-            insertion_point = i + 1
-            existing_content = existing_content[:insertion_point] + s_string + existing_content[insertion_point:]
+        link = f"[see their predictions]({pages_loc}/{todays_schmeichel[name]['fname']}.html)"
+        s_lines.append(
+            f"- {name} with {todays_schmeichel[name]['value']} points"
+            f" part of {todays_schmeichel[name]['group']} {link}\n"
+        )
 
-    # Write the updated content back to the file
-        with open(output_directory, 'w',encoding='UTF-8') as existing_file:
-            existing_file.writelines(existing_content)
+    for i, line in enumerate(content):
+        if "# Today's Schmeichel(s):" in line:
+            content = content[:i + 1] + s_lines + content[i + 1:]
+            break
+
+    with open("index.md", "w", encoding="UTF-8") as f:
+        f.writelines(content)
