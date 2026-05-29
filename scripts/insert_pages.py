@@ -55,8 +55,9 @@ def update_pages(predictions_df, todays_schmeichel):
     s_lines = []
     for name in todays_schmeichel.keys():
         link = f"[see their predictions]({pages_loc}/{todays_schmeichel[name]['fname']}.html)"
+        pts = int(round(todays_schmeichel[name]['value']))
         s_lines.append(
-            f"- {name} with {todays_schmeichel[name]['value']} points"
+            f"- {name} with {pts} points"
             f" part of {todays_schmeichel[name]['group']} {link}\n"
         )
 
