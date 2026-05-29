@@ -30,7 +30,7 @@ See your results in the table below:
 
 ![{name}]({table_path}?raw=true)
 
-[Back](https://christianbanggribsvad.github.io/em_spillet.github.io/)"""
+[Back](https://christianbanggribsvad.github.io/wc-predictions.github.io/)"""
         # Define the output file path
         output_file_path = output_directory + f"{savename}.md"
 

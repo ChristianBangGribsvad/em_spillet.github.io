@@ -3,7 +3,7 @@
 A football prediction game where friends compete by predicting match results.
 Scores update automatically every hour during the tournament and are published as a website.
 
-**Live site:** https://christianbanggribsvad.github.io/em_spillet.github.io/
+**Live site:** https://christianbanggribsvad.github.io/wc-predictions.github.io/
 
 ---
 

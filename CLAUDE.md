@@ -14,7 +14,7 @@ Participants fill out a Google Form before the tournament starts. Their predicti
 scored nightly against live results fetched from an API. Standings and visualisations are
 published automatically as a static website via GitHub Pages.
 
-**Live site:** https://christianbanggribsvad.github.io/em_spillet.github.io/
+**Live site:** https://christianbanggribsvad.github.io/wc-predictions.github.io/
 
 ---
 
