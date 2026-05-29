@@ -929,7 +929,7 @@ def main():
             for _, r in predictions_df.iterrows()
         ]
         predictions_df["d_name"] = [
-            f"{r['First name']} {r['Last name']}"
+            f"{r['First name']} {str(r['Last name']).split()[-1]}"
             for _, r in predictions_df.iterrows()
         ]
 

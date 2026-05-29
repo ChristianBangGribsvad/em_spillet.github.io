@@ -11,7 +11,7 @@ layout: default
 ![Team Beta](./group_plots/standing_Team_Beta.svg?raw=true)
 
 ## Team Beta participants:
-- [Bob Jo](./Bob_Jo.html)
-- [Carol Da](./Carol_Da.html)
+- [Bob Johnson](./Bob_Jo.html)
+- [Carol Davis](./Carol_Da.html)
 
 [← Back to standings](../)
