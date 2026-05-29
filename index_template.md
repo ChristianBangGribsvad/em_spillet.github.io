@@ -24,6 +24,9 @@ Average cumulative score per team over time — the higher the line, the better 
 ![Team vs Team](./pages/group_plots/group_avg.svg?raw=true)
 
 # Teams
+
+Click on your team to see the standings and individual predictions.
+
 <ul>
 {% for group in site.data.groups %}
 <li><a href="{{ '/pages/' | append: group.slug | append: '.html' | absolute_url }}" style="background: {{ group.color }};">{{ group.name }}</a></li>
