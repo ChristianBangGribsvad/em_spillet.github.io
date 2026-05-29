@@ -278,9 +278,9 @@ DAY3_SCORED = {
 
 # (date, scored_dict, n_played, expected_schmeichel_name, expected_schmeichel_delta)
 SIMULATED_DAYS = [
-    ("2026-06-12", DAY1_SCORED, 24, "Alice Sm",   299),
-    ("2026-06-16", DAY2_SCORED, 48, "Bob Jo",     250.0),
-    ("2026-06-20", DAY3_SCORED, 72, "Alice Sm",   397.0),
+    ("2026-06-12", DAY1_SCORED, 24, "Alice Smith",   299),
+    ("2026-06-16", DAY2_SCORED, 48, "Bob Johnson",     250.0),
+    ("2026-06-20", DAY3_SCORED, 72, "Alice Smith",   397.0),
 ]
 
 # ── Special prediction results (only known after the final is played) ─────────
@@ -443,9 +443,9 @@ def check_scoring(predictions_df: pd.DataFrame) -> bool:
     # (name, exp_match_pts, exp_grp_a_pts, exp_grp_b_pts)
     # Carol predicted 2-0 vs actual 2-1: correct outcome AND correct home score = 10 pts
     expectations = [
-        ("Alice Sm", 15, 15.0, 15.0),
-        ("Bob Jo",    5,  5.0, 10.0),
-        ("Carol Da", 10,  5.0,  5.0),
+        ("Alice Smith", 15, 15.0, 15.0),
+        ("Bob Johnson",    5,  5.0, 10.0),
+        ("Carol Davis", 10,  5.0,  5.0),
     ]
 
     rows = []
@@ -531,9 +531,9 @@ def check_special_scoring(predictions_df: pd.DataFrame) -> bool:
 
     # (name, exp_winner, exp_loser, exp_scorer, exp_scorer_goals)
     expectations = [
-        ("Alice Sm",  25,  0, 20, 10),
-        ("Bob Jo",     0,  5,  0,  0),
-        ("Carol Da",   0,  0,  0,  0),
+        ("Alice Smith",  25,  0, 20, 10),
+        ("Bob Johnson",     0,  5,  0,  0),
+        ("Carol Davis",   0,  0,  0,  0),
     ]
 
     all_ok = True
@@ -588,9 +588,9 @@ def check_all_group_winner_scoring(predictions_df: pd.DataFrame) -> bool:
     results_day3 = build_results(DAY3_SCORED)
 
     expectations = [
-        ("Alice Sm", 180.0),
-        ("Bob Jo",   115.0),
-        ("Carol Da", 130.0),
+        ("Alice Smith", 180.0),
+        ("Bob Johnson",   115.0),
+        ("Carol Davis", 130.0),
     ]
 
     all_ok = True
@@ -657,12 +657,12 @@ def check_duplicate_handling(predictions_df: pd.DataFrame) -> bool:
     """
     resubmit_col  = "Group A Predictions [Mexico - South Africa]"
     original_pred = predictions_df.loc[
-        predictions_df["d_name"] == "Alice Sm", resubmit_col
+        predictions_df["d_name"] == "Alice Smith", resubmit_col
     ].values[0]
     resub_pred = "3-2"
 
     # Build 4-row df: [Alice_orig, Bob, Carol, Alice_resub]
-    alice_resub = predictions_df[predictions_df["d_name"] == "Alice Sm"].copy()
+    alice_resub = predictions_df[predictions_df["d_name"] == "Alice Smith"].copy()
     alice_resub.loc[alice_resub.index[0], resubmit_col] = resub_pred
     alice_resub.loc[alice_resub.index[0], "Timestamp"] = "2026/06/10 09:00:00"
 
@@ -846,12 +846,12 @@ def check_group_data() -> bool:
     df_alpha = pd.read_pickle("data/group_dfs/Team Alpha")
     df_beta  = pd.read_pickle("data/group_dfs/Team Beta")
 
-    alpha_scores = df_alpha["Carol Da"].tolist()
-    beta_scores  = df_beta["Carol Da"].tolist()
+    alpha_scores = df_alpha["Carol Davis"].tolist()
+    beta_scores  = df_beta["Carol Davis"].tolist()
     match = (alpha_scores == beta_scores)
 
     print(f"\n{'='*60}")
-    print("MULTI-GROUP INTEGRITY  (Carol Da: Team Alpha + Team Beta)")
+    print("MULTI-GROUP INTEGRITY  (Carol Davis: Team Alpha + Team Beta)")
     print(f"{'='*60}")
     status = "PASS" if match else "FAIL"
     print(f"  [{status}]  scores consistent across both groups: {alpha_scores}")
@@ -929,7 +929,7 @@ def main():
             for _, r in predictions_df.iterrows()
         ]
         predictions_df["d_name"] = [
-            f"{r['First name']} {str(r['Last name'])[:2]}"
+            f"{r['First name']} {r['Last name']}"
             for _, r in predictions_df.iterrows()
         ]
 

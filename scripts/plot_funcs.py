@@ -15,18 +15,16 @@ import matplotlib as mpl
 def plot_group_progress(df_results,group_name,out_path='pages/group_plots/lines_'):
     xs = df_results.index.tolist()
 
-    fig = plt.subplots(1,figsize=(12,6))
+    fig, ax = plt.subplots(1, figsize=(12, 6))
     for i in range(len(df_results.columns)):
-        plt.plot(xs,df_results.iloc[:,i]+random.uniform(-0.1,0.1),label=str(df_results.columns[i]),marker='o',markersize=7)
-    plt.grid(linestyle= "--")
-    plt.ylabel('Score')
-    if len(df_results.columns) > 10:
-        plt.legend(ncol=2)
-    else:
-        plt.legend()
-    plt.title('Standings')
+        ax.plot(xs, df_results.iloc[:,i]+random.uniform(-0.1,0.1),
+                label=str(df_results.columns[i]), marker='o', markersize=7)
+    ax.grid(linestyle="--")
+    ax.set_ylabel('Score')
+    ax.set_title('Standings')
+    ax.legend(loc='upper left', bbox_to_anchor=(1.01, 1), borderaxespad=0)
     plt.tight_layout()
-    plt.savefig(out_path+group_name.replace(" ","_")+'.svg')
+    plt.savefig(out_path+group_name.replace(" ","_")+'.svg', bbox_inches='tight')
     plt.close()
 
 def plot_best_round(df_results,group_name):

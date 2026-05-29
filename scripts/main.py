@@ -38,7 +38,7 @@ if __name__ == "__main__":
         predictions_df = pd.read_csv("data/WC spillet 2026.csv")
 
         df_fname = pd.DataFrame({'f_name': [(f"{row['First name']}"+"_"+f"{str(row['Last name'])[0:2]}").replace(" ","_").replace('"',"_") for _, row in predictions_df.iterrows()]})
-        df_dname = pd.DataFrame({'d_name': [f"{row['First name']}"+" "+f"{str(row['Last name'])[0:2]}" for _, row in predictions_df.iterrows()]})
+        df_dname = pd.DataFrame({'d_name': [f"{row['First name']} {row['Last name']}" for _, row in predictions_df.iterrows()]})
         predictions_df =predictions_df.join(df_fname)
         predictions_df =predictions_df.join(df_dname)
 
