@@ -12,13 +12,19 @@ import random
 import matplotlib as mpl
 
 
-def plot_group_progress(df_results,group_name,out_path='pages/group_plots/lines_'):
+def plot_group_progress(df_results, group_name, out_path='pages/group_plots/lines_', colors=None):
+    """
+    colors: optional dict mapping column name → hex color string.
+    When supplied each series is drawn in its assigned team color.
+    """
     xs = df_results.index.tolist()
 
     fig, ax = plt.subplots(1, figsize=(12, 6))
     for i in range(len(df_results.columns)):
+        col_name = str(df_results.columns[i])
+        kw = {'color': colors[col_name]} if (colors and col_name in colors) else {}
         ax.plot(xs, df_results.iloc[:,i]+random.uniform(-0.1,0.1),
-                label=str(df_results.columns[i]), marker='o', markersize=7)
+                label=col_name, marker='o', markersize=7, **kw)
     ax.grid(linestyle="--")
     ax.set_ylabel('Score')
     ax.set_title('Standings')

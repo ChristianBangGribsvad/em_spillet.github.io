@@ -4,6 +4,23 @@ import pandas as pd
 _MEDALS  = {1: '🥇', 2: '🥈', 3: '🥉'}
 _CLASSES = {1: 'lb-gold', 2: 'lb-silver', 3: 'lb-bronze'}
 
+# All colors are WCAG AA compliant (≥4.5:1) with white text AND visually
+# distinct in line plots on a white background.
+TEAM_PALETTE = [
+    '#1e40af',  # deep blue
+    '#6d28d9',  # deep violet
+    '#991b1b',  # deep red
+    '#065f46',  # deep emerald
+    '#92400e',  # deep amber
+    '#155e75',  # deep cyan
+]
+
+
+def get_team_colors(all_teams):
+    """Assign palette colors to teams in consistent alphabetical order."""
+    return {team: TEAM_PALETTE[i % len(TEAM_PALETTE)]
+            for i, team in enumerate(sorted(all_teams))}
+
 
 def compute_leaderboard(n=10):
     """
@@ -48,21 +65,26 @@ def _leaderboard_block(entries):
 def create_group_pages(predictions_df):
     """
     Write one markdown page per team group at pages/{Slug}.md and
-    regenerate _data/groups.yml so the Jekyll nav renders from data.
+    regenerate _data/groups.yml (includes team color for nav + h1 styling).
+    Participant list appears immediately below the section header.
     """
     all_teams = (predictions_df["Which team(s) do you belong to?"]
                  .str.split(";").explode().str.strip().unique())
 
-    # _data/groups.yml — consumed by the layout to render the sticky nav
+    colors = get_team_colors(all_teams)
+
+    # _data/groups.yml — consumed by the layout to render the styled nav
     os.makedirs("_data", exist_ok=True)
     with open("_data/groups.yml", "w", encoding="UTF-8") as f:
-        for team in all_teams:
-            slug = team.replace(" ", "_")
-            f.write(f'- name: "{team}"\n  slug: "{slug}"\n')
+        for team in sorted(all_teams):
+            slug  = team.replace(" ", "_")
+            color = colors[team]
+            f.write(f'- name: "{team}"\n  slug: "{slug}"\n  color: "{color}"\n')
 
     # One page per group
     for team in all_teams:
-        slug = team.replace(" ", "_")
+        slug  = team.replace(" ", "_")
+        color = colors[team]
         members = predictions_df[
             predictions_df["Which team(s) do you belong to?"].str.contains(team, regex=False)
         ]
@@ -71,13 +93,16 @@ def create_group_pages(predictions_df):
             for _, row in members.iterrows()
         )
         page = (
-            "---\nlayout: default\n---\n\n"
+            "---\n"
+            "layout: default\n"
+            f'team_color: "{color}"\n'
+            "---\n\n"
             f"# {team}\n\n"
+            f"## {team} participants:\n"
+            f"{member_lines}\n\n"
             f"![{team}](./group_plots/bars_{slug}.svg?raw=true)\n \n"
             f"![{team}](./group_plots/lines_{slug}.svg?raw=true)\n \n"
             f"![{team}](./group_plots/standing_{slug}.svg?raw=true)\n\n"
-            f"## {team} participants:\n"
-            f"{member_lines}\n\n"
             "[← Back to standings](../)\n"
         )
         with open(f"pages/{slug}.md", "w", encoding="UTF-8") as f:

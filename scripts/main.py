@@ -172,8 +172,11 @@ if __name__ == "__main__":
             # Save group avg
             df_group_avg.loc[date,group] = df_results.loc[date].mean()
 
-        # Plot group averages
-        plot_group_progress(df_group_avg,"group_avg",out_path='pages/group_plots/')
+        # Plot group averages — use the same team colors as the group pages
+        all_team_names = (predictions_df["Which team(s) do you belong to?"]
+                          .str.split(";").explode().str.strip().unique())
+        plot_group_progress(df_group_avg, "group_avg", out_path='pages/group_plots/',
+                            colors=get_team_colors(all_team_names))
 
         # Save group averages
         df_group_avg.to_pickle("data/group_avg")

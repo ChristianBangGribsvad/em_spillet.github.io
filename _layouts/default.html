@@ -439,7 +439,9 @@
       <a class="site-title" href="{{ '/' | absolute_url }}">&#x26BD; {{ site.title }}</a>
       <nav class="site-nav" aria-label="Team groups">
         {% for group in site.data.groups %}
-        <a href="{{ '/pages/' | append: group.slug | append: '.html' | absolute_url }}">{{ group.name }}</a>
+        <a href="{{ '/pages/' | append: group.slug | append: '.html' | absolute_url }}"
+           data-teamcolor="{{ group.color }}"
+           style="border-color: {{ group.color }};">{{ group.name }}</a>
         {% endfor %}
       </nav>
     </div>
@@ -498,8 +500,11 @@
       trio.forEach(function (p) { grid.appendChild(p); });
     }
 
-    // 3. Unique background colour per section heading
-    //    Palette: all dark enough for WCAG AA white text (contrast >= 7:1)
+    // 3. Section heading colours
+    //    If this page declares a team_color in front matter, every h1 uses it
+    //    (team pages and participant pages have one h1 each).
+    //    Otherwise the front page cycles through the palette.
+    var PAGE_TEAM_COLOR = '{{ page.team_color | default: "" }}';
     var PALETTE = [
       '#1e3a5f',  // deep navy
       '#5c1f78',  // deep violet
@@ -511,8 +516,23 @@
     Array.from(wrapper.querySelectorAll('h1'))
       .filter(function (h) { return !h.closest('.schmeichel-card'); })
       .forEach(function (h, i) {
-        h.style.background = PALETTE[i % PALETTE.length];
+        h.style.background = PAGE_TEAM_COLOR || PALETTE[i % PALETTE.length];
       });
+
+    // 4. Team-colored nav pill hover
+    document.querySelectorAll('.site-nav a[data-teamcolor]').forEach(function (a) {
+      var c = a.dataset.teamcolor;
+      a.addEventListener('mouseenter', function () {
+        a.style.background   = c;
+        a.style.borderColor  = c;
+        a.style.color        = '#fff';
+      });
+      a.addEventListener('mouseleave', function () {
+        a.style.background  = '';
+        a.style.borderColor = c;   // keep colored border at rest
+        a.style.color       = '';
+      });
+    });
   });
   </script>
 
