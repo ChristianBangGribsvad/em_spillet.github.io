@@ -178,4 +178,5 @@ if __name__ == "__main__":
         df_group_avg.to_pickle("data/group_avg")
 
         create_pages(predictions_df)
+        create_group_pages(predictions_df)
         update_pages(predictions_df,todays_schmeichel)

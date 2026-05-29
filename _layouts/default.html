@@ -331,7 +331,11 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="site-title" href="{{ site.baseurl }}/">&#x26BD; {{ site.title }}</a>
-      <nav class="site-nav" id="group-nav" aria-label="Team groups"></nav>
+      <nav class="site-nav" aria-label="Team groups">
+        {% for group in site.data.groups %}
+        <a href="{{ site.baseurl }}/pages/{{ group.slug }}.html">{{ group.name }}</a>
+        {% endfor %}
+      </nav>
     </div>
   </header>
 
@@ -375,17 +379,7 @@
       }
     }
 
-    // 2. Build sticky nav from team-group h1s (skip Schmeichel)
-    var nav = document.getElementById('group-nav');
-    wrapper.querySelectorAll('h1').forEach(function (h1) {
-      if (h1.textContent.indexOf('Schmeichel') !== -1) return;
-      var a = document.createElement('a');
-      a.href = '#' + h1.id;
-      a.textContent = h1.textContent;
-      nav.appendChild(a);
-    });
-
-    // 3. Wrap every 3 consecutive group-plot images into a CSS grid
+    // 2. Wrap every 3 consecutive group-plot images into a CSS grid
     var imgParas = Array.from(wrapper.querySelectorAll('p > img'))
       .filter(function (img) { return img.src.indexOf('group_plots') !== -1; })
       .map(function (img) { return img.closest('p'); });

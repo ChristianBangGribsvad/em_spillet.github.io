@@ -31,7 +31,7 @@ sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 from eval_funcs   import eval_match_predictions, eval_groups, find_group_winners
 from plot_funcs   import plot_user, plot_group_progress, plot_best_round, plot_standings
 from create_pages import create_pages
-from insert_pages import update_pages
+from insert_pages import update_pages, create_group_pages
 
 # ── Simulated match IDs (must match process_match() output exactly) ──────────
 GROUP_A_IDS = [
@@ -298,7 +298,7 @@ def setup():
     if os.path.exists(TEST_DIR):
         shutil.rmtree(TEST_DIR)
     for sub in ["data/user_dfs", "data/group_dfs",
-                "pages/user_plots", "pages/group_plots"]:
+                "pages/user_plots", "pages/group_plots", "_data"]:
         os.makedirs(os.path.join(TEST_DIR, sub), exist_ok=True)
 
     shutil.copy(os.path.join(ROOT, "index_template.md"),
@@ -782,6 +782,7 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict,
     df_group_avg.to_pickle(gfile_avg)
 
     create_pages(predictions_df)
+    create_group_pages(predictions_df)
     update_pages(predictions_df, todays_schmeichel)
 
     if exp_schmeichel_name is not None:
@@ -813,6 +814,10 @@ def assert_files(predictions_df: pd.DataFrame) -> bool:
     expected.append("index.md")
     expected.append("data/group_avg")
     expected.append("pages/group_plots/group_avg.svg")
+    expected.append("_data/groups.yml")
+    for group in (predictions_df["Which team(s) do you belong to?"]
+                  .str.split(";").explode().str.strip().unique()):
+        expected.append(f"pages/{group.replace(' ', '_')}.md")
 
     passes, failures = [], []
     for path in expected:
