@@ -43,22 +43,31 @@ def create_group_pages(predictions_df):
     print(f"Group pages written: {list(all_teams)}")
 
 
+def _div_block(css_class, items, empty_msg):
+    """Build a <div> block from a list of strings, one <p> per item."""
+    if items:
+        inner = "".join(f"<p>{item}</p>\n" for item in items)
+    else:
+        inner = f"<p><em>{empty_msg}</em></p>\n"
+    return [f'<div class="{css_class}">\n', inner, '</div>\n']
+
+
 def update_next_matches_only():
     """
-    Replace only the <div class="next-matches"> block in the existing index.md.
-    Called every pipeline run so the section stays current even when no
-    game results have changed.
+    Refresh both the Next Matches and Yesterday's Results sections in
+    index.md on every pipeline run, even when no game results have changed.
     """
     try:
-        from get_results import get_upcoming_matches
+        from get_results import get_upcoming_matches, get_recent_results
         upcoming = get_upcoming_matches()
+        recent   = get_recent_results()
     except Exception:
-        return  # If the API is unavailable, leave the file untouched
+        return  # API unavailable — leave file untouched
 
-    if upcoming:
-        inner = "".join(f"<p>{m}</p>\n" for m in upcoming)
-    else:
-        inner = "<p><em>No matches scheduled in the next 24 hours.</em></p>\n"
+    next_block      = _div_block("next-matches",      upcoming,
+                                 "No matches scheduled in the next 24 hours.")
+    yesterday_block = _div_block("yesterdays-results", recent,
+                                 "No results yet.")
 
     try:
         with open("index.md", "r", encoding="UTF-8") as f:
@@ -70,7 +79,10 @@ def update_next_matches_only():
     for line in lines:
         if '<div class="next-matches">' in line:
             in_div = True
-            new_lines += ['<div class="next-matches">\n', inner, '</div>\n']
+            new_lines += next_block
+        elif '<div class="yesterdays-results">' in line:
+            in_div = True
+            new_lines += yesterday_block
         elif '</div>' in line and in_div:
             in_div = False
         elif not in_div:
@@ -80,17 +92,24 @@ def update_next_matches_only():
         f.writelines(new_lines)
 
 
-def update_pages(predictions_df, todays_schmeichel, upcoming_matches=None):
-    """Write index.md with Schmeichel, Next Matches, and Groups sections.
-    Pass upcoming_matches=[] to skip the API call (e.g. in tests)."""
+def update_pages(predictions_df, todays_schmeichel,
+                 upcoming_matches=None, recent_results=None):
+    """Write index.md from the template.
+    Pass upcoming_matches=[] / recent_results=[] to skip API calls (e.g. tests)."""
 
-    # Fetch upcoming matches unless caller supplies them
     if upcoming_matches is None:
         try:
             from get_results import get_upcoming_matches
             upcoming_matches = get_upcoming_matches()
         except Exception:
             upcoming_matches = []
+
+    if recent_results is None:
+        try:
+            from get_results import get_recent_results
+            recent_results = get_recent_results()
+        except Exception:
+            recent_results = []
 
     pages_loc = "./pages"
 
@@ -107,12 +126,10 @@ def update_pages(predictions_df, todays_schmeichel, upcoming_matches=None):
             f" part of {todays_schmeichel[name]['group']} {link}\n"
         )
 
-    # ── Next Matches HTML block ───────────────────────────────────────────────
-    if upcoming_matches:
-        inner = "".join(f"<p>{m}</p>\n" for m in upcoming_matches)
-    else:
-        inner = "<p><em>No matches scheduled in the next 24 hours.</em></p>\n"
-    next_block = ['<div class="next-matches">\n', inner, '</div>\n']
+    next_block      = _div_block("next-matches",      upcoming_matches,
+                                 "No matches scheduled in the next 24 hours.")
+    yesterday_block = _div_block("yesterdays-results", recent_results,
+                                 "No results yet.")
 
     # ── Insert into template ──────────────────────────────────────────────────
     for i, line in enumerate(content):
@@ -123,6 +140,11 @@ def update_pages(predictions_df, todays_schmeichel, upcoming_matches=None):
     for i, line in enumerate(content):
         if "NEXT_MATCHES" in line:
             content = content[:i] + next_block + content[i + 1:]
+            break
+
+    for i, line in enumerate(content):
+        if "YESTERDAY_RESULTS" in line:
+            content = content[:i] + yesterday_block + content[i + 1:]
             break
 
     with open("index.md", "w", encoding="UTF-8") as f:

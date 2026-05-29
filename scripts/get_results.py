@@ -43,6 +43,44 @@ def get_upcoming_matches():
 
     return upcoming
 
+
+def get_recent_results():
+    """
+    Return finished matches from the 24-hour window that just closed.
+
+    The window is [window_start - 24h, window_start) where window_start
+    matches the anchor used by get_upcoming_matches().  Before the
+    tournament opens this window contains no WC matches, so an empty list
+    is returned.
+    """
+    now_cph = datetime.now(timezone.utc).astimezone(_CEST)
+    anchor       = _TOURNAMENT_START if now_cph < _TOURNAMENT_START else now_cph
+    window_end   = anchor
+    window_start = window_end - timedelta(hours=24)
+
+    uri     = 'https://api.football-data.org/v4/competitions/WC/matches'
+    headers = {'X-Auth-Token': '242e02ff31ea497fbe4b85978fe70b81'}
+    matches = requests.get(uri, headers=headers).json()["matches"]
+
+    results = []
+    for m in matches:
+        if m.get("status") != "FINISHED":
+            continue
+        try:
+            match_cph = (datetime
+                         .fromisoformat(m["utcDate"].replace("Z", "+00:00"))
+                         .astimezone(_CEST))
+        except (KeyError, ValueError):
+            continue
+        if window_start <= match_cph < window_end:
+            home       = m["homeTeam"]["name"]
+            away       = m["awayTeam"]["name"]
+            home_score = m["score"]["fullTime"]["home"]
+            away_score = m["score"]["fullTime"]["away"]
+            results.append(f"{home} {home_score} - {away_score} {away}")
+
+    return results
+
 def process_match(match):
     hometeam = match["homeTeam"]["name"]
     awayteam = match["awayTeam"]["name"]

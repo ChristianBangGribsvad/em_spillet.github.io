@@ -17,6 +17,12 @@ layout: default
 <p>Qatar vs Switzerland &mdash; Sat 13 Jun, 21:00</p>
 </div>
 
+# Yesterday's Results
+
+<div class="yesterdays-results">
+<p><em>No results yet.</em></p>
+</div>
+
 # Groups
 {% for group in site.data.groups %}
 - [{{ group.name }}]({{ '/pages/' | append: group.slug | append: '.html' | absolute_url }})
