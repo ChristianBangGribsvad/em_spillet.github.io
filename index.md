@@ -23,6 +23,12 @@ layout: default
 <p><em>No results yet.</em></p>
 </div>
 
+# Group vs Group
+
+Average cumulative score per group over time — the higher the line, the better that group's participants are performing overall.
+
+![Group vs Group](./pages/group_plots/group_avg.svg?raw=true)
+
 # Groups
 {% for group in site.data.groups %}
 - [{{ group.name }}]({{ '/pages/' | append: group.slug | append: '.html' | absolute_url }})
