@@ -4,22 +4,28 @@ import pandas as pd
 _MEDALS  = {1: '🥇', 2: '🥈', 3: '🥉'}
 _CLASSES = {1: 'lb-gold', 2: 'lb-silver', 3: 'lb-bronze'}
 
-# All colors are WCAG AA compliant (≥4.5:1) with white text AND visually
-# distinct in line plots on a white background.
-TEAM_PALETTE = [
-    '#1e40af',  # deep blue
-    '#6d28d9',  # deep violet
-    '#991b1b',  # deep red
-    '#065f46',  # deep emerald
-    '#92400e',  # deep amber
-    '#155e75',  # deep cyan
-]
-
-
 def get_team_colors(all_teams):
-    """Assign palette colors to teams in consistent alphabetical order."""
-    return {team: TEAM_PALETTE[i % len(TEAM_PALETTE)]
-            for i, team in enumerate(sorted(all_teams))}
+    """
+    Generate one distinct color per team by spacing hues evenly around the
+    HSL wheel (360 / N degrees apart).  With N teams there are always exactly
+    N unique colors — no cycling, no repetition, regardless of group count.
+
+    S=0.80 L=0.27 keeps every color dark enough for WCAG AA white-text
+    contrast while staying vivid enough to be readable in line plots.
+    """
+    import colorsys
+    teams = sorted(all_teams)
+    n = len(teams)
+    if n == 0:
+        return {}
+    result = {}
+    for i, team in enumerate(teams):
+        h = i / n
+        r, g, b = colorsys.hls_to_rgb(h, 0.27, 0.80)
+        result[team] = '#{:02x}{:02x}{:02x}'.format(
+            int(round(r * 255)), int(round(g * 255)), int(round(b * 255))
+        )
+    return result
 
 
 def compute_leaderboard(n=10):

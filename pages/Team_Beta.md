@@ -1,6 +1,6 @@
 ---
 layout: default
-team_color: "#6d28d9"
+team_color: "#0e7c7c"
 ---
 
 # Team Beta

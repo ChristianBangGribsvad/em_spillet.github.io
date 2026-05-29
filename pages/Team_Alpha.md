@@ -1,6 +1,6 @@
 ---
 layout: default
-team_color: "#1e40af"
+team_color: "#7c0e0e"
 ---
 
 # Team Alpha
