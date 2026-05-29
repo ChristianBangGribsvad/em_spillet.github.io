@@ -2,12 +2,8 @@
 layout: default
 ---
 
-# Results of Alice Sm
+# Results of Alice Smith (Team Alpha)
 
-Part of Team Alpha
-
-See your results in the table below:
-
-![Alice Sm](./user_plots/Alice_Sm.svg?raw=true)
+![Alice Smith](./user_plots/Alice_Sm.svg?raw=true)
 
 [Back](https://christianbanggribsvad.github.io/wc-predictions.github.io/)

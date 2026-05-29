@@ -22,11 +22,7 @@ def create_pages(predictions_df):
 layout: default
 ---
 
-# Results of {name}
-
-Part of {group}
-
-See your results in the table below:
+# Results of {name} ({group})
 
 ![{name}]({table_path}?raw=true)
 
