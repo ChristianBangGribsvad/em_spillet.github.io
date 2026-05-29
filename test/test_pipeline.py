@@ -31,7 +31,7 @@ sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 from eval_funcs   import eval_match_predictions, eval_groups, find_group_winners
 from plot_funcs   import plot_user, plot_group_progress, plot_best_round, plot_standings
 from create_pages import create_pages
-from insert_pages import update_pages, create_group_pages
+from insert_pages import update_pages, create_group_pages, get_team_colors
 
 # ── Simulated match IDs (must match process_match() output exactly) ──────────
 GROUP_A_IDS = [
@@ -778,7 +778,9 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict,
         plot_standings(df_grp, group)
         df_group_avg.loc[date_str, group] = df_grp.loc[date_str].mean()
 
-    plot_group_progress(df_group_avg, "group_avg", out_path="pages/group_plots/")
+    team_names = os.listdir("data/group_dfs")
+    plot_group_progress(df_group_avg, "group_avg", out_path="pages/group_plots/",
+                        colors=get_team_colors(team_names))
     df_group_avg.to_pickle(gfile_avg)
 
     create_pages(predictions_df)

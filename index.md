@@ -38,6 +38,8 @@ Average cumulative score per team over time — the higher the line, the better 
 ![Team vs Team](./pages/group_plots/group_avg.svg?raw=true)
 
 # Teams
+<ul>
 {% for group in site.data.groups %}
-- [{{ group.name }}]({{ '/pages/' | append: group.slug | append: '.html' | absolute_url }})
+<li><a href="{{ '/pages/' | append: group.slug | append: '.html' | absolute_url }}" style="background: {{ group.color }};">{{ group.name }}</a></li>
 {% endfor %}
+</ul>
