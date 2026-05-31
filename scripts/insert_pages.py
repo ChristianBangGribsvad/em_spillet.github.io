@@ -85,27 +85,29 @@ def compute_leaderboard(n=10):
         try:
             df    = pd.read_pickle(os.path.join(user_dir, fname))
             name  = df.at[0, 'd_name']
+            f_name = df.at[0, 'f_name']
             group = str(df.at[0, 'Which team(s) do you belong to?']).replace(';', ' &amp; ')
             score = int(round(pd.to_numeric(df.loc[2], errors='coerce').sum()))
-            entries.append((name, group, score))
+            entries.append((name, f_name, group, score))
         except Exception:
             continue
-    entries.sort(key=lambda x: x[2], reverse=True)
-    return [(i + 1, name, group, score)
-            for i, (name, group, score) in enumerate(entries[:n])]
+    entries.sort(key=lambda x: x[3], reverse=True)
+    return [(i + 1, name, f_name, group, score)
+            for i, (name, f_name, group, score) in enumerate(entries[:n])]
 
 
 def _leaderboard_block(entries):
     if not entries:
         return ['<div class="leaderboard"><p class="lb-empty"><em>No scores yet.</em></p></div>\n']
     rows = []
-    for rank, name, group, score in entries:
+    for rank, name, f_name, group, score in entries:
         css  = _CLASSES.get(rank, '')
         icon = _MEDALS.get(rank, str(rank))
+        link = f'<a href="./pages/{f_name}.html">{name}</a>'
         rows.append(
             f'<div class="lb-row {css}">'
             f'<span class="lb-pos">{icon}</span>'
-            f'<span class="lb-info">{name} <small>({group})</small></span>'
+            f'<span class="lb-info">{link} <small>({group})</small></span>'
             f'<span class="lb-pts">{score} pts</span>'
             f'</div>\n'
         )
