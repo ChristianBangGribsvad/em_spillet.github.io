@@ -1,7 +1,6 @@
 import pandas as pd
 from get_results import *
 from eval_funcs import *
-from plot_funcs import *
 from insert_pages import *
 from create_pages import *
 from datetime import date
@@ -161,7 +160,6 @@ if __name__ == "__main__":
         # Plot and save group results
         for group in os.listdir("data/group_dfs"):
             df_results = pd.read_pickle("data/group_dfs/"+group)
-            plot_best_round(df_results,group)
 
             # Save group avg
             df_group_avg.loc[date,group] = df_results.loc[date].mean()

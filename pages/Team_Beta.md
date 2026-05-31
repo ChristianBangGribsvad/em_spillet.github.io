@@ -106,6 +106,35 @@ btn.addEventListener("click",function(){
 })()
 </script>
 
-![Team Beta](./group_plots/bars_Team_Beta.svg?raw=true)
- 
+<div class="chart-wrapper" style="height:174px">
+<canvas id="bar-Team_Beta"></canvas>
+</div>
+<script>
+(function(){
+var d={"labels": ["Bob Johnson", "Carol Davis"], "values": [300.0, 298.0], "colors": ["#a71b1b", "#1ba7a7"], "title": "Points earned \u2192 2026-06-16 to 2026-06-20"};
+new Chart(document.getElementById("bar-Team_Beta"),{
+  type:"bar",
+  data:{
+    labels:d.labels,
+    datasets:[{data:d.values,backgroundColor:d.colors,borderRadius:5,borderWidth:0}]
+  },
+  options:{
+    indexAxis:"y",responsive:true,maintainAspectRatio:false,
+    plugins:{
+      legend:{display:false},
+      title:{display:true,text:d.title,color:"#666",
+             font:{family:"Inter,system-ui,sans-serif",size:11},padding:{bottom:6}},
+      tooltip:{callbacks:{label:function(c){return " "+Math.round(c.raw)+" pts";}}}
+    },
+    scales:{
+      x:{beginAtZero:true,
+         title:{display:true,text:"Points earned",font:{size:11}},
+         grid:{color:"rgba(0,0,0,0.05)"}},
+      y:{grid:{display:false},ticks:{font:{family:"Inter,system-ui,sans-serif",size:11}}}
+    }
+  }
+});
+})()
+</script>
+
 [← Back to standings](../)

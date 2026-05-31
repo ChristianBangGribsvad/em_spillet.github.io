@@ -101,8 +101,51 @@ btn.addEventListener("click",function(){
 
 
 def _build_chart(chart_id, chart_data_json):
-    """Stamp chart_id and JSON data into the Chart.js template."""
+    """Stamp chart_id and JSON data into the line-chart template."""
     return _CHART_TMPL.replace('CHART_ID', chart_id).replace('CHART_DATA', chart_data_json)
+
+
+# ── Best-round horizontal bar chart template ──────────────────────────────────
+_BAR_TMPL = """\
+<div class="chart-wrapper" style="height:HEIGHTpx">
+<canvas id="CHART_ID"></canvas>
+</div>
+<script>
+(function(){
+var d=CHART_DATA;
+new Chart(document.getElementById("CHART_ID"),{
+  type:"bar",
+  data:{
+    labels:d.labels,
+    datasets:[{data:d.values,backgroundColor:d.colors,borderRadius:5,borderWidth:0}]
+  },
+  options:{
+    indexAxis:"y",responsive:true,maintainAspectRatio:false,
+    plugins:{
+      legend:{display:false},
+      title:{display:true,text:d.title,color:"#666",
+             font:{family:"Inter,system-ui,sans-serif",size:11},padding:{bottom:6}},
+      tooltip:{callbacks:{label:function(c){return " "+Math.round(c.raw)+" pts";}}}
+    },
+    scales:{
+      x:{beginAtZero:true,
+         title:{display:true,text:"Points earned",font:{size:11}},
+         grid:{color:"rgba(0,0,0,0.05)"}},
+      y:{grid:{display:false},ticks:{font:{family:"Inter,system-ui,sans-serif",size:11}}}
+    }
+  }
+});
+})()
+</script>
+"""
+
+
+def _build_bar_chart(chart_id, chart_data_json, height):
+    """Stamp id, JSON data, and pixel height into the bar-chart template."""
+    return (_BAR_TMPL
+            .replace('CHART_ID', chart_id)
+            .replace('CHART_DATA', chart_data_json)
+            .replace('HEIGHT', str(height)))
 
 
 def _hex_to_rgba(hex_color, alpha):
@@ -150,6 +193,32 @@ def _participant_chart_js(slug, df_grp, members):
         for name in df_grp.columns
     ]
     return _build_chart(f'chart-{slug}', json.dumps({'labels': labels, 'datasets': datasets}))
+
+
+def _best_round_chart_js(slug, df_grp):
+    """
+    Horizontal bar chart: points each participant earned in the latest round.
+    Bars are sorted descending (top scorer at top), colored per participant.
+    Only rendered when at least two scoring runs exist.
+    """
+    if df_grp is None or df_grp.empty or len(df_grp) < 2:
+        return (
+            '<p class="chart-placeholder">'
+            '<em>Best round chart appears after the first two scoring updates.</em>'
+            '</p>\n'
+        )
+    delta  = (df_grp.iloc[-1] - df_grp.iloc[-2]).sort_values(ascending=False)
+    colors = _participant_colors(list(df_grp.columns))
+    title  = f'Points earned → {df_grp.index[-2]} to {df_grp.index[-1]}'
+    chart_data = json.dumps({
+        'labels': list(delta.index),
+        'values': [round(float(v), 1) for v in delta.values],
+        'colors': [colors.get(n, '#1a3a2a') for n in delta.index],
+        'title':  title,
+    })
+    # Height scales with the number of participants
+    height = max(120, len(delta) * 52 + 70)
+    return _build_bar_chart(f'bar-{slug}', chart_data, height)
 
 
 def _team_avg_chart_js(df_avg, team_colors):
@@ -324,6 +393,7 @@ def create_group_pages(predictions_df):
 
         standings  = _standings_html(team, members, df_grp=df_grp)
         line_chart = _participant_chart_js(slug, df_grp, members)
+        bar_chart  = _best_round_chart_js(slug, df_grp)
 
         page = (
             "---\n"
@@ -335,7 +405,7 @@ def create_group_pages(predictions_df):
             f"{member_lines}\n\n"
             f"{standings}\n"
             f"{line_chart}\n"
-            f"![{team}](./group_plots/bars_{slug}.svg?raw=true)\n \n"
+            f"{bar_chart}\n"
             "[← Back to standings](../)\n"
         )
         with open(f"pages/{slug}.md", "w", encoding="UTF-8") as f:
