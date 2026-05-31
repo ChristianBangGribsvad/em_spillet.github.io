@@ -270,6 +270,52 @@
 
     .lb-empty { padding: 0.75rem 1rem; color: var(--muted); font-style: italic; }
 
+    /* ── Team standings (HTML table on team pages) ───────────── */
+    .team-standings {
+      background: var(--white);
+      border-left: 5px solid var(--turf);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 0 var(--r) var(--r);
+      overflow: hidden;
+      margin-bottom: 1.25rem;
+    }
+    .ts-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.55rem 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .ts-row:last-child { border-bottom: none; }
+    .ts-gold   { background: linear-gradient(90deg, rgba(212,175,55,0.18) 0%, transparent 65%); }
+    .ts-silver { background: linear-gradient(90deg, rgba(160,160,160,0.14) 0%, transparent 65%); }
+    .ts-bronze { background: linear-gradient(90deg, rgba(180,100,50,0.14) 0%, transparent 65%); }
+    .ts-pos {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      min-width: 2.2rem;
+      text-align: center;
+      color: var(--muted);
+    }
+    .ts-gold   .ts-pos { font-size: 1.35rem; }
+    .ts-silver .ts-pos { font-size: 1.2rem;  }
+    .ts-bronze .ts-pos { font-size: 1.1rem;  }
+    .ts-name { flex: 1; font-size: 0.9rem; font-weight: 500; color: var(--text); }
+    .ts-name a { color: var(--text); text-decoration: none; font-weight: 600; }
+    .ts-name a:hover { color: var(--turf); text-decoration: underline; }
+    .ts-pts {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--pitch);
+    }
+    .ts-gold   .ts-pts { color: #b8860b; }
+    .ts-silver .ts-pts { color: #707070; }
+    .ts-bronze .ts-pts { color: #a0522d; }
+    .ts-empty { padding: 0.75rem 1rem; color: var(--muted); font-style: italic; margin: 0; }
+
     /* ── Next Matches card body ─────────────────────────────── */
     .next-matches {
       background: var(--white);

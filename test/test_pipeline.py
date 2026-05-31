@@ -29,7 +29,7 @@ TEST_DIR   = os.path.join(SCRIPT_DIR, "test-results")
 sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 
 from eval_funcs   import eval_match_predictions, eval_groups, find_group_winners
-from plot_funcs   import plot_user, plot_group_progress, plot_best_round, plot_standings
+from plot_funcs   import plot_user, plot_group_progress, plot_best_round
 from create_pages import create_pages
 from insert_pages import update_pages, create_group_pages, get_team_colors
 
@@ -775,7 +775,6 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict,
         day_ok &= check_monotonicity(df_grp, group)
         plot_group_progress(df_grp, group)
         plot_best_round(df_grp, group)
-        plot_standings(df_grp, group)
         df_group_avg.loc[date_str, group] = df_grp.loc[date_str].mean()
 
     team_names = os.listdir("data/group_dfs")
@@ -810,7 +809,6 @@ def assert_files(predictions_df: pd.DataFrame) -> bool:
         expected += [
             f"pages/group_plots/lines_{g}.svg",
             f"pages/group_plots/bars_{g}.svg",
-            f"pages/group_plots/standing_{g}.svg",
         ]
 
     expected.append("index.md")

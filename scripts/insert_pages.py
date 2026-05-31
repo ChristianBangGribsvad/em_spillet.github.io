@@ -1,8 +1,52 @@
 import os
 import pandas as pd
 
-_MEDALS  = {1: '🥇', 2: '🥈', 3: '🥉'}
-_CLASSES = {1: 'lb-gold', 2: 'lb-silver', 3: 'lb-bronze'}
+_MEDALS     = {1: '🥇', 2: '🥈', 3: '🥉'}
+_CLASSES    = {1: 'lb-gold',  2: 'lb-silver',  3: 'lb-bronze'}
+_TS_CLASSES = {1: 'ts-gold',  2: 'ts-silver',  3: 'ts-bronze'}
+
+
+def _standings_html(team, members):
+    """
+    Load data/group_dfs/{team} and return an HTML standings block.
+    members: the predictions_df subset for this team (has d_name + f_name).
+    Returns a placeholder if no scores exist yet.
+    """
+    pickle_path = os.path.join("data", "group_dfs", team)
+    placeholder = (
+        '<div class="team-standings">\n'
+        '<p class="ts-empty"><em>Standings will appear once the first matches are scored.</em></p>\n'
+        '</div>\n'
+    )
+    if not os.path.isfile(pickle_path):
+        return placeholder
+    try:
+        df     = pd.read_pickle(pickle_path)
+        latest = df.iloc[-1].sort_values(ascending=False)
+    except Exception:
+        return placeholder
+
+    fname_map = {row['d_name']: row['f_name'] for _, row in members.iterrows()}
+    rows = []
+    for rank, (name, score) in enumerate(latest.items(), start=1):
+        try:
+            pts = int(round(float(score)))
+        except (ValueError, TypeError):
+            continue
+        css   = _TS_CLASSES.get(rank, '')
+        icon  = _MEDALS.get(rank, str(rank))
+        fname = fname_map.get(name)
+        name_html = f'<a href="./{fname}.html">{name}</a>' if fname else name
+        rows.append(
+            f'<div class="ts-row {css}">'
+            f'<span class="ts-pos">{icon}</span>'
+            f'<span class="ts-name">{name_html}</span>'
+            f'<span class="ts-pts">{pts} pts</span>'
+            f'</div>\n'
+        )
+    if not rows:
+        return placeholder
+    return '<div class="team-standings">\n' + ''.join(rows) + '</div>\n'
 
 def get_team_colors(all_teams):
     """
@@ -98,6 +142,7 @@ def create_group_pages(predictions_df):
             f"- [{row['d_name']}](./{row['f_name']}.html)"
             for _, row in members.iterrows()
         )
+        standings = _standings_html(team, members)
         page = (
             "---\n"
             "layout: default\n"
@@ -106,9 +151,9 @@ def create_group_pages(predictions_df):
             f"# {team}\n\n"
             f"## {team} participants:\n"
             f"{member_lines}\n\n"
+            f"{standings}\n"
             f"![{team}](./group_plots/bars_{slug}.svg?raw=true)\n \n"
             f"![{team}](./group_plots/lines_{slug}.svg?raw=true)\n \n"
-            f"![{team}](./group_plots/standing_{slug}.svg?raw=true)\n\n"
             "[← Back to standings](../)\n"
         )
         with open(f"pages/{slug}.md", "w", encoding="UTF-8") as f:

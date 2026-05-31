@@ -7,7 +7,6 @@ import warnings
 from datetime import datetime
 from pathlib import Path
 import os
-from matplotlib.font_manager import FontProperties
 import random
 import matplotlib as mpl
 
@@ -51,36 +50,6 @@ def plot_best_round(df_results,group_name):
         plt.close()
 
 
-def plot_standings(df_results,group_name):
-    sort_standing_names = df_results.iloc[-1,:].sort_values(ascending=False).index
-    sort_standing_value = df_results.iloc[-1,:].sort_values(ascending=False)
-
-    cols = 1
-    rows = len(sort_standing_names)
-    val1 = ["Points"]
-    val2 = [sort_standing_names[i].format(rows) for i in range(rows)]
-    val3 = [[str(sort_standing_value.iloc[r])] for r in range(rows)]
-
-    fig, ax = plt.subplots(1,figsize=(2,1))
-    ax.set_axis_off()
-    table = ax.table(
-        cellText = val3,
-        rowLabels = val2,
-        colLabels = val1,
-        rowColours =["dodgerblue"]*rows,
-        colColours =["dodgerblue"]*cols,
-        cellLoc ='center',
-        loc ='upper left')
-
-    ax.set_title('Standings',
-                fontweight ="bold",
-                loc = 'left')
-
-    for (row, col), cell in table.get_celld().items():
-        if (row == 0) or (col == -1):
-            cell.set_text_props(fontproperties=FontProperties(weight='bold'))
-    plt.savefig('pages/group_plots/standing_'+group_name.replace(" ","_")+'.svg',bbox_inches="tight")
-    plt.close()
 
 def plot_user(user_df):
     trans_df = user_df.iloc[:,4:-2].T

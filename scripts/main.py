@@ -4,11 +4,9 @@ from eval_funcs import *
 from plot_funcs import *
 from insert_pages import *
 from create_pages import *
-import pickle
 from datetime import date
 import os
 cwd = os.getcwd()
-import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
     #### Fill out when final is finished
@@ -167,7 +165,6 @@ if __name__ == "__main__":
             df_results = pd.read_pickle("data/group_dfs/"+group)
             plot_group_progress(df_results,group)
             plot_best_round(df_results,group)
-            plot_standings(df_results,group)
 
             # Save group avg
             df_group_avg.loc[date,group] = df_results.loc[date].mean()
