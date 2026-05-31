@@ -1,5 +1,6 @@
 ---
 layout: default
+title: WC Prediction Game 2026
 ---
 
 # Today's Schmeichel(s):
