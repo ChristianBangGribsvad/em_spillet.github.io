@@ -125,8 +125,6 @@ if __name__ == "__main__":
                 else:
                     df_results = pd.read_pickle("data/group_dfs/"+group)
 
-                # Plot user df
-                plot_user(user_df)
 
                 # Upload dataframe with new results
                 df_results.loc[date,user] = user_df.loc[2].sum()

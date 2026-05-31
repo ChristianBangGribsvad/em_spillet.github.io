@@ -29,7 +29,7 @@ TEST_DIR   = os.path.join(SCRIPT_DIR, "test-results")
 sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 
 from eval_funcs   import eval_match_predictions, eval_groups, find_group_winners
-from plot_funcs   import plot_user, plot_group_progress, plot_best_round
+from plot_funcs   import plot_group_progress, plot_best_round
 from create_pages import create_pages
 from insert_pages import update_pages, create_group_pages, get_team_colors
 
@@ -737,8 +737,6 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict,
             gfile = f"data/group_dfs/{group}"
             df_grp = pd.read_pickle(gfile) if os.path.isfile(gfile) else pd.DataFrame()
 
-            plot_user(user_df)
-
             total_score = user_df.loc[2].sum()
             df_grp.loc[date_str, user] = total_score
             df_grp.to_pickle(gfile)
@@ -797,10 +795,7 @@ def assert_files(predictions_df: pd.DataFrame) -> bool:
 
     for _, row in predictions_df.iterrows():
         fname = row["f_name"]
-        expected += [
-            f"pages/user_plots/{fname}.svg",
-            f"pages/{fname}.md",
-        ]
+        expected.append(f"pages/{fname}.md")
 
     groups = (predictions_df["Which team(s) do you belong to?"]
               .str.split(";").explode().unique())

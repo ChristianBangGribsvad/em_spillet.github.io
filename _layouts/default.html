@@ -316,6 +316,123 @@
     .ts-bronze .ts-pts { color: #a0522d; }
     .ts-empty { padding: 0.75rem 1rem; color: var(--muted); font-style: italic; margin: 0; }
 
+    /* ── Participant predictions table ───────────────────── */
+    .pred-table {
+      background: var(--white);
+      border-left: 5px solid var(--turf);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 0 var(--r) var(--r);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      font-size: 0.82rem;
+    }
+    .pred-col-header {
+      display: grid;
+      grid-template-columns: 1fr 5.5rem 5.5rem 3.5rem;
+      gap: 0.4rem;
+      padding: 0.3rem 0.75rem;
+      background: var(--off-white);
+      border-bottom: 2px solid var(--border);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .pred-col-header span:nth-child(n+2) { text-align: center; }
+
+    .pred-section { border-bottom: 2px solid var(--border); }
+    .pred-section:last-child { border-bottom: none; }
+
+    .pred-section-header {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: rgba(255,255,255,0.9);
+      background: var(--pitch);
+      padding: 0.28rem 0.75rem;
+    }
+    .pred-divider {
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      background: var(--off-white);
+      padding: 0.2rem 0.75rem;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .pred-row {
+      display: grid;
+      grid-template-columns: 1fr 5.5rem 5.5rem 3.5rem;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.75rem;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+    .pred-row:last-child { border-bottom: none; }
+    .pred-match  { color: var(--text); line-height: 1.3; }
+    .pred-guess  { text-align: center; font-weight: 600; color: var(--pitch); }
+    .pred-result { text-align: center; color: var(--muted); }
+
+    .pts-badge {
+      display: block;
+      text-align: center;
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.15rem 0.3rem;
+      border-radius: 0.25rem;
+      color: var(--white);
+      background: var(--border);
+    }
+
+    /* Row tint + badge colour per point level */
+    .pts-15 { background: rgba(20, 83, 45, 0.08); }
+    .pts-15 .pts-badge { background: #14532d; }
+    .pts-10 { background: rgba(22, 101, 52, 0.07); }
+    .pts-10 .pts-badge { background: #166534; }
+    .pts-7  { background: rgba(15, 118, 110, 0.07); }
+    .pts-7  .pts-badge { background: #0f766e; }
+    .pts-5  { background: rgba(77, 124, 15, 0.07); }
+    .pts-5  .pts-badge { background: #4d7c0f; }
+    .pts-2  { background: rgba(146, 64, 14, 0.08); }
+    .pts-2  .pts-badge { background: #92400e; }
+    .pts-0  { background: rgba(127, 29, 29, 0.07); }
+    .pts-0  .pts-badge { background: #7f1d1d; }
+    .pts-unplayed .pts-badge { background: var(--border); color: var(--muted); }
+
+    .pred-total {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 0.75rem;
+      background: var(--pitch);
+      color: rgba(255,255,255,0.65);
+      font-size: 0.82rem;
+    }
+    .pred-total-pts {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .pred-placeholder { padding: 1rem; color: var(--muted); font-style: italic; }
+
+    @media (max-width: 600px) {
+      .pred-table { font-size: 0.75rem; }
+      .pred-row, .pred-col-header {
+        grid-template-columns: 1fr 4.5rem 4.5rem 3rem;
+        gap: 0.3rem;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+
     /* ── Next Matches card body ─────────────────────────────── */
     .next-matches {
       background: var(--white);

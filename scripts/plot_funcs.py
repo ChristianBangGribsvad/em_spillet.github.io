@@ -8,7 +8,6 @@ from datetime import datetime
 from pathlib import Path
 import os
 import random
-import matplotlib as mpl
 
 
 def plot_group_progress(df_results, group_name, out_path='pages/group_plots/lines_', colors=None):
@@ -51,35 +50,4 @@ def plot_best_round(df_results,group_name):
 
 
 
-def plot_user(user_df):
-    trans_df = user_df.iloc[:,4:-2].T
-    trans_df.columns = ["Predictions", "Results","Points"]
-    trans_df = trans_df.reset_index()
-    colors = []
-    for _, row in trans_df.iterrows():
-        colors_in_column = [mpl.colormaps["autumn"](0)]*4
-        if row["Results"] == "-":
-            colors_in_column = [mpl.colormaps["Greys"](0.3)]*4
-        elif row["Points"] == 2:
-            colors_in_column = [mpl.colormaps["Greens"](0.2)]*4
-        elif row["Points"] == 5:
-            colors_in_column = [mpl.colormaps["Greens"](0.4)]*4
-        if row["Points"] == 7.5:
-            colors_in_column = [mpl.colormaps["Greens"](0.6)]*4
-        elif row["Points"] == 10:
-            colors_in_column = [mpl.colormaps["Greens"](0.8)]*4
-        elif row["Points"] == 15 or row["Points"] == 20 or row["Points"] == 25:
-            colors_in_column = [mpl.colormaps["Greens"](0.99)]*4
-        colors.append(colors_in_column)
-
-    fig, ax = plt.subplots()
-    ax.axis('off')
-    the_table = ax.table(cellText = trans_df.values,colWidths=[0.65,0.15,0.15,0.10] ,colLabels = trans_df.columns, loc='center', cellColours=colors)
-    the_table.auto_set_font_size(False)
-    the_table.set_fontsize(14)
-    the_table.scale(2, 2)
-
-
-    plt.savefig("pages/user_plots/"+user_df.at[0,"f_name"]+".svg",bbox_inches='tight', pad_inches=0)
-    plt.close()
 
