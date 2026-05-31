@@ -101,6 +101,15 @@
       color: var(--white);
       border-color: var(--turf);
     }
+    .nav-divider {
+      width: 1px;
+      align-self: stretch;
+      background: rgba(255,255,255,0.2);
+      margin: 0.25rem 0.15rem;
+      flex-shrink: 0;
+    }
+    .nav-rules { border-style: dashed !important; opacity: 0.85; }
+    .nav-rules:hover { border-style: solid !important; opacity: 1; }
 
     /* ── Hero banner (homepage only) ────────────────────────── */
     .site-hero {
@@ -426,6 +435,55 @@
     }
     .pred-placeholder { padding: 1rem; color: var(--muted); font-style: italic; }
 
+    /* ── Rules page ──────────────────────────────────────── */
+    .rules-table {
+      background: var(--white);
+      border-left: 5px solid var(--turf);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 0 var(--r) var(--r);
+      overflow: hidden;
+      margin: 0.75rem 0 1.5rem;
+    }
+    .rules-row {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      font-size: 0.88rem;
+    }
+    .rules-row:last-child { border-bottom: none; }
+    .rules-header {
+      background: var(--off-white);
+      border-bottom: 2px solid var(--border) !important;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .rules-pts {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--pitch);
+    }
+    /* inherit row tints from .pts-* classes defined above */
+    kbd {
+      display: inline-block;
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      font-size: 0.8rem;
+      font-family: monospace;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
     @media (max-width: 600px) {
       .pred-table { font-size: 0.75rem; }
       .pred-row, .pred-col-header {
@@ -608,6 +666,8 @@
            data-teamcolor="{{ group.color }}"
            style="border-color: {{ group.color }};">{{ group.name }}</a>
         {% endfor %}
+        <span class="nav-divider"></span>
+        <a href="{{ '/pages/rules.html' | absolute_url }}" class="nav-rules">📋 Rules</a>
       </nav>
     </div>
   </header>
