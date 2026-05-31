@@ -14,6 +14,8 @@ team_color: "#0e7c7c"
 <div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Carol_Da.html">Carol Davis</a></span><span class="ts-pts">701 pts</span></div>
 </div>
 
+## Score progression
+
 <div class="chart-wrapper">
 <div class="chart-controls">
 <button id="chart-Team_Beta-toggle" class="chart-toggle">Show Rank</button>
@@ -105,6 +107,8 @@ btn.addEventListener("click",function(){
 });
 })()
 </script>
+
+## Points earned — latest round
 
 <div class="chart-wrapper" style="height:174px">
 <canvas id="bar-Team_Beta"></canvas>

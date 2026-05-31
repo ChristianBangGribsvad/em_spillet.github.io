@@ -404,7 +404,9 @@ def create_group_pages(predictions_df):
             f"## {team} participants:\n"
             f"{member_lines}\n\n"
             f"{standings}\n"
+            "## Score progression\n\n"
             f"{line_chart}\n"
+            "## Points earned — latest round\n\n"
             f"{bar_chart}\n"
             "[← Back to standings](../)\n"
         )
