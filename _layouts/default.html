@@ -436,6 +436,41 @@
     }
     .pred-placeholder { padding: 1rem; color: var(--muted); font-style: italic; }
 
+    /* ── Participant stat cards ───────────────────────── */
+    .stat-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .stat-card {
+      background: var(--white);
+      border-left: 5px solid var(--turf);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 var(--r) var(--r) 0;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .stat-icon { font-size: 1.6rem; line-height: 1; flex-shrink: 0; }
+    .stat-up   { color: #166534; }
+    .stat-down { color: #7f1d1d; }
+    .stat-body { display: flex; flex-direction: column; gap: 0.1rem; }
+    .stat-main {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--pitch);
+      line-height: 1.2;
+    }
+    .stat-sub { font-size: 0.75rem; color: var(--muted); line-height: 1.4; }
+
+    @media (max-width: 600px) {
+      .stat-cards { grid-template-columns: 1fr; }
+    }
+
     /* ── Chart.js wrapper ────────────────────────────────── */
     .chart-wrapper {
       position: relative;

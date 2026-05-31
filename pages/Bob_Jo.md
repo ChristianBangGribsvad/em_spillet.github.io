@@ -4,6 +4,57 @@ layout: default
 
 # Results of Bob Johnson (Team Beta)
 
+<div class="stat-cards">
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#2nd out of 3</span><span class="stat-sub">You beat 33% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">300 pts last round</span><span class="stat-sub">-31 pts vs avg (331 pts) &middot; Position unchanged</span></div></div>
+</div>
+## Your score vs averages
+
+<div class="chart-wrapper">
+<canvas id="personal-Bob_Jo"></canvas>
+</div>
+<script>
+(function(){
+var el=document.getElementById("personal-Bob_Jo");
+var data={"labels": ["2026-06-12", "2026-06-16", "2026-06-20"], "datasets": [{"label": "Your score", "data": [219.0, 469.0, 769.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [205.5, 436.0, 735.0], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [236.7, 470.7, 802.3], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var hl=null;
+data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
+new Chart(el,{
+  type:"line",data:data,
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    interaction:{mode:"index",intersect:false},
+    plugins:{
+      legend:{
+        position:"right",labels:{boxWidth:12,padding:12,usePointStyle:true},
+        onClick:function(e,item,legend){
+          var chart=legend.chart;var idx=item.datasetIndex;
+          if(hl===idx){
+            data.datasets.forEach(function(ds){ds.borderWidth=ds._w;ds.borderColor=ds._c;ds.backgroundColor=ds._b;});
+            hl=null;
+          } else {
+            data.datasets.forEach(function(ds,i){
+              if(i===idx){ds.borderWidth=ds._w+1;ds.borderColor=ds._c;ds.backgroundColor=ds._b;}
+              else{ds.borderWidth=1;ds.borderColor="rgba(0,0,0,0.1)";ds.backgroundColor="rgba(0,0,0,0.02)";}
+            });
+            hl=idx;
+          }
+          chart.update();
+        }
+      },
+      tooltip:{callbacks:{label:function(c){return c.dataset.label+": "+Math.round(c.raw)+" pts";}}}
+    },
+    scales:{
+      x:{grid:{color:"rgba(0,0,0,0.05)"},ticks:{maxTicksLimit:10}},
+      y:{beginAtZero:true,title:{display:true,text:"Points"},grid:{color:"rgba(0,0,0,0.05)"}}
+    }
+  }
+});
+})()
+</script>
+
+## Your predictions
+
 <div class="pred-table">
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
