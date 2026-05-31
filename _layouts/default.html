@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ site.description }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -434,6 +435,31 @@
       color: var(--white);
     }
     .pred-placeholder { padding: 1rem; color: var(--muted); font-style: italic; }
+
+    /* ── Chart.js wrapper ────────────────────────────────── */
+    .chart-wrapper {
+      position: relative;
+      height: 340px;
+      background: var(--white);
+      border-left: 5px solid var(--turf);
+      border-right: 1px solid var(--border);
+      padding: 1rem 1rem 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .chart-placeholder {
+      padding: 1rem;
+      color: var(--muted);
+      font-style: italic;
+      background: var(--white);
+      border-left: 5px solid var(--turf);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 0 var(--r) var(--r);
+      margin-bottom: 1.25rem;
+    }
+    @media (max-width: 600px) {
+      .chart-wrapper { height: 260px; padding: 0.6rem 0.5rem 0.4rem; }
+    }
 
     /* ── Rules page ──────────────────────────────────────── */
     .rules-table {

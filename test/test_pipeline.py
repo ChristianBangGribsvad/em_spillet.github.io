@@ -29,9 +29,9 @@ TEST_DIR   = os.path.join(SCRIPT_DIR, "test-results")
 sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 
 from eval_funcs   import eval_match_predictions, eval_groups, find_group_winners
-from plot_funcs   import plot_group_progress, plot_best_round
+from plot_funcs   import plot_best_round
 from create_pages import create_pages
-from insert_pages import update_pages, create_group_pages, get_team_colors
+from insert_pages import update_pages, create_group_pages
 
 # ── Simulated match IDs (must match process_match() output exactly) ──────────
 GROUP_A_IDS = [
@@ -771,13 +771,9 @@ def run_day(predictions_df: pd.DataFrame, date_str: str, scored: dict,
     for group in os.listdir("data/group_dfs"):
         df_grp = pd.read_pickle(f"data/group_dfs/{group}")
         day_ok &= check_monotonicity(df_grp, group)
-        plot_group_progress(df_grp, group)
         plot_best_round(df_grp, group)
         df_group_avg.loc[date_str, group] = df_grp.loc[date_str].mean()
 
-    team_names = os.listdir("data/group_dfs")
-    plot_group_progress(df_group_avg, "group_avg", out_path="pages/group_plots/",
-                        colors=get_team_colors(team_names))
     df_group_avg.to_pickle(gfile_avg)
 
     create_pages(predictions_df)
@@ -801,14 +797,10 @@ def assert_files(predictions_df: pd.DataFrame) -> bool:
               .str.split(";").explode().unique())
     for group in groups:
         g = group.replace(" ", "_")
-        expected += [
-            f"pages/group_plots/lines_{g}.svg",
-            f"pages/group_plots/bars_{g}.svg",
-        ]
+        expected.append(f"pages/group_plots/bars_{g}.svg")
 
     expected.append("index.md")
     expected.append("data/group_avg")
-    expected.append("pages/group_plots/group_avg.svg")
     expected.append("_data/groups.yml")
     for group in (predictions_df["Which team(s) do you belong to?"]
                   .str.split(";").explode().str.strip().unique()):

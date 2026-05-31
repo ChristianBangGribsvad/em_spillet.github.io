@@ -31,7 +31,30 @@ title: WC Prediction Game 2026
 
 Average cumulative score per team over time — the higher the line, the better that team's participants are performing overall.
 
-![Team vs Team](./pages/group_plots/group_avg.svg?raw=true)
+<div class="chart-wrapper">
+<canvas id="chart-team-vs-team"></canvas>
+</div>
+<script>
+(function(){
+new Chart(document.getElementById("chart-team-vs-team"),{
+  type:"line",data:{"labels": ["2026-06-12", "2026-06-16", "2026-06-20"], "datasets": [{"label": "Team Alpha", "data": [245.5, 471.5, 819.0], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Team Beta", "data": [205.5, 436.0, 735.0], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]},
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    interaction:{mode:"index",intersect:false},
+    plugins:{
+      legend:{position:"right",labels:{boxWidth:12,padding:12,usePointStyle:true}},
+      tooltip:{callbacks:{label:function(c){return c.dataset.label+": "+Math.round(c.raw)+" pts";}}}
+    },
+    scales:{
+      x:{grid:{color:"rgba(0,0,0,0.05)"},ticks:{maxTicksLimit:10}},
+      y:{beginAtZero:true,
+         title:{display:true,text:"Points"},
+         grid:{color:"rgba(0,0,0,0.05)"}}
+    }
+  }
+});
+})()
+</script>
 
 # Teams
 

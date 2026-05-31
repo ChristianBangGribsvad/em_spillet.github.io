@@ -22,7 +22,7 @@ YESTERDAY_RESULTS
 
 Average cumulative score per team over time — the higher the line, the better that team's participants are performing overall.
 
-![Team vs Team](./pages/group_plots/group_avg.svg?raw=true)
+TEAM_CHART
 
 # Teams
 

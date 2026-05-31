@@ -1,28 +1,130 @@
 import os
+import json
+import colorsys
 import pandas as pd
+
+# ── Chart.js HTML template ────────────────────────────────────────────────────
+# CHART_ID and CHART_DATA are replaced at build time; all { } are JS literals.
+_CHART_TMPL = """\
+<div class="chart-wrapper">
+<canvas id="CHART_ID"></canvas>
+</div>
+<script>
+(function(){
+new Chart(document.getElementById("CHART_ID"),{
+  type:"line",data:CHART_DATA,
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    interaction:{mode:"index",intersect:false},
+    plugins:{
+      legend:{position:"right",labels:{boxWidth:12,padding:12,usePointStyle:true}},
+      tooltip:{callbacks:{label:function(c){return c.dataset.label+": "+Math.round(c.raw)+" pts";}}}
+    },
+    scales:{
+      x:{grid:{color:"rgba(0,0,0,0.05)"},ticks:{maxTicksLimit:10}},
+      y:{beginAtZero:true,
+         title:{display:true,text:"Points"},
+         grid:{color:"rgba(0,0,0,0.05)"}}
+    }
+  }
+});
+})()
+</script>
+"""
+
+
+def _build_chart(chart_id, chart_data_json):
+    """Stamp chart_id and JSON data into the Chart.js template."""
+    return _CHART_TMPL.replace('CHART_ID', chart_id).replace('CHART_DATA', chart_data_json)
+
+
+def _hex_to_rgba(hex_color, alpha):
+    r, g, b = int(hex_color[1:3], 16), int(hex_color[3:5], 16), int(hex_color[5:7], 16)
+    return f'rgba({r},{g},{b},{alpha})'
+
+
+def _make_dataset(label, values, color):
+    return {
+        'label': label,
+        'data': values,
+        'borderColor': color,
+        'backgroundColor': _hex_to_rgba(color, 0.08),
+        'tension': 0.3,
+        'pointRadius': 5,
+        'pointHoverRadius': 8,
+        'borderWidth': 2.5,
+        'fill': True,
+    }
+
+
+def _participant_colors(participants):
+    """Distinct line colors for individual participants within a chart."""
+    n = len(participants)
+    result = {}
+    for i, name in enumerate(sorted(participants)):
+        h = i / n if n > 1 else 0.0
+        r, g, b = colorsys.hls_to_rgb(h, 0.38, 0.72)
+        result[name] = '#{:02x}{:02x}{:02x}'.format(
+            int(round(r * 255)), int(round(g * 255)), int(round(b * 255))
+        )
+    return result
+
+
+def _participant_chart_js(slug, df_grp, members):
+    """Chart.js line chart for participant progress within a team."""
+    if df_grp is None or df_grp.empty:
+        return '<p class="chart-placeholder"><em>Chart will appear once matches are scored.</em></p>\n'
+    labels   = [str(d) for d in df_grp.index.tolist()]
+    colors   = _participant_colors(list(df_grp.columns))
+    datasets = [
+        _make_dataset(name,
+                      [round(float(df_grp.at[d, name]), 1) for d in df_grp.index],
+                      colors[name])
+        for name in df_grp.columns
+    ]
+    return _build_chart(f'chart-{slug}', json.dumps({'labels': labels, 'datasets': datasets}))
+
+
+def _team_avg_chart_js(df_avg, team_colors):
+    """Chart.js line chart for the Team vs Team (group_avg) view."""
+    if df_avg is None or df_avg.empty:
+        return '<p class="chart-placeholder"><em>Chart will appear once matches are scored.</em></p>\n'
+    labels   = [str(d) for d in df_avg.index.tolist()]
+    datasets = [
+        _make_dataset(team,
+                      [round(float(df_avg.at[d, team]), 1) for d in df_avg.index],
+                      team_colors.get(team, '#1a3a2a'))
+        for team in df_avg.columns
+    ]
+    return _build_chart('chart-team-vs-team', json.dumps({'labels': labels, 'datasets': datasets}))
 
 _MEDALS     = {1: '🥇', 2: '🥈', 3: '🥉'}
 _CLASSES    = {1: 'lb-gold',  2: 'lb-silver',  3: 'lb-bronze'}
 _TS_CLASSES = {1: 'ts-gold',  2: 'ts-silver',  3: 'ts-bronze'}
 
 
-def _standings_html(team, members):
+def _standings_html(team, members, df_grp=None):
     """
-    Load data/group_dfs/{team} and return an HTML standings block.
-    members: the predictions_df subset for this team (has d_name + f_name).
-    Returns a placeholder if no scores exist yet.
+    Return an HTML standings block for a team.
+    df_grp: already-loaded group DataFrame (pass None to load from pickle).
     """
-    pickle_path = os.path.join("data", "group_dfs", team)
     placeholder = (
         '<div class="team-standings">\n'
         '<p class="ts-empty"><em>Standings will appear once the first matches are scored.</em></p>\n'
         '</div>\n'
     )
-    if not os.path.isfile(pickle_path):
+    if df_grp is None:
+        pickle_path = os.path.join("data", "group_dfs", team)
+        if not os.path.isfile(pickle_path):
+            return placeholder
+        try:
+            df_grp = pd.read_pickle(pickle_path)
+        except Exception:
+            return placeholder
+    if df_grp.empty:
         return placeholder
     try:
-        df     = pd.read_pickle(pickle_path)
-        latest = df.iloc[-1].sort_values(ascending=False)
+        latest = df_grp.iloc[-1].sort_values(ascending=False)
     except Exception:
         return placeholder
 
@@ -144,7 +246,18 @@ def create_group_pages(predictions_df):
             f"- [{row['d_name']}](./{row['f_name']}.html)"
             for _, row in members.iterrows()
         )
-        standings = _standings_html(team, members)
+        # Load group_df once; share between standings and chart
+        pickle_path = os.path.join("data", "group_dfs", team)
+        df_grp = None
+        if os.path.isfile(pickle_path):
+            try:
+                df_grp = pd.read_pickle(pickle_path)
+            except Exception:
+                pass
+
+        standings  = _standings_html(team, members, df_grp=df_grp)
+        line_chart = _participant_chart_js(slug, df_grp, members)
+
         page = (
             "---\n"
             "layout: default\n"
@@ -154,8 +267,8 @@ def create_group_pages(predictions_df):
             f"## {team} participants:\n"
             f"{member_lines}\n\n"
             f"{standings}\n"
+            f"{line_chart}\n"
             f"![{team}](./group_plots/bars_{slug}.svg?raw=true)\n \n"
-            f"![{team}](./group_plots/lines_{slug}.svg?raw=true)\n \n"
             "[← Back to standings](../)\n"
         )
         with open(f"pages/{slug}.md", "w", encoding="UTF-8") as f:
@@ -253,6 +366,18 @@ def update_pages(predictions_df, todays_schmeichel,
                                  "No results yet.")
     lb_block        = _leaderboard_block(compute_leaderboard())
 
+    # Team vs Team chart
+    avg_path = os.path.join("data", "group_avg")
+    if os.path.isfile(avg_path):
+        try:
+            df_avg     = pd.read_pickle(avg_path)
+            avg_teams  = list(df_avg.columns)
+            team_chart = _team_avg_chart_js(df_avg, get_team_colors(avg_teams))
+        except Exception:
+            team_chart = '<p class="chart-placeholder"><em>Chart could not be loaded.</em></p>\n'
+    else:
+        team_chart = '<p class="chart-placeholder"><em>Chart will appear once matches are scored.</em></p>\n'
+
     # ── Insert into template ──────────────────────────────────────────────────
     for i, line in enumerate(content):
         if "# Today's Schmeichel(s):" in line:
@@ -272,6 +397,11 @@ def update_pages(predictions_df, todays_schmeichel,
     for i, line in enumerate(content):
         if "YESTERDAY_RESULTS" in line:
             content = content[:i] + yesterday_block + content[i + 1:]
+            break
+
+    for i, line in enumerate(content):
+        if "TEAM_CHART" in line:
+            content = content[:i] + [team_chart] + content[i + 1:]
             break
 
     with open("index.md", "w", encoding="UTF-8") as f:
