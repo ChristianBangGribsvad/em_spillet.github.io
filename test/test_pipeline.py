@@ -279,7 +279,7 @@ DAY3_SCORED = {
 SIMULATED_DAYS = [
     ("2026-06-12", DAY1_SCORED, 24, "Alice Smith",   299),
     ("2026-06-16", DAY2_SCORED, 48, "Bob Johnson",     250.0),
-    ("2026-06-20", DAY3_SCORED, 72, "Alice Smith",   397.0),
+    ("2026-06-20", DAY3_SCORED, 72, "Alice Smith",   457.0),
 ]
 
 # ── Special prediction results (only known after the final is played) ─────────
@@ -442,9 +442,9 @@ def check_scoring(predictions_df: pd.DataFrame) -> bool:
     # (name, exp_match_pts, exp_grp_a_pts, exp_grp_b_pts)
     # Carol predicted 2-0 vs actual 2-1: correct outcome AND correct home score = 10 pts
     expectations = [
-        ("Alice Smith", 15, 15.0, 15.0),
-        ("Bob Johnson",    5,  5.0, 10.0),
-        ("Carol Davis", 10,  5.0,  5.0),
+        ("Alice Smith", 15, 20.0, 20.0),   # both groups correct → 10+10 each
+        ("Bob Johnson",  5,  3.0, 10.0),   # grp_a only 2nd correct (3); grp_b swapped (5+5)
+        ("Carol Davis", 10,  5.0,  5.0),   # grp_a/b only 1st correct (5 each)
     ]
 
     rows = []
@@ -587,9 +587,9 @@ def check_all_group_winner_scoring(predictions_df: pd.DataFrame) -> bool:
     results_day3 = build_results(DAY3_SCORED)
 
     expectations = [
-        ("Alice Smith", 180.0),
-        ("Bob Johnson",   115.0),
-        ("Carol Davis", 130.0),
+        ("Alice Smith", 240.0),  # 12 × 20 = 240
+        ("Bob Johnson",  138.0),  # A=3, B=10, C-G=5×5=25, H-L=20×5=100 → 138
+        ("Carol Davis",  165.0),  # C,E-H,K,L both(7×20=140); A,B,D,I,J 1st-only(5×5=25) → 165
     ]
 
     all_ok = True

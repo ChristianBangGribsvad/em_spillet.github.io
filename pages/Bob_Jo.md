@@ -6,7 +6,7 @@ layout: default
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#2nd out of 3 players across the game</span><span class="stat-sub">You beat 33% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">300 pts last round</span><span class="stat-sub">-31 pts vs global avg (331 pts) &middot; Position unchanged &middot; 2nd out of 3 total players<br><span style="opacity:.8">+1 pts vs team avg (299 pts) &middot; Position unchanged &middot; 1st out of 2 Team Beta players</span></span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">323 pts last round</span><span class="stat-sub">-48 pts vs global avg (371 pts) &middot; Position unchanged &middot; 2nd out of 3 total players<br><span style="opacity:.8">-5 pts vs team avg (328 pts) &middot; Position unchanged &middot; 1st out of 2 Team Beta players</span></span></div></div>
 </div>
 ## Your score vs averages
 
@@ -16,7 +16,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Bob_Jo");
-var data={"labels": ["2026-06-12", "2026-06-16", "2026-06-20"], "datasets": [{"label": "Your score", "data": [219.0, 469.0, 769.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [205.5, 436.0, 735.0], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [236.7, 470.7, 802.3], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-12", "2026-06-16", "2026-06-20"], "datasets": [{"label": "Your score", "data": [219.0, 469.0, 792.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [205.5, 436.0, 764.0], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [236.7, 470.7, 841.7], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -66,8 +66,7 @@ new Chart(el,{
 <div class="pred-row pts-2"><span class="pred-match">Czechia vs Mexico</span><span class="pred-guess">1-1</span><span class="pred-result">0-1</span><span class="pts-badge">2</span></div>
 <div class="pred-row pts-0"><span class="pred-match">South Africa vs South Korea</span><span class="pred-guess">2-1</span><span class="pred-result">1-2</span><span class="pts-badge">0</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-0"><span class="pred-match">1st place</span><span class="pred-guess">Czechia</span><span class="pred-result">Mexico</span><span class="pts-badge">0</span></div>
-<div class="pred-row pts-5"><span class="pred-match">2nd place</span><span class="pred-guess">South Korea</span><span class="pred-result">South Korea</span><span class="pts-badge">5</span></div>
+<div class="pred-row pts-2"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Czechia / South Korea</span><span class="pred-result">Mexico / South Korea</span><span class="pts-badge">3</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group B</div>
@@ -78,8 +77,7 @@ new Chart(el,{
 <div class="pred-row pts-2"><span class="pred-match">Switzerland vs Canada</span><span class="pred-guess">0-1</span><span class="pred-result">1-1</span><span class="pts-badge">2</span></div>
 <div class="pred-row pts-5"><span class="pred-match">Bosnia-Herzegovina vs Qatar</span><span class="pred-guess">0-1</span><span class="pred-result">1-2</span><span class="pts-badge">5</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-5"><span class="pred-match">1st place</span><span class="pred-guess">Switzerland</span><span class="pred-result">Canada</span><span class="pts-badge">5</span></div>
-<div class="pred-row pts-5"><span class="pred-match">2nd place</span><span class="pred-guess">Canada</span><span class="pred-result">Switzerland</span><span class="pts-badge">5</span></div>
+<div class="pred-row pts-10"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Switzerland / Canada</span><span class="pred-result">Canada / Switzerland</span><span class="pts-badge">10</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group C</div>
@@ -90,8 +88,7 @@ new Chart(el,{
 <div class="pred-row pts-2"><span class="pred-match">Morocco vs Haiti</span><span class="pred-guess">1-0</span><span class="pred-result">1-1</span><span class="pts-badge">2</span></div>
 <div class="pred-row pts-15"><span class="pred-match">Scotland vs Brazil</span><span class="pred-guess">0-2</span><span class="pred-result">0-2</span><span class="pts-badge">15</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-5"><span class="pred-match">1st place</span><span class="pred-guess">Brazil</span><span class="pred-result">Brazil</span><span class="pts-badge">5</span></div>
-<div class="pred-row pts-0"><span class="pred-match">2nd place</span><span class="pred-guess">Morocco</span><span class="pred-result">Scotland</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-5"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Brazil / Morocco</span><span class="pred-result">Brazil / Scotland</span><span class="pts-badge">5</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group D</div>
@@ -102,8 +99,7 @@ new Chart(el,{
 <div class="pred-row pts-15"><span class="pred-match">Turkey vs United States</span><span class="pred-guess">0-2</span><span class="pred-result">0-2</span><span class="pts-badge">15</span></div>
 <div class="pred-row pts-5"><span class="pred-match">Paraguay vs Australia</span><span class="pred-guess">2-1</span><span class="pred-result">1-0</span><span class="pts-badge">5</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-5"><span class="pred-match">1st place</span><span class="pred-guess">United States</span><span class="pred-result">United States</span><span class="pts-badge">5</span></div>
-<div class="pred-row pts-0"><span class="pred-match">2nd place</span><span class="pred-guess">Paraguay</span><span class="pred-result">Turkey</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-5"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">United States / Paraguay</span><span class="pred-result">United States / Turkey</span><span class="pts-badge">5</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group E</div>
@@ -114,8 +110,7 @@ new Chart(el,{
 <div class="pred-row pts-5"><span class="pred-match">Ecuador vs Germany</span><span class="pred-guess">1-2</span><span class="pred-result">0-3</span><span class="pts-badge">5</span></div>
 <div class="pred-row pts-10"><span class="pred-match">Curaçao vs Ivory Coast</span><span class="pred-guess">0-1</span><span class="pred-result">0-2</span><span class="pts-badge">10</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-5"><span class="pred-match">1st place</span><span class="pred-guess">Germany</span><span class="pred-result">Germany</span><span class="pts-badge">5</span></div>
-<div class="pred-row pts-0"><span class="pred-match">2nd place</span><span class="pred-guess">Ecuador</span><span class="pred-result">Ivory Coast</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-5"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Germany / Ecuador</span><span class="pred-result">Germany / Ivory Coast</span><span class="pts-badge">5</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group F</div>
@@ -126,8 +121,7 @@ new Chart(el,{
 <div class="pred-row pts-5"><span class="pred-match">Tunisia vs Netherlands</span><span class="pred-guess">1-2</span><span class="pred-result">0-3</span><span class="pts-badge">5</span></div>
 <div class="pred-row pts-10"><span class="pred-match">Japan vs Sweden</span><span class="pred-guess">0-1</span><span class="pred-result">0-2</span><span class="pts-badge">10</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-5"><span class="pred-match">1st place</span><span class="pred-guess">Netherlands</span><span class="pred-result">Netherlands</span><span class="pts-badge">5</span></div>
-<div class="pred-row pts-0"><span class="pred-match">2nd place</span><span class="pred-guess">Japan</span><span class="pred-result">Sweden</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-5"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Netherlands / Japan</span><span class="pred-result">Netherlands / Sweden</span><span class="pts-badge">5</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group G</div>
@@ -138,8 +132,7 @@ new Chart(el,{
 <div class="pred-row pts-10"><span class="pred-match">New Zealand vs Belgium</span><span class="pred-guess">0-3</span><span class="pred-result">0-2</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-10"><span class="pred-match">Egypt vs Iran</span><span class="pred-guess">0-1</span><span class="pred-result">0-2</span><span class="pts-badge">10</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-5"><span class="pred-match">1st place</span><span class="pred-guess">Belgium</span><span class="pred-result">Belgium</span><span class="pts-badge">5</span></div>
-<div class="pred-row pts-0"><span class="pred-match">2nd place</span><span class="pred-guess">New Zealand</span><span class="pred-result">Iran</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-5"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Belgium / New Zealand</span><span class="pred-result">Belgium / Iran</span><span class="pts-badge">5</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group H</div>
@@ -150,8 +143,7 @@ new Chart(el,{
 <div class="pred-row pts-15"><span class="pred-match">Uruguay vs Spain</span><span class="pred-guess">0-2</span><span class="pred-result">0-2</span><span class="pts-badge">15</span></div>
 <div class="pred-row pts-2"><span class="pred-match">Cape Verde Islands vs Saudi Arabia</span><span class="pred-guess">1-2</span><span class="pred-result">1-0</span><span class="pts-badge">2</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-7"><span class="pred-match">1st place</span><span class="pred-guess">Spain</span><span class="pred-result">Spain</span><span class="pts-badge">7.5</span></div>
-<div class="pred-row pts-7"><span class="pred-match">2nd place</span><span class="pred-guess">Uruguay</span><span class="pred-result">Uruguay</span><span class="pts-badge">7.5</span></div>
+<div class="pred-row pts-15"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Spain / Uruguay</span><span class="pred-result">Spain / Uruguay</span><span class="pts-badge">20</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group I</div>
@@ -162,8 +154,7 @@ new Chart(el,{
 <div class="pred-row pts-15"><span class="pred-match">Norway vs France</span><span class="pred-guess">0-2</span><span class="pred-result">0-2</span><span class="pts-badge">15</span></div>
 <div class="pred-row pts-2"><span class="pred-match">Senegal vs Iraq</span><span class="pred-guess">2-1</span><span class="pred-result">1-1</span><span class="pts-badge">2</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-7"><span class="pred-match">1st place</span><span class="pred-guess">France</span><span class="pred-result">France</span><span class="pts-badge">7.5</span></div>
-<div class="pred-row pts-7"><span class="pred-match">2nd place</span><span class="pred-guess">Norway</span><span class="pred-result">Norway</span><span class="pts-badge">7.5</span></div>
+<div class="pred-row pts-15"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">France / Norway</span><span class="pred-result">France / Norway</span><span class="pts-badge">20</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group J</div>
@@ -174,8 +165,7 @@ new Chart(el,{
 <div class="pred-row pts-15"><span class="pred-match">Jordan vs Argentina</span><span class="pred-guess">0-3</span><span class="pred-result">0-3</span><span class="pts-badge">15</span></div>
 <div class="pred-row pts-10"><span class="pred-match">Algeria vs Austria</span><span class="pred-guess">0-1</span><span class="pred-result">0-2</span><span class="pts-badge">10</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-7"><span class="pred-match">1st place</span><span class="pred-guess">Argentina</span><span class="pred-result">Argentina</span><span class="pts-badge">7.5</span></div>
-<div class="pred-row pts-7"><span class="pred-match">2nd place</span><span class="pred-guess">Austria</span><span class="pred-result">Austria</span><span class="pts-badge">7.5</span></div>
+<div class="pred-row pts-15"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Argentina / Austria</span><span class="pred-result">Argentina / Austria</span><span class="pts-badge">20</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group K</div>
@@ -186,8 +176,7 @@ new Chart(el,{
 <div class="pred-row pts-10"><span class="pred-match">Colombia vs Portugal</span><span class="pred-guess">1-2</span><span class="pred-result">0-2</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-0"><span class="pred-match">Congo DR vs Uzbekistan</span><span class="pred-guess">0-1</span><span class="pred-result">1-0</span><span class="pts-badge">0</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-7"><span class="pred-match">1st place</span><span class="pred-guess">Portugal</span><span class="pred-result">Portugal</span><span class="pts-badge">7.5</span></div>
-<div class="pred-row pts-7"><span class="pred-match">2nd place</span><span class="pred-guess">Colombia</span><span class="pred-result">Colombia</span><span class="pts-badge">7.5</span></div>
+<div class="pred-row pts-15"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Portugal / Colombia</span><span class="pred-result">Portugal / Colombia</span><span class="pts-badge">20</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group L</div>
@@ -198,8 +187,7 @@ new Chart(el,{
 <div class="pred-row pts-10"><span class="pred-match">Panama vs England</span><span class="pred-guess">0-1</span><span class="pred-result">0-3</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-10"><span class="pred-match">Croatia vs Ghana</span><span class="pred-guess">1-0</span><span class="pred-result">2-0</span><span class="pts-badge">10</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-7"><span class="pred-match">1st place</span><span class="pred-guess">England</span><span class="pred-result">England</span><span class="pts-badge">7.5</span></div>
-<div class="pred-row pts-7"><span class="pred-match">2nd place</span><span class="pred-guess">Croatia</span><span class="pred-result">Croatia</span><span class="pts-badge">7.5</span></div>
+<div class="pred-row pts-15"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">England / Croatia</span><span class="pred-result">England / Croatia</span><span class="pts-badge">20</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Special Predictions</div>
@@ -208,7 +196,7 @@ new Chart(el,{
 <div class="pred-row pts-unplayed"><span class="pred-match">Top scorer</span><span class="pred-guess">Kylian Mbappe</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Scorer goals</span><span class="pred-guess">6</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">769 pts</span></div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">792 pts</span></div>
 </div>
 
 [Back](https://christianbanggribsvad.github.io/wc-predictions.github.io/)

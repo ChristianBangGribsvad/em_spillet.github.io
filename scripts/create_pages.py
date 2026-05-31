@@ -414,9 +414,18 @@ def _predictions_html(user_df):
             rows.append(_pred_row(name, user_df.at[0,col], user_df.at[1,col], user_df.at[2,col]))
         if win_cols:
             rows.append('<div class="pred-divider">Group winners</div>\n')
-            for col in win_cols:
-                rows.append(_pred_row(col[len(grp):].strip(),
-                                      user_df.at[0,col], user_df.at[1,col], user_df.at[2,col]))
+            # Combine 1st and 2nd into one row showing the total
+            col_1 = next((c for c in win_cols if '1st' in c), win_cols[0])
+            col_2 = next((c for c in win_cols if '2nd' in c), win_cols[-1])
+            def _gs(val):
+                s = str(val)
+                return s if s not in ('nan', 'None', '') else '—'
+            p1, p2 = _gs(user_df.at[0, col_1]), _gs(user_df.at[0, col_2])
+            r1, r2 = _gs(user_df.at[1, col_1]), _gs(user_df.at[1, col_2])
+            combined_pred = f'{p1} / {p2}'
+            combined_res  = f'{r1} / {r2}' if r1 not in ('—', '-') else '-'
+            combined_pts  = user_df.at[2, col_1] + user_df.at[2, col_2]
+            rows.append(_pred_row('1st &amp; 2nd place', combined_pred, combined_res, combined_pts))
         sections.append(
             f'<div class="pred-section">\n'
             f'<div class="pred-section-header">{grp}</div>\n'

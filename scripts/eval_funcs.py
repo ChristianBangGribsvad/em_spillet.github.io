@@ -364,15 +364,19 @@ def eval_groups(predictions_df , results):
         predictions_df.at[1, col_2nd] = res2nd
 
         if res1st == pred1st and res2nd == pred2nd:
-            predictions_df.at[2, col_1st] = 7.5
-            predictions_df.at[2, col_2nd] = 7.5
+            # Both positions exactly correct: 10 pts each (20 total)
+            predictions_df.at[2, col_1st] = 10
+            predictions_df.at[2, col_2nd] = 10
         elif res1st == pred2nd and res2nd == pred1st:
+            # Right teams, positions swapped: 5 pts each (10 total)
             predictions_df.at[2, col_1st] = 5
             predictions_df.at[2, col_2nd] = 5
         elif res1st == pred1st:
+            # Only 1st place correct
             predictions_df.at[2, col_1st] = 5
         elif res2nd == pred2nd:
-            predictions_df.at[2, col_2nd] = 5
+            # Only 2nd place correct
+            predictions_df.at[2, col_2nd] = 3
 
     return predictions_df
 

@@ -57,16 +57,20 @@ For each of the 12 groups you predict who finishes 1st and 2nd.
   <span>Points</span><span>What you got right</span>
 </div>
 <div class="rules-row pts-15">
-  <span class="rules-pts">7.5 + 7.5</span>
-  <span>Both 1st and 2nd place exactly correct</span>
+  <span class="rules-pts">20</span>
+  <span>Both 1st and 2nd place exactly correct (10 pts per position)</span>
+</div>
+<div class="rules-row pts-10">
+  <span class="rules-pts">10</span>
+  <span>Right teams but swapped — predicted 1st is 2nd and vice versa (5 pts per position)</span>
 </div>
 <div class="rules-row pts-5">
-  <span class="rules-pts">5 + 5</span>
-  <span>Right teams but swapped — predicted 1st is 2nd and vice versa</span>
+  <span class="rules-pts">5</span>
+  <span>Only 1st place correct</span>
 </div>
 <div class="rules-row pts-2">
-  <span class="rules-pts">5</span>
-  <span>Only one position correct</span>
+  <span class="rules-pts">3</span>
+  <span>Only 2nd place correct</span>
 </div>
 <div class="rules-row pts-0">
   <span class="rules-pts">0</span>

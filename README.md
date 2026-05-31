@@ -63,8 +63,10 @@ requirements.txt        # Python dependencies
 | Correct result + one team's exact score | 10 |
 | Correct result only | 5 |
 | One team's exact score only | 2 |
-| Group 1st and 2nd place both correct | 7.5 each |
-| Group 1st/2nd swapped, or one correct | 5 |
+| Group 1st AND 2nd correct | 10 each (20 total) |
+| Group right teams, positions swapped | 5 each (10 total) |
+| Group only 1st place correct | 5 |
+| Group only 2nd place correct | 3 |
 | Tournament top scorer (correct player) | 20 |
 | Top scorer goals (exact) | 10 |
 | Final winner | 25 |

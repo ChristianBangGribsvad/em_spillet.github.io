@@ -94,7 +94,7 @@ test_main.py            # Old test script (EURO 2024, partially broken — see b
 
 5. SCORING  (eval_funcs.py)  — for each participant:
    eval_match_predictions()  →  2/5/10/15 pts per group match
-   eval_groups()             →  5/7.5 pts per group winner prediction  ⚠ BROKEN for WC
+   eval_groups()             →  3/5/10/20 pts per group winner prediction
    dk_finish()               →  15 pts for Denmark knockout round      ⚠ EURO-specific
    dk_goals_scored()         →  20 pts for Denmark total goals         ⚠ EURO-specific
    main.py (inline)          →  top scorer (20), final winner (25),
@@ -315,8 +315,10 @@ FILE ASSERTIONS  —  13 passed / 0 failed
 | Correct outcome + one team's exact score | 10 |
 | Correct outcome only (win/draw) | 5 |
 | One team's exact score only | 2 |
-| Group stage 1st AND 2nd correct | 7.5 each |
-| Group stage 1st/2nd swapped, or one correct | 5 |
+| Group stage both 1st AND 2nd correct | 10 each (20 total) |
+| Group stage right teams, positions swapped | 5 each (10 total) |
+| Group stage only 1st place correct | 5 |
+| Group stage only 2nd place correct | 3 |
 | Home country knockout round (exact) | 15 |
 | Home country total goals (exact) | 20 |
 | Top scorer (correct player) | 20 |
