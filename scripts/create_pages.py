@@ -135,6 +135,10 @@ def _participant_context(f_name, d_name, group_name):
 
     # ── Last-round stats (need ≥ 2 scoring runs) ─────────────────────────────
     last_round_pts = global_avg_last = rank_movement = None
+    team_avg_last = None
+    if team_vals and len(team_vals) >= 2:
+        team_avg_last = round(team_vals[-1] - team_vals[-2], 1)
+
     if len(combined) >= 2:
         my_last       = float(combined[d_name].iloc[-1] - combined[d_name].iloc[-2])
         deltas        = combined.iloc[-1] - combined.iloc[-2]
@@ -152,6 +156,7 @@ def _participant_context(f_name, d_name, group_name):
         'global_vals': global_vals, 'team_vals': team_vals,
         'last_round_pts': last_round_pts,
         'global_avg_last': global_avg_last,
+        'team_avg_last': team_avg_last,
         'rank_movement': rank_movement,
     }
 
@@ -174,17 +179,21 @@ def _stat_cards_html(ctx):
     )
 
     if ctx.get('last_round_pts') is not None:
-        my_pts  = ctx['last_round_pts']
-        avg_pts = ctx['global_avg_last']
-        diff    = round(my_pts - avg_pts, 1)
-        move    = ctx['rank_movement']
+        my_pts       = ctx['last_round_pts']
+        global_avg   = ctx['global_avg_last']
+        team_avg     = ctx.get('team_avg_last')
+        diff_global  = round(my_pts - global_avg, 1)
+        move         = ctx['rank_movement']
 
-        if diff > 0:
-            arrow, arrow_cls, diff_str = '↑', 'stat-up',   f'+{int(diff)}'
-        elif diff < 0:
-            arrow, arrow_cls, diff_str = '↓', 'stat-down', str(int(diff))
+        if diff_global > 0:
+            arrow, arrow_cls = '↑', 'stat-up'
+        elif diff_global < 0:
+            arrow, arrow_cls = '↓', 'stat-down'
         else:
-            arrow, arrow_cls, diff_str = '→', '',           '0'
+            arrow, arrow_cls = '→', ''
+
+        def _fmt(diff):
+            return f'+{int(diff)}' if diff > 0 else str(int(diff))
 
         if move and move > 0:
             move_str = f'Moved up {move} place{"s" if move > 1 else ""}'
@@ -193,12 +202,21 @@ def _stat_cards_html(ctx):
         else:
             move_str = 'Position unchanged'
 
+        line1 = f'{_fmt(diff_global)} pts vs global avg ({int(global_avg)} pts) &middot; {move_str}'
+
+        if team_avg is not None:
+            diff_team = round(my_pts - team_avg, 1)
+            line2 = f'{_fmt(diff_team)} pts vs team avg ({int(team_avg)} pts)'
+            sub = f'{line1}<br><span style="opacity:.8">{line2}</span>'
+        else:
+            sub = line1
+
         card2 = (
             '<div class="stat-card">'
             f'<span class="stat-icon {arrow_cls}">{arrow}</span>'
             '<div class="stat-body">'
             f'<span class="stat-main">{int(my_pts)} pts last round</span>'
-            f'<span class="stat-sub">{diff_str} pts vs avg ({int(avg_pts)} pts) &middot; {move_str}</span>'
+            f'<span class="stat-sub">{sub}</span>'
             '</div></div>\n'
         )
     else:
