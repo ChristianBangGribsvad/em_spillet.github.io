@@ -135,19 +135,49 @@ def _participant_context(f_name, d_name, group_name):
 
     # ── Last-round stats (need ≥ 2 scoring runs) ─────────────────────────────
     last_round_pts = global_avg_last = rank_movement = None
+    # Team average for last round and team-pool rank
     team_avg_last = None
     if team_vals and len(team_vals) >= 2:
         team_avg_last = round(team_vals[-1] - team_vals[-2], 1)
 
+    # Build the pool of unique participants across ALL teams this person belongs to
+    team_names_list = [t.strip() for t in group_name.split(';')]
+    gdir = os.path.join('data', 'group_dfs')
+    team_pool_names = set()
+    if os.path.isdir(gdir):
+        for team in team_names_list:
+            try:
+                df_t = pd.read_pickle(os.path.join(gdir, team))
+                team_pool_names.update(df_t.columns.tolist())
+            except Exception:
+                pass
+    team_pool = sorted(team_pool_names)
+    n_team    = len(team_pool)
+
+    last_round_pts = global_avg_last = rank_movement = None
+    curr_rank = rank   # fallback: use global rank from user_dfs totals
+    curr_team_rank = team_rank_movement = None
+
     if len(combined) >= 2:
-        my_last       = float(combined[d_name].iloc[-1] - combined[d_name].iloc[-2])
-        deltas        = combined.iloc[-1] - combined.iloc[-2]
+        my_last         = float(combined[d_name].iloc[-1] - combined[d_name].iloc[-2])
+        deltas          = combined.iloc[-1] - combined.iloc[-2]
         last_round_pts  = round(my_last, 1)
         global_avg_last = round(float(deltas.mean()), 1)
 
         prev_rank = int(combined.iloc[-2].rank(ascending=False, method='min')[d_name])
         curr_rank = int(combined.iloc[-1].rank(ascending=False, method='min')[d_name])
-        rank_movement = prev_rank - curr_rank  # positive = moved up
+        rank_movement = prev_rank - curr_rank   # positive = moved up
+
+        # Team-pool rank
+        team_pool_cols = [p for p in team_pool if p in combined.columns]
+        if d_name in team_pool_cols:
+            prev_team_rank = int(combined[team_pool_cols].iloc[-2]
+                                 .rank(ascending=False, method='min')[d_name])
+            curr_team_rank = int(combined[team_pool_cols].iloc[-1]
+                                 .rank(ascending=False, method='min')[d_name])
+            team_rank_movement = prev_team_rank - curr_team_rank
+        else:
+            curr_team_rank = team_rank_movement = None
 
     return {
         'rank': rank, 'n_total': n_total, 'beat_pct': beat_pct,
@@ -158,6 +188,11 @@ def _participant_context(f_name, d_name, group_name):
         'global_avg_last': global_avg_last,
         'team_avg_last': team_avg_last,
         'rank_movement': rank_movement,
+        'curr_rank': curr_rank,
+        'team_names_list': team_names_list,
+        'n_team': n_team,
+        'curr_team_rank': curr_team_rank,
+        'team_rank_movement': team_rank_movement,
     }
 
 
@@ -173,7 +208,7 @@ def _stat_cards_html(ctx):
         '<div class="stat-card">'
         '<span class="stat-icon">🏆</span>'
         '<div class="stat-body">'
-        f'<span class="stat-main">#{_ordinal(rank)} out of {n_total}</span>'
+        f'<span class="stat-main">#{_ordinal(rank)} out of {n_total} players across the game</span>'
         f'<span class="stat-sub">You beat {beat_pct}% of all players</span>'
         '</div></div>\n'
     )
@@ -202,11 +237,31 @@ def _stat_cards_html(ctx):
         else:
             move_str = 'Position unchanged'
 
-        line1 = f'{_fmt(diff_global)} pts vs global avg ({int(global_avg)} pts) &middot; {move_str}'
+        curr_rank      = ctx.get('curr_rank', rank)
+        n_total_ctx    = ctx['n_total']
+        line1 = (f'{_fmt(diff_global)} pts vs global avg ({int(global_avg)} pts)'
+                 f' &middot; {move_str}'
+                 f' &middot; {_ordinal(curr_rank)} out of {n_total_ctx} total players')
 
         if team_avg is not None:
-            diff_team = round(my_pts - team_avg, 1)
-            line2 = f'{_fmt(diff_team)} pts vs team avg ({int(team_avg)} pts)'
+            diff_team        = round(my_pts - team_avg, 1)
+            team_names_list  = ctx.get('team_names_list', [])
+            n_team           = ctx.get('n_team', 0)
+            curr_team_rank   = ctx.get('curr_team_rank')
+            team_rank_mv     = ctx.get('team_rank_movement', 0)
+            team_label       = ' and '.join(team_names_list) + ' players'
+
+            if team_rank_mv and team_rank_mv > 0:
+                t_move = f'Moved up {team_rank_mv} place{"s" if team_rank_mv > 1 else ""}'
+            elif team_rank_mv and team_rank_mv < 0:
+                t_move = f'Moved down {abs(team_rank_mv)} place{"s" if abs(team_rank_mv) > 1 else ""}'
+            else:
+                t_move = 'Position unchanged'
+
+            rank_part = (f' &middot; {_ordinal(curr_team_rank)} out of {n_team} {team_label}'
+                         if curr_team_rank else '')
+            line2 = (f'{_fmt(diff_team)} pts vs team avg ({int(team_avg)} pts)'
+                     f' &middot; {t_move}{rank_part}')
             sub = f'{line1}<br><span style="opacity:.8">{line2}</span>'
         else:
             sub = line1

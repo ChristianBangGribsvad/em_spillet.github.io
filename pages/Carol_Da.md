@@ -5,8 +5,8 @@ layout: default
 # Results of Carol Davis (Team Alpha and Team Beta)
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#3rd out of 3</span><span class="stat-sub">You beat 0% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">298 pts last round</span><span class="stat-sub">-33 pts vs global avg (331 pts) &middot; Position unchanged<br><span style="opacity:.8">-49 pts vs team avg (347 pts)</span></span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#3rd out of 3 players across the game</span><span class="stat-sub">You beat 0% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">298 pts last round</span><span class="stat-sub">-33 pts vs global avg (331 pts) &middot; Position unchanged &middot; 3rd out of 3 total players<br><span style="opacity:.8">-49 pts vs team avg (347 pts) &middot; Position unchanged &middot; 3rd out of 3 Team Alpha and Team Beta players</span></span></div></div>
 </div>
 ## Your score vs averages
 
