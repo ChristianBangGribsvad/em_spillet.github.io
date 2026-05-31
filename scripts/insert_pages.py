@@ -7,26 +7,93 @@ import pandas as pd
 # CHART_ID and CHART_DATA are replaced at build time; all { } are JS literals.
 _CHART_TMPL = """\
 <div class="chart-wrapper">
+<div class="chart-controls">
+<button id="CHART_ID-toggle" class="chart-toggle">Show Rank</button>
+</div>
 <canvas id="CHART_ID"></canvas>
 </div>
 <script>
 (function(){
-new Chart(document.getElementById("CHART_ID"),{
-  type:"line",data:CHART_DATA,
+var el=document.getElementById("CHART_ID");
+var btn=document.getElementById("CHART_ID-toggle");
+var data=CHART_DATA;
+var N=data.datasets.length;
+
+/* store original colours for highlight/reset */
+data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;});
+
+/* pre-compute rank at each time point (1 = highest score) */
+var pts=data.datasets.map(function(ds){return ds.data.slice();});
+var rnk=pts.map(function(myPts,di){
+  return myPts.map(function(v,li){
+    var r=1;pts.forEach(function(op,oi){if(oi!==di&&op[li]>v)r++;});return r;
+  });
+});
+
+var hl=null,isRank=false;
+
+function resetHL(){
+  data.datasets.forEach(function(ds){
+    ds.borderWidth=2.5;ds.borderColor=ds._c;ds.backgroundColor=ds._b;
+  });
+  hl=null;
+}
+
+var chart=new Chart(el,{
+  type:"line",data:data,
   options:{
     responsive:true,maintainAspectRatio:false,
     interaction:{mode:"index",intersect:false},
     plugins:{
-      legend:{position:"right",labels:{boxWidth:12,padding:12,usePointStyle:true}},
-      tooltip:{callbacks:{label:function(c){return c.dataset.label+": "+Math.round(c.raw)+" pts";}}}
+      legend:{
+        position:"right",
+        labels:{boxWidth:12,padding:12,usePointStyle:true},
+        /* click legend entry to highlight one line, click again to reset */
+        onClick:function(e,item){
+          var idx=item.datasetIndex;
+          if(hl===idx){resetHL();}
+          else{
+            data.datasets.forEach(function(ds,i){
+              if(i===idx){ds.borderWidth=4;ds.borderColor=ds._c;ds.backgroundColor=ds._b;}
+              else{ds.borderWidth=1;ds.borderColor="rgba(0,0,0,0.1)";ds.backgroundColor="rgba(0,0,0,0.02)";}
+            });
+            hl=idx;
+          }
+          chart.update();
+        }
+      },
+      tooltip:{callbacks:{label:function(c){
+        return c.dataset.label+": "+(isRank?"#"+Math.round(c.raw):Math.round(c.raw)+" pts");
+      }}}
     },
     scales:{
       x:{grid:{color:"rgba(0,0,0,0.05)"},ticks:{maxTicksLimit:10}},
-      y:{beginAtZero:true,
-         title:{display:true,text:"Points"},
-         grid:{color:"rgba(0,0,0,0.05)"}}
+      y:{beginAtZero:true,title:{display:true,text:"Points"},grid:{color:"rgba(0,0,0,0.05)"}}
     }
   }
+});
+
+/* toggle between Points and Rank views */
+btn.addEventListener("click",function(){
+  isRank=!isRank;
+  resetHL();
+  data.datasets.forEach(function(ds,i){
+    ds.data=isRank?rnk[i]:pts[i];
+    ds.tension=isRank?0:0.3;
+    ds.fill=!isRank;
+  });
+  var y=chart.options.scales.y;
+  if(isRank){
+    y.reverse=true;y.beginAtZero=false;y.min=0.5;y.max=N+0.5;
+    y.title.text="Position";
+    y.ticks={stepSize:1,callback:function(v){return v%1===0?"#"+v:"";}};
+  } else {
+    y.reverse=false;y.beginAtZero=true;y.min=undefined;y.max=undefined;
+    y.title.text="Points";y.ticks={};
+  }
+  btn.textContent=isRank?"Show Points":"Show Rank";
+  btn.classList.toggle("active",isRank);
+  chart.update();
 });
 })()
 </script>

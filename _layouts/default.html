@@ -446,6 +446,28 @@
       padding: 1rem 1rem 0.5rem;
       margin-bottom: 1.25rem;
     }
+    .chart-controls {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 0.25rem 0.4rem;
+    }
+    .chart-toggle {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--pitch);
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: 2rem;
+      padding: 0.2rem 0.7rem;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .chart-toggle:hover { background: var(--turf); color: var(--white); border-color: var(--turf); }
+    .chart-toggle.active { background: var(--pitch); color: var(--white); border-color: var(--pitch); }
+
     .chart-placeholder {
       padding: 1rem;
       color: var(--muted);
