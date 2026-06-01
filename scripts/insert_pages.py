@@ -185,6 +185,7 @@ def _participant_chart_js(slug, df_grp, members):
     """Chart.js line chart for participant progress within a team."""
     if df_grp is None or df_grp.empty:
         return '<p class="chart-placeholder"><em>Chart will appear once matches are scored.</em></p>\n'
+    df_grp = df_grp.ffill()   # fill gaps for participants who scored 0 in a round
     labels   = [str(d) for d in df_grp.index.tolist()]
     colors   = _participant_colors(list(df_grp.columns))
     datasets = [
@@ -208,6 +209,7 @@ def _best_round_chart_js(slug, df_grp):
             '<em>Best round chart appears after the first two scoring updates.</em>'
             '</p>\n'
         )
+    df_grp = df_grp.ffill()   # fill gaps for participants who scored 0 in a round
     delta  = (df_grp.iloc[-1] - df_grp.iloc[-2]).sort_values(ascending=False)
     colors = _participant_colors(list(df_grp.columns))
     title  = f'Points earned → {df_grp.index[-2]} to {df_grp.index[-1]}'
@@ -226,6 +228,7 @@ def _team_avg_chart_js(df_avg, team_colors):
     """Chart.js line chart for the Team vs Team (group_avg) view."""
     if df_avg is None or df_avg.empty:
         return '<p class="chart-placeholder"><em>Chart will appear once matches are scored.</em></p>\n'
+    df_avg = df_avg.ffill()   # fill gaps for rounds with no new results
     labels   = [str(d) for d in df_avg.index.tolist()]
     datasets = [
         _make_dataset(team,

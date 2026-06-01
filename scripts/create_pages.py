@@ -77,7 +77,11 @@ def _load_all_group_combined():
                     all_series[col] = df[col]
         except Exception:
             continue
-    return pd.DataFrame(all_series) if all_series else None
+    if not all_series:
+        return None
+    # ffill: participants who scored 0 in a round have no new row — fill forward
+    # so all participants share the same date index and comparisons are consistent.
+    return pd.DataFrame(all_series).ffill()
 
 
 def _participant_context(f_name, d_name, group_name):

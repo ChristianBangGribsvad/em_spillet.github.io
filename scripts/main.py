@@ -194,9 +194,11 @@ if __name__ == "__main__":
             except Exception as e:
                 logger.warning(f"[WARN] Could not read group_dfs/{group}: {e} — skipping")
                 continue
-            # Only record group avg for dates that actually have new data
+            # Only record group avg for dates that actually have new data.
+            # ffill ensures participants with unchanged scores (guard fired) are
+            # still included in the average at their last known value.
             if today in df_results.index:
-                df_group_avg.loc[today, group] = df_results.loc[today].mean()
+                df_group_avg.loc[today, group] = df_results.ffill().loc[today].mean()
 
         df_group_avg.to_pickle("data/group_avg")
 
