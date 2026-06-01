@@ -9,7 +9,7 @@ team_color: "#0e7c0e"
 - [Christian Gribsvad](./Christian_Gr.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">7 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">32 pts</span></div>
 </div>
 
 ## Score progression
@@ -24,7 +24,7 @@ team_color: "#0e7c0e"
 (function(){
 var el=document.getElementById("chart-Frederiksborg_Gymnasium");
 var btn=document.getElementById("chart-Frederiksborg_Gymnasium-toggle");
-var data={"labels": ["2026-06-10", "2026-06-12"], "datasets": [{"label": "Christian Gribsvad", "data": [0.0, 7.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-10", "2026-06-12", "2026-06-13"], "datasets": [{"label": "Christian Gribsvad", "data": [0.0, 7.0, 32.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -113,7 +113,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["Christian Gribsvad"], "values": [7.0], "colors": ["#a71b1b"], "title": "Points earned \u2192 2026-06-10 to 2026-06-12"};
+var d={"labels": ["Christian Gribsvad"], "values": [25.0], "colors": ["#a71b1b"], "title": "Points earned \u2192 2026-06-12 to 2026-06-13"};
 new Chart(document.getElementById("bar-Frederiksborg_Gymnasium"),{
   type:"bar",
   data:{

@@ -5,8 +5,8 @@ layout: default
 # Results of Isabella  Isaacs (Friends and Family)
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#1st out of 2 players across the game</span><span class="stat-sub">You beat 50% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">20 pts last round</span><span class="stat-sub">+6 pts vs global avg (13 pts) &middot; Position unchanged &middot; 1st out of 2 total players<br><span style="opacity:.8">+6 pts vs team avg (13 pts) &middot; Position unchanged &middot; 1st out of 2 Friends and Family players</span></span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#2nd out of 2 players across the game</span><span class="stat-sub">You beat 0% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">12 pts last round</span><span class="stat-sub">-6 pts vs global avg (18 pts) &middot; Position unchanged &middot; 1st out of 2 total players<br><span style="opacity:.8">-6 pts vs team avg (18 pts) &middot; Position unchanged &middot; 1st out of 2 Friends and Family players</span></span></div></div>
 </div>
 ## Your score vs averages
 
@@ -16,7 +16,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Isabella__Is");
-var data={"labels": ["2026-06-10", "2026-06-12"], "datasets": [{"label": "Your score", "data": [0.0, 20.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 13.5], "borderColor": "#0e0e7c", "backgroundColor": "rgba(14,14,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 13.5], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-10", "2026-06-12", "2026-06-13"], "datasets": [{"label": "Your score", "data": [0.0, 20.0, 32.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 13.5, 32.0], "borderColor": "#0e0e7c", "backgroundColor": "rgba(14,14,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 13.5, 32.0], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -60,7 +60,7 @@ new Chart(el,{
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
 <div class="pred-row pts-10"><span class="pred-match">Mexico vs South Africa</span><span class="pred-guess">2-0</span><span class="pred-result">2-1</span><span class="pts-badge">10</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">South Korea vs Czechia</span><span class="pred-guess">0-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-2"><span class="pred-match">South Korea vs Czechia</span><span class="pred-guess">0-1</span><span class="pred-result">1-1</span><span class="pts-badge">2</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Czechia vs South Africa</span><span class="pred-guess">2-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Mexico vs South Korea</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Czechia vs Mexico</span><span class="pred-guess">3-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -92,7 +92,7 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group D</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">United States vs Paraguay</span><span class="pred-guess">3-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-10"><span class="pred-match">United States vs Paraguay</span><span class="pred-guess">3-0</span><span class="pred-result">2-0</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Australia vs Turkey</span><span class="pred-guess">1-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">United States vs Australia</span><span class="pred-guess">1-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Turkey vs Paraguay</span><span class="pred-guess">2-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -196,7 +196,7 @@ new Chart(el,{
 <div class="pred-row pts-unplayed"><span class="pred-match">Top scorer</span><span class="pred-guess">Erling Haaland</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Scorer goals</span><span class="pred-guess">8</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">20 pts</span></div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">32 pts</span></div>
 </div>
 
 [Back](https://christianbanggribsvad.github.io/wc-predictions.github.io/)

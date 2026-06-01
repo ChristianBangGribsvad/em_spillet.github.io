@@ -10,8 +10,8 @@ team_color: "#0e0e7c"
 - [Christian Gribsvad](./Christian_Gr.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Isabella__Is.html">Isabella  Isaacs</a></span><span class="ts-pts">20 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">7 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Isabella__Is.html">Isabella  Isaacs</a></span><span class="ts-pts">32 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">32 pts</span></div>
 </div>
 
 ## Score progression
@@ -26,7 +26,7 @@ team_color: "#0e0e7c"
 (function(){
 var el=document.getElementById("chart-Friends_and_Family");
 var btn=document.getElementById("chart-Friends_and_Family-toggle");
-var data={"labels": ["2026-06-10", "2026-06-12"], "datasets": [{"label": "Isabella  Isaacs", "data": [0.0, 20.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Christian Gribsvad", "data": [0.0, 7.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-10", "2026-06-12", "2026-06-13"], "datasets": [{"label": "Isabella  Isaacs", "data": [0.0, 20.0, 32.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Christian Gribsvad", "data": [0.0, 7.0, 32.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -115,7 +115,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["Isabella  Isaacs", "Christian Gribsvad"], "values": [20.0, 7.0], "colors": ["#1ba7a7", "#a71b1b"], "title": "Points earned \u2192 2026-06-10 to 2026-06-12"};
+var d={"labels": ["Christian Gribsvad", "Isabella  Isaacs"], "values": [25.0, 12.0], "colors": ["#a71b1b", "#1ba7a7"], "title": "Points earned \u2192 2026-06-12 to 2026-06-13"};
 new Chart(document.getElementById("bar-Friends_and_Family"),{
   type:"bar",
   data:{
