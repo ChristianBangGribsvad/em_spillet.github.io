@@ -9,7 +9,7 @@ team_color: "#7c0e0e"
 - [Christian Gribsvad](./Christian_Gr.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">0 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">7 pts</span></div>
 </div>
 
 ## Score progression
@@ -24,7 +24,7 @@ team_color: "#7c0e0e"
 (function(){
 var el=document.getElementById("chart-Danica_Ejendomme");
 var btn=document.getElementById("chart-Danica_Ejendomme-toggle");
-var data={"labels": ["2026-06-10"], "datasets": [{"label": "Christian Gribsvad", "data": [0.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-10", "2026-06-12"], "datasets": [{"label": "Christian Gribsvad", "data": [0.0, 7.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -108,6 +108,35 @@ btn.addEventListener("click",function(){
 
 ## Points earned — latest round
 
-<p class="chart-placeholder"><em>Best round chart appears after the first two scoring updates.</em></p>
+<div class="chart-wrapper" style="height:122px">
+<canvas id="bar-Danica_Ejendomme"></canvas>
+</div>
+<script>
+(function(){
+var d={"labels": ["Christian Gribsvad"], "values": [7.0], "colors": ["#a71b1b"], "title": "Points earned \u2192 2026-06-10 to 2026-06-12"};
+new Chart(document.getElementById("bar-Danica_Ejendomme"),{
+  type:"bar",
+  data:{
+    labels:d.labels,
+    datasets:[{data:d.values,backgroundColor:d.colors,borderRadius:5,borderWidth:0}]
+  },
+  options:{
+    indexAxis:"y",responsive:true,maintainAspectRatio:false,
+    plugins:{
+      legend:{display:false},
+      title:{display:true,text:d.title,color:"#666",
+             font:{family:"Inter,system-ui,sans-serif",size:11},padding:{bottom:6}},
+      tooltip:{callbacks:{label:function(c){return " "+Math.round(c.raw)+" pts";}}}
+    },
+    scales:{
+      x:{beginAtZero:true,
+         title:{display:true,text:"Points earned",font:{size:11}},
+         grid:{color:"rgba(0,0,0,0.05)"}},
+      y:{grid:{display:false},ticks:{font:{family:"Inter,system-ui,sans-serif",size:11}}}
+    }
+  }
+});
+})()
+</script>
 
 [← Back to standings](../)

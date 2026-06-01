@@ -46,16 +46,24 @@ if len(sys.argv) >= 3:
     with open(sys.argv[2], encoding="utf-8") as f:
         injected = json.load(f)
 
+CSV        = "data/FIFA World Cup 2026 - Predictions.csv"
+FNAME_COL  = "First name (one name)"
+LNAME_COL  = "Last name (one name)"
+
 logger.info(f"Test pipeline — date: {today}  |  injected results: {len(injected)}")
 
 # ── Build results list from injected dict (mirrors process_match output) ───────
-# Every known group-stage match gets either the injected score or "None - None".
-# This also triggers the change-detection so the full pipeline always runs.
+# We derive all known match IDs from the Predictions columns in the CSV so that
+# unplayed matches correctly appear as "None - None" (just like the real API).
+_csv_df       = pd.read_csv(CSV)
+ALL_MATCH_IDS = [c for c in _csv_df.columns if "Predictions [" in c]
+
 results = [
     (match_id, injected.get(match_id, "None - None"))
-    for match_id in injected.keys()
+    for match_id in ALL_MATCH_IDS
 ]
-# Add a sentinel entry so pre-tournament runs still differ from the bootstrap []
+# Pre-tournament sentinel: ensures we differ from the bootstrap [] even when
+# ALL_MATCH_IDS is empty (shouldn't happen with a real CSV).
 if not results:
     results = [("PRE_TOURNAMENT_SENTINEL", "None - None")]
 
@@ -83,11 +91,7 @@ else:
 # ── Full pipeline ──────────────────────────────────────────────────────────────
 t0 = time.time()
 
-CSV = "data/FIFA World Cup 2026 - Predictions.csv"
 predictions_df = pd.read_csv(CSV)
-
-FNAME_COL = "First name (one name)"
-LNAME_COL = "Last name (one name)"
 
 predictions_df["f_name"] = [
     (f"{r[FNAME_COL]}_{str(r[LNAME_COL])[:2]}").replace(" ", "_").replace('"', "_")
