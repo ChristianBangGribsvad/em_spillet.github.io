@@ -162,7 +162,7 @@ Browsers and phones cache pages for speed. After scores update you may need to f
 </div>
 <div class="rules-row pts-unplayed">
   <span><strong>iPhone / iPad</strong><br><small>Safari</small></span>
-  <span>Long-press the reload icon ⟳ in the address bar → <em>Reload Without Content Blockers</em>. Or open a new Private tab.</span>
+  <span>Open a new <strong>Private tab</strong> (tap the tabs icon → Private) and navigate to the page. This is the simplest method. Alternatively: <em>Settings → Safari → Clear History and Website Data</em>.</span>
 </div>
 </div>
 
