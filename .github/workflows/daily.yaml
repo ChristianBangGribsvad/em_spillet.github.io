@@ -5,11 +5,14 @@ on:
     - cron: "15 * * * *"
   workflow_dispatch:    # enables the "Run workflow" button in the Actions tab
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # opt in early — forced default June 16 2026
+
 jobs:
   run_script:
     name: Run Python Script
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -31,7 +34,7 @@ jobs:
         git config --global user.name "GitHub Actions"
         git add .
         git commit -m "Update files via workflow" || echo "No changes to commit"
-        
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
