@@ -2,7 +2,8 @@ name: Daily Job
 
 on:
   schedule:
-    - cron: "15 * * * *" # Runs at 12:00 AM UTC (adjust as needed)
+    - cron: "15 * * * *"
+  workflow_dispatch:    # enables the "Run workflow" button in the Actions tab
 
 jobs:
   run_script:
