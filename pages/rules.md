@@ -44,7 +44,8 @@ Points depend on how close your prediction is:
 | **2–0** | 10 | Mexico win ✓ + Mexico score 2 ✓ |
 | **1–0** | 5 | Mexico win ✓, no score match |
 | **0–1** | 2 | South Africa score 1 ✓, but wrong outcome |
-| **1–1** | 0 | Draw predicted, Mexico won |
+| **1–1** | 2 | Wrong outcome, but South Africa score (1) is correct |
+| **0–0** | 0 | Wrong outcome, no score correct |
 
 ---
 
