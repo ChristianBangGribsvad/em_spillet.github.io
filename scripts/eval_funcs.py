@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from loguru import logger
 
 def eval_match_predictions(predictions_df , results):
     # Convert results to a dict (and select only group stage matches)
@@ -108,7 +109,7 @@ def find_group_winners(results):
             away_score = v.split("-")[1].strip()
 
             if home_score == "None" or away_score == "None":
-                print("No results for",home_team,"-",away_team)
+                logger.debug(f"No results yet for {home_team} - {away_team}")
                 skip_group = True
                 break
             else:
@@ -128,7 +129,7 @@ def find_group_winners(results):
 
         if skip_group:
             # If None value is present in current group we skip current group and go to next group
-            print("Skipping",group_name," due to None values")
+            logger.debug(f"Skipping {group_name} — incomplete results")
 
             #if group_name == all_group_names[-1]:
                 #return {"Skip":0}
@@ -181,7 +182,7 @@ def find_group_winners(results):
                         elif equal_goals[equal_teams[0]] < equal_goals[equal_teams[1]]:
                             all_group_res[group_name]["2nd"] = equal_teams[1]
                         elif equal_goals[equal_teams[0]] == equal_goals[equal_teams[1]]:
-                            print("Its a coin toss - manual assign:",equal_teams[0],"-",equal_teams[1])
+                            logger.warning(f"[COIN TOSS] Manual assignment needed: {equal_teams[0]} - {equal_teams[1]}")
                             all_group_res[group_name]["2nd"] = "---"
 
             elif sum(np.array(list(group_stand.values())) == max(list(group_stand.values()))) == 3:
@@ -204,7 +205,7 @@ def find_group_winners(results):
                     elif equal_goals[equal_teams[0]] < equal_goals[equal_teams[1]]:
                         all_group_res[group_name]["2nd"] = equal_teams[1]
                     elif equal_goals[equal_teams[0]] == equal_goals[equal_teams[1]]:
-                        print("Its a coin toss - manual assign:",equal_teams[0],"-",equal_teams[1])
+                        logger.warning(f"[COIN TOSS] Manual assignment needed: {equal_teams[0]} - {equal_teams[1]}")
                         all_group_res[group_name]["2nd"] = "---"
 
                 elif sum(np.array(list(equal_points.values())) == max(list(equal_points.values()))) == 3:
@@ -215,7 +216,7 @@ def find_group_winners(results):
                     if sum(np.array(list(equal_goals.values())) == max(list(equal_goals.values()))) == 1:
                         all_group_res[group_name]["2nd"] =  list(equal_goals.keys())[0]
                     else:
-                        print("Its a coin toss - manual assign:",equal_teams[0],",",equal_teams[1],",",equal_teams[2])
+                        logger.warning(f"[COIN TOSS] Manual assignment needed: {equal_teams[0]}, {equal_teams[1]}, {equal_teams[2]}")
                         all_group_res[group_name]["2nd"] = "---"
 
 
@@ -256,7 +257,7 @@ def find_group_winners(results):
                         all_group_res[group_name]["1st"] = equal_teams[1]
                         all_group_res[group_name]["2nd"] = equal_teams[0]
                     elif equal_goals[equal_teams[0]] == equal_goals[equal_teams[1]]:
-                        print("Its a coin toss - manual assign:",equal_teams[0],"-",equal_teams[1])
+                        logger.warning(f"[COIN TOSS] Manual assignment needed: {equal_teams[0]} - {equal_teams[1]}")
                         all_group_res[group_name]["1st"] = "---"
                         all_group_res[group_name]["2nd"] = "---"
 
@@ -286,7 +287,7 @@ def find_group_winners(results):
                     elif equal_goals[equal_teams[0]] < equal_goals[equal_teams[1]]:
                         all_group_res[group_name]["2nd"] = equal_teams[1]
                     elif equal_goals[equal_teams[0]] == equal_goals[equal_teams[1]]:
-                        print("Its a coin toss - manual assign:",equal_teams[0],"-",equal_teams[1])
+                        logger.warning(f"[COIN TOSS] Manual assignment needed: {equal_teams[0]} - {equal_teams[1]}")
                         all_group_res[group_name]["2nd"] = "---"
 
             elif sum(np.array(list(equal_points.values())) == max(list(equal_points.values()))) == 2:
@@ -303,7 +304,7 @@ def find_group_winners(results):
                     all_group_res[group_name]["1st"] = equal_teams[1]
                     all_group_res[group_name]["2nd"] = equal_teams[0]
                 elif equal_goals[equal_teams[0]] == equal_goals[equal_teams[1]]:
-                    print("Its a coin toss - manual assign:",equal_teams[0],"-",equal_teams[1])
+                    logger.warning(f"[COIN TOSS] Manual assignment needed: {equal_teams[0]} - {equal_teams[1]}")
                     all_group_res[group_name]["1st"] = "---"
                     all_group_res[group_name]["2nd"] = "---"
 
@@ -323,13 +324,13 @@ def find_group_winners(results):
                         all_group_res[group_name]["2nd"] = list(equal_goals.keys())[0]
                     elif sum(np.array(list(equal_goals.values())) == max(list(equal_goals.values()))) == 2:
                         # The scenario where there's 2 teams with 2nd best goals scored - its a coin toss
-                        print("Its a coin toss - manual assign:",list(equal_goals.keys())[0],"-",list(equal_goals.keys())[1],"-",list(equal_goals.keys())[2])
+                        logger.warning(f"[COIN TOSS] Manual assignment needed: {list(equal_goals.keys())[0]} - {list(equal_goals.keys())[1]} - {list(equal_goals.keys())[2]}")
                         all_group_res[group_name]["1st"] = "---"
                         all_group_res[group_name]["2nd"] = "---"
 
                 elif sum(np.array(list(equal_goals.values())) == max(list(equal_goals.values()))) > 1:
                     # The scenario where 2 or more teams have same points, goal difference and goals scored - coin toss
-                    print("Its a coin toss - manual assign:",list(equal_goals.keys())[0],"-",list(equal_goals.keys())[1],"-",list(equal_goals.keys())[2])
+                    logger.warning(f"[COIN TOSS] Manual assignment needed: {list(equal_goals.keys())[0]} - {list(equal_goals.keys())[1]} - {list(equal_goals.keys())[2]}")
                     all_group_res[group_name]["1st"] = "---"
                     all_group_res[group_name]["2nd"] = "---"
 

@@ -2,6 +2,7 @@ import os
 import json
 import colorsys
 import pandas as pd
+from loguru import logger
 
 # ── Chart.js HTML template ────────────────────────────────────────────────────
 # CHART_ID and CHART_DATA are replaced at build time; all { } are JS literals.
@@ -413,7 +414,7 @@ def create_group_pages(predictions_df):
         with open(f"pages/{slug}.md", "w", encoding="UTF-8") as f:
             f.write(page)
 
-    print(f"Group pages written: {list(all_teams)}")
+    logger.info(f"[PAGES] Group pages written: {sorted(all_teams)}")
 
 
 def _div_block(css_class, items, empty_msg):
@@ -438,6 +439,7 @@ def update_next_matches_only(raw_matches=None):
     except Exception:
         return  # API unavailable — leave file untouched
 
+    logger.info(f"[SCHEDULE] Upcoming: {len(upcoming)} matches | Recent results: {len(recent)}")
     next_block      = _div_block("next-matches",      upcoming,
                                  "No matches scheduled in the next 24 hours.")
     yesterday_block = _div_block("yesterdays-results", recent,

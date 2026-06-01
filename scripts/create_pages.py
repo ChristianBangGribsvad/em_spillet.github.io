@@ -1,6 +1,7 @@
 import os
 import json
 import pandas as pd
+from loguru import logger
 
 
 # ── Chart.js template (no rank toggle — used for 3-line personal chart) ───────
@@ -524,4 +525,4 @@ def create_pages(predictions_df):
         with open(output_directory + f'{savename}.md', 'w', encoding='UTF-8') as f:
             f.write(markdown_content)
 
-    print('Markdown pages have been created successfully.')
+    logger.info(f"[PAGES] Participant pages created ({len(predictions_df)} participants)")

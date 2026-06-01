@@ -1,4 +1,6 @@
+import time
 import pandas as pd
+from loguru import logger
 from get_results import *
 from eval_funcs import *
 from insert_pages import *
@@ -8,174 +10,186 @@ import os
 cwd = os.getcwd()
 
 if __name__ == "__main__":
+    t0 = time.time()
+    logger.info("Pipeline started")
+
     #### Fill out when final is finished
     topscorer = []       # e.g. ["Player Name"]
     topscorer_goals = None  # e.g. 5  ← integer, NOT a string. pandas reads this CSV column as int64.
     finale_loser = None  # e.g. "France"
     finale_winner = None # e.g. "Brazil"
     eval_res = True
-    
-    raw     = fetch_raw_matches()          # single API call shared by all three functions
-    results = get_results(raw)
-    date    = date.today()
-    datafile = [results, date]
-    n_file = get_highest_result_number()
 
+    # ── Single API call shared by the whole pipeline ──────────────────────────
+    try:
+        raw = fetch_raw_matches()
+    except Exception as e:
+        logger.error(f"API call failed: {e}")
+        raise
+
+    finished_count = sum(1 for m in raw if m.get("status") == "FINISHED")
+    logger.info(f"[API] {len(raw)} matches fetched — {finished_count} finished")
+
+    results      = get_results(raw)
+    today        = date.today()
+    datafile     = [results, today]
+    n_file       = get_highest_result_number()
     prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
 
     if prev_results[0] != results:
-        print("New results saved")
+        prev_finished = sum(1 for _, score in prev_results[0] if "None" not in str(score))
+        logger.info(f"[CHANGE] {prev_finished} → {finished_count} finished — running full pipeline")
         save_results(cwd + f"/results/data_{n_file+1}.pickle", datafile)
     else:
-        # No new match results — still refresh the Next Matches section
-        print("No updates so we exit the script")
+        logger.info(f"[NO CHANGE] {finished_count} finished — refreshing schedule only")
         eval_res = False
         update_next_matches_only(raw)
 
-    # Only execute rest of main if we have new results
+    # ── Full pipeline — only when results changed ─────────────────────────────
     if eval_res:
         predictions_df = pd.read_csv("data/WC spillet 2026.csv")
 
-        df_fname = pd.DataFrame({'f_name': [(f"{row['First name']}"+"_"+f"{str(row['Last name'])[0:2]}").replace(" ","_").replace('"',"_") for _, row in predictions_df.iterrows()]})
-        df_dname = pd.DataFrame({'d_name': [f"{row['First name']} {str(row['Last name']).split()[-1]}" for _, row in predictions_df.iterrows()]})
-        predictions_df =predictions_df.join(df_fname)
-        predictions_df =predictions_df.join(df_dname)
+        df_fname = pd.DataFrame({'f_name': [
+            (f"{row['First name']}_" + f"{str(row['Last name'])[0:2]}").replace(" ", "_").replace('"', "_")
+            for _, row in predictions_df.iterrows()
+        ]})
+        df_dname = pd.DataFrame({'d_name': [
+            f"{row['First name']} {str(row['Last name']).split()[-1]}"
+            for _, row in predictions_df.iterrows()
+        ]})
+        predictions_df = predictions_df.join(df_fname)
+        predictions_df = predictions_df.join(df_dname)
 
+        logger.info(f"[CSV] {len(predictions_df)} participants loaded")
 
         ### Detect duplicates
-        # Find duplicates in the first name / last name group. True values occur for both instances of the duplicate
-        idx_duplicate = predictions_df.duplicated(subset=['First name','Last name'], keep=False)
-        # Dict to hold duplicates
-        idx_remove = {"first name": [], "last name": [] ,"idx": []}
+        idx_duplicate = predictions_df.duplicated(subset=['First name', 'Last name'], keep=False)
+        idx_remove = {"first name": [], "last name": [], "idx": []}
         for idx in range(len(idx_duplicate)):
             if idx_duplicate[idx]:
-                if predictions_df.at[idx,"First name"] in idx_remove["first name"]  and predictions_df.at[idx,"Last name"] in idx_remove["last name"]:
-                    # In this case we have already detected the duplicate so we move on
+                if (predictions_df.at[idx, "First name"] in idx_remove["first name"] and
+                        predictions_df.at[idx, "Last name"]  in idx_remove["last name"]):
                     continue
                 else:
-                    # Find the instances of this duplicate
-                    first_name = predictions_df.at[idx,"First name"]
-                    last_name  = predictions_df.at[idx,"Last name"]
+                    first_name = predictions_df.at[idx, "First name"]
+                    last_name  = predictions_df.at[idx, "Last name"]
                     name_match = ((predictions_df["First name"] == first_name) &
                                   (predictions_df["Last name"]  == last_name))
                     idx_remove["first name"] += [first_name]
-                    idx_remove["last name"] += [last_name]
+                    idx_remove["last name"]  += [last_name]
                     idx_remove["idx"] += [np.where(np.array(name_match.tolist()) > 0)[0][0]]
 
-
-        # Remove the detected duplicates
         if len(idx_remove["idx"]) > 0:
+            logger.warning(f"[DUPLICATES] Removed {len(idx_remove['idx'])} duplicate submission(s): "
+                           f"{list(zip(idx_remove['first name'], idx_remove['last name']))}")
             predictions_df = predictions_df.drop(idx_remove["idx"])
 
-        # Initialise todays schmeichel
+        # ── Group winner completion summary ───────────────────────────────────
+        group_winners  = find_group_winners(results)
+        n_gw_complete  = sum(1 for v in group_winners.values() if v.get("1st"))
+        logger.info(f"[GROUPS] {n_gw_complete}/{len(group_winners)} groups complete")
+
+        # ── Score each participant ────────────────────────────────────────────
         max_val = 0
-        todays_schmeichel = {"Nobody":{"value":max_val,"group":"Nobody","fname":""}}
+        todays_schmeichel = {"Nobody": {"value": max_val, "group": "Nobody", "fname": ""}}
 
         for user in predictions_df["d_name"]:
-            user_df = predictions_df[predictions_df["d_name"] == user]
-            user_df = user_df.reset_index(drop=True)
+            user_df = predictions_df[predictions_df["d_name"] == user].reset_index(drop=True)
+            user_df = eval_match_predictions(user_df, results)
+            user_df = eval_groups(user_df, results)
 
-            # Calc totalt score as of today
-            user_df = eval_match_predictions(user_df , results)
-
-            # Add group stage winners points
-            user_df = eval_groups(user_df , results)
-
-            col_winner = "FIFA World Cup 2026 final winner"
-            col_loser  = "FIFA World Cup 2026 final loser"
-            col_scorer = "Who is going to be the top scorer throughout FIFA World Cup 2026? (20 points)"
+            col_winner       = "FIFA World Cup 2026 final winner"
+            col_loser        = "FIFA World Cup 2026 final loser"
+            col_scorer       = "Who is going to be the top scorer throughout FIFA World Cup 2026? (20 points)"
             col_scorer_goals = "How many goals does the top scorer score? (10 points)"
 
-            # Add Top scorer
             if topscorer:
                 if user_df.at[0, col_scorer] in topscorer:
                     user_df.at[2, col_scorer] = 20
                 user_df.at[1, col_scorer] = ",".join(topscorer)
 
-            # Add Top scorer goals
             if topscorer_goals is not None:
                 if topscorer_goals == user_df.at[0, col_scorer_goals]:
                     user_df.at[2, col_scorer_goals] = 10
                 user_df.at[1, col_scorer_goals] = topscorer_goals
 
-            # Add final winner/loser (only once final result is known)
             if finale_winner is not None and finale_loser is not None:
                 user_df.at[1, col_winner] = finale_winner
                 user_df.at[1, col_loser]  = finale_loser
-
                 if finale_winner == user_df.at[0, col_winner]:
                     user_df.at[2, col_winner] = 25
                 if finale_loser == user_df.at[0, col_loser]:
                     user_df.at[2, col_loser] = 15
-
-                # Correct teams but swapped placement
                 if finale_loser == user_df.at[0, col_winner] and finale_winner == user_df.at[0, col_loser]:
                     user_df.at[2, col_loser] = 10
                 elif finale_loser == user_df.at[0, col_winner] or finale_winner == user_df.at[0, col_loser]:
                     user_df.at[2, col_loser] = 5
 
-            # Save in user_dfs
-            user_df.to_pickle("data/user_dfs/"+user_df.at[0,"f_name"])
+            user_df.to_pickle("data/user_dfs/" + user_df.at[0, "f_name"])
 
-            # Load data frame containing group results
-            for group in user_df.at[0,"Which team(s) do you belong to?"].split(";"):
+            user_total = int(round(pd.to_numeric(user_df.loc[2], errors='coerce').sum()))
+            logger.info(f"[SCORE] {user}: {user_total} pts")
+
+            for group in user_df.at[0, "Which team(s) do you belong to?"].split(";"):
                 if group not in os.listdir("data/group_dfs"):
-                    # Create an empty df
                     df_results = pd.DataFrame()
                 else:
-                    df_results = pd.read_pickle("data/group_dfs/"+group)
+                    df_results = pd.read_pickle("data/group_dfs/" + group)
 
+                df_results.loc[today, user] = user_df.loc[2].sum()
+                df_results.to_pickle("data/group_dfs/" + group)
 
-                # Upload dataframe with new results
-                df_results.loc[date,user] = user_df.loc[2].sum()
-                df_results.to_pickle("data/group_dfs/"+group)
-
-                # Todays Schmeichel (be careful not to count people in multiple groups twice)
                 if df_results.shape[0] > 1:
-                    prev_date = df_results.index[np.where(np.array(df_results.index.tolist()) == date)[0][0]-1]
-                    user_val = df_results.loc[date,user] - df_results.at[prev_date,user]
+                    prev_date = df_results.index[
+                        np.where(np.array(df_results.index.tolist()) == today)[0][0] - 1
+                    ]
+                    user_val = df_results.loc[today, user] - df_results.at[prev_date, user]
                 else:
                     user_val = user_df.loc[2].sum()
 
                 if user_val > max_val:
-                    todays_schmeichel = {user_df.at[0,"d_name"]:{"value":user_val,"group":user_df.at[0,"Which team(s) do you belong to?"].replace(";"," and "),"fname":user_df.at[0,"f_name"]}}
+                    todays_schmeichel = {
+                        user_df.at[0, "d_name"]: {
+                            "value": user_val,
+                            "group": user_df.at[0, "Which team(s) do you belong to?"].replace(";", " and "),
+                            "fname": user_df.at[0, "f_name"],
+                        }
+                    }
                     max_val = user_val
                 elif user_val == max_val:
-                    todays_schmeichel[user_df.at[0,"d_name"]] = {"value":user_val,"group":user_df.at[0,"Which team(s) do you belong to?"].replace(";"," and "),"fname":user_df.at[0,"f_name"]}
+                    todays_schmeichel[user_df.at[0, "d_name"]] = {
+                        "value": user_val,
+                        "group": user_df.at[0, "Which team(s) do you belong to?"].replace(";", " and "),
+                        "fname": user_df.at[0, "f_name"],
+                    }
 
+            if len(df_results) > 1 and df_results.iloc[-1, 0] < df_results.iloc[-2, 0]:
+                logger.error(f"[INTEGRITY] Score decreased for participant in group '{group}' — investigate!")
 
-            # Check if anythin goes wrong in points addition (ie there is an error if you have less point today than you had yesterday)
-            if len(df_results) > 1:
-                if df_results.iloc[-1,0] < df_results.iloc[-2,0]:
-                    print("ERROR- something went wrong in adding points")
+        schmeichel_name = list(todays_schmeichel.keys())[0]
+        schmeichel_pts  = int(round(todays_schmeichel[schmeichel_name]["value"]))
+        logger.success(f"[SCHMEICH] {schmeichel_name} — {schmeichel_pts} pts this round")
 
-        print(date,todays_schmeichel)
-
-        # Create or load df with group averages
+        # ── Group averages ────────────────────────────────────────────────────
         if "group_avg" not in os.listdir("data/"):
-            # Create an empty df
             df_group_avg = pd.DataFrame()
         else:
             df_group_avg = pd.read_pickle("data/group_avg")
 
-        # Plot and save group results
         for group in os.listdir("data/group_dfs"):
-            if group.startswith('.'):   # skip .gitkeep and hidden files
+            if group.startswith('.'):
                 continue
             try:
-                df_results = pd.read_pickle("data/group_dfs/"+group)
+                df_results = pd.read_pickle("data/group_dfs/" + group)
             except Exception as e:
-                print(f"Warning: could not read group_dfs/{group} ({e}), skipping")
+                logger.warning(f"[WARN] Could not read group_dfs/{group}: {e} — skipping")
                 continue
+            df_group_avg.loc[today, group] = df_results.loc[today].mean()
 
-            # Save group avg
-            df_group_avg.loc[date,group] = df_results.loc[date].mean()
-
-        # group_avg chart is now generated by update_pages() via Chart.js
-
-        # Save group averages
         df_group_avg.to_pickle("data/group_avg")
 
         create_pages(predictions_df)
         create_group_pages(predictions_df)
         update_pages(predictions_df, todays_schmeichel, raw_matches=raw)
+
+    logger.success(f"[DONE] Pipeline finished in {time.time() - t0:.1f}s")
