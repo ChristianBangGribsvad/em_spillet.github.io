@@ -83,18 +83,25 @@ def get_recent_results(raw=None):
 
 
 def process_match(match):
-    hometeam  = match["homeTeam"]["name"]
-    awayteam  = match["awayTeam"]["name"]
-    homescore = match["score"]["fullTime"]["home"]
-    awayscore = match["score"]["fullTime"]["away"]
-    group = match["group"]
-    stage = match["stage"]
-    score = f"{homescore} - {awayscore}"
+    hometeam = match["homeTeam"]["name"]
+    awayteam = match["awayTeam"]["name"]
+    group    = match["group"]
+    stage    = match["stage"]
+
     if stage == "GROUP_STAGE":
-        letter  = group[-1]
-        matchid = f"Group {letter} Predictions [{hometeam} - {awayteam}]"
+        matchid = f"Group {group[-1]} Predictions [{hometeam} - {awayteam}]"
     else:
         matchid = f"{stage} Predictions [{hometeam} - {awayteam}]"
+
+    # Only extract a real score when the match is officially FINISHED.
+    # Guards against the API returning 0-0 for TIMED/IN_PLAY matches.
+    if match.get("status") == "FINISHED":
+        h = match["score"]["fullTime"]["home"]
+        a = match["score"]["fullTime"]["away"]
+        score = f"{h} - {a}"
+    else:
+        score = "None - None"
+
     return matchid, score
 
 
@@ -116,8 +123,11 @@ def load_results(filename):
         return pickle.load(handle)
 
 def get_highest_result_number():
-    n_file = 0
-    for i in range(100):
-        if os.path.isfile(cwd + f"/results/data_{i}.pickle"):
-            n_file = i
-    return n_file
+    import glob
+    files = glob.glob(os.path.join(cwd, "results", "data_*.pickle"))
+    if not files:
+        return 0
+    return max(
+        int(os.path.basename(f).replace("data_", "").replace(".pickle", ""))
+        for f in files
+    )

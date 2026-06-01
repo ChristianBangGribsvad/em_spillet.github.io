@@ -5,9 +5,12 @@ from get_results import *
 from eval_funcs import *
 from insert_pages import *
 from create_pages import *
-from datetime import date
+from datetime import datetime, timezone, timedelta
 import os
 cwd = os.getcwd()
+
+# Copenhagen summer time (CEST = UTC+2) for correct date labelling
+_CEST = timezone(timedelta(hours=2))
 
 if __name__ == "__main__":
     t0 = time.time()
@@ -31,7 +34,7 @@ if __name__ == "__main__":
     logger.info(f"[API] {len(raw)} matches fetched — {finished_count} finished")
 
     results      = get_results(raw)
-    today        = date.today()
+    today   = datetime.now(timezone.utc).astimezone(_CEST).date()  # date in Copenhagen time
     datafile     = [results, today]
     n_file       = get_highest_result_number()
     prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
@@ -176,9 +179,24 @@ if __name__ == "__main__":
             if len(df_results) > 1 and df_results.iloc[-1, 0] < df_results.iloc[-2, 0]:
                 logger.error(f"[INTEGRITY] Score decreased for participant in group '{group}' — investigate!")
 
+        # ── Schmeichel persistence ────────────────────────────────────────────
+        # During the knockout stage no group-stage prediction scores change, so
+        # todays_schmeichel would default to "Nobody".  Rather than display that
+        # on the front page for five weeks, we fall back to the last real winner.
+        last_schm_path  = os.path.join(cwd, "data", "last_schmeichel.pickle")
         schmeichel_name = list(todays_schmeichel.keys())[0]
-        schmeichel_pts  = int(round(todays_schmeichel[schmeichel_name]["value"]))
-        logger.success(f"[SCHMEICH] {schmeichel_name} — {schmeichel_pts} pts this round")
+
+        if schmeichel_name == "Nobody":
+            if os.path.isfile(last_schm_path):
+                todays_schmeichel = load_results(last_schm_path)
+                saved_name = list(todays_schmeichel.keys())[0]
+                logger.info(f"[SCHMEICH] No new scores — showing last real winner: {saved_name}")
+            else:
+                logger.info("[SCHMEICH] No scores yet")
+        else:
+            schmeichel_pts = int(round(todays_schmeichel[schmeichel_name]["value"]))
+            logger.success(f"[SCHMEICH] {schmeichel_name} — {schmeichel_pts} pts this round")
+            save_results(last_schm_path, todays_schmeichel)
 
         # ── Group averages ────────────────────────────────────────────────────
         if "group_avg" not in os.listdir("data/"):
