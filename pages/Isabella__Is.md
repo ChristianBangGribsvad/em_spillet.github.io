@@ -6,7 +6,7 @@ layout: default
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#1st out of 2 players across the game</span><span class="stat-sub">You beat 50% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">32 pts last round</span><span class="stat-sub">+5 pts vs global avg (27 pts) &middot; Position unchanged &middot; 1st out of 2 total players<br><span style="opacity:.8">+5 pts vs team avg (27 pts) &middot; Position unchanged &middot; 1st out of 2 Friends and Family players</span></span></div></div>
+<div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">25 pts last round</span><span class="stat-sub">+2 pts vs global avg (22 pts) &middot; Position unchanged &middot; 1st out of 2 total players<br><span style="opacity:.8">+2 pts vs team avg (22 pts) &middot; Position unchanged &middot; 1st out of 2 Friends and Family players</span></span></div></div>
 </div>
 ## Your score vs averages
 
@@ -16,7 +16,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Isabella__Is");
-var data={"labels": ["2026-06-10", "2026-06-12", "2026-06-13", "2026-06-14"], "datasets": [{"label": "Your score", "data": [0.0, 20.0, 32.0, 64.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 13.5, 32.0, 59.0], "borderColor": "#0e0e7c", "backgroundColor": "rgba(14,14,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 13.5, 32.0, 59.0], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-10", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15"], "datasets": [{"label": "Your score", "data": [0.0, 20.0, 32.0, 64.0, 89.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 13.5, 32.0, 59.0, 81.5], "borderColor": "#0e0e7c", "backgroundColor": "rgba(14,14,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 13.5, 32.0, 59.0, 81.5], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -103,8 +103,8 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group E</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Germany vs Curaçao</span><span class="pred-guess">5-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Ivory Coast vs Ecuador</span><span class="pred-guess">1-2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-10"><span class="pred-match">Germany vs Curaçao</span><span class="pred-guess">5-0</span><span class="pred-result">9-0</span><span class="pts-badge">10</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Ivory Coast vs Ecuador</span><span class="pred-guess">1-2</span><span class="pred-result">0-0</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Germany vs Ivory Coast</span><span class="pred-guess">2-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Ecuador vs Curaçao</span><span class="pred-guess">2-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Ecuador vs Germany</span><span class="pred-guess">1-2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -114,8 +114,8 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group F</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Netherlands vs Japan</span><span class="pred-guess">2-2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Sweden vs Tunisia</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-5"><span class="pred-match">Netherlands vs Japan</span><span class="pred-guess">2-2</span><span class="pred-result">3-3</span><span class="pts-badge">5</span></div>
+<div class="pred-row pts-10"><span class="pred-match">Sweden vs Tunisia</span><span class="pred-guess">1-0</span><span class="pred-result">3-0</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Netherlands vs Sweden</span><span class="pred-guess">2-2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Tunisia vs Japan</span><span class="pred-guess">1-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Tunisia vs Netherlands</span><span class="pred-guess">0-3</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -196,7 +196,7 @@ new Chart(el,{
 <div class="pred-row pts-unplayed"><span class="pred-match">Top scorer</span><span class="pred-guess">Erling Haaland</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Scorer goals</span><span class="pred-guess">8</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">64 pts</span></div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">89 pts</span></div>
 </div>
 
 [Back](https://christianbanggribsvad.github.io/wc-predictions.github.io/)
