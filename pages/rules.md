@@ -117,9 +117,26 @@ For each of the 12 groups you predict who finishes 1st and 2nd.
 
 ## How the Game Works
 
-The site updates automatically **every 20 minutes** (at :03, :23 and :43 past each hour). Results are fetched from the official football API — when new match results are detected, everyone's scores are recalculated and pages are regenerated, typically within 20 minutes of a match finishing. The **Next Matches** and **Yesterday's Results** sections refresh on the same schedule even when no scores change.
+The site updates automatically every 20 minutes. Scores, charts and standings are refreshed within minutes of a match finishing.
 
-**Today's Schmeichel** is whoever earned the most points since the previous scoring update.
+<div class="rules-table">
+<div class="rules-row pts-unplayed">
+  <span><strong>Schedule</strong></span>
+  <span>Runs at :03, :23 and :43 past each hour</span>
+</div>
+<div class="rules-row pts-unplayed">
+  <span><strong>Score updates</strong></span>
+  <span>When new results are detected, everyone's totals are recalculated and all pages regenerated</span>
+</div>
+<div class="rules-row pts-unplayed">
+  <span><strong>Schedule sections</strong></span>
+  <span><em>Next Matches</em> and <em>Yesterday's Results</em> refresh every 20 min even when no scores change</span>
+</div>
+<div class="rules-row pts-unplayed">
+  <span><strong>Today's Schmeichel</strong></span>
+  <span>Whoever earned the most points since the previous scoring update</span>
+</div>
+</div>
 
 ---
 
