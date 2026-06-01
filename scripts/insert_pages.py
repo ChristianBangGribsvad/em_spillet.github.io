@@ -425,15 +425,16 @@ def _div_block(css_class, items, empty_msg):
     return [f'<div class="{css_class}">\n', inner, '</div>\n']
 
 
-def update_next_matches_only():
+def update_next_matches_only(raw_matches=None):
     """
     Refresh both the Next Matches and Yesterday's Results sections in
     index.md on every pipeline run, even when no game results have changed.
+    Pass raw_matches=fetch_raw_matches() to avoid a redundant API call.
     """
     try:
         from get_results import get_upcoming_matches, get_recent_results
-        upcoming = get_upcoming_matches()
-        recent   = get_recent_results()
+        upcoming = get_upcoming_matches(raw_matches)
+        recent   = get_recent_results(raw_matches)
     except Exception:
         return  # API unavailable — leave file untouched
 
@@ -466,21 +467,22 @@ def update_next_matches_only():
 
 
 def update_pages(predictions_df, todays_schmeichel,
-                 upcoming_matches=None, recent_results=None):
+                 upcoming_matches=None, recent_results=None, raw_matches=None):
     """Write index.md from the template.
-    Pass upcoming_matches=[] / recent_results=[] to skip API calls (e.g. tests)."""
+    Pass upcoming_matches=[] / recent_results=[] to skip API calls (e.g. tests).
+    Pass raw_matches=fetch_raw_matches() to reuse an already-fetched API response."""
 
     if upcoming_matches is None:
         try:
             from get_results import get_upcoming_matches
-            upcoming_matches = get_upcoming_matches()
+            upcoming_matches = get_upcoming_matches(raw_matches)
         except Exception:
             upcoming_matches = []
 
     if recent_results is None:
         try:
             from get_results import get_recent_results
-            recent_results = get_recent_results()
+            recent_results = get_recent_results(raw_matches)
         except Exception:
             recent_results = []
 

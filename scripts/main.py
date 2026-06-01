@@ -15,21 +15,22 @@ if __name__ == "__main__":
     finale_winner = None # e.g. "Brazil"
     eval_res = True
     
-    results = get_results()
-    date = date.today()
-    datafile = [results,date]
+    raw     = fetch_raw_matches()          # single API call shared by all three functions
+    results = get_results(raw)
+    date    = date.today()
+    datafile = [results, date]
     n_file = get_highest_result_number()
 
     prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
 
     if prev_results[0] != results:
         print("New results saved")
-        save_results(cwd + f"/results/data_{n_file+1}.pickle",datafile)
+        save_results(cwd + f"/results/data_{n_file+1}.pickle", datafile)
     else:
         # No new match results — still refresh the Next Matches section
         print("No updates so we exit the script")
         eval_res = False
-        update_next_matches_only()
+        update_next_matches_only(raw)
 
     # Only execute rest of main if we have new results
     if eval_res:
@@ -177,4 +178,4 @@ if __name__ == "__main__":
 
         create_pages(predictions_df)
         create_group_pages(predictions_df)
-        update_pages(predictions_df,todays_schmeichel)
+        update_pages(predictions_df, todays_schmeichel, raw_matches=raw)
