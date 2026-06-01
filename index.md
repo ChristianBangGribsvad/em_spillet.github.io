@@ -4,14 +4,14 @@ title: WC Prediction Game 2026
 ---
 
 # Today's Schmeichel(s):
-- Christian Gribsvad with 25 points part of Danica Ejendomme and Frederiksborg Gymnasium and Friends and Family [see their predictions](./pages/Christian_Gr.html)
+- Isabella  Isaacs with 32 points part of Friends and Family [see their predictions](./pages/Isabella__Is.html)
 
 
 # Leaderboard
 
 <div class="leaderboard">
-<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Christian_Gr.html">Christian Gribsvad</a> <small>(Danica Ejendomme &amp; Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">32 pts</span></div>
-<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Isabella__Is.html">Isabella  Isaacs</a> <small>(Friends and Family)</small></span><span class="lb-pts">32 pts</span></div>
+<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Isabella__Is.html">Isabella  Isaacs</a> <small>(Friends and Family)</small></span><span class="lb-pts">64 pts</span></div>
+<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Christian_Gr.html">Christian Gribsvad</a> <small>(Danica Ejendomme &amp; Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">54 pts</span></div>
 </div>
 
 # Next Matches
@@ -40,7 +40,7 @@ Average cumulative score per team over time — the higher the line, the better 
 (function(){
 var el=document.getElementById("chart-team-vs-team");
 var btn=document.getElementById("chart-team-vs-team-toggle");
-var data={"labels": ["2026-06-10", "2026-06-12", "2026-06-13"], "datasets": [{"label": "Danica Ejendomme", "data": [0.0, 7.0, 32.0], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Frederiksborg Gymnasium", "data": [0.0, 7.0, 32.0], "borderColor": "#0e7c0e", "backgroundColor": "rgba(14,124,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Friends and Family", "data": [0.0, 13.5, 32.0], "borderColor": "#0e0e7c", "backgroundColor": "rgba(14,14,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-10", "2026-06-12", "2026-06-13", "2026-06-14"], "datasets": [{"label": "Danica Ejendomme", "data": [0.0, 7.0, 32.0, 54.0], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Frederiksborg Gymnasium", "data": [0.0, 7.0, 32.0, 54.0], "borderColor": "#0e7c0e", "backgroundColor": "rgba(14,124,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Friends and Family", "data": [0.0, 13.5, 32.0, 59.0], "borderColor": "#0e0e7c", "backgroundColor": "rgba(14,14,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */

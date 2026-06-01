@@ -9,7 +9,7 @@ team_color: "#7c0e0e"
 - [Christian Gribsvad](./Christian_Gr.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">32 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">54 pts</span></div>
 </div>
 
 ## Score progression
@@ -24,7 +24,7 @@ team_color: "#7c0e0e"
 (function(){
 var el=document.getElementById("chart-Danica_Ejendomme");
 var btn=document.getElementById("chart-Danica_Ejendomme-toggle");
-var data={"labels": ["2026-06-10", "2026-06-12", "2026-06-13"], "datasets": [{"label": "Christian Gribsvad", "data": [0.0, 7.0, 32.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-10", "2026-06-12", "2026-06-13", "2026-06-14"], "datasets": [{"label": "Christian Gribsvad", "data": [0.0, 7.0, 32.0, 54.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -113,7 +113,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["Christian Gribsvad"], "values": [25.0], "colors": ["#a71b1b"], "title": "Points earned \u2192 2026-06-12 to 2026-06-13"};
+var d={"labels": ["Christian Gribsvad"], "values": [22.0], "colors": ["#a71b1b"], "title": "Points earned \u2192 2026-06-13 to 2026-06-14"};
 new Chart(document.getElementById("bar-Danica_Ejendomme"),{
   type:"bar",
   data:{
