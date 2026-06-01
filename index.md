@@ -4,7 +4,7 @@ title: WC Prediction Game 2026
 ---
 
 # Today's Schmeichel(s):
-- Christian Gribsvad with 7 points part of Danica Ejendomme and Frederiksborg Gymnasium and Friends and Family [see their predictions](./pages/Christian_Gr.html)
+- Isabella  Isaacs with 20 points part of Friends and Family [see their predictions](./pages/Isabella__Is.html)
 
 
 # Leaderboard
