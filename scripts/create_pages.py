@@ -248,26 +248,8 @@ def _stat_cards_html(ctx):
                  f' &middot; {move_str}'
                  f' &middot; {_ordinal(curr_rank)} out of {n_total_ctx} total players')
 
-        if team_avg is not None:
-            diff_team        = round(my_pts - team_avg, 1)
-            team_names_list  = ctx.get('team_names_list', [])
-            n_team           = ctx.get('n_team', 0)
-            curr_team_rank   = ctx.get('curr_team_rank')
-            team_rank_mv     = ctx.get('team_rank_movement', 0)
-            team_label       = ' and '.join(team_names_list) + ' players'
-
-            if team_rank_mv and team_rank_mv > 0:
-                t_move = f'Moved up {team_rank_mv} place{"s" if team_rank_mv > 1 else ""}'
-            elif team_rank_mv and team_rank_mv < 0:
-                t_move = f'Moved down {abs(team_rank_mv)} place{"s" if abs(team_rank_mv) > 1 else ""}'
-            else:
-                t_move = 'Position unchanged'
-
-            rank_part = (f' &middot; {_ordinal(curr_team_rank)} out of {n_team} {team_label}'
-                         if curr_team_rank else '')
-            line2 = (f'{_fmt(diff_team)} pts vs team avg ({int(team_avg)} pts)'
-                     f' &middot; {t_move}{rank_part}')
-            sub = f'{line1}<br><span style="opacity:.8">{line2}</span>'
+        if False:  # team avg line removed — too verbose with multiple team names
+            pass
         else:
             sub = line1
 

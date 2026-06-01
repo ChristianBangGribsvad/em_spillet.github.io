@@ -2,7 +2,7 @@ name: Daily Job
 
 on:
   schedule:
-    - cron: "3,23,43 * * * *"   # every 20 min, offset from :00 peak load
+    - cron: "2,12,22,32,42,52 * * * *"   # every 10 min, offset from :00 peak load
   workflow_dispatch:    # enables the "Run workflow" button in the Actions tab
 
 env:
