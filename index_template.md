@@ -28,8 +28,12 @@ TEAM_CHART
 
 Click on your team to see the standings and individual predictions.
 
+{% if site.data.groups %}
 <ul>
 {% for group in site.data.groups %}
 <li><a href="{{ '/pages/' | append: group.slug | append: '.html' | absolute_url }}" style="background: {{ group.color }};">{{ group.name }}</a></li>
 {% endfor %}
 </ul>
+{% else %}
+<p class="chart-placeholder"><em>No teams registered yet — check back once participants have signed up.</em></p>
+{% endif %}

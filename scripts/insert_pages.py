@@ -497,14 +497,22 @@ def update_pages(predictions_df, todays_schmeichel,
         content = f.readlines()
 
     # ── Schmeichel lines ──────────────────────────────────────────────────────
-    s_lines = []
-    for name in todays_schmeichel.keys():
-        link = f"[see their predictions]({pages_loc}/{todays_schmeichel[name]['fname']}.html)"
-        pts = int(round(todays_schmeichel[name]['value']))
-        s_lines.append(
-            f"- {name} with {pts} points"
-            f" part of {todays_schmeichel[name]['group']} {link}\n"
-        )
+    schmeichel_name = list(todays_schmeichel.keys())[0]
+    if schmeichel_name == "Nobody":
+        s_lines = [
+            '<p class="chart-placeholder"><em>'
+            "World Cup has not started — Today's Schmeichel will be revealed on each matchday throughout the tournament."
+            '</em></p>\n'
+        ]
+    else:
+        s_lines = []
+        for name in todays_schmeichel.keys():
+            link = f"[see their predictions]({pages_loc}/{todays_schmeichel[name]['fname']}.html)"
+            pts = int(round(todays_schmeichel[name]['value']))
+            s_lines.append(
+                f"- {name} with {pts} points"
+                f" part of {todays_schmeichel[name]['group']} {link}\n"
+            )
 
     next_block      = _div_block("next-matches",      upcoming_matches,
                                  "No matches scheduled in the next 24 hours.")

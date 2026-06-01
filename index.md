@@ -4,7 +4,7 @@ title: WC Prediction Game 2026
 ---
 
 # Today's Schmeichel(s):
-- Nobody with 0 points part of Nobody [see their predictions](./pages/.html)
+<p class="chart-placeholder"><em>World Cup has not started — Today's Schmeichel will be revealed on each matchday throughout the tournament.</em></p>
 
 
 # Leaderboard
@@ -34,8 +34,12 @@ Average cumulative score per team over time — the higher the line, the better 
 
 Click on your team to see the standings and individual predictions.
 
+{% if site.data.groups %}
 <ul>
 {% for group in site.data.groups %}
 <li><a href="{{ '/pages/' | append: group.slug | append: '.html' | absolute_url }}" style="background: {{ group.color }};">{{ group.name }}</a></li>
 {% endfor %}
 </ul>
+{% else %}
+<p class="chart-placeholder"><em>No teams registered yet — check back once participants have signed up.</em></p>
+{% endif %}
