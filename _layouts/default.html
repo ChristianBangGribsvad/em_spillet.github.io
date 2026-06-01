@@ -436,6 +436,59 @@
     }
     .pred-placeholder { padding: 1rem; color: var(--muted); font-style: italic; }
 
+    /* ── Global text overflow prevention ────────────────── */
+    .content-wrapper { overflow-wrap: break-word; word-break: break-word; }
+
+    /* ── Description paragraphs between headings and card bodies ─
+       Without these, the green left border and right border
+       disappear on the description line, creating a visual break. */
+    .content-wrapper h1 + p,
+    .content-wrapper h2 + p {
+      background: var(--white);
+      border-left: 5px solid var(--turf);
+      border-right: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    /* ── Markdown-generated tables (rules page) ──────────── */
+    .content-wrapper table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0 1.25rem;
+      font-size: 0.88rem;
+      display: block;
+      overflow-x: auto;   /* horizontal scroll on narrow screens */
+    }
+    .content-wrapper th,
+    .content-wrapper td {
+      padding: 0.4rem 0.75rem;
+      border: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    .content-wrapper th {
+      background: var(--off-white);
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .content-wrapper tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+
+    /* ── Rules table — stack vertically on narrow screens ── */
+    @media (max-width: 540px) {
+      .rules-row { grid-template-columns: 1fr; }
+      .rules-row > span:first-child {
+        font-weight: 600;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.3rem;
+        margin-bottom: 0.2rem;
+      }
+    }
+
     /* ── Participant stat cards ───────────────────────── */
     .stat-cards {
       display: grid;
