@@ -117,7 +117,7 @@ For each of the 12 groups you predict who finishes 1st and 2nd.
 
 ## How the Game Works
 
-The site updates automatically every 20 minutes. Scores, charts and standings are refreshed within minutes of a match finishing.
+The site updates automatically every 20 minutes. Scores, charts and standings are refreshed for each newly completed match.
 
 <div class="rules-table">
 <div class="rules-row pts-unplayed">
