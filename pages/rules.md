@@ -116,12 +116,7 @@ For each of the 12 groups you predict who finishes 1st and 2nd.
 
 ## How the Game Works
 
-The pipeline runs automatically **every 20 minutes** (at :03, :23 and :43 past each hour).
-Each run:
-
-1. Fetches the latest match results from the official football API
-2. If **new results** are found, everyone's scores are recalculated, charts regenerated, and all pages updated — typically within 20 minutes of a match finishing
-3. The **Next Matches** and **Yesterday's Results** sections refresh every 20 minutes regardless, so the schedule is always current
+The site updates automatically **every 20 minutes** (at :03, :23 and :43 past each hour). Results are fetched from the official football API — when new match results are detected, everyone's scores are recalculated and pages are regenerated, typically within 20 minutes of a match finishing. The **Next Matches** and **Yesterday's Results** sections refresh on the same schedule even when no scores change.
 
 **Today's Schmeichel** is whoever earned the most points since the previous scoring update.
 
