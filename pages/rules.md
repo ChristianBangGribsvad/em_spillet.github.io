@@ -123,7 +123,7 @@ Each run:
 2. If **new results** are found, everyone's scores are recalculated, charts regenerated, and all pages updated — typically within an hour of a match finishing
 3. The **Next Matches** and **Yesterday's Results** sections refresh every hour regardless, so the schedule is always current
 
-**Today's Schmeichel** is whoever earned the most points between the current run and the previous scoring run. A player who scores 45 points in a single batch of results wins — even if they are not leading overall.
+**Today's Schmeichel** is whoever earned the most points since the previous scoring update. There is no upper limit — on the final day of the group stage, when all 12 groups complete simultaneously, a perfect predictor could earn 600+ points in a single update. A player can win Schmeichel even if they are last overall.
 
 ---
 
