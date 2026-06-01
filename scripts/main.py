@@ -130,13 +130,23 @@ if __name__ == "__main__":
             user_total = int(round(pd.to_numeric(user_df.loc[2], errors='coerce').sum()))
             logger.info(f"[SCORE] {user}: {user_total} pts")
 
+            user_total_float = user_df.loc[2].sum()
+
             for group in user_df.at[0, "Which team(s) do you belong to?"].split(";"):
                 if group not in os.listdir("data/group_dfs"):
                     df_results = pd.DataFrame()
                 else:
                     df_results = pd.read_pickle("data/group_dfs/" + group)
 
-                df_results.loc[today, user] = user_df.loc[2].sum()
+                # Guard: only write a new date row when the score actually changed.
+                # Skipping zero-delta writes prevents phantom "rounds" in the knockout
+                # stage when group-stage predictions can no longer gain points.
+                if (not df_results.empty and user in df_results.columns
+                        and df_results[user].iloc[-1] == user_total_float):
+                    logger.debug(f"[GUARD] {user} score unchanged ({user_total} pts) — skipping write")
+                    continue
+
+                df_results.loc[today, user] = user_total_float
                 df_results.to_pickle("data/group_dfs/" + group)
 
                 if df_results.shape[0] > 1:
@@ -145,7 +155,7 @@ if __name__ == "__main__":
                     ]
                     user_val = df_results.loc[today, user] - df_results.at[prev_date, user]
                 else:
-                    user_val = user_df.loc[2].sum()
+                    user_val = user_total_float
 
                 if user_val > max_val:
                     todays_schmeichel = {
@@ -184,7 +194,9 @@ if __name__ == "__main__":
             except Exception as e:
                 logger.warning(f"[WARN] Could not read group_dfs/{group}: {e} — skipping")
                 continue
-            df_group_avg.loc[today, group] = df_results.loc[today].mean()
+            # Only record group avg for dates that actually have new data
+            if today in df_results.index:
+                df_group_avg.loc[today, group] = df_results.loc[today].mean()
 
         df_group_avg.to_pickle("data/group_avg")
 
