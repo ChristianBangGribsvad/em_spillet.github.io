@@ -159,7 +159,13 @@ if __name__ == "__main__":
 
         # Plot and save group results
         for group in os.listdir("data/group_dfs"):
-            df_results = pd.read_pickle("data/group_dfs/"+group)
+            if group.startswith('.'):   # skip .gitkeep and hidden files
+                continue
+            try:
+                df_results = pd.read_pickle("data/group_dfs/"+group)
+            except Exception as e:
+                print(f"Warning: could not read group_dfs/{group} ({e}), skipping")
+                continue
 
             # Save group avg
             df_group_avg.loc[date,group] = df_results.loc[date].mean()
