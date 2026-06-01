@@ -50,14 +50,14 @@ if __name__ == "__main__":
 
     # ── Full pipeline — only when results changed ─────────────────────────────
     if eval_res:
-        predictions_df = pd.read_csv("data/WC spillet 2026.csv")
+        predictions_df = pd.read_csv("data/FIFA World Cup 2026 - Predictions.csv")
 
         df_fname = pd.DataFrame({'f_name': [
-            (f"{row['First name']}_" + f"{str(row['Last name'])[0:2]}").replace(" ", "_").replace('"', "_")
+            (f"{row['First name (one name)']}_" + f"{str(row['Last name (one name)'])[0:2]}").replace(" ", "_").replace('"', "_")
             for _, row in predictions_df.iterrows()
         ]})
         df_dname = pd.DataFrame({'d_name': [
-            f"{row['First name']} {str(row['Last name']).split()[-1]}"
+            f"{row['First name (one name)']} {str(row['Last name (one name)']).split()[-1]}"
             for _, row in predictions_df.iterrows()
         ]})
         predictions_df = predictions_df.join(df_fname)
@@ -66,18 +66,18 @@ if __name__ == "__main__":
         logger.info(f"[CSV] {len(predictions_df)} participants loaded")
 
         ### Detect duplicates
-        idx_duplicate = predictions_df.duplicated(subset=['First name', 'Last name'], keep=False)
+        idx_duplicate = predictions_df.duplicated(subset=['First name (one name)', 'Last name (one name)'], keep=False)
         idx_remove = {"first name": [], "last name": [], "idx": []}
         for idx in range(len(idx_duplicate)):
             if idx_duplicate[idx]:
-                if (predictions_df.at[idx, "First name"] in idx_remove["first name"] and
-                        predictions_df.at[idx, "Last name"]  in idx_remove["last name"]):
+                if (predictions_df.at[idx, "First name (one name)"] in idx_remove["first name"] and
+                        predictions_df.at[idx, "Last name (one name)"]  in idx_remove["last name"]):
                     continue
                 else:
-                    first_name = predictions_df.at[idx, "First name"]
-                    last_name  = predictions_df.at[idx, "Last name"]
-                    name_match = ((predictions_df["First name"] == first_name) &
-                                  (predictions_df["Last name"]  == last_name))
+                    first_name = predictions_df.at[idx, "First name (one name)"]
+                    last_name  = predictions_df.at[idx, "Last name (one name)"]
+                    name_match = ((predictions_df["First name (one name)"] == first_name) &
+                                  (predictions_df["Last name (one name)"]  == last_name))
                     idx_remove["first name"] += [first_name]
                     idx_remove["last name"]  += [last_name]
                     idx_remove["idx"] += [np.where(np.array(name_match.tolist()) > 0)[0][0]]

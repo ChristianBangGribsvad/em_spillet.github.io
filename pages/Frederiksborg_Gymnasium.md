@@ -1,46 +1,30 @@
 ---
 layout: default
-title: WC Prediction Game 2026
+team_color: "#0e7c0e"
 ---
 
-# Today's Schmeichel(s):
-<p class="chart-placeholder"><em>World Cup has not started — Today's Schmeichel will be revealed on each matchday throughout the tournament.</em></p>
+# Frederiksborg Gymnasium
 
+## Frederiksborg Gymnasium participants:
+- [Christian Gribsvad](./Christian_Gr.html)
 
-# Leaderboard
-
-<div class="leaderboard">
-<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Christian_Gr.html">Christian Gribsvad</a> <small>(Danica Ejendomme &amp; Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Isabella__Is.html">Isabella  Isaacs</a> <small>(Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="team-standings">
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">0 pts</span></div>
 </div>
 
-# Next Matches
-
-<div class="next-matches">
-<p><em>No matches scheduled in the next 24 hours.</em></p>
-</div>
-
-# Yesterday's Results
-
-<div class="yesterdays-results">
-<p><em>No results yet.</em></p>
-</div>
-
-# Team vs Team
-
-Average cumulative score per team over time — the higher the line, the better that team's participants are performing overall.
+## Score progression
 
 <div class="chart-wrapper">
 <div class="chart-controls">
-<button id="chart-team-vs-team-toggle" class="chart-toggle">Show Rank</button>
+<button id="chart-Frederiksborg_Gymnasium-toggle" class="chart-toggle">Show Rank</button>
 </div>
-<canvas id="chart-team-vs-team"></canvas>
+<canvas id="chart-Frederiksborg_Gymnasium"></canvas>
 </div>
 <script>
 (function(){
-var el=document.getElementById("chart-team-vs-team");
-var btn=document.getElementById("chart-team-vs-team-toggle");
-var data={"labels": ["2026-06-10"], "datasets": [{"label": "Danica Ejendomme", "data": [0.0], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Frederiksborg Gymnasium", "data": [0.0], "borderColor": "#0e7c0e", "backgroundColor": "rgba(14,124,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Friends and Family", "data": [0.0], "borderColor": "#0e0e7c", "backgroundColor": "rgba(14,14,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var el=document.getElementById("chart-Frederiksborg_Gymnasium");
+var btn=document.getElementById("chart-Frederiksborg_Gymnasium-toggle");
+var data={"labels": ["2026-06-10"], "datasets": [{"label": "Christian Gribsvad", "data": [0.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -122,16 +106,8 @@ btn.addEventListener("click",function(){
 })()
 </script>
 
-# Teams
+## Points earned — latest round
 
-Click on your team to see the standings and individual predictions.
+<p class="chart-placeholder"><em>Best round chart appears after the first two scoring updates.</em></p>
 
-{% if site.data.groups %}
-<ul>
-{% for group in site.data.groups %}
-<li><a href="{{ '/pages/' | append: group.slug | append: '.html' | absolute_url }}" style="background: {{ group.color }};">{{ group.name }}</a></li>
-{% endfor %}
-</ul>
-{% else %}
-<p class="chart-placeholder"><em>No teams registered yet — check back once participants have signed up.</em></p>
-{% endif %}
+[← Back to standings](../)
