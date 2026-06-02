@@ -34,7 +34,12 @@ def run_pipeline(results, today, raw=None,
 
     t0 = time.time()
 
-    predictions_df = pd.read_csv("data/FIFA World Cup 2026 - Predictions.csv")
+    csv_path = "data/FIFA World Cup 2026 - Predictions.csv"
+    if not os.path.isfile(csv_path):
+        logger.warning("[CSV] Predictions file not found — add the CSV to start scoring")
+        return
+
+    predictions_df = pd.read_csv(csv_path)
 
     df_fname = pd.DataFrame({'f_name': [
         (f"{row['First name (one name)']}_" + f"{str(row['Last name (one name)'])[0:2]}").replace(" ", "_").replace('"', "_")
