@@ -117,12 +117,12 @@ For each of the 12 groups you predict who finishes 1st and 2nd.
 
 ## How the Game Works
 
-The site updates automatically every 20 minutes. Scores, charts and standings are refreshed for each newly completed match.
+The site updates automatically approximately once an hour. Scores, charts and standings are refreshed for each newly completed match.
 
 <div class="rules-table">
 <div class="rules-row pts-unplayed">
   <span><strong>Schedule</strong></span>
-  <span>Runs at :03, :23 and :43 past each hour</span>
+  <span>Approximately once an hour — GitHub's scheduler may delay or skip runs during peak times</span>
 </div>
 <div class="rules-row pts-unplayed">
   <span><strong>Score updates</strong></span>
@@ -130,7 +130,7 @@ The site updates automatically every 20 minutes. Scores, charts and standings ar
 </div>
 <div class="rules-row pts-unplayed">
   <span><strong>Schedule sections</strong></span>
-  <span><em>Next Matches</em> and <em>Yesterday's Results</em> refresh every 20 min even when no scores change</span>
+  <span><em>Next Matches</em> and <em>Yesterday's Results</em> refresh on the same schedule</span>
 </div>
 <div class="rules-row pts-unplayed">
   <span><strong>Today's Schmeichel</strong></span>
