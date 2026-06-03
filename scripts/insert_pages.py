@@ -61,7 +61,7 @@ def compute_biggest_movers():
         movers.append((name, fname_map.get(name, ''), curr_r, prev_r, change))
 
     movers.sort(key=lambda x: (-abs(x[4]), x[2]))
-    return movers
+    return movers[:5]
 
 
 def _biggest_movers_block(movers):
