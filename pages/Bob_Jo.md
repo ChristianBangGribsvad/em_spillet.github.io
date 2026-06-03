@@ -56,6 +56,8 @@ new Chart(el,{
 ## Your predictions
 
 <div class="pred-table">
+<div class="pred-breakdown">Group matches: <strong>137 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>5 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">142 pts</span></div>
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
@@ -196,7 +198,6 @@ new Chart(el,{
 <div class="pred-row pts-unplayed"><span class="pred-match">Top scorer</span><span class="pred-guess">Kylian Mbappe</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Scorer goals</span><span class="pred-guess">6</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">142 pts</span></div>
 </div>
 
 [Back](https://christianbanggribsvad.github.io/wc-predictions.github.io/)

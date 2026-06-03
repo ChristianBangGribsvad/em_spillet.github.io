@@ -430,14 +430,25 @@ def _predictions_html(user_df):
             + ''.join(rows) + '</div>\n'
         )
 
-    try:
-        total = int(round(pd.to_numeric(user_df.loc[2], errors='coerce').sum()))
-    except Exception:
-        total = 0
+    pts_row = pd.to_numeric(user_df.loc[2], errors='coerce')
 
-    col_header = (
-        '<div class="pred-col-header">'
-        '<span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span>'
+    match_cols  = [c for c in all_cols if 'Predictions [' in c]
+    winner_cols = [c for c in all_cols if 'place' in c]
+    special_cols_all = [c for c in all_cols
+                        if not any(c.startswith(g + ' ') for g in GROUPS)]
+
+    match_pts   = int(round(pts_row[match_cols].sum()))
+    winner_pts  = int(round(pts_row[winner_cols].sum()))
+    special_pts = int(round(pts_row[special_cols_all].sum()))
+    total       = match_pts + winner_pts + special_pts
+
+    breakdown = (
+        '<div class="pred-breakdown">'
+        f'Group matches: <strong>{match_pts} pts</strong>'
+        f' &nbsp;&middot;&nbsp; '
+        f'Group winners: <strong>{winner_pts} pts</strong>'
+        f' &nbsp;&middot;&nbsp; '
+        f'Special predictions: <strong>{special_pts} pts</strong>'
         '</div>\n'
     )
     total_row = (
@@ -445,7 +456,19 @@ def _predictions_html(user_df):
         f'Total &nbsp;<span class="pred-total-pts">{total} pts</span>'
         '</div>\n'
     )
-    return '<div class="pred-table">\n' + col_header + ''.join(sections) + total_row + '</div>\n'
+    col_header = (
+        '<div class="pred-col-header">'
+        '<span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span>'
+        '</div>\n'
+    )
+    return (
+        '<div class="pred-table">\n'
+        + breakdown
+        + total_row
+        + col_header
+        + ''.join(sections)
+        + '</div>\n'
+    )
 
 
 # ── Public function ───────────────────────────────────────────────────────────
