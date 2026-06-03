@@ -57,8 +57,11 @@ if not results:
     results = [("PRE_TOURNAMENT_SENTINEL", "None - None")]
 
 # ── Change detection (mirrors main.py exactly) ────────────────────────────────
-n_file       = get_highest_result_number()
-prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
+n_file = get_highest_result_number()
+try:
+    prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
+except FileNotFoundError:
+    prev_results = [[], None]
 
 if prev_results[0] != results:
     logger.info(f"[CHANGE] Saving as data_{n_file+1}.pickle — running full pipeline")

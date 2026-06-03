@@ -10,13 +10,8 @@ team_color: "#0e7c7c"
 - [Carol Davis](./Carol_Da.html)
 
 <div class="team-standings">
-<<<<<<< HEAD
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Carol_Da.html">Carol Davis</a></span><span class="ts-pts">35 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Bob_Jo.html">Bob Johnson</a></span><span class="ts-pts">25 pts</span></div>
-=======
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Bob_Jo.html">Bob Johnson</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Carol_Da.html">Carol Davis</a></span><span class="ts-pts">0 pts</span></div>
->>>>>>> f904ca7ba2f956736bc6cab3497e61c2662bcb1f
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Bob_Jo.html">Bob Johnson</a></span><span class="ts-pts">142 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Carol_Da.html">Carol Davis</a></span><span class="ts-pts">119 pts</span></div>
 </div>
 
 ## Score progression
@@ -31,11 +26,7 @@ team_color: "#0e7c7c"
 (function(){
 var el=document.getElementById("chart-Team_Beta");
 var btn=document.getElementById("chart-Team_Beta-toggle");
-<<<<<<< HEAD
-var data={"labels": ["2026-06-12", "2026-06-13", "2026-06-14", "2026-06-11"], "datasets": [{"label": "Bob Johnson", "data": [25.0, 47.0, 142.0, 25.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Carol Davis", "data": [35.0, 67.0, 119.0, 35.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
-=======
-var data={"labels": ["2026-06-12", "2026-06-13", "2026-06-14", "2026-06-03"], "datasets": [{"label": "Bob Johnson", "data": [25.0, 47.0, 142.0, 0.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Carol Davis", "data": [35.0, 67.0, 119.0, 0.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
->>>>>>> f904ca7ba2f956736bc6cab3497e61c2662bcb1f
+var data={"labels": ["2026-06-14"], "datasets": [{"label": "Bob Johnson", "data": [142.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Carol Davis", "data": [119.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -119,39 +110,6 @@ btn.addEventListener("click",function(){
 
 ## Points earned — latest round
 
-<div class="chart-wrapper" style="height:174px">
-<canvas id="bar-Team_Beta"></canvas>
-</div>
-<script>
-(function(){
-<<<<<<< HEAD
-var d={"labels": ["Carol Davis", "Bob Johnson"], "values": [-84.0, -117.0], "colors": ["#1ba7a7", "#a71b1b"], "title": "Points earned \u2192 2026-06-14 to 2026-06-11"};
-=======
-var d={"labels": ["Carol Davis", "Bob Johnson"], "values": [-119.0, -142.0], "colors": ["#1ba7a7", "#a71b1b"], "title": "Points earned \u2192 2026-06-14 to 2026-06-03"};
->>>>>>> f904ca7ba2f956736bc6cab3497e61c2662bcb1f
-new Chart(document.getElementById("bar-Team_Beta"),{
-  type:"bar",
-  data:{
-    labels:d.labels,
-    datasets:[{data:d.values,backgroundColor:d.colors,borderRadius:5,borderWidth:0}]
-  },
-  options:{
-    indexAxis:"y",responsive:true,maintainAspectRatio:false,
-    plugins:{
-      legend:{display:false},
-      title:{display:true,text:d.title,color:"#666",
-             font:{family:"Inter,system-ui,sans-serif",size:11},padding:{bottom:6}},
-      tooltip:{callbacks:{label:function(c){return " "+Math.round(c.raw)+" pts";}}}
-    },
-    scales:{
-      x:{beginAtZero:true,
-         title:{display:true,text:"Points earned",font:{size:11}},
-         grid:{color:"rgba(0,0,0,0.05)"}},
-      y:{grid:{display:false},ticks:{font:{family:"Inter,system-ui,sans-serif",size:11}}}
-    }
-  }
-});
-})()
-</script>
+<p class="chart-placeholder"><em>Best round chart appears after the first two scoring updates.</em></p>
 
 [← Back to standings](../)
