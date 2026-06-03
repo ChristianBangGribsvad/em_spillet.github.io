@@ -41,12 +41,16 @@ def run_pipeline(results, today, raw=None,
 
     predictions_df = pd.read_csv(csv_path)
 
+    # Support both the real form column names and the simpler test-CSV column names
+    fn_col = 'First name (one name)' if 'First name (one name)' in predictions_df.columns else 'First name'
+    ln_col = 'Last name (one name)'  if 'Last name (one name)'  in predictions_df.columns else 'Last name'
+
     df_fname = pd.DataFrame({'f_name': [
-        (f"{row['First name (one name)']}_" + f"{str(row['Last name (one name)'])[0:2]}").replace(" ", "_").replace('"', "_")
+        (f"{row[fn_col]}_" + f"{str(row[ln_col])[0:2]}").replace(" ", "_").replace('"', "_")
         for _, row in predictions_df.iterrows()
     ]})
     df_dname = pd.DataFrame({'d_name': [
-        f"{row['First name (one name)']} {str(row['Last name (one name)']).split()[-1]}"
+        f"{row[fn_col]} {str(row[ln_col]).split()[-1]}"
         for _, row in predictions_df.iterrows()
     ]})
     predictions_df = predictions_df.join(df_fname)
@@ -55,17 +59,16 @@ def run_pipeline(results, today, raw=None,
     logger.info(f"[CSV] {len(predictions_df)} participants loaded")
 
     # ── Duplicate detection ───────────────────────────────────────────────────
-    idx_duplicate = predictions_df.duplicated(
-        subset=['First name (one name)', 'Last name (one name)'], keep=False)
+    idx_duplicate = predictions_df.duplicated(subset=[fn_col, ln_col], keep=False)
     idx_remove = {"first name": [], "last name": [], "idx": []}
     for idx in range(len(idx_duplicate)):
         if idx_duplicate[idx]:
-            fn = predictions_df.at[idx, "First name (one name)"]
-            ln = predictions_df.at[idx, "Last name (one name)"]
+            fn = predictions_df.at[idx, fn_col]
+            ln = predictions_df.at[idx, ln_col]
             if fn in idx_remove["first name"] and ln in idx_remove["last name"]:
                 continue
-            name_match = ((predictions_df["First name (one name)"] == fn) &
-                          (predictions_df["Last name (one name)"]  == ln))
+            name_match = ((predictions_df[fn_col] == fn) &
+                          (predictions_df[ln_col] == ln))
             idx_remove["first name"] += [fn]
             idx_remove["last name"]  += [ln]
             idx_remove["idx"] += [np.where(np.array(name_match.tolist()) > 0)[0][0]]

@@ -46,6 +46,10 @@ title: WC Prediction Game 2026
 
 LEADERBOARD
 
+# Biggest Movers
+
+BIGGEST_MOVERS
+
 # Next Matches
 
 NEXT_MATCHES

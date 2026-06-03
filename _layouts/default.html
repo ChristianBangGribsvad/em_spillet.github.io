@@ -642,6 +642,42 @@
     }
     .form-cta a:hover { text-decoration: underline; }
 
+    /* ── Biggest movers ──────────────────────────────────── */
+    .biggest-movers {
+      background: var(--white);
+      border-left: 5px solid var(--turf);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 0 var(--r) var(--r);
+      overflow: hidden;
+    }
+    .mover-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+    .mover-row:last-child { border-bottom: none; }
+    .mv-up, .mv-down, .mv-neutral {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      min-width: 2.5rem;
+      text-align: center;
+    }
+    .mv-up      { color: #166534; }
+    .mv-down    { color: #7f1d1d; }
+    .mv-neutral { color: var(--muted); }
+    .mv-name    { flex: 1; font-size: 0.9rem; font-weight: 500; }
+    .mv-name a  { color: var(--text); text-decoration: none; font-weight: 600; }
+    .mv-name a:hover { color: var(--turf); text-decoration: underline; }
+    .mv-rank {
+      font-family: 'Oswald', 'Arial Narrow', sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
     .chart-placeholder {
       padding: 1rem;
       color: var(--muted);

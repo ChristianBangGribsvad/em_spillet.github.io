@@ -4,6 +4,91 @@ import colorsys
 import pandas as pd
 from loguru import logger
 
+
+def _ordinal_ins(n):
+    s = {1:'st',2:'nd',3:'rd'}.get(n%10 if n%100 not in (11,12,13) else 0,'th')
+    return f'{n}{s}'
+
+
+def compute_biggest_movers():
+    """
+    Returns [(d_name, f_name, curr_rank, prev_rank, change), ...]
+    sorted by |change| descending. Empty when fewer than 2 scoring dates exist.
+    """
+    gdir = os.path.join("data", "group_dfs")
+    udir = os.path.join("data", "user_dfs")
+    if not os.path.isdir(gdir) or not os.path.isdir(udir):
+        return []
+
+    # Build deduplicated combined df (first-wins per participant)
+    all_series = {}
+    for fname in os.listdir(gdir):
+        if fname.startswith('.'):
+            continue
+        try:
+            df = pd.read_pickle(os.path.join(gdir, fname))
+            for col in df.columns:
+                if col not in all_series:
+                    all_series[col] = df[col]
+        except Exception:
+            continue
+
+    if not all_series:
+        return []
+
+    combined = pd.DataFrame(all_series).ffill()
+    if len(combined) < 2:
+        return []
+
+    curr_ranks = combined.iloc[-1].rank(ascending=False, method='min').astype(int)
+    prev_ranks = combined.iloc[-2].rank(ascending=False, method='min').astype(int)
+
+    fname_map = {}
+    for fname in os.listdir(udir):
+        if fname.startswith('.'):
+            continue
+        try:
+            df = pd.read_pickle(os.path.join(udir, fname))
+            fname_map[df.at[0, 'd_name']] = df.at[0, 'f_name']
+        except Exception:
+            continue
+
+    movers = []
+    for name in combined.columns:
+        curr_r = int(curr_ranks[name])
+        prev_r = int(prev_ranks[name])
+        change = prev_r - curr_r        # positive = moved up
+        movers.append((name, fname_map.get(name, ''), curr_r, prev_r, change))
+
+    movers.sort(key=lambda x: (-abs(x[4]), x[2]))
+    return movers
+
+
+def _biggest_movers_block(movers):
+    if not movers:
+        return (
+            '<p class="chart-placeholder">'
+            '<em>Biggest movers will appear after the first two scoring updates.</em>'
+            '</p>\n'
+        )
+    rows = []
+    for name, f_name, curr_r, prev_r, change in movers:
+        if change > 0:
+            ind = f'<span class="mv-up">&#x2191;{change}</span>'
+        elif change < 0:
+            ind = f'<span class="mv-down">&#x2193;{abs(change)}</span>'
+        else:
+            ind = '<span class="mv-neutral">&#x2192;</span>'
+        name_html = f'<a href="./pages/{f_name}.html">{name}</a>' if f_name else name
+        rows.append(
+            f'<div class="mover-row">'
+            f'{ind}'
+            f'<span class="mv-name">{name_html}</span>'
+            f'<span class="mv-rank">{_ordinal_ins(curr_r)}</span>'
+            f'</div>\n'
+        )
+    return '<div class="biggest-movers">\n' + ''.join(rows) + '</div>\n'
+
 # ── Chart.js HTML template ────────────────────────────────────────────────────
 # CHART_ID and CHART_DATA are replaced at build time; all { } are JS literals.
 _CHART_TMPL = """\
@@ -519,6 +604,7 @@ def update_pages(predictions_df, todays_schmeichel,
     yesterday_block = _div_block("yesterdays-results", recent_results,
                                  "No results yet.")
     lb_block        = _leaderboard_block(compute_leaderboard())
+    movers_block    = _biggest_movers_block(compute_biggest_movers())
 
     # Team vs Team chart
     avg_path = os.path.join("data", "group_avg")
@@ -556,6 +642,11 @@ def update_pages(predictions_df, todays_schmeichel,
     for i, line in enumerate(content):
         if "TEAM_CHART" in line:
             content = content[:i] + [team_chart] + content[i + 1:]
+            break
+
+    for i, line in enumerate(content):
+        if "BIGGEST_MOVERS" in line:
+            content = content[:i] + [movers_block] + content[i + 1:]
             break
 
     with open("index.md", "w", encoding="UTF-8") as f:
