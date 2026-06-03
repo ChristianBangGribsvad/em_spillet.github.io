@@ -6,7 +6,7 @@ layout: default
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#2nd out of 3 players across the game</span><span class="stat-sub">You beat 33% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">95 pts last round</span><span class="stat-sub">+26 pts vs global avg (68 pts) &middot; Moved up 1 place &middot; 2nd out of 3 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">-117 pts last round</span><span class="stat-sub">-10 pts vs global avg (-106 pts) &middot; Moved down 1 place &middot; 3rd out of 3 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -16,7 +16,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Bob_Jo");
-var data={"labels": ["2026-06-12", "2026-06-13", "2026-06-14"], "datasets": [{"label": "Your score", "data": [25.0, 47.0, 142.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [30.0, 57.0, 130.5], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [36.7, 74.7, 143.3], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-12", "2026-06-13", "2026-06-14", "2026-06-11"], "datasets": [{"label": "Your score", "data": [25.0, 47.0, 142.0, 25.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [30.0, 57.0, 130.5, 30.0], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [36.7, 74.7, 143.3, 36.7], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{

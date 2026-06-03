@@ -329,7 +329,152 @@ def _personal_chart_js(slug, ctx, team_color):
     return _SIMPLE_CHART_TMPL.replace('CHART_ID', f'personal-{slug}').replace('CHART_DATA', chart_data)
 
 
-# ── Predictions table helpers (unchanged) ─────────────────────────────────────
+# ── Per-match badge helpers ───────────────────────────────────────────────────
+
+_BADGE_DEFS = {
+    'gem':     ('💎', 'Hidden Gem',            'mb-gem'),
+    'unicorn': ('🦄', 'Unicorn Pick',          'mb-unicorn'),
+    'crystal': ('🔮', 'Crystal Ball',          'mb-crystal'),
+    'sharp':   ('🎯', 'Sharp Eye',             'mb-sharp'),
+    'miss1':   ('🙈', 'The One Who Missed',    'mb-miss1'),
+    'rarem':   ('😬', 'Rare Miss',             'mb-rarem'),
+    'nobody':  ('💀', 'Nobody Saw That Coming','mb-nobody'),
+    'company': ('🤝', 'In Good Company',       'mb-company'),
+}
+
+
+def _compute_match_stats():
+    """
+    Load all user_dfs and return per-match outcome/exact-score counts.
+    Returns {col_name: {'n': total_participants, 'outcome': int, 'exact': int}}
+    Only includes columns where the match has been played.
+    """
+    udir = os.path.join('data', 'user_dfs')
+    if not os.path.isdir(udir):
+        return {}
+
+    all_dfs = []
+    for fname in os.listdir(udir):
+        if fname.startswith('.'):
+            continue
+        try:
+            all_dfs.append(pd.read_pickle(os.path.join(udir, fname)))
+        except Exception:
+            continue
+
+    if not all_dfs:
+        return {}
+
+    n_total = len(all_dfs)
+    stats = {}
+
+    match_cols = {col for df in all_dfs for col in df.columns if 'Predictions [' in col}
+
+    def _outcome(h, a):
+        return 'H' if h > a else ('A' if h < a else 'D')
+
+    for col in match_cols:
+        # Determine actual result from first df that has a real result
+        rh = ra = None
+        for df in all_dfs:
+            if col not in df.columns:
+                continue
+            res = str(df.at[1, col]).strip()
+            if res in ('-', 'nan', 'None', ''):
+                continue
+            try:
+                parts = res.replace(' ', '').split('-')
+                rh, ra = int(parts[0]), int(parts[1])
+                break
+            except (ValueError, IndexError):
+                continue
+        if rh is None:
+            continue  # unplayed
+
+        real_out = _outcome(rh, ra)
+        outcome_n = exact_n = 0
+
+        for df in all_dfs:
+            if col not in df.columns:
+                continue
+            pred = str(df.at[0, col]).strip()
+            if pred in ('nan', 'None', '-', ''):
+                continue
+            try:
+                pp = pred.replace(' ', '').split('-')
+                ph, pa = int(pp[0]), int(pp[1])
+            except (ValueError, IndexError):
+                continue
+            if _outcome(ph, pa) == real_out:
+                outcome_n += 1
+            if ph == rh and pa == ra:
+                exact_n += 1
+
+        stats[col] = {'n': n_total, 'outcome': outcome_n, 'exact': exact_n}
+
+    return stats
+
+
+def _match_badge_html(col, my_pred, my_result, match_stats):
+    """Return a badge anchor element for this match, or empty string."""
+    s = match_stats.get(col)
+    if not s:
+        return ''
+    n = s['n']
+    if n == 0:
+        return ''
+
+    res_str  = str(my_result).strip()
+    pred_str = str(my_pred).strip()
+    if res_str  in ('-', 'nan', 'None', ''):
+        return ''
+    if pred_str in ('nan', 'None', '-', ''):
+        return ''
+
+    try:
+        rh, ra = [int(x) for x in res_str.replace(' ', '').split('-')]
+        ph, pa = [int(x) for x in pred_str.replace(' ', '').split('-')]
+    except (ValueError, IndexError):
+        return ''
+
+    def _out(h, a):
+        return 'H' if h > a else ('A' if h < a else 'D')
+
+    i_exact   = (ph == rh and pa == ra)
+    i_correct = (_out(ph, pa) == _out(rh, ra))
+    pct_ok    = s['outcome'] / n
+
+    badge_key = None
+    if i_exact and s['exact'] / n < 0.05:
+        badge_key = 'gem'
+    elif i_correct:
+        if pct_ok <= 0.06:
+            badge_key = 'unicorn'
+        elif pct_ok <= 0.14:
+            badge_key = 'crystal'
+        elif pct_ok <= 0.25:
+            badge_key = 'sharp'
+    else:
+        if pct_ok >= 0.90:
+            badge_key = 'miss1'
+        elif pct_ok >= 0.80:
+            badge_key = 'rarem'
+        elif pct_ok <= 0.10:
+            badge_key = 'nobody'
+        elif pct_ok <= 0.30:
+            badge_key = 'company'
+
+    if badge_key is None:
+        return ''
+
+    emoji, label, css_cls = _BADGE_DEFS[badge_key]
+    return (
+        f'<a href="./rules.html#match-badges" class="match-badge {css_cls}" '
+        f'target="_blank" rel="noopener">{emoji} {label}</a>\n'
+    )
+
+
+# ── Predictions table helpers ─────────────────────────────────────────────────
 
 def _pts_class(result, pts):
     if str(result).strip() == '-':
@@ -381,7 +526,7 @@ def _special_label(col):
     return col[:40]
 
 
-def _predictions_html(user_df):
+def _predictions_html(user_df, match_stats=None):
     GROUPS   = [f'Group {c}' for c in 'ABCDEFGHIJKL']
     all_cols = list(user_df.columns[4:-2])
     sections = []
@@ -399,6 +544,10 @@ def _predictions_html(user_df):
             except IndexError:
                 name = col
             rows.append(_pred_row(name, user_df.at[0,col], user_df.at[1,col], user_df.at[2,col]))
+            if match_stats is not None:
+                badge = _match_badge_html(col, user_df.at[0,col], user_df.at[1,col], match_stats)
+                if badge:
+                    rows.append(badge)
         if win_cols:
             rows.append('<div class="pred-divider">Group winners</div>\n')
             # Combine 1st and 2nd into one row showing the total
@@ -478,6 +627,9 @@ def create_pages(predictions_df):
 
     output_directory = './pages/'
 
+    # Pre-compute match stats once (for per-match badges)
+    match_stats = _compute_match_stats()
+
     # Pre-compute team colors for all teams (for the personal chart)
     all_teams = (predictions_df['Which team(s) do you belong to?']
                  .str.split(';').explode().str.strip().unique())
@@ -512,7 +664,7 @@ def create_pages(predictions_df):
         if os.path.isfile(pickle_path):
             try:
                 user_df           = pd.read_pickle(pickle_path)
-                predictions_block = _predictions_html(user_df)
+                predictions_block = _predictions_html(user_df, match_stats)
             except Exception:
                 predictions_block = '<p><em>Could not load predictions data.</em></p>\n'
         else:
