@@ -46,16 +46,21 @@ title: WC Prediction Game 2026
 # Leaderboard
 
 <div class="leaderboard">
-<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Alice_Sm.html">Alice Smith</a> <small>(Team Alpha)</small></span><span class="lb-pts">169 pts</span></div>
-<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Bob_Jo.html">Bob Johnson</a> <small>(Team Beta)</small></span><span class="lb-pts">142 pts</span></div>
-<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/Carol_Da.html">Carol Davis</a> <small>(Team Alpha &amp; Team Beta)</small></span><span class="lb-pts">119 pts</span></div>
+<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Bob_Jo.html">Bob Johnson</a> <small>(Team Beta)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Alice_Sm.html">Alice Smith</a> <small>(Team Alpha)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/Carol_Da.html">Carol Davis</a> <small>(Team Alpha &amp; Team Beta)</small></span><span class="lb-pts">0 pts</span></div>
 </div>
 
 # Biggest Movers
 
 <div class="biggest-movers">
+<<<<<<< HEAD
 <div class="mover-row"><span class="mv-up">&#x2191;1</span><span class="mv-name"><a href="./pages/Carol_Da.html">Carol Davis</a></span><span class="mv-rank">2nd</span></div>
 <div class="mover-row"><span class="mv-down">&#x2193;1</span><span class="mv-name"><a href="./pages/Bob_Jo.html">Bob Johnson</a></span><span class="mv-rank">3rd</span></div>
+=======
+<div class="mover-row"><span class="mv-up">&#x2191;2</span><span class="mv-name"><a href="./pages/Carol_Da.html">Carol Davis</a></span><span class="mv-rank">1st</span></div>
+<div class="mover-row"><span class="mv-up">&#x2191;1</span><span class="mv-name"><a href="./pages/Bob_Jo.html">Bob Johnson</a></span><span class="mv-rank">1st</span></div>
+>>>>>>> f904ca7ba2f956736bc6cab3497e61c2662bcb1f
 <div class="mover-row"><span class="mv-neutral">&#x2192;</span><span class="mv-name"><a href="./pages/Alice_Sm.html">Alice Smith</a></span><span class="mv-rank">1st</span></div>
 </div>
 
@@ -85,7 +90,11 @@ Average cumulative score per team over time — the higher the line, the better 
 (function(){
 var el=document.getElementById("chart-team-vs-team");
 var btn=document.getElementById("chart-team-vs-team-toggle");
+<<<<<<< HEAD
 var data={"labels": ["2026-06-12", "2026-06-13", "2026-06-14", "2026-06-11"], "datasets": [{"label": "Team Alpha", "data": [42.5, 88.5, 144.0, 42.5], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Team Beta", "data": [30.0, 57.0, 130.5, 30.0], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+=======
+var data={"labels": ["2026-06-12", "2026-06-13", "2026-06-14", "2026-06-03"], "datasets": [{"label": "Team Alpha", "data": [42.5, 88.5, 144.0, 0.0], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Team Beta", "data": [30.0, 57.0, 130.5, 0.0], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+>>>>>>> f904ca7ba2f956736bc6cab3497e61c2662bcb1f
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
