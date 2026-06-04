@@ -14,12 +14,12 @@ team_color: "#0e7c7c"
 - [James White](./James_Wh.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Emma_Wi.html">Emma Wilson</a></span><span class="ts-pts">120 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Bob_Jo.html">Bob Johnson</a></span><span class="ts-pts">99 pts</span></div>
-<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Henry_Ma.html">Henry Martinez</a></span><span class="ts-pts">86 pts</span></div>
-<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Grace_Ta.html">Grace Taylor</a></span><span class="ts-pts">83 pts</span></div>
-<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Carol_Da.html">Carol Davis</a></span><span class="ts-pts">71 pts</span></div>
-<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./James_Wh.html">James White</a></span><span class="ts-pts">69 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Bob_Jo.html">Bob Johnson</a></span><span class="ts-pts">0 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Carol_Da.html">Carol Davis</a></span><span class="ts-pts">0 pts</span></div>
+<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Emma_Wi.html">Emma Wilson</a></span><span class="ts-pts">0 pts</span></div>
+<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Grace_Ta.html">Grace Taylor</a></span><span class="ts-pts">0 pts</span></div>
+<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Henry_Ma.html">Henry Martinez</a></span><span class="ts-pts">0 pts</span></div>
+<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./James_Wh.html">James White</a></span><span class="ts-pts">0 pts</span></div>
 </div>
 
 ## Score progression
@@ -34,7 +34,7 @@ team_color: "#0e7c7c"
 (function(){
 var el=document.getElementById("chart-Team_Beta");
 var btn=document.getElementById("chart-Team_Beta-toggle");
-var data={"labels": ["2026-06-14"], "datasets": [{"label": "Bob Johnson", "data": [99.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Carol Davis", "data": [71.0], "borderColor": "#a7a71b", "backgroundColor": "rgba(167,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Emma Wilson", "data": [120.0], "borderColor": "#1ba71b", "backgroundColor": "rgba(27,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Grace Taylor", "data": [83.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Henry Martinez", "data": [86.0], "borderColor": "#1b1ba7", "backgroundColor": "rgba(27,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "James White", "data": [69.0], "borderColor": "#a71ba7", "backgroundColor": "rgba(167,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-14", "2026-06-04"], "datasets": [{"label": "Bob Johnson", "data": [99.0, 0.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Carol Davis", "data": [71.0, 0.0], "borderColor": "#a7a71b", "backgroundColor": "rgba(167,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Emma Wilson", "data": [120.0, 0.0], "borderColor": "#1ba71b", "backgroundColor": "rgba(27,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Grace Taylor", "data": [83.0, 0.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Henry Martinez", "data": [86.0, 0.0], "borderColor": "#1b1ba7", "backgroundColor": "rgba(27,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "James White", "data": [69.0, 0.0], "borderColor": "#a71ba7", "backgroundColor": "rgba(167,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -118,6 +118,35 @@ btn.addEventListener("click",function(){
 
 ## Points earned — latest round
 
-<p class="chart-placeholder"><em>Best round chart appears after the first two scoring updates.</em></p>
+<div class="chart-wrapper" style="height:382px">
+<canvas id="bar-Team_Beta"></canvas>
+</div>
+<script>
+(function(){
+var d={"labels": ["James White", "Carol Davis", "Grace Taylor", "Henry Martinez", "Bob Johnson", "Emma Wilson"], "values": [-69.0, -71.0, -83.0, -86.0, -99.0, -120.0], "colors": ["#a71ba7", "#a7a71b", "#1ba7a7", "#1b1ba7", "#a71b1b", "#1ba71b"], "title": "Points earned \u2192 2026-06-14 to 2026-06-04"};
+new Chart(document.getElementById("bar-Team_Beta"),{
+  type:"bar",
+  data:{
+    labels:d.labels,
+    datasets:[{data:d.values,backgroundColor:d.colors,borderRadius:5,borderWidth:0}]
+  },
+  options:{
+    indexAxis:"y",responsive:true,maintainAspectRatio:false,
+    plugins:{
+      legend:{display:false},
+      title:{display:true,text:d.title,color:"#666",
+             font:{family:"Inter,system-ui,sans-serif",size:11},padding:{bottom:6}},
+      tooltip:{callbacks:{label:function(c){return " "+Math.round(c.raw)+" pts";}}}
+    },
+    scales:{
+      x:{beginAtZero:true,
+         title:{display:true,text:"Points earned",font:{size:11}},
+         grid:{color:"rgba(0,0,0,0.05)"}},
+      y:{grid:{display:false},ticks:{font:{family:"Inter,system-ui,sans-serif",size:11}}}
+    }
+  }
+});
+})()
+</script>
 
 [← Back to standings](../)
