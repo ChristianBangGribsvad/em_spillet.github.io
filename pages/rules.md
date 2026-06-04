@@ -125,19 +125,19 @@ Some matches show a small badge on your prediction page. Click any badge to come
 </div>
 <div class="rules-row pts-15">
   <span class="rules-pts">💎 Hidden Gem</span>
-  <span>You got the <strong>exact score</strong> — and almost nobody else did.</span>
+  <span>You got the <strong>exact score</strong> — and at most 10% of players did too.</span>
 </div>
 <div class="rules-row pts-5">
   <span class="rules-pts">🔮 Crystal Ball</span>
-  <span>You called the result correctly when most others didn't.</span>
+  <span>You called the result correctly when fewer than 25% of players did.</span>
 </div>
 <div class="rules-row pts-2">
   <span class="rules-pts">😬 Rare Miss</span>
-  <span>Almost everyone else got this right. You didn't.</span>
+  <span>At least 80% of players got this right. You didn't.</span>
 </div>
 <div class="rules-row pts-unplayed">
   <span class="rules-pts">💀 Nobody Saw That Coming</span>
-  <span>Almost nobody predicted this correctly — including you.</span>
+  <span>Fewer than 10% of players predicted this correctly — and neither did you.</span>
 </div>
 </div>
 

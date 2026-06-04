@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Results of David Lee (Team Alpha)
+# David Lee
+
+<div class="participant-meta"><span class="pmeta-ts">Submitted 1 Jun 2026 · 10:45</span><span class="pmeta-team">Team Alpha</span></div>
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#5th out of 10 players across the game</span><span class="stat-sub">You beat 50% of all players</span></div></div>

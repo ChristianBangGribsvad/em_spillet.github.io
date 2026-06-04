@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Results of James White (Team Beta)
+# James White
+
+<div class="participant-meta"><span class="pmeta-ts">Submitted 1 Jun 2026 · 12:15</span><span class="pmeta-team">Team Beta</span></div>
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#10th out of 10 players across the game</span><span class="stat-sub">You beat 0% of all players</span></div></div>

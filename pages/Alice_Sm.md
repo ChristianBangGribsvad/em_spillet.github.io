@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Results of Alice Smith (Team Alpha)
+# Alice Smith
+
+<div class="participant-meta"><span class="pmeta-ts">Submitted 1 Jun 2026 · 10:00</span><span class="pmeta-team">Team Alpha</span></div>
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#1st out of 10 players across the game</span><span class="stat-sub">You beat 90% of all players</span></div></div>

@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Results of Grace Taylor (Team Beta)
+# Grace Taylor
+
+<div class="participant-meta"><span class="pmeta-ts">Submitted 1 Jun 2026 · 11:30</span><span class="pmeta-team">Team Beta</span></div>
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#7th out of 10 players across the game</span><span class="stat-sub">You beat 30% of all players</span></div></div>

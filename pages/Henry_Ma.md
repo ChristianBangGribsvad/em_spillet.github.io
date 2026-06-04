@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Results of Henry Martinez (Team Alpha and Team Beta)
+# Henry Martinez
+
+<div class="participant-meta"><span class="pmeta-ts">Submitted 1 Jun 2026 · 11:45</span><span class="pmeta-team">Team Alpha</span><span class="pmeta-team">Team Beta</span></div>
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#6th out of 10 players across the game</span><span class="stat-sub">You beat 40% of all players</span></div></div>

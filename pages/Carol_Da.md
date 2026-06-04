@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Results of Carol Davis (Team Alpha and Team Beta)
+# Carol Davis
+
+<div class="participant-meta"><span class="pmeta-ts">Submitted 1 Jun 2026 · 10:30</span><span class="pmeta-team">Team Alpha</span><span class="pmeta-team">Team Beta</span></div>
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#8th out of 10 players across the game</span><span class="stat-sub">You beat 20% of all players</span></div></div>

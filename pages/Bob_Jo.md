@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Results of Bob Johnson (Team Beta)
+# Bob Johnson
+
+<div class="participant-meta"><span class="pmeta-ts">Submitted 1 Jun 2026 · 10:15</span><span class="pmeta-team">Team Beta</span></div>
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#4th out of 10 players across the game</span><span class="stat-sub">You beat 60% of all players</span></div></div>

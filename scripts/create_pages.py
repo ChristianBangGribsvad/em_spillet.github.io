@@ -627,6 +627,18 @@ def _predictions_html(user_df, match_stats=None):
 
 # ── Public function ───────────────────────────────────────────────────────────
 
+def _fmt_submitted(ts_str):
+    """Format '2026/06/01 10:00:00' → 'Submitted 1 Jun 2026 · 10:00'"""
+    try:
+        from datetime import datetime
+        dt = datetime.strptime(str(ts_str).strip(), '%Y/%m/%d %H:%M:%S')
+        months = ['Jan','Feb','Mar','Apr','May','Jun',
+                  'Jul','Aug','Sep','Oct','Nov','Dec']
+        return f'Submitted {dt.day} {months[dt.month-1]} {dt.year} · {dt.strftime("%H:%M")}'
+    except Exception:
+        return ''
+
+
 def create_pages(predictions_df):
     from insert_pages import get_team_colors
 
@@ -641,11 +653,12 @@ def create_pages(predictions_df):
     team_colors = get_team_colors(all_teams)
 
     for _, row in predictions_df.iterrows():
-        name     = row['d_name']
-        savename = row['f_name']
-        group    = row['Which team(s) do you belong to?'].replace(';', ' and ')
+        name       = row['d_name']
+        savename   = row['f_name']
+        group      = row['Which team(s) do you belong to?'].replace(';', ' and ')
         first_team = row['Which team(s) do you belong to?'].split(';')[0].strip()
         team_color = team_colors.get(first_team, '#1a3a2a')
+        submitted  = _fmt_submitted(row.get('Timestamp', ''))
 
         # ── Personal context (rank, last round, chart data) ───────────────
         ctx = _participant_context(savename, name, row['Which team(s) do you belong to?'])
@@ -679,9 +692,19 @@ def create_pages(predictions_df):
                 '</p>\n'
             )
 
+        meta_parts = ([f'<span class="pmeta-ts">{submitted}</span>'] if submitted else [])
+        meta_parts += [f'<span class="pmeta-team">{t.strip()}</span>'
+                       for t in row['Which team(s) do you belong to?'].split(';')]
+        participant_meta = (
+            '<div class="participant-meta">'
+            + ''.join(meta_parts)
+            + '</div>\n\n'
+        )
+
         markdown_content = (
             '---\nlayout: default\n---\n\n'
-            f'# Results of {name} ({group})\n\n'
+            f'# {name}\n\n'
+            f'{participant_meta}'
             f'{personal_section}'
             '## Your predictions\n\n'
             f'{predictions_block}\n'
