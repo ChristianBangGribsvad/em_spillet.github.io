@@ -406,7 +406,16 @@ def _compute_match_stats():
             if ph == rh and pa == ra:
                 exact_n += 1
 
-        stats[col] = {'n': n_total, 'outcome': outcome_n, 'exact': exact_n}
+        stats[col] = {'n': n_total, 'outcome': outcome_n, 'exact': exact_n, 'date': ''}
+
+    try:
+        import pickle
+        with open('data/match_dates.pickle', 'rb') as _f:
+            match_dates = pickle.load(_f)
+        for col in stats:
+            stats[col]['date'] = match_dates.get(col, '')
+    except Exception:
+        pass
 
     return stats
 
@@ -489,13 +498,14 @@ def _badge(result, pts):
     return f'<span class="pts-badge">{label}</span>'
 
 
-def _pred_row(match_name, pred, result, pts):
-    cls   = _pts_class(result, pts)
-    p_str = str(pred)   if str(pred)   not in ('nan', 'None', '')      else '&mdash;'
-    r_str = str(result) if str(result) not in ('nan', 'None', '-', '') else '&mdash;'
+def _pred_row(match_name, pred, result, pts, date=''):
+    cls      = _pts_class(result, pts)
+    p_str    = str(pred)   if str(pred)   not in ('nan', 'None', '')      else '&mdash;'
+    r_str    = str(result) if str(result) not in ('nan', 'None', '-', '') else '&mdash;'
+    date_html = f'<small class="match-date">{date}</small>' if date else ''
     return (
         f'<div class="pred-row {cls}">'
-        f'<span class="pred-match">{match_name}</span>'
+        f'<span class="pred-match">{date_html}{match_name}</span>'
         f'<span class="pred-guess">{p_str}</span>'
         f'<span class="pred-result">{r_str}</span>'
         f'{_badge(result, pts)}'
@@ -531,7 +541,8 @@ def _predictions_html(user_df, match_stats=None):
                 name = col.split('[', 1)[1].rstrip(']').replace(' - ', ' vs ')
             except IndexError:
                 name = col
-            rows.append(_pred_row(name, user_df.at[0,col], user_df.at[1,col], user_df.at[2,col]))
+            date = match_stats[col]['date'] if match_stats and col in match_stats else ''
+            rows.append(_pred_row(name, user_df.at[0,col], user_df.at[1,col], user_df.at[2,col], date))
             if match_stats is not None:
                 badge = _match_badge_html(col, user_df.at[0,col], user_df.at[1,col], match_stats)
                 if badge:
@@ -627,18 +638,6 @@ def _predictions_html(user_df, match_stats=None):
 
 # ── Public function ───────────────────────────────────────────────────────────
 
-def _fmt_submitted(ts_str):
-    """Format '2026/06/01 10:00:00' → 'Submitted 1 Jun 2026 · 10:00'"""
-    try:
-        from datetime import datetime
-        dt = datetime.strptime(str(ts_str).strip(), '%Y/%m/%d %H:%M:%S')
-        months = ['Jan','Feb','Mar','Apr','May','Jun',
-                  'Jul','Aug','Sep','Oct','Nov','Dec']
-        return f'Submitted {dt.day} {months[dt.month-1]} {dt.year} · {dt.strftime("%H:%M")}'
-    except Exception:
-        return ''
-
-
 def create_pages(predictions_df):
     from insert_pages import get_team_colors
 
@@ -658,7 +657,6 @@ def create_pages(predictions_df):
         group      = row['Which team(s) do you belong to?'].replace(';', ' and ')
         first_team = row['Which team(s) do you belong to?'].split(';')[0].strip()
         team_color = team_colors.get(first_team, '#1a3a2a')
-        submitted  = _fmt_submitted(row.get('Timestamp', ''))
 
         # ── Personal context (rank, last round, chart data) ───────────────
         ctx = _participant_context(savename, name, row['Which team(s) do you belong to?'])
@@ -692,9 +690,8 @@ def create_pages(predictions_df):
                 '</p>\n'
             )
 
-        meta_parts = ([f'<span class="pmeta-ts">{submitted}</span>'] if submitted else [])
-        meta_parts += [f'<span class="pmeta-team">{t.strip()}</span>'
-                       for t in row['Which team(s) do you belong to?'].split(';')]
+        meta_parts = [f'<span class="pmeta-team">{t.strip()}</span>'
+                      for t in row['Which team(s) do you belong to?'].split(';')]
         participant_meta = (
             '<div class="participant-meta">'
             + ''.join(meta_parts)

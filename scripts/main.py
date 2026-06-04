@@ -200,6 +200,11 @@ def run_pipeline(results, today, raw=None,
 
     df_group_avg.to_pickle("data/group_avg")
 
+    if raw:
+        import pickle
+        with open("data/match_dates.pickle", "wb") as _f:
+            pickle.dump(get_match_dates(raw), _f)
+
     create_pages(predictions_df)
     create_group_pages(predictions_df)
     update_pages(predictions_df, todays_schmeichel, raw_matches=raw)

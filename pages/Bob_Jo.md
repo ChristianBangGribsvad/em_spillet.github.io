@@ -4,7 +4,7 @@ layout: default
 
 # Bob Johnson
 
-<div class="participant-meta"><span class="pmeta-ts">Submitted 1 Jun 2026 · 10:15</span><span class="pmeta-team">Team Beta</span></div>
+<div class="participant-meta"><span class="pmeta-team">Team Beta</span></div>
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#4th out of 10 players across the game</span><span class="stat-sub">You beat 60% of all players</span></div></div>
@@ -64,9 +64,9 @@ new Chart(el,{
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
-<div class="pred-row pts-2"><span class="pred-match">Mexico vs South Africa</span><span class="pred-guess">0-1</span><span class="pred-result">2-1</span><span class="pts-badge">2</span></div>
+<div class="pred-row pts-2"><span class="pred-match"><small class="match-date">Jun 11th · 21:00</small>Mexico vs South Africa</span><span class="pred-guess">0-1</span><span class="pred-result">2-1</span><span class="pts-badge">2</span></div>
 <a href="./rules.html#match-badges" class="match-badge mb-nobody" target="_blank" rel="noopener">💀 Nobody Saw That Coming</a>
-<div class="pred-row pts-0"><span class="pred-match">South Korea vs Czechia</span><span class="pred-guess">2-0</span><span class="pred-result">1-1</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 12th · 04:00</small>South Korea vs Czechia</span><span class="pred-guess">2-0</span><span class="pred-result">1-1</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Czechia vs South Africa</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Mexico vs South Korea</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Czechia vs Mexico</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -76,8 +76,8 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group B</div>
-<div class="pred-row pts-10"><span class="pred-match">Canada vs Bosnia-Herzegovina</span><span class="pred-guess">2-0</span><span class="pred-result">1-0</span><span class="pts-badge">10</span></div>
-<div class="pred-row pts-10"><span class="pred-match">Qatar vs Switzerland</span><span class="pred-guess">0-1</span><span class="pred-result">0-2</span><span class="pts-badge">10</span></div>
+<div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 12th · 21:00</small>Canada vs Bosnia-Herzegovina</span><span class="pred-guess">2-0</span><span class="pred-result">1-0</span><span class="pts-badge">10</span></div>
+<div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 13th · 21:00</small>Qatar vs Switzerland</span><span class="pred-guess">0-1</span><span class="pred-result">0-2</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Switzerland vs Bosnia-Herzegovina</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Canada vs Qatar</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Switzerland vs Canada</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -87,7 +87,7 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group C</div>
-<div class="pred-row pts-0"><span class="pred-match">Brazil vs Morocco</span><span class="pred-guess">0-1</span><span class="pred-result">3-0</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 14th · 00:00</small>Brazil vs Morocco</span><span class="pred-guess">0-1</span><span class="pred-result">3-0</span><span class="pts-badge">0</span></div>
 <a href="./rules.html#match-badges" class="match-badge mb-nobody" target="_blank" rel="noopener">💀 Nobody Saw That Coming</a>
 <div class="pred-row pts-unplayed"><span class="pred-match">Haiti vs Scotland</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Scotland vs Morocco</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -99,7 +99,7 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group D</div>
-<div class="pred-row pts-2"><span class="pred-match">United States vs Paraguay</span><span class="pred-guess">0-1</span><span class="pred-result">2-1</span><span class="pts-badge">2</span></div>
+<div class="pred-row pts-2"><span class="pred-match"><small class="match-date">Jun 13th · 03:00</small>United States vs Paraguay</span><span class="pred-guess">0-1</span><span class="pred-result">2-1</span><span class="pts-badge">2</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Australia vs Turkey</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">United States vs Australia</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Turkey vs Paraguay</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -110,7 +110,7 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group E</div>
-<div class="pred-row pts-10"><span class="pred-match">Germany vs Curaçao</span><span class="pred-guess">2-0</span><span class="pred-result">4-0</span><span class="pts-badge">10</span></div>
+<div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 14th · 19:00</small>Germany vs Curaçao</span><span class="pred-guess">2-0</span><span class="pred-result">4-0</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Ivory Coast vs Ecuador</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Germany vs Ivory Coast</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Ecuador vs Curaçao</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -121,7 +121,7 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group F</div>
-<div class="pred-row pts-10"><span class="pred-match">Netherlands vs Japan</span><span class="pred-guess">1-0</span><span class="pred-result">2-0</span><span class="pts-badge">10</span></div>
+<div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 14th · 22:00</small>Netherlands vs Japan</span><span class="pred-guess">1-0</span><span class="pred-result">2-0</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Sweden vs Tunisia</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Netherlands vs Sweden</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match">Tunisia vs Japan</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
@@ -132,12 +132,12 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group G</div>
-<div class="pred-row pts-10"><span class="pred-match">Belgium vs Egypt</span><span class="pred-guess">1-0</span><span class="pred-result">2-0</span><span class="pts-badge">10</span></div>
-<div class="pred-row pts-0"><span class="pred-match">Iran vs New Zealand</span><span class="pred-guess">0-1</span><span class="pred-result">1-0</span><span class="pts-badge">0</span></div>
-<div class="pred-row pts-10"><span class="pred-match">Belgium vs Iran</span><span class="pred-guess">3-0</span><span class="pred-result">3-1</span><span class="pts-badge">10</span></div>
-<div class="pred-row pts-0"><span class="pred-match">New Zealand vs Egypt</span><span class="pred-guess">1-0</span><span class="pred-result">0-1</span><span class="pts-badge">0</span></div>
-<div class="pred-row pts-15"><span class="pred-match">New Zealand vs Belgium</span><span class="pred-guess">0-3</span><span class="pred-result">0-3</span><span class="pts-badge">15</span></div>
-<div class="pred-row pts-15"><span class="pred-match">Egypt vs Iran</span><span class="pred-guess">0-1</span><span class="pred-result">0-1</span><span class="pts-badge">15</span></div>
+<div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 15th · 21:00</small>Belgium vs Egypt</span><span class="pred-guess">1-0</span><span class="pred-result">2-0</span><span class="pts-badge">10</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 16th · 03:00</small>Iran vs New Zealand</span><span class="pred-guess">0-1</span><span class="pred-result">1-0</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 21st · 21:00</small>Belgium vs Iran</span><span class="pred-guess">3-0</span><span class="pred-result">3-1</span><span class="pts-badge">10</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 22nd · 03:00</small>New Zealand vs Egypt</span><span class="pred-guess">1-0</span><span class="pred-result">0-1</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-15"><span class="pred-match"><small class="match-date">Jun 27th · 05:00</small>New Zealand vs Belgium</span><span class="pred-guess">0-3</span><span class="pred-result">0-3</span><span class="pts-badge">15</span></div>
+<div class="pred-row pts-15"><span class="pred-match"><small class="match-date">Jun 27th · 05:00</small>Egypt vs Iran</span><span class="pred-guess">0-1</span><span class="pred-result">0-1</span><span class="pts-badge">15</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-5"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Belgium / New Zealand</span><span class="pred-result">Belgium / Iran</span><span class="pts-badge">5</span></div>
 </div>

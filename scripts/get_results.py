@@ -114,6 +114,31 @@ def get_results(raw=None):
     return [process_match(m) for m in matches]
 
 
+_MONTHS = ['Jan','Feb','Mar','Apr','May','Jun',
+           'Jul','Aug','Sep','Oct','Nov','Dec']
+_ORD    = {1:'st',2:'nd',3:'rd'}
+
+def get_match_dates(raw=None):
+    """
+    Return {match_id: 'Jun 12th · 21:00'} for all matches, in CEST.
+    Pass raw=fetch_raw_matches() to reuse an already-fetched response.
+    """
+    matches = raw if raw is not None else fetch_raw_matches()
+    dates = {}
+    for m in matches:
+        try:
+            match_id, _ = process_match(m)
+            dt = (datetime
+                  .fromisoformat(m["utcDate"].replace("Z", "+00:00"))
+                  .astimezone(_CEST))
+            day = dt.day
+            suf = _ORD.get(day % 10 if day % 100 not in (11,12,13) else 0, 'th')
+            dates[match_id] = f'{_MONTHS[dt.month-1]} {day}{suf} · {dt.strftime("%H:%M")}'
+        except Exception:
+            continue
+    return dates
+
+
 def save_results(filename, a):
     with open(filename, 'wb') as handle:
         pickle.dump(a, handle)
