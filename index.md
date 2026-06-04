@@ -46,26 +46,33 @@ title: WC Prediction Game 2026
 # Leaderboard
 
 <div class="leaderboard">
-<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Alice_Sm.html">Alice Smith</a> <small>(Team Alpha)</small></span><span class="lb-pts">187 pts</span></div>
-<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Emma_Wi.html">Emma Wilson</a> <small>(Team Beta)</small></span><span class="lb-pts">120 pts</span></div>
-<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/Frank_Br.html">Frank Brown</a> <small>(Team Alpha)</small></span><span class="lb-pts">104 pts</span></div>
-<div class="lb-row "><span class="lb-pos">4</span><span class="lb-info"><a href="./pages/Bob_Jo.html">Bob Johnson</a> <small>(Team Beta)</small></span><span class="lb-pts">99 pts</span></div>
-<div class="lb-row "><span class="lb-pos">5</span><span class="lb-info"><a href="./pages/David_Le.html">David Lee</a> <small>(Team Alpha)</small></span><span class="lb-pts">98 pts</span></div>
-<div class="lb-row "><span class="lb-pos">6</span><span class="lb-info"><a href="./pages/Henry_Ma.html">Henry Martinez</a> <small>(Team Alpha &amp; Team Beta)</small></span><span class="lb-pts">86 pts</span></div>
-<div class="lb-row "><span class="lb-pos">7</span><span class="lb-info"><a href="./pages/Grace_Ta.html">Grace Taylor</a> <small>(Team Beta)</small></span><span class="lb-pts">83 pts</span></div>
-<div class="lb-row "><span class="lb-pos">8</span><span class="lb-info"><a href="./pages/Carol_Da.html">Carol Davis</a> <small>(Team Alpha &amp; Team Beta)</small></span><span class="lb-pts">71 pts</span></div>
-<div class="lb-row "><span class="lb-pos">9</span><span class="lb-info"><a href="./pages/Isabella_An.html">Isabella Anderson</a> <small>(Team Alpha)</small></span><span class="lb-pts">71 pts</span></div>
-<div class="lb-row "><span class="lb-pos">10</span><span class="lb-info"><a href="./pages/James_Wh.html">James White</a> <small>(Team Beta)</small></span><span class="lb-pts">69 pts</span></div>
+<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Bob_Jo.html">Bob Johnson</a> <small>(Team Beta)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Frank_Br.html">Frank Brown</a> <small>(Team Alpha)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/Alice_Sm.html">Alice Smith</a> <small>(Team Alpha)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">4</span><span class="lb-info"><a href="./pages/Henry_Ma.html">Henry Martinez</a> <small>(Team Alpha &amp; Team Beta)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">5</span><span class="lb-info"><a href="./pages/James_Wh.html">James White</a> <small>(Team Beta)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">6</span><span class="lb-info"><a href="./pages/Grace_Ta.html">Grace Taylor</a> <small>(Team Beta)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">7</span><span class="lb-info"><a href="./pages/Emma_Wi.html">Emma Wilson</a> <small>(Team Beta)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">8</span><span class="lb-info"><a href="./pages/David_Le.html">David Lee</a> <small>(Team Alpha)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">9</span><span class="lb-info"><a href="./pages/Isabella_An.html">Isabella Anderson</a> <small>(Team Alpha)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">10</span><span class="lb-info"><a href="./pages/Carol_Da.html">Carol Davis</a> <small>(Team Alpha &amp; Team Beta)</small></span><span class="lb-pts">0 pts</span></div>
 </div>
 
 # Biggest Movers
 
-<p class="chart-placeholder"><em>Biggest movers will appear after the first two scoring updates.</em></p>
+<div class="biggest-movers">
+<div class="mover-row"><span class="mv-up">&#x2191;9</span><span class="mv-name"><a href="./pages/James_Wh.html">James White</a></span><span class="mv-rank">1st</span></div>
+<div class="mover-row"><span class="mv-up">&#x2191;7</span><span class="mv-name"><a href="./pages/Carol_Da.html">Carol Davis</a></span><span class="mv-rank">1st</span></div>
+<div class="mover-row"><span class="mv-up">&#x2191;7</span><span class="mv-name"><a href="./pages/Isabella_An.html">Isabella Anderson</a></span><span class="mv-rank">1st</span></div>
+<div class="mover-row"><span class="mv-up">&#x2191;6</span><span class="mv-name"><a href="./pages/Grace_Ta.html">Grace Taylor</a></span><span class="mv-rank">1st</span></div>
+<div class="mover-row"><span class="mv-up">&#x2191;5</span><span class="mv-name"><a href="./pages/Henry_Ma.html">Henry Martinez</a></span><span class="mv-rank">1st</span></div>
+</div>
 
 # Next Matches
 
 <div class="next-matches">
-<p><em>No matches scheduled in the next 24 hours.</em></p>
+<p>Mexico vs South Africa &mdash; Thu 11 June, 21:00</p>
+<p>South Korea vs Czechia &mdash; Fri 12 June, 04:00</p>
 </div>
 
 # Yesterday's Results
@@ -88,7 +95,7 @@ Average cumulative score per team over time — the higher the line, the better 
 (function(){
 var el=document.getElementById("chart-team-vs-team");
 var btn=document.getElementById("chart-team-vs-team-toggle");
-var data={"labels": ["2026-06-14"], "datasets": [{"label": "Team Alpha", "data": [102.8], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Team Beta", "data": [88.0], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-14", "2026-06-04"], "datasets": [{"label": "Team Alpha", "data": [102.8, 0.0], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Team Beta", "data": [88.0, 0.0], "borderColor": "#0e7c7c", "backgroundColor": "rgba(14,124,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
