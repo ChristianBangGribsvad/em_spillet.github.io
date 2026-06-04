@@ -117,7 +117,7 @@ For each of the 12 groups you predict who finishes 1st and 2nd.
 
 ## Match Badges {#match-badges}
 
-During and after the tournament your prediction page shows small badges next to played matches. They highlight interesting outcomes — rare picks, unlucky misses, and shared surprises. Click any badge to return here.
+Some matches show a small badge on your prediction page. Click any badge to come back here.
 
 <div class="rules-table">
 <div class="rules-row rules-header">
@@ -125,35 +125,19 @@ During and after the tournament your prediction page shows small badges next to 
 </div>
 <div class="rules-row pts-15">
   <span class="rules-pts">💎 Hidden Gem</span>
-  <span>You got the <strong>exact score</strong> and fewer than 5% of players did — an exceptionally rare call.</span>
-</div>
-<div class="rules-row pts-10">
-  <span class="rules-pts">🦄 Unicorn Pick</span>
-  <span>You got the <strong>correct outcome</strong>, but 6% or fewer of players agreed with you. An extremely uncommon prediction that paid off.</span>
-</div>
-<div class="rules-row pts-7">
-  <span class="rules-pts">🔮 Crystal Ball</span>
-  <span>You got the <strong>correct outcome</strong> when only 7–14% of players did. Well above average foresight.</span>
+  <span>You got the <strong>exact score</strong> — and almost nobody else did.</span>
 </div>
 <div class="rules-row pts-5">
-  <span class="rules-pts">🎯 Sharp Eye</span>
-  <span>You got the <strong>correct outcome</strong> when 15–25% of players did — a solid call most people missed.</span>
+  <span class="rules-pts">🔮 Crystal Ball</span>
+  <span>You called the result correctly when most others didn't.</span>
 </div>
 <div class="rules-row pts-2">
   <span class="rules-pts">😬 Rare Miss</span>
-  <span>You got it <strong>wrong</strong>, but 80–89% of other players got it right. A tough one to miss.</span>
-</div>
-<div class="rules-row pts-0">
-  <span class="rules-pts">🙈 The One Who Missed</span>
-  <span>You got it <strong>wrong</strong> when 90% or more of other players got it right. An outlier miss.</span>
+  <span>Almost everyone else got this right. You didn't.</span>
 </div>
 <div class="rules-row pts-unplayed">
   <span class="rules-pts">💀 Nobody Saw That Coming</span>
-  <span>10% or fewer of all players got this right — and <strong>neither did you</strong>. A genuine shock result.</span>
-</div>
-<div class="rules-row pts-unplayed">
-  <span class="rules-pts">🤝 In Good Company</span>
-  <span>You got it <strong>wrong</strong>, but 70–89% of players also missed it. You're not alone on this one.</span>
+  <span>Almost nobody predicted this correctly — including you.</span>
 </div>
 </div>
 

@@ -333,13 +333,9 @@ def _personal_chart_js(slug, ctx, team_color):
 
 _BADGE_DEFS = {
     'gem':     ('💎', 'Hidden Gem',            'mb-gem'),
-    'unicorn': ('🦄', 'Unicorn Pick',          'mb-unicorn'),
     'crystal': ('🔮', 'Crystal Ball',          'mb-crystal'),
-    'sharp':   ('🎯', 'Sharp Eye',             'mb-sharp'),
-    'miss1':   ('🙈', 'The One Who Missed',    'mb-miss1'),
     'rarem':   ('😬', 'Rare Miss',             'mb-rarem'),
     'nobody':  ('💀', 'Nobody Saw That Coming','mb-nobody'),
-    'company': ('🤝', 'In Good Company',       'mb-company'),
 }
 
 
@@ -445,24 +441,14 @@ def _match_badge_html(col, my_pred, my_result, match_stats):
     pct_ok    = s['outcome'] / n
 
     badge_key = None
-    if i_exact and s['exact'] / n < 0.05:
+    if i_exact and s['exact'] / n <= 0.10:
         badge_key = 'gem'
-    elif i_correct:
-        if pct_ok <= 0.06:
-            badge_key = 'unicorn'
-        elif pct_ok <= 0.14:
-            badge_key = 'crystal'
-        elif pct_ok <= 0.25:
-            badge_key = 'sharp'
-    else:
-        if pct_ok >= 0.90:
-            badge_key = 'miss1'
-        elif pct_ok >= 0.80:
-            badge_key = 'rarem'
-        elif pct_ok <= 0.10:
-            badge_key = 'nobody'
-        elif pct_ok <= 0.30:
-            badge_key = 'company'
+    elif i_correct and pct_ok <= 0.25:
+        badge_key = 'crystal'
+    elif not i_correct and pct_ok >= 0.80:
+        badge_key = 'rarem'
+    elif not i_correct and pct_ok <= 0.10:
+        badge_key = 'nobody'
 
     if badge_key is None:
         return ''
@@ -531,6 +517,8 @@ def _predictions_html(user_df, match_stats=None):
     all_cols = list(user_df.columns[4:-2])
     sections = []
 
+    badge_counts = {k: 0 for k in _BADGE_DEFS}
+
     for grp in GROUPS:
         grp_cols   = [c for c in all_cols if c.startswith(grp + ' ')]
         match_cols = [c for c in grp_cols if 'Predictions [' in c]
@@ -547,6 +535,10 @@ def _predictions_html(user_df, match_stats=None):
             if match_stats is not None:
                 badge = _match_badge_html(col, user_df.at[0,col], user_df.at[1,col], match_stats)
                 if badge:
+                    for key, (_, _, css_cls) in _BADGE_DEFS.items():
+                        if css_cls in badge:
+                            badge_counts[key] += 1
+                            break
                     rows.append(badge)
         if win_cols:
             rows.append('<div class="pred-divider">Group winners</div>\n')
@@ -600,6 +592,18 @@ def _predictions_html(user_df, match_stats=None):
         f'Special predictions: <strong>{special_pts} pts</strong>'
         '</div>\n'
     )
+
+    badge_parts = [
+        f'{emoji}&thinsp;&times;{badge_counts[key]}'
+        for key, (emoji, _, _) in _BADGE_DEFS.items()
+        if badge_counts[key] > 0
+    ]
+    badge_summary = (
+        '<div class="pred-badge-summary">'
+        + ' &nbsp;&middot;&nbsp; '.join(badge_parts)
+        + '</div>\n'
+    ) if badge_parts else ''
+
     total_row = (
         '<div class="pred-total">'
         f'Total &nbsp;<span class="pred-total-pts">{total} pts</span>'
@@ -613,6 +617,7 @@ def _predictions_html(user_df, match_stats=None):
     return (
         '<div class="pred-table">\n'
         + breakdown
+        + badge_summary
         + total_row
         + col_header
         + ''.join(sections)
