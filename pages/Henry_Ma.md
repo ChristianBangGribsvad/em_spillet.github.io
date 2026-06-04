@@ -67,10 +67,10 @@ new Chart(el,{
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 11th · 21:00</small>Mexico vs South Africa</span><span class="pred-guess">0-0</span><span class="pred-result">2-1</span><span class="pts-badge">0</span></div>
 <a href="./rules.html#match-badges" class="match-badge mb-nobody" target="_blank" rel="noopener">💀 Nobody Saw That Coming</a>
 <div class="pred-row pts-2"><span class="pred-match"><small class="match-date">Jun 12th · 04:00</small>South Korea vs Czechia</span><span class="pred-guess">2-1</span><span class="pred-result">1-1</span><span class="pts-badge">2</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Czechia vs South Africa</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Mexico vs South Korea</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Czechia vs Mexico</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">South Africa vs South Korea</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 18th · 18:00</small>Czechia vs South Africa</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 19th · 03:00</small>Mexico vs South Korea</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 03:00</small>Czechia vs Mexico</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 03:00</small>South Africa vs South Korea</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Mexico / South Korea</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
@@ -78,10 +78,10 @@ new Chart(el,{
 <div class="pred-section-header">Group B</div>
 <div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 12th · 21:00</small>Canada vs Bosnia-Herzegovina</span><span class="pred-guess">2-0</span><span class="pred-result">1-0</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-15"><span class="pred-match"><small class="match-date">Jun 13th · 21:00</small>Qatar vs Switzerland</span><span class="pred-guess">0-2</span><span class="pred-result">0-2</span><span class="pts-badge">15</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Switzerland vs Bosnia-Herzegovina</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Canada vs Qatar</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Switzerland vs Canada</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Bosnia-Herzegovina vs Qatar</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 18th · 21:00</small>Switzerland vs Bosnia-Herzegovina</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 19th · 00:00</small>Canada vs Qatar</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 24th · 21:00</small>Switzerland vs Canada</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 24th · 21:00</small>Bosnia-Herzegovina vs Qatar</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Canada / Switzerland</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
@@ -89,44 +89,44 @@ new Chart(el,{
 <div class="pred-section-header">Group C</div>
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 14th · 00:00</small>Brazil vs Morocco</span><span class="pred-guess">0-1</span><span class="pred-result">3-0</span><span class="pts-badge">0</span></div>
 <a href="./rules.html#match-badges" class="match-badge mb-nobody" target="_blank" rel="noopener">💀 Nobody Saw That Coming</a>
-<div class="pred-row pts-unplayed"><span class="pred-match">Haiti vs Scotland</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Scotland vs Morocco</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Brazil vs Haiti</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Morocco vs Haiti</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Scotland vs Brazil</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 14th · 03:00</small>Haiti vs Scotland</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 20th · 00:00</small>Scotland vs Morocco</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 20th · 02:30</small>Brazil vs Haiti</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 00:00</small>Morocco vs Haiti</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 00:00</small>Scotland vs Brazil</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Brazil / Scotland</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group D</div>
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 13th · 03:00</small>United States vs Paraguay</span><span class="pred-guess">1-2</span><span class="pred-result">2-1</span><span class="pts-badge">0</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Australia vs Turkey</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">United States vs Australia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Turkey vs Paraguay</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Turkey vs United States</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Paraguay vs Australia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 14th · 06:00</small>Australia vs Turkey</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 19th · 21:00</small>United States vs Australia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 20th · 05:00</small>Turkey vs Paraguay</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 26th · 04:00</small>Turkey vs United States</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 26th · 04:00</small>Paraguay vs Australia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">United States / Turkey</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group E</div>
 <div class="pred-row pts-2"><span class="pred-match"><small class="match-date">Jun 14th · 19:00</small>Germany vs Curaçao</span><span class="pred-guess">0-0</span><span class="pred-result">4-0</span><span class="pts-badge">2</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Ivory Coast vs Ecuador</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Germany vs Ivory Coast</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Ecuador vs Curaçao</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Ecuador vs Germany</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Curaçao vs Ivory Coast</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 15th · 01:00</small>Ivory Coast vs Ecuador</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 20th · 22:00</small>Germany vs Ivory Coast</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 21st · 02:00</small>Ecuador vs Curaçao</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 22:00</small>Ecuador vs Germany</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 22:00</small>Curaçao vs Ivory Coast</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Germany / Ivory Coast</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group F</div>
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 14th · 22:00</small>Netherlands vs Japan</span><span class="pred-guess">1-1</span><span class="pred-result">2-0</span><span class="pts-badge">0</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Sweden vs Tunisia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Netherlands vs Sweden</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Tunisia vs Japan</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Tunisia vs Netherlands</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Japan vs Sweden</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 15th · 04:00</small>Sweden vs Tunisia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 20th · 19:00</small>Netherlands vs Sweden</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 21st · 06:00</small>Tunisia vs Japan</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 26th · 01:00</small>Tunisia vs Netherlands</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 26th · 01:00</small>Japan vs Sweden</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Netherlands / Sweden</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
@@ -143,56 +143,56 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group H</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Spain vs Cape Verde Islands</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Saudi Arabia vs Uruguay</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Spain vs Saudi Arabia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Uruguay vs Cape Verde Islands</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Uruguay vs Spain</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Cape Verde Islands vs Saudi Arabia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 15th · 18:00</small>Spain vs Cape Verde Islands</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 16th · 00:00</small>Saudi Arabia vs Uruguay</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 21st · 18:00</small>Spain vs Saudi Arabia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 22nd · 00:00</small>Uruguay vs Cape Verde Islands</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 27th · 02:00</small>Uruguay vs Spain</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 27th · 02:00</small>Cape Verde Islands vs Saudi Arabia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Spain / Uruguay</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group I</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">France vs Senegal</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Iraq vs Norway</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">France vs Iraq</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Norway vs Senegal</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Norway vs France</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Senegal vs Iraq</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 16th · 21:00</small>France vs Senegal</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 17th · 00:00</small>Iraq vs Norway</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 22nd · 23:00</small>France vs Iraq</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 23rd · 02:00</small>Norway vs Senegal</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 26th · 21:00</small>Norway vs France</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 26th · 21:00</small>Senegal vs Iraq</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">France / Norway</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group J</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Argentina vs Algeria</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Austria vs Jordan</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Argentina vs Austria</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Jordan vs Algeria</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Jordan vs Argentina</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Algeria vs Austria</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 17th · 03:00</small>Argentina vs Algeria</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 17th · 06:00</small>Austria vs Jordan</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 22nd · 19:00</small>Argentina vs Austria</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 23rd · 05:00</small>Jordan vs Algeria</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 28th · 04:00</small>Jordan vs Argentina</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 28th · 04:00</small>Algeria vs Austria</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Argentina / Austria</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group K</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Portugal vs Congo DR</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Uzbekistan vs Colombia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Portugal vs Uzbekistan</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Colombia vs Congo DR</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Colombia vs Portugal</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Congo DR vs Uzbekistan</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 17th · 19:00</small>Portugal vs Congo DR</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 18th · 04:00</small>Uzbekistan vs Colombia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 23rd · 19:00</small>Portugal vs Uzbekistan</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 24th · 04:00</small>Colombia vs Congo DR</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 28th · 01:30</small>Colombia vs Portugal</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 28th · 01:30</small>Congo DR vs Uzbekistan</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Portugal / Colombia</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group L</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">England vs Croatia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Ghana vs Panama</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">England vs Ghana</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Panama vs Croatia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Panama vs England</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Croatia vs Ghana</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 17th · 22:00</small>England vs Croatia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 18th · 01:00</small>Ghana vs Panama</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 23rd · 22:00</small>England vs Ghana</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 24th · 01:00</small>Panama vs Croatia</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 27th · 23:00</small>Panama vs England</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 27th · 23:00</small>Croatia vs Ghana</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
 <div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">England / Panama</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 </div>

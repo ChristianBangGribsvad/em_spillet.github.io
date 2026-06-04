@@ -120,12 +120,15 @@ _ORD    = {1:'st',2:'nd',3:'rd'}
 
 def get_match_dates(raw=None):
     """
-    Return {match_id: 'Jun 12th · 21:00'} for all matches, in CEST.
+    Return {match_id: 'Jun 11th · 21:00'} for group-stage matches only, in CEST.
+    Knockout fixtures are excluded — the game only covers the group stage.
     Pass raw=fetch_raw_matches() to reuse an already-fetched response.
     """
     matches = raw if raw is not None else fetch_raw_matches()
     dates = {}
     for m in matches:
+        if m.get("stage") != "GROUP_STAGE":
+            continue
         try:
             match_id, _ = process_match(m)
             dt = (datetime

@@ -408,12 +408,17 @@ def _compute_match_stats():
 
         stats[col] = {'n': n_total, 'outcome': outcome_n, 'exact': exact_n, 'date': ''}
 
+    # Load dates for ALL match columns (played and unplayed)
     try:
         import pickle
         with open('data/match_dates.pickle', 'rb') as _f:
             match_dates = pickle.load(_f)
-        for col in stats:
-            stats[col]['date'] = match_dates.get(col, '')
+        for col in match_cols:
+            date = match_dates.get(col, '')
+            if col in stats:
+                stats[col]['date'] = date
+            elif date:
+                stats[col] = {'n': 0, 'outcome': 0, 'exact': 0, 'date': date}
     except Exception:
         pass
 
