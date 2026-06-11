@@ -238,7 +238,10 @@ if __name__ == "__main__":
     results      = get_results(raw)
     today        = datetime.now(timezone.utc).astimezone(_CEST).date()
     n_file       = get_highest_result_number()
-    prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
+    try:
+        prev_results = load_results(cwd + f"/results/data_{n_file}.pickle")
+    except FileNotFoundError:
+        prev_results = [[], None]
 
     if prev_results[0] != results:
         prev_finished = sum(1 for _, score in prev_results[0] if "None" not in str(score))
