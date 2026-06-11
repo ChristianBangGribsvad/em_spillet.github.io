@@ -72,7 +72,7 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p><em>No results yet.</em></p>
+<p>Mexico None - None South Africa</p>
 </div>
 
 # Team vs Team
