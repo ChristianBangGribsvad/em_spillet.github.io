@@ -19,16 +19,16 @@ team_color: "#7c0e6c"
 - [Simon Lund-Hansen](./Simon_Lu.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Thomas_Pe.html">Thomas Petersen</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Renee_Pe.html">Renee Petersen</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Hanne_Ho.html">Hanne Hornshøj</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Bobinho_Hj.html">Bobinho Hjorth</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Nicholas_So.html">Nicholas Sommer-Lykke</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./Godske_G.html">Godske G</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row "><span class="ts-pos">7</span><span class="ts-name"><a href="./lisbeth_Ul.html">lisbeth Ulnits</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row "><span class="ts-pos">8</span><span class="ts-name"><a href="./Bjarke_Ha.html">Bjarke Haugan</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row "><span class="ts-pos">9</span><span class="ts-name"><a href="./Andreas_To.html">Andreas Mikkelsen</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row "><span class="ts-pos">10</span><span class="ts-name"><a href="./RK__Fy.html">RK  Fysioterapi</a></span><span class="ts-pts">0 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./RK__Fy.html">RK  Fysioterapi</a></span><span class="ts-pts">15 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Nicholas_So.html">Nicholas Sommer-Lykke</a></span><span class="ts-pts">15 pts</span></div>
+<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Bobinho_Hj.html">Bobinho Hjorth</a></span><span class="ts-pts">15 pts</span></div>
+<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./lisbeth_Ul.html">lisbeth Ulnits</a></span><span class="ts-pts">10 pts</span></div>
+<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Hanne_Ho.html">Hanne Hornshøj</a></span><span class="ts-pts">10 pts</span></div>
+<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./Thomas_Pe.html">Thomas Petersen</a></span><span class="ts-pts">10 pts</span></div>
+<div class="ts-row "><span class="ts-pos">7</span><span class="ts-name"><a href="./Godske_G.html">Godske G</a></span><span class="ts-pts">10 pts</span></div>
+<div class="ts-row "><span class="ts-pos">8</span><span class="ts-name"><a href="./Andreas_To.html">Andreas Mikkelsen</a></span><span class="ts-pts">10 pts</span></div>
+<div class="ts-row "><span class="ts-pos">9</span><span class="ts-name"><a href="./Bjarke_Ha.html">Bjarke Haugan</a></span><span class="ts-pts">10 pts</span></div>
+<div class="ts-row "><span class="ts-pos">10</span><span class="ts-name"><a href="./Renee_Pe.html">Renee Petersen</a></span><span class="ts-pts">0 pts</span></div>
 <div class="ts-row "><span class="ts-pos">11</span><span class="ts-name"><a href="./Simon_Lu.html">Simon Lund-Hansen</a></span><span class="ts-pts">0 pts</span></div>
 </div>
 
@@ -44,7 +44,7 @@ team_color: "#7c0e6c"
 (function(){
 var el=document.getElementById("chart-GeH_Fys");
 var btn=document.getElementById("chart-GeH_Fys-toggle");
-var data={"labels": ["2026-06-11"], "datasets": [{"label": "Thomas Petersen", "data": [0.0], "borderColor": "#9a1ba7", "backgroundColor": "rgba(154,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Renee Petersen", "data": [0.0], "borderColor": "#1b35a7", "backgroundColor": "rgba(27,53,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Hanne Hornsh\u00f8j", "data": [0.0], "borderColor": "#1ba735", "backgroundColor": "rgba(27,167,53,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Bobinho Hjorth", "data": [0.0], "borderColor": "#9aa71b", "backgroundColor": "rgba(154,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Nicholas Sommer-Lykke", "data": [0.0], "borderColor": "#1ba781", "backgroundColor": "rgba(27,167,129,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Godske G", "data": [0.0], "borderColor": "#4ea71b", "backgroundColor": "rgba(78,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "lisbeth Ulnits", "data": [0.0], "borderColor": "#a71b67", "backgroundColor": "rgba(167,27,103,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Bjarke Haugan", "data": [0.0], "borderColor": "#a7671b", "backgroundColor": "rgba(167,103,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Andreas Mikkelsen", "data": [0.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "RK  Fysioterapi", "data": [0.0], "borderColor": "#1b81a7", "backgroundColor": "rgba(27,129,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Simon Lund-Hansen", "data": [0.0], "borderColor": "#4e1ba7", "backgroundColor": "rgba(78,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12"], "datasets": [{"label": "Thomas Petersen", "data": [0.0, 10.0], "borderColor": "#9a1ba7", "backgroundColor": "rgba(154,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Renee Petersen", "data": [0.0, 0.0], "borderColor": "#1b35a7", "backgroundColor": "rgba(27,53,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Hanne Hornsh\u00f8j", "data": [0.0, 10.0], "borderColor": "#1ba735", "backgroundColor": "rgba(27,167,53,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Bobinho Hjorth", "data": [0.0, 15.0], "borderColor": "#9aa71b", "backgroundColor": "rgba(154,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Nicholas Sommer-Lykke", "data": [0.0, 15.0], "borderColor": "#1ba781", "backgroundColor": "rgba(27,167,129,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Godske G", "data": [0.0, 10.0], "borderColor": "#4ea71b", "backgroundColor": "rgba(78,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "lisbeth Ulnits", "data": [0.0, 10.0], "borderColor": "#a71b67", "backgroundColor": "rgba(167,27,103,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Bjarke Haugan", "data": [0.0, 10.0], "borderColor": "#a7671b", "backgroundColor": "rgba(167,103,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Andreas Mikkelsen", "data": [0.0, 10.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "RK  Fysioterapi", "data": [0.0, 15.0], "borderColor": "#1b81a7", "backgroundColor": "rgba(27,129,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Simon Lund-Hansen", "data": [0.0, 0.0], "borderColor": "#4e1ba7", "backgroundColor": "rgba(78,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -128,6 +128,35 @@ btn.addEventListener("click",function(){
 
 ## Points earned — latest round
 
-<p class="chart-placeholder"><em>Best round chart appears after the first two scoring updates.</em></p>
+<div class="chart-wrapper" style="height:642px">
+<canvas id="bar-GeH_Fys"></canvas>
+</div>
+<script>
+(function(){
+var d={"labels": ["RK  Fysioterapi", "Nicholas Sommer-Lykke", "Bobinho Hjorth", "lisbeth Ulnits", "Hanne Hornsh\u00f8j", "Thomas Petersen", "Godske G", "Andreas Mikkelsen", "Bjarke Haugan", "Renee Petersen", "Simon Lund-Hansen"], "values": [15.0, 15.0, 15.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 0.0, 0.0], "colors": ["#1b81a7", "#1ba781", "#9aa71b", "#a71b67", "#1ba735", "#9a1ba7", "#4ea71b", "#a71b1b", "#a7671b", "#1b35a7", "#4e1ba7"], "title": "Points earned \u2192 2026-06-11 to 2026-06-12"};
+new Chart(document.getElementById("bar-GeH_Fys"),{
+  type:"bar",
+  data:{
+    labels:d.labels,
+    datasets:[{data:d.values,backgroundColor:d.colors,borderRadius:5,borderWidth:0}]
+  },
+  options:{
+    indexAxis:"y",responsive:true,maintainAspectRatio:false,
+    plugins:{
+      legend:{display:false},
+      title:{display:true,text:d.title,color:"#666",
+             font:{family:"Inter,system-ui,sans-serif",size:11},padding:{bottom:6}},
+      tooltip:{callbacks:{label:function(c){return " "+Math.round(c.raw)+" pts";}}}
+    },
+    scales:{
+      x:{beginAtZero:true,
+         title:{display:true,text:"Points earned",font:{size:11}},
+         grid:{color:"rgba(0,0,0,0.05)"}},
+      y:{grid:{display:false},ticks:{font:{family:"Inter,system-ui,sans-serif",size:11}}}
+    }
+  }
+});
+})()
+</script>
 
 [← Back to standings](../)

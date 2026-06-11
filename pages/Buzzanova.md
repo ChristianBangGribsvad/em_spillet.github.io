@@ -10,8 +10,8 @@ team_color: "#7c6c0e"
 - [Sarah-Alberte Bennetzen](./Sarah-Alberte_Be.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Isabella__Is.html">Isabella  Isaacs</a></span><span class="ts-pts">0 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Sarah-Alberte_Be.html">Sarah-Alberte Bennetzen</a></span><span class="ts-pts">0 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Isabella__Is.html">Isabella  Isaacs</a></span><span class="ts-pts">15 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Sarah-Alberte_Be.html">Sarah-Alberte Bennetzen</a></span><span class="ts-pts">15 pts</span></div>
 </div>
 
 ## Score progression
@@ -26,7 +26,7 @@ team_color: "#7c6c0e"
 (function(){
 var el=document.getElementById("chart-Buzzanova");
 var btn=document.getElementById("chart-Buzzanova-toggle");
-var data={"labels": ["2026-06-11"], "datasets": [{"label": "Isabella  Isaacs", "data": [0.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah-Alberte Bennetzen", "data": [0.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12"], "datasets": [{"label": "Isabella  Isaacs", "data": [0.0, 15.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah-Alberte Bennetzen", "data": [0.0, 15.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -110,6 +110,35 @@ btn.addEventListener("click",function(){
 
 ## Points earned — latest round
 
-<p class="chart-placeholder"><em>Best round chart appears after the first two scoring updates.</em></p>
+<div class="chart-wrapper" style="height:174px">
+<canvas id="bar-Buzzanova"></canvas>
+</div>
+<script>
+(function(){
+var d={"labels": ["Isabella  Isaacs", "Sarah-Alberte Bennetzen"], "values": [15.0, 15.0], "colors": ["#a71b1b", "#1ba7a7"], "title": "Points earned \u2192 2026-06-11 to 2026-06-12"};
+new Chart(document.getElementById("bar-Buzzanova"),{
+  type:"bar",
+  data:{
+    labels:d.labels,
+    datasets:[{data:d.values,backgroundColor:d.colors,borderRadius:5,borderWidth:0}]
+  },
+  options:{
+    indexAxis:"y",responsive:true,maintainAspectRatio:false,
+    plugins:{
+      legend:{display:false},
+      title:{display:true,text:d.title,color:"#666",
+             font:{family:"Inter,system-ui,sans-serif",size:11},padding:{bottom:6}},
+      tooltip:{callbacks:{label:function(c){return " "+Math.round(c.raw)+" pts";}}}
+    },
+    scales:{
+      x:{beginAtZero:true,
+         title:{display:true,text:"Points earned",font:{size:11}},
+         grid:{color:"rgba(0,0,0,0.05)"}},
+      y:{grid:{display:false},ticks:{font:{family:"Inter,system-ui,sans-serif",size:11}}}
+    }
+  }
+});
+})()
+</script>
 
 [← Back to standings](../)
