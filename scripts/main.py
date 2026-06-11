@@ -7,6 +7,7 @@ from insert_pages import *
 from create_pages import *
 from datetime import datetime, timezone, timedelta
 import os
+import re as _re
 cwd = os.getcwd()
 
 # Copenhagen summer time (CEST = UTC+2) for correct date labelling
@@ -45,8 +46,11 @@ def run_pipeline(results, today, raw=None,
     fn_col = 'First name (one name)' if 'First name (one name)' in predictions_df.columns else 'First name'
     ln_col = 'Last name (one name)'  if 'Last name (one name)'  in predictions_df.columns else 'Last name'
 
+    
     df_fname = pd.DataFrame({'f_name': [
-        (f"{row[fn_col]}_" + f"{str(row[ln_col])[0:2]}").replace(" ", "_").replace('"', "_")
+        _re.sub(r'[^\w\-]', '_',
+            (f"{row[fn_col]}_" + f"{str(row[ln_col])[0:2]}").replace(" ", "_")
+        ).strip('_')
         for _, row in predictions_df.iterrows()
     ]})
     df_dname = pd.DataFrame({'d_name': [
