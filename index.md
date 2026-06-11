@@ -46,16 +46,16 @@ title: WC Prediction Game 2026
 # Leaderboard
 
 <div class="leaderboard">
-<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Andreas_To.html">Andreas Mikkelsen</a> <small>(GeH Fys)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Bjarke_Ha.html">Bjarke Haugan</a> <small>(GeH Fys &amp; Frederiksborg Gymnasium)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/Bobinho_Hj.html">Bobinho Hjorth</a> <small>(GeH Fys)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row "><span class="lb-pos">4</span><span class="lb-info"><a href="./pages/Christian_Gr.html">Christian Gribsvad</a> <small>(Danica Ejendomme &amp; Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row "><span class="lb-pos">5</span><span class="lb-info"><a href="./pages/Christian_Is.html">Christian Isaacs</a> <small>(Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row "><span class="lb-pos">6</span><span class="lb-info"><a href="./pages/Ditlev_Bi.html">Ditlev Bigum</a> <small>(GAHK)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row "><span class="lb-pos">7</span><span class="lb-info"><a href="./pages/Ebbe_Ottar_Je.html">Ebbe Ottar Jensen</a> <small>(Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row "><span class="lb-pos">8</span><span class="lb-info"><a href="./pages/Emil_Jo.html">Emil Johansen</a> <small>(Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row "><span class="lb-pos">9</span><span class="lb-info"><a href="./pages/Ernst_Bø.html">Ernst Bøttger</a> <small>(Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
-<div class="lb-row "><span class="lb-pos">10</span><span class="lb-info"><a href="./pages/Eva_WF.html">Eva WF</a> <small>(Danica Ejendomme)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/MetteMuttiFrankfurt_Is.html">MetteMuttiFrankfurt Isaacs-Bøttger</a> <small>(Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Thomas_Pe.html">Thomas Petersen</a> <small>(GeH Fys)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/Matias_Bu.html">Matias Bundgaard-Nielsen</a> <small>(Frederiksborg Gymnasium)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">4</span><span class="lb-info"><a href="./pages/sexy_os.html">sexy ossi</a> <small>(Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">5</span><span class="lb-info"><a href="./pages/Emil_Jo.html">Emil Johansen</a> <small>(Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">6</span><span class="lb-info"><a href="./pages/Renee_Pe.html">Renee Petersen</a> <small>(GeH Fys)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">7</span><span class="lb-info"><a href="./pages/Christian_Is.html">Christian Isaacs</a> <small>(Friends and Family)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">8</span><span class="lb-info"><a href="./pages/RK__Fy.html">RK  Fysioterapi</a> <small>(GeH Fys)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">9</span><span class="lb-info"><a href="./pages/Hanne_Ho.html">Hanne Hornshøj</a> <small>(GeH Fys)</small></span><span class="lb-pts">0 pts</span></div>
+<div class="lb-row "><span class="lb-pos">10</span><span class="lb-info"><a href="./pages/Michael__Gr.html">Michael  Gribsvad</a> <small>(Friends and Family &amp; ATP)</small></span><span class="lb-pts">0 pts</span></div>
 </div>
 
 # Biggest Movers
@@ -65,7 +65,8 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p><em>No matches scheduled in the next 24 hours.</em></p>
+<p>Mexico vs South Africa &mdash; Thu 11 June, 21:00</p>
+<p>South Korea vs Czechia &mdash; Fri 12 June, 04:00</p>
 </div>
 
 # Yesterday's Results
