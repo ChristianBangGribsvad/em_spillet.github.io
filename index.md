@@ -65,8 +65,8 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Mexico vs South Africa &mdash; Thu 11 June, 21:00</p>
 <p>South Korea vs Czechia &mdash; Fri 12 June, 04:00</p>
+<p>Canada vs Bosnia-Herzegovina &mdash; Fri 12 June, 21:00</p>
 </div>
 
 # Yesterday's Results
