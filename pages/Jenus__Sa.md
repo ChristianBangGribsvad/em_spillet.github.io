@@ -7,7 +7,7 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">ATP</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#23rd out of 34 players across the game</span><span class="stat-sub">You beat 32% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#24th out of 35 players across the game</span><span class="stat-sub">You beat 31% of all players</span></div></div>
 <div class="stat-card"><span class="stat-icon">⏳</span><div class="stat-body"><span class="stat-main">Last round</span><span class="stat-sub">Available after two scoring updates</span></div></div>
 </div>
 ## Your score vs averages

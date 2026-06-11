@@ -7,7 +7,7 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Buzzanova</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#13th out of 34 players across the game</span><span class="stat-sub">You beat 62% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#14th out of 35 players across the game</span><span class="stat-sub">You beat 60% of all players</span></div></div>
 <div class="stat-card"><span class="stat-icon">⏳</span><div class="stat-body"><span class="stat-main">Last round</span><span class="stat-sub">Available after two scoring updates</span></div></div>
 </div>
 ## Your score vs averages

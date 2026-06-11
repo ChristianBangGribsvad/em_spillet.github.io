@@ -7,7 +7,7 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Frederiksborg Gymnasium</span><span class="pmeta-team">Friends and Family</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#4th out of 34 players across the game</span><span class="stat-sub">You beat 88% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#4th out of 35 players across the game</span><span class="stat-sub">You beat 89% of all players</span></div></div>
 <div class="stat-card"><span class="stat-icon">⏳</span><div class="stat-body"><span class="stat-main">Last round</span><span class="stat-sub">Available after two scoring updates</span></div></div>
 </div>
 ## Your score vs averages

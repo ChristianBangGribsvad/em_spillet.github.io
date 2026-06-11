@@ -7,7 +7,7 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">GAHK</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#15th out of 34 players across the game</span><span class="stat-sub">You beat 56% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#16th out of 35 players across the game</span><span class="stat-sub">You beat 54% of all players</span></div></div>
 <div class="stat-card"><span class="stat-icon">⏳</span><div class="stat-body"><span class="stat-main">Last round</span><span class="stat-sub">Available after two scoring updates</span></div></div>
 </div>
 ## Your score vs averages
