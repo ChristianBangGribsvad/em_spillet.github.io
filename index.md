@@ -71,14 +71,13 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Canada vs Bosnia-Herzegovina &mdash; Fri 12 June, 21:00</p>
 <p>United States vs Paraguay &mdash; Sat 13 June, 03:00</p>
+<p>Qatar vs Switzerland &mdash; Sat 13 June, 21:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Mexico 2 - 0 South Africa</p>
 <p>South Korea 2 - 1 Czechia</p>
 </div>
 
