@@ -80,6 +80,7 @@ title: WC Prediction Game 2026
 <div class="next-matches">
 <p>South Korea vs Czechia &mdash; Fri 12 June, 04:00</p>
 <p>Canada vs Bosnia-Herzegovina &mdash; Fri 12 June, 21:00</p>
+<p>United States vs Paraguay &mdash; Sat 13 June, 03:00</p>
 </div>
 
 # Yesterday's Results
