@@ -7,8 +7,8 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Friends and Family</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#28th out of 35 players across the game</span><span class="stat-sub">You beat 20% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">5 pts last round</span><span class="stat-sub">-3 pts vs global avg (8 pts) &middot; Moved down 22 places &middot; 23rd out of 35 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#30th out of 35 players across the game</span><span class="stat-sub">You beat 14% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">5 pts last round</span><span class="stat-sub">-7 pts vs global avg (12 pts) &middot; Moved down 28 places &middot; 29th out of 35 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Ernst_Bø");
-var data={"labels": ["2026-06-11", "2026-06-12"], "datasets": [{"label": "Your score", "data": [0.0, 5.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 7.7], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 8.6], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12"], "datasets": [{"label": "Your score", "data": [0.0, 5.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 11.5], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -64,7 +64,7 @@ new Chart(el,{
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
 <div class="pred-row pts-5"><span class="pred-match"><small class="match-date">Jun 11th · 21:00</small>Mexico vs South Africa</span><span class="pred-guess">3-1</span><span class="pred-result">2-0</span><span class="pts-badge">5</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 12th · 04:00</small>South Korea vs Czechia</span><span class="pred-guess">0-2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 12th · 04:00</small>South Korea vs Czechia</span><span class="pred-guess">0-2</span><span class="pred-result">2-1</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 18th · 18:00</small>Czechia vs South Africa</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 19th · 03:00</small>Mexico vs South Korea</span><span class="pred-guess">3-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 03:00</small>Czechia vs Mexico</span><span class="pred-guess">2-2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
