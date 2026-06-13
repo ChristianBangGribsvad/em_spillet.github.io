@@ -164,6 +164,7 @@ def _participant_context(f_name, d_name, group_name):
     curr_team_rank = team_rank_movement = None
 
     if len(combined) >= 2:
+        combined        = combined.fillna(0)
         my_last         = float(combined[d_name].iloc[-1] - combined[d_name].iloc[-2])
         deltas          = combined.iloc[-1] - combined.iloc[-2]
         last_round_pts  = round(my_last, 1)
