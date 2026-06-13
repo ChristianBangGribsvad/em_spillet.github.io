@@ -74,7 +74,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Qatar vs Switzerland &mdash; Sat 13 June, 21:00</p>
 <p>Brazil vs Morocco &mdash; Sun 14 June, 00:00</p>
 <p>Haiti vs Scotland &mdash; Sun 14 June, 03:00</p>
 <p>Australia vs Turkey &mdash; Sun 14 June, 06:00</p>
@@ -84,7 +83,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Canada 1 - 1 Bosnia-Herzegovina</p>
 <p>United States 4 - 1 Paraguay</p>
 </div>
 
