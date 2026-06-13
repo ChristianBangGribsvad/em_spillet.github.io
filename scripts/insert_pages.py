@@ -36,7 +36,7 @@ def compute_biggest_movers():
     if not all_series:
         return []
 
-    combined = pd.DataFrame(all_series).ffill()
+    combined = pd.DataFrame(all_series).fillna(0)
     if len(combined) < 2:
         return []
 
