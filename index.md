@@ -78,6 +78,7 @@ title: WC Prediction Game 2026
 <p>Brazil vs Morocco &mdash; Sun 14 June, 00:00</p>
 <p>Haiti vs Scotland &mdash; Sun 14 June, 03:00</p>
 <p>Australia vs Turkey &mdash; Sun 14 June, 06:00</p>
+<p>Germany vs Curaçao &mdash; Sun 14 June, 19:00</p>
 </div>
 
 # Yesterday's Results
