@@ -16,14 +16,14 @@ team_color: "#0e7c4d"
 - [Sebastian Lefmann](./Sebastian_Le.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Matias_Bu.html">Matias Bundgaard-Nielsen</a></span><span class="ts-pts">89 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Joachim_Gl.html">Joachim Glenthøj</a></span><span class="ts-pts">67 pts</span></div>
-<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./sexy_os.html">sexy ossi</a></span><span class="ts-pts">59 pts</span></div>
-<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Oscar_En.html">Oscar Engberg</a></span><span class="ts-pts">52 pts</span></div>
-<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Bjarke_Ha.html">Bjarke Haugan</a></span><span class="ts-pts">42 pts</span></div>
-<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./Sebastian_Le.html">Sebastian Lefmann</a></span><span class="ts-pts">34 pts</span></div>
-<div class="ts-row "><span class="ts-pos">7</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">31 pts</span></div>
-<div class="ts-row "><span class="ts-pos">8</span><span class="ts-name"><a href="./Sarah_Me.html">Sarah Melberg</a></span><span class="ts-pts">29 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Matias_Bu.html">Matias Bundgaard-Nielsen</a></span><span class="ts-pts">91 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Joachim_Gl.html">Joachim Glenthøj</a></span><span class="ts-pts">69 pts</span></div>
+<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./sexy_os.html">sexy ossi</a></span><span class="ts-pts">61 pts</span></div>
+<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Oscar_En.html">Oscar Engberg</a></span><span class="ts-pts">54 pts</span></div>
+<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Bjarke_Ha.html">Bjarke Haugan</a></span><span class="ts-pts">44 pts</span></div>
+<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">36 pts</span></div>
+<div class="ts-row "><span class="ts-pos">7</span><span class="ts-name"><a href="./Sebastian_Le.html">Sebastian Lefmann</a></span><span class="ts-pts">36 pts</span></div>
+<div class="ts-row "><span class="ts-pos">8</span><span class="ts-name"><a href="./Sarah_Me.html">Sarah Melberg</a></span><span class="ts-pts">31 pts</span></div>
 </div>
 
 ## Score progression
@@ -38,7 +38,7 @@ team_color: "#0e7c4d"
 (function(){
 var el=document.getElementById("chart-Frederiksborg_Gymnasium");
 var btn=document.getElementById("chart-Frederiksborg_Gymnasium-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14"], "datasets": [{"label": "sexy ossi", "data": [0.0, 17.0, 42.0, 59.0], "borderColor": "#a71b84", "backgroundColor": "rgba(167,27,132,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Joachim Glenth\u00f8j", "data": [0.0, 30.0, 37.0, 67.0], "borderColor": "#61a71b", "backgroundColor": "rgba(97,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah Melberg", "data": [0.0, 10.0, 20.0, 29.0], "borderColor": "#1b3ea7", "backgroundColor": "rgba(27,62,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Bjarke Haugan", "data": [0.0, 20.0, 25.0, 42.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Christian Gribsvad", "data": [0.0, 12.0, 14.0, 31.0], "borderColor": "#a7841b", "backgroundColor": "rgba(167,132,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Oscar Engberg", "data": [0.0, 25.0, 37.0, 52.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Matias Bundgaard-Nielsen", "data": [0.0, 25.0, 65.0, 89.0], "borderColor": "#1ba73e", "backgroundColor": "rgba(27,167,62,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sebastian Lefmann", "data": [0.0, 7.0, 19.0, 34.0], "borderColor": "#611ba7", "backgroundColor": "rgba(97,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15"], "datasets": [{"label": "sexy ossi", "data": [0.0, 17.0, 42.0, 59.0, 61.0], "borderColor": "#a71b84", "backgroundColor": "rgba(167,27,132,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Joachim Glenth\u00f8j", "data": [0.0, 30.0, 37.0, 67.0, 69.0], "borderColor": "#61a71b", "backgroundColor": "rgba(97,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah Melberg", "data": [0.0, 10.0, 20.0, 29.0, 31.0], "borderColor": "#1b3ea7", "backgroundColor": "rgba(27,62,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Bjarke Haugan", "data": [0.0, 20.0, 25.0, 42.0, 44.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Christian Gribsvad", "data": [0.0, 12.0, 14.0, 31.0, 36.0], "borderColor": "#a7841b", "backgroundColor": "rgba(167,132,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Oscar Engberg", "data": [0.0, 25.0, 37.0, 52.0, 54.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Matias Bundgaard-Nielsen", "data": [0.0, 25.0, 65.0, 89.0, 91.0], "borderColor": "#1ba73e", "backgroundColor": "rgba(27,167,62,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sebastian Lefmann", "data": [0.0, 7.0, 19.0, 34.0, 36.0], "borderColor": "#611ba7", "backgroundColor": "rgba(97,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -127,7 +127,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["Joachim Glenth\u00f8j", "Matias Bundgaard-Nielsen", "Bjarke Haugan", "sexy ossi", "Christian Gribsvad", "Oscar Engberg", "Sebastian Lefmann", "Sarah Melberg"], "values": [30.0, 24.0, 17.0, 17.0, 17.0, 15.0, 15.0, 9.0], "colors": ["#61a71b", "#1ba73e", "#a71b1b", "#a71b84", "#a7841b", "#1ba7a7", "#611ba7", "#1b3ea7"], "title": "Points earned \u2192 2026-06-13 to 2026-06-14"};
+var d={"labels": ["Christian Gribsvad", "sexy ossi", "Sarah Melberg", "Joachim Glenth\u00f8j", "Bjarke Haugan", "Oscar Engberg", "Matias Bundgaard-Nielsen", "Sebastian Lefmann"], "values": [5.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "colors": ["#a7841b", "#a71b84", "#1b3ea7", "#61a71b", "#a71b1b", "#1ba7a7", "#1ba73e", "#611ba7"], "title": "Points earned \u2192 2026-06-14 to 2026-06-15"};
 new Chart(document.getElementById("bar-Frederiksborg_Gymnasium"),{
   type:"bar",
   data:{
