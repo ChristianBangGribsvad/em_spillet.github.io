@@ -73,7 +73,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Australia vs Turkey &mdash; Sun 14 June, 06:00</p>
 <p>Germany vs Curaçao &mdash; Sun 14 June, 19:00</p>
 <p>Netherlands vs Japan &mdash; Sun 14 June, 22:00</p>
 <p>Ivory Coast vs Ecuador &mdash; Mon 15 June, 01:00</p>
