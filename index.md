@@ -79,7 +79,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Ivory Coast 1 - 0 Ecuador</p>
 <p>Sweden 5 - 1 Tunisia</p>
 <p>Spain 0 - 0 Cape Verde Islands</p>
 <p>Belgium 1 - 1 Egypt</p>
