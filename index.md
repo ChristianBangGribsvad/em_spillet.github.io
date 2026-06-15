@@ -71,9 +71,9 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Belgium vs Egypt &mdash; Mon 15 June, 21:00</p>
 <p>Saudi Arabia vs Uruguay &mdash; Tue 16 June, 00:00</p>
 <p>Iran vs New Zealand &mdash; Tue 16 June, 03:00</p>
+<p>France vs Senegal &mdash; Tue 16 June, 21:00</p>
 </div>
 
 # Yesterday's Results
