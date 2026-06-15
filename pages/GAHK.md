@@ -10,8 +10,8 @@ team_color: "#2d0e7c"
 - [Sebastian Lefmann](./Sebastian_Le.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Ditlev_Bi.html">Ditlev Bigum</a></span><span class="ts-pts">46 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Sebastian_Le.html">Sebastian Lefmann</a></span><span class="ts-pts">38 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Ditlev_Bi.html">Ditlev Bigum</a></span><span class="ts-pts">41 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Sebastian_Le.html">Sebastian Lefmann</a></span><span class="ts-pts">36 pts</span></div>
 </div>
 
 ## Score progression
@@ -26,7 +26,7 @@ team_color: "#2d0e7c"
 (function(){
 var el=document.getElementById("chart-GAHK");
 var btn=document.getElementById("chart-GAHK-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15"], "datasets": [{"label": "Ditlev Bigum", "data": [0.0, 10.0, 17.0, 39.0, 46.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sebastian Lefmann", "data": [0.0, 7.0, 19.0, 34.0, 38.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15"], "datasets": [{"label": "Ditlev Bigum", "data": [0.0, 10.0, 17.0, 39.0, 41.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sebastian Lefmann", "data": [0.0, 7.0, 19.0, 34.0, 36.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -115,7 +115,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["Ditlev Bigum", "Sebastian Lefmann"], "values": [7.0, 4.0], "colors": ["#a71b1b", "#1ba7a7"], "title": "Points earned \u2192 2026-06-14 to 2026-06-15"};
+var d={"labels": ["Ditlev Bigum", "Sebastian Lefmann"], "values": [2.0, 2.0], "colors": ["#a71b1b", "#1ba7a7"], "title": "Points earned \u2192 2026-06-14 to 2026-06-15"};
 new Chart(document.getElementById("bar-GAHK"),{
   type:"bar",
   data:{
