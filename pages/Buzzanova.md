@@ -15,11 +15,11 @@ team_color: "#7c6c0e"
 
 <div class="team-standings">
 <div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Isabella__Is.html">Isabella  Isaacs</a></span><span class="ts-pts">49 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Noah_El.html">Noah Elias</a></span><span class="ts-pts">40 pts</span></div>
-<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Sarah-Alberte_Be.html">Sarah-Alberte Bennetzen</a></span><span class="ts-pts">34 pts</span></div>
-<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./caroline_Pr.html">caroline Preisler</a></span><span class="ts-pts">29 pts</span></div>
-<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./John_Ka.html">John Karim</a></span><span class="ts-pts">29 pts</span></div>
-<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./Jacob_Ha.html">Jacob Harder</a></span><span class="ts-pts">24 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Sarah-Alberte_Be.html">Sarah-Alberte Bennetzen</a></span><span class="ts-pts">49 pts</span></div>
+<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Noah_El.html">Noah Elias</a></span><span class="ts-pts">40 pts</span></div>
+<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./caroline_Pr.html">caroline Preisler</a></span><span class="ts-pts">31 pts</span></div>
+<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./John_Ka.html">John Karim</a></span><span class="ts-pts">31 pts</span></div>
+<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./Jacob_Ha.html">Jacob Harder</a></span><span class="ts-pts">26 pts</span></div>
 </div>
 
 ## Score progression
@@ -34,7 +34,7 @@ team_color: "#7c6c0e"
 (function(){
 var el=document.getElementById("chart-Buzzanova");
 var btn=document.getElementById("chart-Buzzanova-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15"], "datasets": [{"label": "Isabella  Isaacs", "data": [0.0, 17.0, 22.0, 34.0, 49.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah-Alberte Bennetzen", "data": [0.0, 17.0, 34.0, 49.0, 34.0], "borderColor": "#1b1ba7", "backgroundColor": "rgba(27,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "caroline Preisler", "data": [NaN, NaN, 2.0, 29.0, 29.0], "borderColor": "#a71ba7", "backgroundColor": "rgba(167,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Noah Elias", "data": [NaN, NaN, 0.0, 25.0, 40.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "John Karim", "data": [NaN, NaN, 12.0, 29.0, 29.0], "borderColor": "#1ba71b", "backgroundColor": "rgba(27,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Jacob Harder", "data": [NaN, NaN, 7.0, 24.0, 24.0], "borderColor": "#a7a71b", "backgroundColor": "rgba(167,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15"], "datasets": [{"label": "Isabella  Isaacs", "data": [0.0, 17.0, 22.0, 34.0, 49.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah-Alberte Bennetzen", "data": [0.0, 17.0, 34.0, 49.0, 49.0], "borderColor": "#1b1ba7", "backgroundColor": "rgba(27,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "caroline Preisler", "data": [NaN, NaN, 2.0, 29.0, 31.0], "borderColor": "#a71ba7", "backgroundColor": "rgba(167,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Noah Elias", "data": [NaN, NaN, 0.0, 25.0, 40.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "John Karim", "data": [NaN, NaN, 12.0, 29.0, 31.0], "borderColor": "#1ba71b", "backgroundColor": "rgba(27,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Jacob Harder", "data": [NaN, NaN, 7.0, 24.0, 26.0], "borderColor": "#a7a71b", "backgroundColor": "rgba(167,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -123,7 +123,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["Isabella  Isaacs", "Noah Elias", "John Karim", "caroline Preisler", "Jacob Harder", "Sarah-Alberte Bennetzen"], "values": [15.0, 15.0, 0.0, 0.0, 0.0, -15.0], "colors": ["#a71b1b", "#1ba7a7", "#1ba71b", "#a71ba7", "#a7a71b", "#1b1ba7"], "title": "Points earned \u2192 2026-06-14 to 2026-06-15"};
+var d={"labels": ["Isabella  Isaacs", "Noah Elias", "John Karim", "caroline Preisler", "Jacob Harder", "Sarah-Alberte Bennetzen"], "values": [15.0, 15.0, 2.0, 2.0, 2.0, 0.0], "colors": ["#a71b1b", "#1ba7a7", "#1ba71b", "#a71ba7", "#a7a71b", "#1b1ba7"], "title": "Points earned \u2192 2026-06-14 to 2026-06-15"};
 new Chart(document.getElementById("bar-Buzzanova"),{
   type:"bar",
   data:{
