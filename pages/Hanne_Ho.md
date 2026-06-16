@@ -7,8 +7,8 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">GeH Fys</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#20th out of 40 players across the game</span><span class="stat-sub">You beat 50% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">-15 pts last round</span><span class="stat-sub">-8 pts vs global avg (-6 pts) &middot; Moved down 6 places &middot; 19th out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#13th out of 40 players across the game</span><span class="stat-sub">You beat 68% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon ">→</span><div class="stat-body"><span class="stat-main">0 pts last round</span><span class="stat-sub">0 pts vs global avg (0 pts) &middot; Position unchanged &middot; 13th out of 40 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Hanne_Ho");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17"], "datasets": [{"label": "Your score", "data": [0.0, 10.0, 25.0, 42.0, 48.0, 78.0, 63.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 12.5, 27.1, 42.8, 56.7, 73.1, 66.9], "borderColor": "#7c0e6c", "backgroundColor": "rgba(124,14,108,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 64.3], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17"], "datasets": [{"label": "Your score", "data": [0.0, 10.0, 25.0, 42.0, 48.0, 78.0, 78.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 12.5, 27.1, 42.8, 56.7, 73.1, 73.1], "borderColor": "#7c0e6c", "backgroundColor": "rgba(124,14,108,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 71.0], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -58,9 +58,9 @@ new Chart(el,{
 ## Your predictions
 
 <div class="pred-table">
-<div class="pred-breakdown">Group matches: <strong>63 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>0 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
+<div class="pred-breakdown">Group matches: <strong>78 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>0 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
 <div class="pred-badge-summary">💀&thinsp;&times;3</div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">63 pts</span></div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">78 pts</span></div>
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
@@ -75,7 +75,7 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group B</div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 12th · 21:00</small>Canada vs Bosnia-Herzegovina</span><span class="pred-guess">1-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-15"><span class="pred-match"><small class="match-date">Jun 12th · 21:00</small>Canada vs Bosnia-Herzegovina</span><span class="pred-guess">1-1</span><span class="pred-result">1-1</span><span class="pts-badge">15</span></div>
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 13th · 21:00</small>Qatar vs Switzerland</span><span class="pred-guess">0-3</span><span class="pred-result">1-1</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 18th · 21:00</small>Switzerland vs Bosnia-Herzegovina</span><span class="pred-guess">2-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 19th · 00:00</small>Canada vs Qatar</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
