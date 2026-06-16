@@ -75,12 +75,12 @@ title: WC Prediction Game 2026
 <p>Iraq vs Norway &mdash; Wed 17 June, 00:00</p>
 <p>Argentina vs Algeria &mdash; Wed 17 June, 03:00</p>
 <p>Austria vs Jordan &mdash; Wed 17 June, 06:00</p>
+<p>Portugal vs Congo DR &mdash; Wed 17 June, 19:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Spain 0 - 0 Cape Verde Islands</p>
 <p>Belgium 1 - 1 Egypt</p>
 <p>Saudi Arabia 1 - 1 Uruguay</p>
 <p>Iran 2 - 2 New Zealand</p>
