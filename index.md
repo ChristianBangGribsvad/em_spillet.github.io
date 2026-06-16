@@ -75,6 +75,7 @@ title: WC Prediction Game 2026
 <p>Austria vs Jordan &mdash; Wed 17 June, 06:00</p>
 <p>Portugal vs Congo DR &mdash; Wed 17 June, 19:00</p>
 <p>England vs Croatia &mdash; Wed 17 June, 22:00</p>
+<p>Ghana vs Panama &mdash; Thu 18 June, 01:00</p>
 </div>
 
 # Yesterday's Results
