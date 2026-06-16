@@ -40,38 +40,32 @@ title: WC Prediction Game 2026
 </div>
 
 # Today's Schmeichel(s):
-- sexy ossi with 15 points part of Frederiksborg Gymnasium and Friends and Family [see their predictions](./pages/sexy_os.html)
-- Ebbe Ottar Jensen with 15 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
-- Sarah Melberg with 15 points part of Frederiksborg Gymnasium [see their predictions](./pages/Sarah_Me.html)
-- Hanne Hornshøj with 15 points part of GeH Fys [see their predictions](./pages/Hanne_Ho.html)
-- RK  Fysioterapi with 15 points part of GeH Fys [see their predictions](./pages/RK__Fy.html)
-- Christian Gribsvad with 15 points part of Danica Ejendomme and Frederiksborg Gymnasium and Friends and Family [see their predictions](./pages/Christian_Gr.html)
-- Matias Bundgaard-Nielsen with 15 points part of Frederiksborg Gymnasium [see their predictions](./pages/Matias_Bu.html)
+- Ebbe Ottar Jensen with 30 points part of Friends and Family [see their predictions](./pages/Ebbe_Ottar_Je.html)
 
 
 # Leaderboard
 
 <div class="leaderboard">
-<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Matias_Bu.html">Matias Bundgaard-Nielsen</a> <small>(Frederiksborg Gymnasium)</small></span><span class="lb-pts">123 pts</span></div>
-<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Ebbe_Ottar_Je.html">Ebbe Ottar Jensen</a> <small>(Friends and Family)</small></span><span class="lb-pts">92 pts</span></div>
-<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/RK__Fy.html">RK  Fysioterapi</a> <small>(GeH Fys)</small></span><span class="lb-pts">88 pts</span></div>
-<div class="lb-row "><span class="lb-pos">4</span><span class="lb-info"><a href="./pages/Michael__Gr.html">Michael  Gribsvad</a> <small>(Friends and Family &amp; ATP)</small></span><span class="lb-pts">88 pts</span></div>
-<div class="lb-row "><span class="lb-pos">5</span><span class="lb-info"><a href="./pages/sexy_os.html">sexy ossi</a> <small>(Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">87 pts</span></div>
+<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/Matias_Bu.html">Matias Bundgaard-Nielsen</a> <small>(Frederiksborg Gymnasium)</small></span><span class="lb-pts">125 pts</span></div>
+<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Ebbe_Ottar_Je.html">Ebbe Ottar Jensen</a> <small>(Friends and Family)</small></span><span class="lb-pts">107 pts</span></div>
+<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/RK__Fy.html">RK  Fysioterapi</a> <small>(GeH Fys)</small></span><span class="lb-pts">93 pts</span></div>
+<div class="lb-row "><span class="lb-pos">4</span><span class="lb-info"><a href="./pages/sexy_os.html">sexy ossi</a> <small>(Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">92 pts</span></div>
+<div class="lb-row "><span class="lb-pos">5</span><span class="lb-info"><a href="./pages/Michael__Gr.html">Michael  Gribsvad</a> <small>(Friends and Family &amp; ATP)</small></span><span class="lb-pts">90 pts</span></div>
 <div class="lb-row "><span class="lb-pos">6</span><span class="lb-info"><a href="./pages/Joachim_Gl.html">Joachim Glenthøj</a> <small>(Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">77 pts</span></div>
-<div class="lb-row "><span class="lb-pos">7</span><span class="lb-info"><a href="./pages/Nanna_Da.html">Nanna Davidsen</a> <small>(Danica Ejendomme)</small></span><span class="lb-pts">74 pts</span></div>
-<div class="lb-row "><span class="lb-pos">8</span><span class="lb-info"><a href="./pages/Godske_G.html">Godske G</a> <small>(GeH Fys)</small></span><span class="lb-pts">73 pts</span></div>
-<div class="lb-row "><span class="lb-pos">9</span><span class="lb-info"><a href="./pages/Jenus__Sa.html">Jenus  Saleh</a> <small>(ATP)</small></span><span class="lb-pts">70 pts</span></div>
-<div class="lb-row "><span class="lb-pos">10</span><span class="lb-info"><a href="./pages/Nicholas_So.html">Nicholas Sommer-Lykke</a> <small>(GeH Fys)</small></span><span class="lb-pts">68 pts</span></div>
+<div class="lb-row "><span class="lb-pos">7</span><span class="lb-info"><a href="./pages/Nanna_Da.html">Nanna Davidsen</a> <small>(Danica Ejendomme)</small></span><span class="lb-pts">76 pts</span></div>
+<div class="lb-row "><span class="lb-pos">8</span><span class="lb-info"><a href="./pages/Nicholas_So.html">Nicholas Sommer-Lykke</a> <small>(GeH Fys)</small></span><span class="lb-pts">73 pts</span></div>
+<div class="lb-row "><span class="lb-pos">9</span><span class="lb-info"><a href="./pages/Godske_G.html">Godske G</a> <small>(GeH Fys)</small></span><span class="lb-pts">73 pts</span></div>
+<div class="lb-row "><span class="lb-pos">10</span><span class="lb-info"><a href="./pages/Bjarke_Ha.html">Bjarke Haugan</a> <small>(GeH Fys &amp; Frederiksborg Gymnasium)</small></span><span class="lb-pts">70 pts</span></div>
 </div>
 
 # Biggest Movers
 
 <div class="biggest-movers">
-<div class="mover-row"><span class="mv-down">&#x2193;33</span><span class="mv-name"><a href="./pages/Jenus__Sa.html">Jenus  Saleh</a></span><span class="mv-rank">40th</span></div>
 <div class="mover-row"><span class="mv-up">&#x2191;12</span><span class="mv-name"><a href="./pages/Hanne_Ho.html">Hanne Hornshøj</a></span><span class="mv-rank">14th</span></div>
 <div class="mover-row"><span class="mv-up">&#x2191;11</span><span class="mv-name"><a href="./pages/Christian_Gr.html">Christian Gribsvad</a></span><span class="mv-rank">20th</span></div>
-<div class="mover-row"><span class="mv-up">&#x2191;9</span><span class="mv-name"><a href="./pages/Sarah_Me.html">Sarah Melberg</a></span><span class="mv-rank">23rd</span></div>
-<div class="mover-row"><span class="mv-up">&#x2191;7</span><span class="mv-name"><a href="./pages/Isabella__Is.html">Isabella  Isaacs</a></span><span class="mv-rank">11th</span></div>
+<div class="mover-row"><span class="mv-up">&#x2191;8</span><span class="mv-name"><a href="./pages/Sarah_Me.html">Sarah Melberg</a></span><span class="mv-rank">24th</span></div>
+<div class="mover-row"><span class="mv-up">&#x2191;7</span><span class="mv-name"><a href="./pages/MetteMuttiFrankfurt_Is.html">MetteMuttiFrankfurt Isaacs-Bøttger</a></span><span class="mv-rank">28th</span></div>
+<div class="mover-row"><span class="mv-down">&#x2193;6</span><span class="mv-name"><a href="./pages/Oscar_En.html">Oscar Engberg</a></span><span class="mv-rank">18th</span></div>
 </div>
 
 # Next Matches
@@ -80,6 +74,7 @@ title: WC Prediction Game 2026
 <p>France vs Senegal &mdash; Tue 16 June, 21:00</p>
 <p>Iraq vs Norway &mdash; Wed 17 June, 00:00</p>
 <p>Argentina vs Algeria &mdash; Wed 17 June, 03:00</p>
+<p>Austria vs Jordan &mdash; Wed 17 June, 06:00</p>
 </div>
 
 # Yesterday's Results
@@ -88,6 +83,7 @@ title: WC Prediction Game 2026
 <p>Spain 0 - 0 Cape Verde Islands</p>
 <p>Belgium 1 - 1 Egypt</p>
 <p>Saudi Arabia 1 - 1 Uruguay</p>
+<p>Iran 2 - 2 New Zealand</p>
 </div>
 
 # Team vs Team
@@ -104,7 +100,7 @@ Average cumulative score per team over time — the higher the line, the better 
 (function(){
 var el=document.getElementById("chart-team-vs-team");
 var btn=document.getElementById("chart-team-vs-team-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16"], "datasets": [{"label": "Friends and Family", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 59.5], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "ATP", "data": [0.0, 9.7, 24.3, 45.7, 64.0, 64.7], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Frederiksborg Gymnasium", "data": [0.0, 18.2, 32.4, 50.4, 65.0, 72.8], "borderColor": "#0e7c4d", "backgroundColor": "rgba(14,124,77,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Danica Ejendomme", "data": [0.0, 7.8, 21.4, 43.4, 58.4, 62.8], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Buzzanova", "data": [0.0, 17.0, 12.8, 31.7, 48.0, 49.5], "borderColor": "#7c6c0e", "backgroundColor": "rgba(124,108,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "GeH Fys", "data": [0.0, 12.5, 27.1, 42.8, 56.7, 60.7], "borderColor": "#7c0e6c", "backgroundColor": "rgba(124,14,108,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "GAHK", "data": [0.0, 8.5, 18.0, 36.5, 52.5, 53.5], "borderColor": "#2d0e7c", "backgroundColor": "rgba(45,14,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16"], "datasets": [{"label": "Friends and Family", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 65.2], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "ATP", "data": [0.0, 9.7, 24.3, 45.7, 64.0, 67.0], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Frederiksborg Gymnasium", "data": [0.0, 18.2, 32.4, 50.4, 65.0, 75.4], "borderColor": "#0e7c4d", "backgroundColor": "rgba(14,124,77,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Danica Ejendomme", "data": [0.0, 7.8, 21.4, 43.4, 58.4, 66.2], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Buzzanova", "data": [0.0, 17.0, 12.8, 31.7, 48.0, 51.8], "borderColor": "#7c6c0e", "backgroundColor": "rgba(124,108,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "GeH Fys", "data": [0.0, 12.5, 27.1, 42.8, 56.7, 63.8], "borderColor": "#7c0e6c", "backgroundColor": "rgba(124,14,108,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "GAHK", "data": [0.0, 8.5, 18.0, 36.5, 52.5, 54.5], "borderColor": "#2d0e7c", "backgroundColor": "rgba(45,14,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
