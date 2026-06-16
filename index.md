@@ -71,17 +71,16 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>France vs Senegal &mdash; Tue 16 June, 21:00</p>
 <p>Iraq vs Norway &mdash; Wed 17 June, 00:00</p>
 <p>Argentina vs Algeria &mdash; Wed 17 June, 03:00</p>
 <p>Austria vs Jordan &mdash; Wed 17 June, 06:00</p>
 <p>Portugal vs Congo DR &mdash; Wed 17 June, 19:00</p>
+<p>England vs Croatia &mdash; Wed 17 June, 22:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Belgium 1 - 1 Egypt</p>
 <p>Saudi Arabia 1 - 1 Uruguay</p>
 <p>Iran 2 - 2 New Zealand</p>
 </div>
