@@ -75,6 +75,7 @@ title: WC Prediction Game 2026
 <p>England vs Croatia &mdash; Wed 17 June, 22:00</p>
 <p>Ghana vs Panama &mdash; Thu 18 June, 01:00</p>
 <p>Uzbekistan vs Colombia &mdash; Thu 18 June, 04:00</p>
+<p>Czechia vs South Africa &mdash; Thu 18 June, 18:00</p>
 </div>
 
 # Yesterday's Results
