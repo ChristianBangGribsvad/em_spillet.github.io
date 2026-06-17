@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Ditlev_Bi");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17"], "datasets": [{"label": "Your score", "data": [0.0, 10.0, 17.0, 39.0, 53.0, 62.0, 87.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 8.5, 18.0, 36.5, 52.5, 64.5, 89.5], "borderColor": "#2d0e7c", "backgroundColor": "rgba(45,14,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 93.3], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17"], "datasets": [{"label": "Your score", "data": [0.0, 10.0, 17.0, 39.0, 53.0, 62.0, 87.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 8.5, 18.0, 36.5, 52.5, 64.5, 89.5], "borderColor": "#2d0e7c", "backgroundColor": "rgba(45,14,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 93.9], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -59,7 +59,7 @@ new Chart(el,{
 
 <div class="pred-table">
 <div class="pred-breakdown">Group matches: <strong>87 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>0 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
-<div class="pred-badge-summary">🔮&thinsp;&times;2 &nbsp;&middot;&nbsp; 💀&thinsp;&times;2</div>
+<div class="pred-badge-summary">🔮&thinsp;&times;2 &nbsp;&middot;&nbsp; 💀&thinsp;&times;3</div>
 <div class="pred-total">Total &nbsp;<span class="pred-total-pts">87 pts</span></div>
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
@@ -178,7 +178,8 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group K</div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 17th · 19:00</small>Portugal vs Congo DR</span><span class="pred-guess">3 - 0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 17th · 19:00</small>Portugal vs Congo DR</span><span class="pred-guess">3 - 0</span><span class="pred-result">1-1</span><span class="pts-badge">0</span></div>
+<a href="./rules.html#match-badges" class="match-badge mb-nobody" target="_blank" rel="noopener">💀 Nobody Saw That Coming</a>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 18th · 04:00</small>Uzbekistan vs Colombia</span><span class="pred-guess">1 - 2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 23rd · 19:00</small>Portugal vs Uzbekistan</span><span class="pred-guess">3 - 0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 24th · 04:00</small>Colombia vs Congo DR</span><span class="pred-guess">3 - 0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
