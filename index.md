@@ -79,7 +79,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Uzbekistan vs Colombia &mdash; Thu 18 June, 04:00</p>
 <p>Czechia vs South Africa &mdash; Thu 18 June, 18:00</p>
 <p>Switzerland vs Bosnia-Herzegovina &mdash; Thu 18 June, 21:00</p>
 <p>Canada vs Qatar &mdash; Fri 19 June, 00:00</p>
