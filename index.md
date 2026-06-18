@@ -79,7 +79,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Ghana 1 - 0 Panama</p>
 <p>Uzbekistan 1 - 3 Colombia</p>
 <p>Czechia 1 - 1 South Africa</p>
 <p>Switzerland 4 - 1 Bosnia-Herzegovina</p>
