@@ -7,8 +7,8 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Buzzanova</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#21st out of 40 players across the game</span><span class="stat-sub">You beat 48% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">24 pts last round</span><span class="stat-sub">+2 pts vs global avg (21 pts) &middot; Moved up 1 place &middot; 20th out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#25th out of 40 players across the game</span><span class="stat-sub">You beat 38% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">24 pts last round</span><span class="stat-sub">-1 pts vs global avg (25 pts) &middot; Moved down 3 places &middot; 24th out of 40 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Sarah-Alberte_Be");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18"], "datasets": [{"label": "Your score", "data": [0.0, 17.0, 34.0, 49.0, 61.0, 71.0, 83.0, 107.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 17.0, 12.8, 31.7, 48.0, 59.3, 83.5, 101.7], "borderColor": "#7c6c0e", "backgroundColor": "rgba(124,108,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 108.9], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18"], "datasets": [{"label": "Your score", "data": [0.0, 17.0, 34.0, 49.0, 61.0, 71.0, 83.0, 107.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 17.0, 12.8, 31.7, 48.0, 59.3, 83.5, 105.2], "borderColor": "#7c6c0e", "backgroundColor": "rgba(124,108,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 112.7], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -66,7 +66,7 @@ new Chart(el,{
 <div class="pred-section-header">Group A</div>
 <div class="pred-row pts-15"><span class="pred-match"><small class="match-date">Jun 11th · 21:00</small>Mexico vs South Africa</span><span class="pred-guess">2-0</span><span class="pred-result">2-0</span><span class="pts-badge">15</span></div>
 <div class="pred-row pts-2"><span class="pred-match"><small class="match-date">Jun 12th · 04:00</small>South Korea vs Czechia</span><span class="pred-guess">1-1</span><span class="pred-result">2-1</span><span class="pts-badge">2</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 18th · 18:00</small>Czechia vs South Africa</span><span class="pred-guess">2-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 18th · 18:00</small>Czechia vs South Africa</span><span class="pred-guess">2-0</span><span class="pred-result">1-1</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 19th · 03:00</small>Mexico vs South Korea</span><span class="pred-guess">3-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 03:00</small>Czechia vs Mexico</span><span class="pred-guess">2-2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 03:00</small>South Africa vs South Korea</span><span class="pred-guess">1-3</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>

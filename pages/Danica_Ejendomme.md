@@ -13,10 +13,10 @@ team_color: "#2d7c0e"
 - [Lucas Barbera](./Lucas_Ba.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Nanna_Da.html">Nanna Davidsen</a></span><span class="ts-pts">130 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">107 pts</span></div>
-<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Eva_WF.html">Eva WF</a></span><span class="ts-pts">99 pts</span></div>
-<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Lucas_Ba.html">Lucas Barbera</a></span><span class="ts-pts">97 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Nanna_Da.html">Nanna Davidsen</a></span><span class="ts-pts">145 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">109 pts</span></div>
+<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Eva_WF.html">Eva WF</a></span><span class="ts-pts">101 pts</span></div>
+<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Lucas_Ba.html">Lucas Barbera</a></span><span class="ts-pts">99 pts</span></div>
 <div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Rikke_Ca.html">Rikke Carlsen</a></span><span class="ts-pts">84 pts</span></div>
 </div>
 
@@ -32,7 +32,7 @@ team_color: "#2d7c0e"
 (function(){
 var el=document.getElementById("chart-Danica_Ejendomme");
 var btn=document.getElementById("chart-Danica_Ejendomme-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18"], "datasets": [{"label": "Nanna Davidsen", "data": [0.0, 10.0, 29.0, 48.0, 69.0, 81.0, 85.0, 130.0], "borderColor": "#1b53a7", "backgroundColor": "rgba(27,83,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Rikke Carlsen", "data": [0.0, 0.0, 20.0, 55.0, 65.0, 70.0, 64.0, 84.0], "borderColor": "#8b1ba7", "backgroundColor": "rgba(139,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Eva WF", "data": [0.0, 5.0, 20.0, 42.0, 56.0, 71.0, 78.0, 99.0], "borderColor": "#8ba71b", "backgroundColor": "rgba(139,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Christian Gribsvad", "data": [0.0, 12.0, 14.0, 31.0, 42.0, 67.0, 92.0, 107.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Lucas Barbera", "data": [0.0, 12.0, 24.0, 41.0, 60.0, 67.0, 87.0, 97.0], "borderColor": "#1ba753", "backgroundColor": "rgba(27,167,83,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18"], "datasets": [{"label": "Nanna Davidsen", "data": [0.0, 10.0, 29.0, 48.0, 69.0, 81.0, 85.0, 145.0], "borderColor": "#1b53a7", "backgroundColor": "rgba(27,83,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Rikke Carlsen", "data": [0.0, 0.0, 20.0, 55.0, 65.0, 70.0, 64.0, 84.0], "borderColor": "#8b1ba7", "backgroundColor": "rgba(139,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Eva WF", "data": [0.0, 5.0, 20.0, 42.0, 56.0, 71.0, 78.0, 101.0], "borderColor": "#8ba71b", "backgroundColor": "rgba(139,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Christian Gribsvad", "data": [0.0, 12.0, 14.0, 31.0, 42.0, 67.0, 92.0, 109.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Lucas Barbera", "data": [0.0, 12.0, 24.0, 41.0, 60.0, 67.0, 87.0, 99.0], "borderColor": "#1ba753", "backgroundColor": "rgba(27,167,83,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -121,7 +121,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["Nanna Davidsen", "Eva WF", "Rikke Carlsen", "Christian Gribsvad", "Lucas Barbera"], "values": [45.0, 21.0, 20.0, 15.0, 10.0], "colors": ["#1b53a7", "#8ba71b", "#8b1ba7", "#a71b1b", "#1ba753"], "title": "Points earned \u2192 2026-06-17 to 2026-06-18"};
+var d={"labels": ["Nanna Davidsen", "Eva WF", "Rikke Carlsen", "Christian Gribsvad", "Lucas Barbera"], "values": [60.0, 23.0, 20.0, 17.0, 12.0], "colors": ["#1b53a7", "#8ba71b", "#8b1ba7", "#a71b1b", "#1ba753"], "title": "Points earned \u2192 2026-06-17 to 2026-06-18"};
 new Chart(document.getElementById("bar-Danica_Ejendomme"),{
   type:"bar",
   data:{
