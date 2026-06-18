@@ -71,7 +71,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Czechia vs South Africa &mdash; Thu 18 June, 18:00</p>
 <p>Switzerland vs Bosnia-Herzegovina &mdash; Thu 18 June, 21:00</p>
 <p>Canada vs Qatar &mdash; Fri 19 June, 00:00</p>
 <p>Mexico vs South Korea &mdash; Fri 19 June, 03:00</p>
@@ -80,7 +79,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Portugal 1 - 1 Congo DR</p>
 <p>England 4 - 2 Croatia</p>
 <p>Ghana 1 - 0 Panama</p>
 <p>Uzbekistan 1 - 3 Colombia</p>
