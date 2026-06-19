@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Scotland vs Morocco &mdash; Sat 20 June, 00:00</p>
 <p>Brazil vs Haiti &mdash; Sat 20 June, 02:30</p>
 <p>Turkey vs Paraguay &mdash; Sat 20 June, 05:00</p>
 <p>Netherlands vs Sweden &mdash; Sat 20 June, 19:00</p>
@@ -82,7 +81,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Canada 6 - 0 Qatar</p>
 <p>Mexico 1 - 0 South Korea</p>
 <p>United States 2 - 0 Australia</p>
 </div>
