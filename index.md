@@ -87,9 +87,9 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Mexico vs South Korea &mdash; Fri 19 June, 03:00</p>
 <p>United States vs Australia &mdash; Fri 19 June, 21:00</p>
 <p>Scotland vs Morocco &mdash; Sat 20 June, 00:00</p>
+<p>Brazil vs Haiti &mdash; Sat 20 June, 02:30</p>
 </div>
 
 # Yesterday's Results
