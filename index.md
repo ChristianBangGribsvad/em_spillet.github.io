@@ -75,6 +75,7 @@ title: WC Prediction Game 2026
 <p>Brazil vs Haiti &mdash; Sat 20 June, 02:30</p>
 <p>Turkey vs Paraguay &mdash; Sat 20 June, 05:00</p>
 <p>Netherlands vs Sweden &mdash; Sat 20 June, 19:00</p>
+<p>Germany vs Ivory Coast &mdash; Sat 20 June, 22:00</p>
 </div>
 
 # Yesterday's Results
