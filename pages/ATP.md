@@ -11,9 +11,9 @@ team_color: "#7c0e0e"
 - [*Gosia Jørgensen](./Gosia_N.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Michael__Gr.html">Michael  Gribsvad</a></span><span class="ts-pts">145 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Jenus__Sa.html">Jenus  Saleh</a></span><span class="ts-pts">127 pts</span></div>
-<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Gosia_N.html">*Gosia Jørgensen</a></span><span class="ts-pts">90 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Michael__Gr.html">Michael  Gribsvad</a></span><span class="ts-pts">160 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Jenus__Sa.html">Jenus  Saleh</a></span><span class="ts-pts">142 pts</span></div>
+<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Gosia_N.html">*Gosia Jørgensen</a></span><span class="ts-pts">92 pts</span></div>
 </div>
 
 ## Score progression
@@ -28,7 +28,7 @@ team_color: "#7c0e0e"
 (function(){
 var el=document.getElementById("chart-ATP");
 var btn=document.getElementById("chart-ATP-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19"], "datasets": [{"label": "Michael  Gribsvad", "data": [0.0, 7.0, 32.0, 51.0, 88.0, 100.0, 100.0, 145.0, 145.0], "borderColor": "#1b1ba7", "backgroundColor": "rgba(27,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Jenus  Saleh", "data": [0.0, 12.0, 29.0, 59.0, 70.0, 80.0, 85.0, 122.0, 127.0], "borderColor": "#1ba71b", "backgroundColor": "rgba(27,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "*Gosia J\u00f8rgensen", "data": [0.0, 10.0, 12.0, 27.0, 34.0, 41.0, 71.0, 87.0, 90.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19"], "datasets": [{"label": "Michael  Gribsvad", "data": [0.0, 7.0, 32.0, 51.0, 88.0, 100.0, 100.0, 145.0, 160.0], "borderColor": "#1b1ba7", "backgroundColor": "rgba(27,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Jenus  Saleh", "data": [0.0, 12.0, 29.0, 59.0, 70.0, 80.0, 85.0, 122.0, 142.0], "borderColor": "#1ba71b", "backgroundColor": "rgba(27,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "*Gosia J\u00f8rgensen", "data": [0.0, 10.0, 12.0, 27.0, 34.0, 41.0, 71.0, 87.0, 92.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -117,7 +117,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["Jenus  Saleh", "*Gosia J\u00f8rgensen", "Michael  Gribsvad"], "values": [5.0, 3.0, 0.0], "colors": ["#1ba71b", "#a71b1b", "#1b1ba7"], "title": "Points earned \u2192 2026-06-18 to 2026-06-19"};
+var d={"labels": ["Jenus  Saleh", "Michael  Gribsvad", "*Gosia J\u00f8rgensen"], "values": [20.0, 15.0, 5.0], "colors": ["#1ba71b", "#1b1ba7", "#a71b1b"], "title": "Points earned \u2192 2026-06-18 to 2026-06-19"};
 new Chart(document.getElementById("bar-ATP"),{
   type:"bar",
   data:{
