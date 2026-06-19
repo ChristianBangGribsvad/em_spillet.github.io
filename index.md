@@ -95,7 +95,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Uzbekistan 1 - 3 Colombia</p>
 <p>Czechia 1 - 1 South Africa</p>
 <p>Switzerland 4 - 1 Bosnia-Herzegovina</p>
 <p>Canada 6 - 0 Qatar</p>
