@@ -7,8 +7,8 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">GeH Fys</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#34th out of 40 players across the game</span><span class="stat-sub">You beat 15% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">4 pts last round</span><span class="stat-sub">-12 pts vs global avg (16 pts) &middot; Moved down 2 places &middot; 34th out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#36th out of 40 players across the game</span><span class="stat-sub">You beat 10% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">0 pts last round</span><span class="stat-sub">-3 pts vs global avg (3 pts) &middot; Moved down 2 places &middot; 36th out of 40 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Renee_Pe");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19"], "datasets": [{"label": "Your score", "data": [0.0, 2.0, 11.0, 26.0, 45.0, 60.0, 78.0, 96.0, 100.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 12.5, 27.1, 42.8, 56.7, 73.1, 86.8, 118.5, 132.8], "borderColor": "#7c0e6c", "backgroundColor": "rgba(124,14,108,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20"], "datasets": [{"label": "Your score", "data": [0.0, 2.0, 11.0, 26.0, 45.0, 60.0, 78.0, 96.0, 100.0, 100.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 12.5, 27.1, 42.8, 56.7, 73.1, 86.8, 118.5, 132.8, 137.0], "borderColor": "#7c0e6c", "backgroundColor": "rgba(124,14,108,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 139.1], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -88,7 +88,7 @@ new Chart(el,{
 <div class="pred-section-header">Group C</div>
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 14th · 00:00</small>Brazil vs Morocco</span><span class="pred-guess">3-0</span><span class="pred-result">1-1</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 14th · 03:00</small>Haiti vs Scotland</span><span class="pred-guess">0-2</span><span class="pred-result">0-1</span><span class="pts-badge">10</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 20th · 00:00</small>Scotland vs Morocco</span><span class="pred-guess">1-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 20th · 00:00</small>Scotland vs Morocco</span><span class="pred-guess">1-0</span><span class="pred-result">0-1</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 20th · 02:30</small>Brazil vs Haiti</span><span class="pred-guess">3-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 00:00</small>Morocco vs Haiti</span><span class="pred-guess">0-0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 00:00</small>Scotland vs Brazil</span><span class="pred-guess">1-3</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
