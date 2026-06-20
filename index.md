@@ -71,7 +71,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Germany vs Ivory Coast &mdash; Sat 20 June, 22:00</p>
 <p>Ecuador vs Curaçao &mdash; Sun 21 June, 02:00</p>
 <p>Tunisia vs Japan &mdash; Sun 21 June, 06:00</p>
 <p>Spain vs Saudi Arabia &mdash; Sun 21 June, 18:00</p>
