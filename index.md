@@ -76,6 +76,7 @@ title: WC Prediction Game 2026
 <p>Netherlands vs Sweden &mdash; Sat 20 June, 19:00</p>
 <p>Germany vs Ivory Coast &mdash; Sat 20 June, 22:00</p>
 <p>Ecuador vs Curaçao &mdash; Sun 21 June, 02:00</p>
+<p>Tunisia vs Japan &mdash; Sun 21 June, 06:00</p>
 </div>
 
 # Yesterday's Results
