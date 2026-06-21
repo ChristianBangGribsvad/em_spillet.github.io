@@ -74,7 +74,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Belgium vs Iran &mdash; Sun 21 June, 21:00</p>
 <p>Uruguay vs Cape Verde Islands &mdash; Mon 22 June, 00:00</p>
 <p>New Zealand vs Egypt &mdash; Mon 22 June, 03:00</p>
 <p>Argentina vs Austria &mdash; Mon 22 June, 19:00</p>
