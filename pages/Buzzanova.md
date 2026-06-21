@@ -15,11 +15,11 @@ team_color: "#7c6c0e"
 
 <div class="team-standings">
 <div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Noah_El.html">Noah Elias</a></span><span class="ts-pts">209 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Jacob_Ha.html">Jacob Harder</a></span><span class="ts-pts">183 pts</span></div>
-<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./caroline_Pr.html">caroline Preisler</a></span><span class="ts-pts">180 pts</span></div>
-<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Isabella__Is.html">Isabella  Isaacs</a></span><span class="ts-pts">171 pts</span></div>
-<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Sarah-Alberte_Be.html">Sarah-Alberte Bennetzen</a></span><span class="ts-pts">169 pts</span></div>
-<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./John_Ka.html">John Karim</a></span><span class="ts-pts">149 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Jacob_Ha.html">Jacob Harder</a></span><span class="ts-pts">185 pts</span></div>
+<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Sarah-Alberte_Be.html">Sarah-Alberte Bennetzen</a></span><span class="ts-pts">184 pts</span></div>
+<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./caroline_Pr.html">caroline Preisler</a></span><span class="ts-pts">182 pts</span></div>
+<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Isabella__Is.html">Isabella  Isaacs</a></span><span class="ts-pts">171 pts</span></div>
+<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./John_Ka.html">John Karim</a></span><span class="ts-pts">151 pts</span></div>
 </div>
 
 ## Score progression
@@ -34,7 +34,7 @@ team_color: "#7c6c0e"
 (function(){
 var el=document.getElementById("chart-Buzzanova");
 var btn=document.getElementById("chart-Buzzanova-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21"], "datasets": [{"label": "Isabella  Isaacs", "data": [0.0, 17.0, 22.0, 34.0, 60.0, 75.0, 105.0, 137.0, 149.0, 159.0, 171.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah-Alberte Bennetzen", "data": [0.0, 17.0, 34.0, 49.0, 61.0, 71.0, 83.0, 112.0, 137.0, 162.0, 169.0], "borderColor": "#1b1ba7", "backgroundColor": "rgba(27,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "caroline Preisler", "data": [NaN, NaN, 2.0, 29.0, 43.0, 53.0, 81.0, 123.0, 143.0, 167.0, 180.0], "borderColor": "#a71ba7", "backgroundColor": "rgba(167,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Noah Elias", "data": [NaN, NaN, 0.0, 25.0, 54.0, 71.0, 103.0, 135.0, 160.0, 187.0, 209.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "John Karim", "data": [NaN, NaN, 12.0, 29.0, 35.0, 42.0, 57.0, 65.0, 100.0, 124.0, 149.0], "borderColor": "#1ba71b", "backgroundColor": "rgba(27,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Jacob Harder", "data": [NaN, NaN, 7.0, 24.0, 35.0, 44.0, 72.0, 96.0, 126.0, 158.0, 183.0], "borderColor": "#a7a71b", "backgroundColor": "rgba(167,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21"], "datasets": [{"label": "Isabella  Isaacs", "data": [0.0, 17.0, 22.0, 34.0, 60.0, 75.0, 105.0, 137.0, 149.0, 159.0, 171.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah-Alberte Bennetzen", "data": [0.0, 17.0, 34.0, 49.0, 61.0, 71.0, 83.0, 112.0, 137.0, 162.0, 184.0], "borderColor": "#1b1ba7", "backgroundColor": "rgba(27,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "caroline Preisler", "data": [NaN, NaN, 2.0, 29.0, 43.0, 53.0, 81.0, 123.0, 143.0, 167.0, 182.0], "borderColor": "#a71ba7", "backgroundColor": "rgba(167,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Noah Elias", "data": [NaN, NaN, 0.0, 25.0, 54.0, 71.0, 103.0, 135.0, 160.0, 187.0, 209.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "John Karim", "data": [NaN, NaN, 12.0, 29.0, 35.0, 42.0, 57.0, 65.0, 100.0, 124.0, 151.0], "borderColor": "#1ba71b", "backgroundColor": "rgba(27,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Jacob Harder", "data": [NaN, NaN, 7.0, 24.0, 35.0, 44.0, 72.0, 96.0, 126.0, 158.0, 185.0], "borderColor": "#a7a71b", "backgroundColor": "rgba(167,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -123,7 +123,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["John Karim", "Jacob Harder", "Noah Elias", "caroline Preisler", "Isabella  Isaacs", "Sarah-Alberte Bennetzen"], "values": [25.0, 25.0, 22.0, 13.0, 12.0, 7.0], "colors": ["#1ba71b", "#a7a71b", "#1ba7a7", "#a71ba7", "#a71b1b", "#1b1ba7"], "title": "Points earned \u2192 2026-06-20 to 2026-06-21"};
+var d={"labels": ["John Karim", "Jacob Harder", "Noah Elias", "Sarah-Alberte Bennetzen", "caroline Preisler", "Isabella  Isaacs"], "values": [27.0, 27.0, 22.0, 22.0, 15.0, 12.0], "colors": ["#1ba71b", "#a7a71b", "#1ba7a7", "#1b1ba7", "#a71ba7", "#a71b1b"], "title": "Points earned \u2192 2026-06-20 to 2026-06-21"};
 new Chart(document.getElementById("bar-Buzzanova"),{
   type:"bar",
   data:{
