@@ -86,12 +86,12 @@ title: WC Prediction Game 2026
 <p>Spain vs Saudi Arabia &mdash; Sun 21 June, 18:00</p>
 <p>Belgium vs Iran &mdash; Sun 21 June, 21:00</p>
 <p>Uruguay vs Cape Verde Islands &mdash; Mon 22 June, 00:00</p>
+<p>New Zealand vs Egypt &mdash; Mon 22 June, 03:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Brazil 3 - 0 Haiti</p>
 <p>Turkey 0 - 1 Paraguay</p>
 <p>Netherlands 5 - 1 Sweden</p>
 <p>Germany 2 - 1 Ivory Coast</p>
