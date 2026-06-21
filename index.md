@@ -82,7 +82,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Germany 2 - 1 Ivory Coast</p>
 <p>Ecuador 0 - 0 Curaçao</p>
 <p>Tunisia 0 - 4 Japan</p>
 <p>Spain 5 - 0 Saudi Arabia</p>
