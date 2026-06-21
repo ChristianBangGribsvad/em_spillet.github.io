@@ -82,7 +82,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Ecuador vs Curaçao &mdash; Sun 21 June, 02:00</p>
 <p>Tunisia vs Japan &mdash; Sun 21 June, 06:00</p>
 <p>Spain vs Saudi Arabia &mdash; Sun 21 June, 18:00</p>
 <p>Belgium vs Iran &mdash; Sun 21 June, 21:00</p>
