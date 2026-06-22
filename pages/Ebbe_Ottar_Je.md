@@ -7,8 +7,8 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Friends and Family</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#6th out of 40 players across the game</span><span class="stat-sub">You beat 85% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">19 pts last round</span><span class="stat-sub">-9 pts vs global avg (28 pts) &middot; Moved down 3 places &middot; 6th out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#7th out of 40 players across the game</span><span class="stat-sub">You beat 82% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">0 pts last round</span><span class="stat-sub">-1 pts vs global avg (1 pts) &middot; Moved down 1 place &middot; 7th out of 40 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Ebbe_Ottar_Je");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21"], "datasets": [{"label": "Your score", "data": [0.0, 15.0, 35.0, 55.0, 77.0, 122.0, 134.0, 166.0, 181.0, 201.0, 220.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 72.2, 90.5, 122.5, 138.7, 160.5, 190.5], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22"], "datasets": [{"label": "Your score", "data": [0.0, 15.0, 35.0, 55.0, 77.0, 122.0, 134.0, 166.0, 181.0, 201.0, 220.0, 220.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 72.2, 90.5, 122.5, 138.7, 160.5, 190.5, 191.1], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 187.9], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -59,7 +59,7 @@ new Chart(el,{
 
 <div class="pred-table">
 <div class="pred-breakdown">Group matches: <strong>220 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>0 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
-<div class="pred-badge-summary">💎&thinsp;&times;4 &nbsp;&middot;&nbsp; 🔮&thinsp;&times;1 &nbsp;&middot;&nbsp; 😬&thinsp;&times;1 &nbsp;&middot;&nbsp; 💀&thinsp;&times;5</div>
+<div class="pred-badge-summary">💎&thinsp;&times;4 &nbsp;&middot;&nbsp; 🔮&thinsp;&times;1 &nbsp;&middot;&nbsp; 😬&thinsp;&times;1 &nbsp;&middot;&nbsp; 💀&thinsp;&times;6</div>
 <div class="pred-total">Total &nbsp;<span class="pred-total-pts">220 pts</span></div>
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
@@ -152,7 +152,8 @@ new Chart(el,{
 <a href="./rules.html#match-badges" class="match-badge mb-nobody" target="_blank" rel="noopener">💀 Nobody Saw That Coming</a>
 <div class="pred-row pts-15"><span class="pred-match"><small class="match-date">Jun 16th · 00:00</small>Saudi Arabia vs Uruguay</span><span class="pred-guess">1 - 1</span><span class="pred-result">1-1</span><span class="pts-badge">15</span></div>
 <div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 21st · 18:00</small>Spain vs Saudi Arabia</span><span class="pred-guess">3 - 0</span><span class="pred-result">4-0</span><span class="pts-badge">10</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 22nd · 00:00</small>Uruguay vs Cape Verde Islands</span><span class="pred-guess">4 - 0</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 22nd · 00:00</small>Uruguay vs Cape Verde Islands</span><span class="pred-guess">4 - 0</span><span class="pred-result">2-2</span><span class="pts-badge">0</span></div>
+<a href="./rules.html#match-badges" class="match-badge mb-nobody" target="_blank" rel="noopener">💀 Nobody Saw That Coming</a>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 27th · 02:00</small>Uruguay vs Spain</span><span class="pred-guess">2 - 4</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 27th · 02:00</small>Cape Verde Islands vs Saudi Arabia</span><span class="pred-guess">0 - 2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
