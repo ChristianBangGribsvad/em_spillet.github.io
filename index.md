@@ -75,6 +75,7 @@ title: WC Prediction Game 2026
 <p>Norway vs Senegal &mdash; Tue 23 June, 02:00</p>
 <p>Jordan vs Algeria &mdash; Tue 23 June, 05:00</p>
 <p>Portugal vs Uzbekistan &mdash; Tue 23 June, 19:00</p>
+<p>England vs Ghana &mdash; Tue 23 June, 22:00</p>
 </div>
 
 # Yesterday's Results
