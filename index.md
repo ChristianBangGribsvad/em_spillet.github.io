@@ -80,7 +80,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Uruguay 2 - 2 Cape Verde Islands</p>
 <p>New Zealand 1 - 3 Egypt</p>
 <p>Argentina 2 - 0 Austria</p>
 </div>
