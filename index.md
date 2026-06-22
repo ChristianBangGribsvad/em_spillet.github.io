@@ -71,7 +71,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>France vs Iraq &mdash; Mon 22 June, 23:00</p>
 <p>Norway vs Senegal &mdash; Tue 23 June, 02:00</p>
 <p>Jordan vs Algeria &mdash; Tue 23 June, 05:00</p>
 <p>Portugal vs Uzbekistan &mdash; Tue 23 June, 19:00</p>
