@@ -81,7 +81,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>France 3 - 0 Iraq</p>
 <p>Norway 3 - 2 Senegal</p>
 <p>Jordan 1 - 2 Algeria</p>
 <p>Portugal 5 - 0 Uzbekistan</p>
