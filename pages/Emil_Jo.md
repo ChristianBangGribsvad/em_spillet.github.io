@@ -7,8 +7,8 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Friends and Family</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#37th out of 40 players across the game</span><span class="stat-sub">You beat 8% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">10 pts last round</span><span class="stat-sub">-4 pts vs global avg (14 pts) &middot; Moved up 1 place &middot; 37th out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#36th out of 40 players across the game</span><span class="stat-sub">You beat 10% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">20 pts last round</span><span class="stat-sub">+0 pts vs global avg (19 pts) &middot; Moved up 2 places &middot; 36th out of 40 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Emil_Jo");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23"], "datasets": [{"label": "Your score", "data": [0.0, 7.0, 32.0, 47.0, 61.0, 73.0, 78.0, 112.0, 124.0, 136.0, 160.0, 160.0, 170.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 72.2, 90.5, 122.5, 138.7, 160.5, 190.5, 205.6, 217.8], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 216.1], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23"], "datasets": [{"label": "Your score", "data": [0.0, 7.0, 32.0, 47.0, 61.0, 73.0, 78.0, 112.0, 124.0, 136.0, 160.0, 160.0, 180.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 72.2, 90.5, 122.5, 138.7, 160.5, 190.5, 205.6, 224.9], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 221.7], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -58,9 +58,9 @@ new Chart(el,{
 ## Your predictions
 
 <div class="pred-table">
-<div class="pred-breakdown">Group matches: <strong>170 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>0 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
+<div class="pred-breakdown">Group matches: <strong>180 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>0 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
 <div class="pred-badge-summary">🔮&thinsp;&times;1 &nbsp;&middot;&nbsp; 😬&thinsp;&times;1 &nbsp;&middot;&nbsp; 💀&thinsp;&times;6</div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">170 pts</span></div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">180 pts</span></div>
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
@@ -173,7 +173,7 @@ new Chart(el,{
 <div class="pred-row pts-5"><span class="pred-match"><small class="match-date">Jun 17th · 06:00</small>Austria vs Jordan</span><span class="pred-guess">2-0</span><span class="pred-result">3-1</span><span class="pts-badge">5</span></div>
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 22nd · 19:00</small>Argentina vs Austria</span><span class="pred-guess">1-1</span><span class="pred-result">2-0</span><span class="pts-badge">0</span></div>
 <a href="./rules.html#match-badges" class="match-badge mb-rarem" target="_blank" rel="noopener">😬 Rare Miss</a>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 23rd · 05:00</small>Jordan vs Algeria</span><span class="pred-guess">1-3</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 23rd · 05:00</small>Jordan vs Algeria</span><span class="pred-guess">1-3</span><span class="pred-result">1-2</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 28th · 04:00</small>Jordan vs Argentina</span><span class="pred-guess">1-4</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 28th · 04:00</small>Algeria vs Austria</span><span class="pred-guess">1-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
 <div class="pred-divider">Group winners</div>
