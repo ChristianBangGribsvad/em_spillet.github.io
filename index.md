@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Jordan vs Algeria &mdash; Tue 23 June, 05:00</p>
 <p>Portugal vs Uzbekistan &mdash; Tue 23 June, 19:00</p>
 <p>England vs Ghana &mdash; Tue 23 June, 22:00</p>
 <p>Panama vs Croatia &mdash; Wed 24 June, 01:00</p>
