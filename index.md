@@ -75,12 +75,13 @@ title: WC Prediction Game 2026
 <p>South Africa vs South Korea &mdash; Thu 25 June, 03:00</p>
 <p>Ecuador vs Germany &mdash; Thu 25 June, 22:00</p>
 <p>Curaçao vs Ivory Coast &mdash; Thu 25 June, 22:00</p>
+<p>Tunisia vs Netherlands &mdash; Fri 26 June, 01:00</p>
+<p>Japan vs Sweden &mdash; Fri 26 June, 01:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Panama 0 - 1 Croatia</p>
 <p>Colombia 1 - 0 Congo DR</p>
 <p>Switzerland 2 - 1 Canada</p>
 <p>Bosnia-Herzegovina 3 - 1 Qatar</p>
