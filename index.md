@@ -75,12 +75,13 @@ title: WC Prediction Game 2026
 <p>Scotland vs Brazil &mdash; Thu 25 June, 00:00</p>
 <p>Czechia vs Mexico &mdash; Thu 25 June, 03:00</p>
 <p>South Africa vs South Korea &mdash; Thu 25 June, 03:00</p>
+<p>Ecuador vs Germany &mdash; Thu 25 June, 22:00</p>
+<p>Curaçao vs Ivory Coast &mdash; Thu 25 June, 22:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>England 0 - 0 Ghana</p>
 <p>Panama 0 - 1 Croatia</p>
 <p>Colombia 1 - 0 Congo DR</p>
 </div>
