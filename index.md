@@ -74,7 +74,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Colombia vs Congo DR &mdash; Wed 24 June, 04:00</p>
 <p>Switzerland vs Canada &mdash; Wed 24 June, 21:00</p>
 <p>Bosnia-Herzegovina vs Qatar &mdash; Wed 24 June, 21:00</p>
 <p>Morocco vs Haiti &mdash; Thu 25 June, 00:00</p>
