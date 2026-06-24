@@ -82,7 +82,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Portugal 5 - 0 Uzbekistan</p>
 <p>England 0 - 0 Ghana</p>
 <p>Panama 0 - 1 Croatia</p>
 <p>Colombia 1 - 0 Congo DR</p>
