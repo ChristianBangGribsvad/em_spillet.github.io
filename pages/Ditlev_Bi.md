@@ -8,7 +8,7 @@ layout: default
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#8th out of 40 players across the game</span><span class="stat-sub">You beat 80% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">65 pts last round</span><span class="stat-sub">+26 pts vs global avg (38 pts) &middot; Moved up 7 places &middot; 8th out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">15 pts last round</span><span class="stat-sub">-1 pts vs global avg (16 pts) &middot; Position unchanged &middot; 8th out of 40 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Ditlev_Bi");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25"], "datasets": [{"label": "Your score", "data": [0.0, 10.0, 17.0, 39.0, 53.0, 62.0, 85.0, 112.0, 137.0, 159.0, 183.0, 195.0, 227.0, 284.0, 349.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 8.5, 18.0, 36.5, 52.5, 64.5, 87.5, 118.0, 143.0, 166.0, 192.5, 203.5, 237.0, 281.5, 327.5], "borderColor": "#2d0e7c", "backgroundColor": "rgba(45,14,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 230.9, 271.5, 309.7], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26"], "datasets": [{"label": "Your score", "data": [0.0, 10.0, 17.0, 39.0, 53.0, 62.0, 85.0, 112.0, 137.0, 159.0, 183.0, 195.0, 227.0, 284.0, 349.0, 364.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 8.5, 18.0, 36.5, 52.5, 64.5, 87.5, 118.0, 143.0, 166.0, 192.5, 203.5, 237.0, 281.5, 327.5, 345.0], "borderColor": "#2d0e7c", "backgroundColor": "rgba(45,14,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 230.9, 271.5, 309.7, 326.7], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -58,9 +58,9 @@ new Chart(el,{
 ## Your predictions
 
 <div class="pred-table">
-<div class="pred-breakdown">Group matches: <strong>304 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>45 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
-<div class="pred-badge-summary">💎&thinsp;&times;1 &nbsp;&middot;&nbsp; 🔮&thinsp;&times;2 &nbsp;&middot;&nbsp; 💀&thinsp;&times;6</div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">349 pts</span></div>
+<div class="pred-breakdown">Group matches: <strong>314 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>50 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
+<div class="pred-badge-summary">💎&thinsp;&times;1 &nbsp;&middot;&nbsp; 🔮&thinsp;&times;2 &nbsp;&middot;&nbsp; 💀&thinsp;&times;7</div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">364 pts</span></div>
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
@@ -115,10 +115,11 @@ new Chart(el,{
 <a href="./rules.html#match-badges" class="match-badge mb-crystal" target="_blank" rel="noopener">🔮 Crystal Ball</a>
 <div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 20th · 22:00</small>Germany vs Ivory Coast</span><span class="pred-guess">2 - 0</span><span class="pred-result">2-1</span><span class="pts-badge">10</span></div>
 <div class="pred-row pts-2"><span class="pred-match"><small class="match-date">Jun 21st · 02:00</small>Ecuador vs Curaçao</span><span class="pred-guess">3 - 0</span><span class="pred-result">0-0</span><span class="pts-badge">2</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 22:00</small>Ecuador vs Germany</span><span class="pred-guess">0 - 2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 22:00</small>Curaçao vs Ivory Coast</span><span class="pred-guess">1 - 2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 25th · 22:00</small>Ecuador vs Germany</span><span class="pred-guess">0 - 2</span><span class="pred-result">2-1</span><span class="pts-badge">0</span></div>
+<a href="./rules.html#match-badges" class="match-badge mb-nobody" target="_blank" rel="noopener">💀 Nobody Saw That Coming</a>
+<div class="pred-row pts-10"><span class="pred-match"><small class="match-date">Jun 25th · 22:00</small>Curaçao vs Ivory Coast</span><span class="pred-guess">1 - 2</span><span class="pred-result">0-2</span><span class="pts-badge">10</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Germany / Ecuador</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-5"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Germany / Ecuador</span><span class="pred-result">Germany / Ivory Coast</span><span class="pts-badge">5</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group F</div>
