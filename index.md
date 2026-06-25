@@ -73,8 +73,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Czechia vs Mexico &mdash; Thu 25 June, 03:00</p>
-<p>South Africa vs South Korea &mdash; Thu 25 June, 03:00</p>
 <p>Ecuador vs Germany &mdash; Thu 25 June, 22:00</p>
 <p>Curaçao vs Ivory Coast &mdash; Thu 25 June, 22:00</p>
 <p>Tunisia vs Netherlands &mdash; Fri 26 June, 01:00</p>
