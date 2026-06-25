@@ -77,12 +77,13 @@ title: WC Prediction Game 2026
 <p>Curaçao vs Ivory Coast &mdash; Thu 25 June, 22:00</p>
 <p>Tunisia vs Netherlands &mdash; Fri 26 June, 01:00</p>
 <p>Japan vs Sweden &mdash; Fri 26 June, 01:00</p>
+<p>Turkey vs United States &mdash; Fri 26 June, 04:00</p>
+<p>Paraguay vs Australia &mdash; Fri 26 June, 04:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Colombia 1 - 0 Congo DR</p>
 <p>Switzerland 2 - 1 Canada</p>
 <p>Bosnia-Herzegovina 3 - 1 Qatar</p>
 <p>Morocco 4 - 2 Haiti</p>
