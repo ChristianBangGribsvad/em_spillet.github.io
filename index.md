@@ -77,13 +77,13 @@ title: WC Prediction Game 2026
 <p>Japan vs Sweden &mdash; Fri 26 June, 01:00</p>
 <p>Turkey vs United States &mdash; Fri 26 June, 04:00</p>
 <p>Paraguay vs Australia &mdash; Fri 26 June, 04:00</p>
+<p>Norway vs France &mdash; Fri 26 June, 21:00</p>
+<p>Senegal vs Iraq &mdash; Fri 26 June, 21:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Switzerland 2 - 1 Canada</p>
-<p>Bosnia-Herzegovina 3 - 1 Qatar</p>
 <p>Morocco 4 - 2 Haiti</p>
 <p>Scotland 0 - 3 Brazil</p>
 <p>Czechia 0 - 3 Mexico</p>
