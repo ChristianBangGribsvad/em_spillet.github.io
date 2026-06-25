@@ -8,7 +8,7 @@ layout: default
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#21st out of 40 players across the game</span><span class="stat-sub">You beat 48% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">30 pts last round</span><span class="stat-sub">+3 pts vs global avg (26 pts) &middot; Moved up 2 places &middot; 21st out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">37 pts last round</span><span class="stat-sub">-1 pts vs global avg (38 pts) &middot; Moved up 2 places &middot; 21st out of 40 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Camilla_Gr");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25"], "datasets": [{"label": "Your score", "data": [NaN, NaN, 17.0, 27.0, 40.0, 50.0, 78.0, 105.0, 132.0, 156.0, 185.0, 199.0, 226.0, 273.0, 303.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 72.2, 90.5, 122.5, 138.7, 160.5, 190.5, 205.6, 234.2, 275.8, 302.2], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 230.9, 271.5, 298.3], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25"], "datasets": [{"label": "Your score", "data": [NaN, NaN, 17.0, 27.0, 40.0, 50.0, 78.0, 105.0, 132.0, 156.0, 185.0, 199.0, 226.0, 273.0, 310.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 72.2, 90.5, 122.5, 138.7, 160.5, 190.5, 205.6, 234.2, 275.8, 310.4], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 230.9, 271.5, 309.7], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -58,9 +58,9 @@ new Chart(el,{
 ## Your predictions
 
 <div class="pred-table">
-<div class="pred-breakdown">Group matches: <strong>263 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>40 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
+<div class="pred-breakdown">Group matches: <strong>265 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>45 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
 <div class="pred-badge-summary">💀&thinsp;&times;7</div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">303 pts</span></div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">310 pts</span></div>
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
@@ -68,10 +68,10 @@ new Chart(el,{
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 12th · 04:00</small>South Korea vs Czechia</span><span class="pred-guess">3-3</span><span class="pred-result">2-1</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 18th · 18:00</small>Czechia vs South Africa</span><span class="pred-guess">4-2</span><span class="pred-result">1-1</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-2"><span class="pred-match"><small class="match-date">Jun 19th · 03:00</small>Mexico vs South Korea</span><span class="pred-guess">0-0</span><span class="pred-result">1-0</span><span class="pts-badge">2</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 03:00</small>Czechia vs Mexico</span><span class="pred-guess">3-2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 25th · 03:00</small>South Africa vs South Korea</span><span class="pred-guess">1-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 25th · 03:00</small>Czechia vs Mexico</span><span class="pred-guess">3-2</span><span class="pred-result">0-3</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-2"><span class="pred-match"><small class="match-date">Jun 25th · 03:00</small>South Africa vs South Korea</span><span class="pred-guess">1-1</span><span class="pred-result">1-0</span><span class="pts-badge">2</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Mexico / South Korea</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-5"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Mexico / South Korea</span><span class="pred-result">Mexico / South Africa</span><span class="pts-badge">5</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group B</div>
