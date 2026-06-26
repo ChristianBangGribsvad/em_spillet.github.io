@@ -10,8 +10,8 @@ team_color: "#2d0e7c"
 - [Sebastian Lefmann](./Sebastian_Le.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Ditlev_Bi.html">Ditlev Bigum</a></span><span class="ts-pts">364 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Sebastian_Le.html">Sebastian Lefmann</a></span><span class="ts-pts">326 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./Ditlev_Bi.html">Ditlev Bigum</a></span><span class="ts-pts">391 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Sebastian_Le.html">Sebastian Lefmann</a></span><span class="ts-pts">338 pts</span></div>
 </div>
 
 ## Score progression
@@ -26,7 +26,7 @@ team_color: "#2d0e7c"
 (function(){
 var el=document.getElementById("chart-GAHK");
 var btn=document.getElementById("chart-GAHK-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26"], "datasets": [{"label": "Ditlev Bigum", "data": [0.0, 10.0, 17.0, 39.0, 53.0, 62.0, 85.0, 112.0, 137.0, 159.0, 183.0, 195.0, 227.0, 284.0, 349.0, 364.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sebastian Lefmann", "data": [0.0, 7.0, 19.0, 34.0, 52.0, 67.0, 90.0, 124.0, 149.0, 173.0, 202.0, 212.0, 247.0, 279.0, 306.0, 326.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26"], "datasets": [{"label": "Ditlev Bigum", "data": [0.0, 10.0, 17.0, 39.0, 53.0, 62.0, 85.0, 112.0, 137.0, 159.0, 183.0, 195.0, 227.0, 284.0, 349.0, 391.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sebastian Lefmann", "data": [0.0, 7.0, 19.0, 34.0, 52.0, 67.0, 90.0, 124.0, 149.0, 173.0, 202.0, 212.0, 247.0, 279.0, 306.0, 338.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -115,7 +115,7 @@ btn.addEventListener("click",function(){
 </div>
 <script>
 (function(){
-var d={"labels": ["Sebastian Lefmann", "Ditlev Bigum"], "values": [20.0, 15.0], "colors": ["#1ba7a7", "#a71b1b"], "title": "Points earned \u2192 2026-06-25 to 2026-06-26"};
+var d={"labels": ["Ditlev Bigum", "Sebastian Lefmann"], "values": [42.0, 32.0], "colors": ["#a71b1b", "#1ba7a7"], "title": "Points earned \u2192 2026-06-25 to 2026-06-26"};
 new Chart(document.getElementById("bar-GAHK"),{
   type:"bar",
   data:{
