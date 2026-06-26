@@ -40,32 +40,33 @@ title: WC Prediction Game 2026
 </div>
 
 # Today's Schmeichel(s):
-- Tobias Boklund with 82 points part of Friends and Family [see their predictions](./pages/Tobias_Bo.html)
+- Christian Isaacs with 117 points part of Friends and Family [see their predictions](./pages/Christian_Is.html)
+- Tobias Boklund with 117 points part of Friends and Family [see their predictions](./pages/Tobias_Bo.html)
 
 
 # Leaderboard
 
 <div class="leaderboard">
-<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/sexy_os.html">sexy ossi</a> <small>(Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">471 pts</span></div>
-<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Bjarke_Ha.html">Bjarke Haugan</a> <small>(GeH Fys &amp; Frederiksborg Gymnasium)</small></span><span class="lb-pts">441 pts</span></div>
-<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/Nicholas_So.html">Nicholas Sommer-Lykke</a> <small>(GeH Fys)</small></span><span class="lb-pts">425 pts</span></div>
-<div class="lb-row "><span class="lb-pos">4</span><span class="lb-info"><a href="./pages/Jenus__Sa.html">Jenus  Saleh</a> <small>(ATP)</small></span><span class="lb-pts">407 pts</span></div>
-<div class="lb-row "><span class="lb-pos">5</span><span class="lb-info"><a href="./pages/RK__Fy.html">RK  Fysioterapi</a> <small>(GeH Fys)</small></span><span class="lb-pts">406 pts</span></div>
-<div class="lb-row "><span class="lb-pos">6</span><span class="lb-info"><a href="./pages/Thomas_Pe.html">Thomas Petersen</a> <small>(GeH Fys)</small></span><span class="lb-pts">404 pts</span></div>
-<div class="lb-row "><span class="lb-pos">7</span><span class="lb-info"><a href="./pages/Ebbe_Ottar_Je.html">Ebbe Ottar Jensen</a> <small>(Friends and Family)</small></span><span class="lb-pts">399 pts</span></div>
-<div class="lb-row "><span class="lb-pos">8</span><span class="lb-info"><a href="./pages/Ditlev_Bi.html">Ditlev Bigum</a> <small>(GAHK)</small></span><span class="lb-pts">398 pts</span></div>
-<div class="lb-row "><span class="lb-pos">9</span><span class="lb-info"><a href="./pages/Tobias_Bo.html">Tobias Boklund</a> <small>(Friends and Family)</small></span><span class="lb-pts">398 pts</span></div>
-<div class="lb-row "><span class="lb-pos">10</span><span class="lb-info"><a href="./pages/Sarah-Alberte_Be.html">Sarah-Alberte Bennetzen</a> <small>(Buzzanova)</small></span><span class="lb-pts">396 pts</span></div>
+<div class="lb-row lb-gold"><span class="lb-pos">🥇</span><span class="lb-info"><a href="./pages/sexy_os.html">sexy ossi</a> <small>(Frederiksborg Gymnasium &amp; Friends and Family)</small></span><span class="lb-pts">493 pts</span></div>
+<div class="lb-row lb-silver"><span class="lb-pos">🥈</span><span class="lb-info"><a href="./pages/Bjarke_Ha.html">Bjarke Haugan</a> <small>(GeH Fys &amp; Frederiksborg Gymnasium)</small></span><span class="lb-pts">481 pts</span></div>
+<div class="lb-row lb-bronze"><span class="lb-pos">🥉</span><span class="lb-info"><a href="./pages/Nicholas_So.html">Nicholas Sommer-Lykke</a> <small>(GeH Fys)</small></span><span class="lb-pts">455 pts</span></div>
+<div class="lb-row "><span class="lb-pos">4</span><span class="lb-info"><a href="./pages/Jenus__Sa.html">Jenus  Saleh</a> <small>(ATP)</small></span><span class="lb-pts">442 pts</span></div>
+<div class="lb-row "><span class="lb-pos">5</span><span class="lb-info"><a href="./pages/Jacob_Ha.html">Jacob Harder</a> <small>(Buzzanova)</small></span><span class="lb-pts">435 pts</span></div>
+<div class="lb-row "><span class="lb-pos">6</span><span class="lb-info"><a href="./pages/Thomas_Pe.html">Thomas Petersen</a> <small>(GeH Fys)</small></span><span class="lb-pts">434 pts</span></div>
+<div class="lb-row "><span class="lb-pos">7</span><span class="lb-info"><a href="./pages/lisbeth_Ul.html">lisbeth Ulnits</a> <small>(GeH Fys)</small></span><span class="lb-pts">434 pts</span></div>
+<div class="lb-row "><span class="lb-pos">8</span><span class="lb-info"><a href="./pages/Tobias_Bo.html">Tobias Boklund</a> <small>(Friends and Family)</small></span><span class="lb-pts">433 pts</span></div>
+<div class="lb-row "><span class="lb-pos">9</span><span class="lb-info"><a href="./pages/Christian_Is.html">Christian Isaacs</a> <small>(Friends and Family)</small></span><span class="lb-pts">429 pts</span></div>
+<div class="lb-row "><span class="lb-pos">10</span><span class="lb-info"><a href="./pages/RK__Fy.html">RK  Fysioterapi</a> <small>(GeH Fys)</small></span><span class="lb-pts">426 pts</span></div>
 </div>
 
 # Biggest Movers
 
 <div class="biggest-movers">
+<div class="mover-row"><span class="mv-down">&#x2193;12</span><span class="mv-name"><a href="./pages/Ebbe_Ottar_Je.html">Ebbe Ottar Jensen</a></span><span class="mv-rank">15th</span></div>
+<div class="mover-row"><span class="mv-up">&#x2191;11</span><span class="mv-name"><a href="./pages/Jacob_Ha.html">Jacob Harder</a></span><span class="mv-rank">5th</span></div>
+<div class="mover-row"><span class="mv-up">&#x2191;11</span><span class="mv-name"><a href="./pages/Christian_Is.html">Christian Isaacs</a></span><span class="mv-rank">9th</span></div>
 <div class="mover-row"><span class="mv-up">&#x2191;10</span><span class="mv-name"><a href="./pages/Tobias_Bo.html">Tobias Boklund</a></span><span class="mv-rank">8th</span></div>
 <div class="mover-row"><span class="mv-up">&#x2191;9</span><span class="mv-name"><a href="./pages/Thomas_Pe.html">Thomas Petersen</a></span><span class="mv-rank">6th</span></div>
-<div class="mover-row"><span class="mv-down">&#x2193;9</span><span class="mv-name"><a href="./pages/lisbeth_Ul.html">lisbeth Ulnits</a></span><span class="mv-rank">13th</span></div>
-<div class="mover-row"><span class="mv-down">&#x2193;8</span><span class="mv-name"><a href="./pages/caroline_Pr.html">caroline Preisler</a></span><span class="mv-rank">17th</span></div>
-<div class="mover-row"><span class="mv-up">&#x2191;6</span><span class="mv-name"><a href="./pages/Christian_Is.html">Christian Isaacs</a></span><span class="mv-rank">14th</span></div>
 </div>
 
 # Next Matches
@@ -75,6 +76,8 @@ title: WC Prediction Game 2026
 <p>Cape Verde Islands vs Saudi Arabia &mdash; Sat 27 June, 02:00</p>
 <p>New Zealand vs Belgium &mdash; Sat 27 June, 05:00</p>
 <p>Egypt vs Iran &mdash; Sat 27 June, 05:00</p>
+<p>Panama vs England &mdash; Sat 27 June, 23:00</p>
+<p>Croatia vs Ghana &mdash; Sat 27 June, 23:00</p>
 </div>
 
 # Yesterday's Results
@@ -84,6 +87,8 @@ title: WC Prediction Game 2026
 <p>Japan 1 - 1 Sweden</p>
 <p>Turkey 3 - 2 United States</p>
 <p>Paraguay 0 - 0 Australia</p>
+<p>Norway 1 - 4 France</p>
+<p>Senegal 5 - 0 Iraq</p>
 </div>
 
 # Team vs Team
@@ -100,7 +105,7 @@ Average cumulative score per team over time — the higher the line, the better 
 (function(){
 var el=document.getElementById("chart-team-vs-team");
 var btn=document.getElementById("chart-team-vs-team-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26"], "datasets": [{"label": "Friends and Family", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 72.2, 90.5, 122.5, 138.7, 160.5, 190.5, 205.6, 234.2, 275.8, 310.4, 363.1], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "ATP", "data": [0.0, 9.7, 24.3, 45.7, 64.0, 73.7, 85.3, 118.0, 139.7, 162.3, 187.0, 202.7, 231.3, 272.0, 303.0, 351.0], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Frederiksborg Gymnasium", "data": [0.0, 18.2, 32.4, 50.4, 65.0, 84.1, 104.1, 139.6, 159.5, 183.2, 214.4, 230.5, 259.8, 304.2, 339.4, 393.4], "borderColor": "#0e7c4d", "backgroundColor": "rgba(14,124,77,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Danica Ejendomme", "data": [0.0, 7.8, 21.4, 43.4, 58.4, 71.2, 81.2, 112.0, 123.8, 141.8, 170.2, 190.4, 214.0, 248.0, 284.4, 328.8], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Buzzanova", "data": [0.0, 17.0, 12.8, 31.7, 48.0, 59.3, 83.5, 111.3, 135.8, 159.5, 190.5, 206.0, 237.0, 276.5, 325.8, 375.3], "borderColor": "#7c6c0e", "backgroundColor": "rgba(124,108,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "GeH Fys", "data": [0.0, 12.5, 27.1, 42.8, 56.7, 73.1, 86.8, 118.5, 132.8, 156.1, 183.2, 199.2, 230.1, 272.6, 307.5, 358.0], "borderColor": "#7c0e6c", "backgroundColor": "rgba(124,14,108,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "GAHK", "data": [0.0, 8.5, 18.0, 36.5, 52.5, 64.5, 87.5, 118.0, 143.0, 166.0, 192.5, 203.5, 237.0, 281.5, 327.5, 374.0], "borderColor": "#2d0e7c", "backgroundColor": "rgba(45,14,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26"], "datasets": [{"label": "Friends and Family", "data": [0.0, 11.5, 23.5, 40.5, 54.6, 72.2, 90.5, 122.5, 138.7, 160.5, 190.5, 205.6, 234.2, 275.8, 310.4, 392.9], "borderColor": "#0e4d7c", "backgroundColor": "rgba(14,77,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "ATP", "data": [0.0, 9.7, 24.3, 45.7, 64.0, 73.7, 85.3, 118.0, 139.7, 162.3, 187.0, 202.7, 231.3, 272.0, 303.0, 387.7], "borderColor": "#7c0e0e", "backgroundColor": "rgba(124,14,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Frederiksborg Gymnasium", "data": [0.0, 18.2, 32.4, 50.4, 65.0, 84.1, 104.1, 139.6, 159.5, 183.2, 214.4, 230.5, 259.8, 304.2, 339.4, 422.2], "borderColor": "#0e7c4d", "backgroundColor": "rgba(14,124,77,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Danica Ejendomme", "data": [0.0, 7.8, 21.4, 43.4, 58.4, 71.2, 81.2, 112.0, 123.8, 141.8, 170.2, 190.4, 214.0, 248.0, 284.4, 352.8], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Buzzanova", "data": [0.0, 17.0, 12.8, 31.7, 48.0, 59.3, 83.5, 111.3, 135.8, 159.5, 190.5, 206.0, 237.0, 276.5, 325.8, 404.0], "borderColor": "#7c6c0e", "backgroundColor": "rgba(124,108,14,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "GeH Fys", "data": [0.0, 12.5, 27.1, 42.8, 56.7, 73.1, 86.8, 118.5, 132.8, 156.1, 183.2, 199.2, 230.1, 272.6, 307.5, 390.6], "borderColor": "#7c0e6c", "backgroundColor": "rgba(124,14,108,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "GAHK", "data": [0.0, 8.5, 18.0, 36.5, 52.5, 64.5, 87.5, 118.0, 143.0, 166.0, 192.5, 203.5, 237.0, 281.5, 327.5, 404.0], "borderColor": "#2d0e7c", "backgroundColor": "rgba(45,14,124,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
