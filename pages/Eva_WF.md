@@ -7,8 +7,8 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Danica Ejendomme</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#38th out of 40 players across the game</span><span class="stat-sub">You beat 5% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">29 pts last round</span><span class="stat-sub">-11 pts vs global avg (40 pts) &middot; Moved down 1 place &middot; 38th out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#35th out of 40 players across the game</span><span class="stat-sub">You beat 12% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">44 pts last round</span><span class="stat-sub">-5 pts vs global avg (49 pts) &middot; Moved up 2 places &middot; 35th out of 40 total players</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Eva_WF");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26"], "datasets": [{"label": "Your score", "data": [0.0, 5.0, 20.0, 42.0, 56.0, 71.0, 78.0, 106.0, 111.0, 118.0, 155.0, 162.0, 177.0, 212.0, 247.0, 276.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 7.8, 21.4, 43.4, 58.4, 71.2, 81.2, 112.0, 123.8, 141.8, 170.2, 190.4, 214.0, 248.0, 284.4, 321.0], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 230.9, 271.5, 309.7, 350.4], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26"], "datasets": [{"label": "Your score", "data": [0.0, 5.0, 20.0, 42.0, 56.0, 71.0, 78.0, 106.0, 111.0, 118.0, 155.0, 162.0, 177.0, 212.0, 247.0, 291.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 7.8, 21.4, 43.4, 58.4, 71.2, 81.2, 112.0, 123.8, 141.8, 170.2, 190.4, 214.0, 248.0, 284.4, 328.8], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 230.9, 271.5, 309.7, 359.6], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -58,9 +58,9 @@ new Chart(el,{
 ## Your predictions
 
 <div class="pred-table">
-<div class="pred-breakdown">Group matches: <strong>241 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>35 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
-<div class="pred-badge-summary">🔮&thinsp;&times;3 &nbsp;&middot;&nbsp; 😬&thinsp;&times;2 &nbsp;&middot;&nbsp; 💀&thinsp;&times;7</div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">276 pts</span></div>
+<div class="pred-breakdown">Group matches: <strong>256 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>35 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
+<div class="pred-badge-summary">💎&thinsp;&times;1 &nbsp;&middot;&nbsp; 🔮&thinsp;&times;3 &nbsp;&middot;&nbsp; 😬&thinsp;&times;2 &nbsp;&middot;&nbsp; 💀&thinsp;&times;7</div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">291 pts</span></div>
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
@@ -105,10 +105,11 @@ new Chart(el,{
 <a href="./rules.html#match-badges" class="match-badge mb-crystal" target="_blank" rel="noopener">🔮 Crystal Ball</a>
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 19th · 21:00</small>United States vs Australia</span><span class="pred-guess">3-3</span><span class="pred-result">2-0</span><span class="pts-badge">0</span></div>
 <div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 20th · 05:00</small>Turkey vs Paraguay</span><span class="pred-guess">2-2</span><span class="pred-result">0-1</span><span class="pts-badge">0</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 26th · 04:00</small>Turkey vs United States</span><span class="pred-guess">3-2</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match"><small class="match-date">Jun 26th · 04:00</small>Paraguay vs Australia</span><span class="pred-guess">4-1</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-15"><span class="pred-match"><small class="match-date">Jun 26th · 04:00</small>Turkey vs United States</span><span class="pred-guess">3-2</span><span class="pred-result">3-2</span><span class="pts-badge">15</span></div>
+<a href="./rules.html#match-badges" class="match-badge mb-gem" target="_blank" rel="noopener">💎 Hidden Gem</a>
+<div class="pred-row pts-0"><span class="pred-match"><small class="match-date">Jun 26th · 04:00</small>Paraguay vs Australia</span><span class="pred-guess">4-1</span><span class="pred-result">0-0</span><span class="pts-badge">0</span></div>
 <div class="pred-divider">Group winners</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Paraguay / Turkey</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match">1st &amp; 2nd place</span><span class="pred-guess">Paraguay / Turkey</span><span class="pred-result">United States / Australia</span><span class="pts-badge">0</span></div>
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Group E</div>
