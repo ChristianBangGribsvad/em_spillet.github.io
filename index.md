@@ -71,8 +71,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Norway vs France &mdash; Fri 26 June, 21:00</p>
-<p>Senegal vs Iraq &mdash; Fri 26 June, 21:00</p>
 <p>Uruguay vs Spain &mdash; Sat 27 June, 02:00</p>
 <p>Cape Verde Islands vs Saudi Arabia &mdash; Sat 27 June, 02:00</p>
 <p>New Zealand vs Belgium &mdash; Sat 27 June, 05:00</p>
