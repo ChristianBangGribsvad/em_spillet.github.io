@@ -71,8 +71,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Turkey vs United States &mdash; Fri 26 June, 04:00</p>
-<p>Paraguay vs Australia &mdash; Fri 26 June, 04:00</p>
 <p>Norway vs France &mdash; Fri 26 June, 21:00</p>
 <p>Senegal vs Iraq &mdash; Fri 26 June, 21:00</p>
 <p>Uruguay vs Spain &mdash; Sat 27 June, 02:00</p>
