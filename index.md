@@ -75,6 +75,8 @@ title: WC Prediction Game 2026
 <p>Senegal vs Iraq &mdash; Fri 26 June, 21:00</p>
 <p>Uruguay vs Spain &mdash; Sat 27 June, 02:00</p>
 <p>Cape Verde Islands vs Saudi Arabia &mdash; Sat 27 June, 02:00</p>
+<p>New Zealand vs Belgium &mdash; Sat 27 June, 05:00</p>
+<p>Egypt vs Iran &mdash; Sat 27 June, 05:00</p>
 </div>
 
 # Yesterday's Results
