@@ -71,8 +71,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>New Zealand vs Belgium &mdash; Sat 27 June, 05:00</p>
-<p>Egypt vs Iran &mdash; Sat 27 June, 05:00</p>
 <p>Panama vs England &mdash; Sat 27 June, 23:00</p>
 <p>Croatia vs Ghana &mdash; Sat 27 June, 23:00</p>
 <p>Colombia vs Portugal &mdash; Sun 28 June, 01:30</p>
