@@ -77,13 +77,12 @@ title: WC Prediction Game 2026
 <p>Congo DR vs Uzbekistan &mdash; Sun 28 June, 01:30</p>
 <p>Jordan vs Argentina &mdash; Sun 28 June, 04:00</p>
 <p>Algeria vs Austria &mdash; Sun 28 June, 04:00</p>
+<p>South Africa vs Canada &mdash; Sun 28 June, 21:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Norway 1 - 4 France</p>
-<p>Senegal 5 - 0 Iraq</p>
 <p>Uruguay 0 - 1 Spain</p>
 <p>Cape Verde Islands 0 - 0 Saudi Arabia</p>
 <p>New Zealand 1 - 5 Belgium</p>
