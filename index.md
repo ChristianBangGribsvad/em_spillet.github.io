@@ -71,8 +71,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Colombia vs Portugal &mdash; Sun 28 June, 01:30</p>
-<p>Congo DR vs Uzbekistan &mdash; Sun 28 June, 01:30</p>
 <p>Jordan vs Argentina &mdash; Sun 28 June, 04:00</p>
 <p>Algeria vs Austria &mdash; Sun 28 June, 04:00</p>
 <p>South Africa vs Canada &mdash; Sun 28 June, 21:00</p>
