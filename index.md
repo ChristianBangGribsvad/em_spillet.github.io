@@ -71,8 +71,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Panama vs England &mdash; Sat 27 June, 23:00</p>
-<p>Croatia vs Ghana &mdash; Sat 27 June, 23:00</p>
 <p>Colombia vs Portugal &mdash; Sun 28 June, 01:30</p>
 <p>Congo DR vs Uzbekistan &mdash; Sun 28 June, 01:30</p>
 <p>Jordan vs Argentina &mdash; Sun 28 June, 04:00</p>
