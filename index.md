@@ -79,12 +79,11 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Panama 0 - 2 England</p>
-<p>Croatia 2 - 1 Ghana</p>
 <p>Colombia 0 - 0 Portugal</p>
 <p>Congo DR 3 - 1 Uzbekistan</p>
 <p>Jordan 1 - 3 Argentina</p>
 <p>Algeria 3 - 3 Austria</p>
+<p>South Africa 0 - 1 Canada</p>
 </div>
 
 # Team vs Team
