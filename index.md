@@ -79,8 +79,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Uruguay 0 - 1 Spain</p>
-<p>Cape Verde Islands 0 - 0 Saudi Arabia</p>
 <p>New Zealand 1 - 5 Belgium</p>
 <p>Egypt 1 - 1 Iran</p>
 <p>Panama 0 - 2 England</p>
