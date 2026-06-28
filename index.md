@@ -72,7 +72,7 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>None vs None &mdash; Sun 28 June, 21:00</p>
+<p>South Africa vs Canada &mdash; Sun 28 June, 21:00</p>
 </div>
 
 # Yesterday's Results
