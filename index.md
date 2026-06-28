@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>South Africa vs Canada &mdash; Sun 28 June, 21:00</p>
 <p>Brazil vs Japan &mdash; Mon 29 June, 19:00</p>
 </div>
 
