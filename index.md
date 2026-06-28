@@ -79,8 +79,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Colombia 0 - 0 Portugal</p>
-<p>Congo DR 3 - 1 Uzbekistan</p>
 <p>Jordan 1 - 3 Argentina</p>
 <p>Algeria 3 - 3 Austria</p>
 <p>South Africa 0 - 1 Canada</p>
