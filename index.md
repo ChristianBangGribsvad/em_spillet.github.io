@@ -79,8 +79,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>New Zealand 1 - 5 Belgium</p>
-<p>Egypt 1 - 1 Iran</p>
 <p>Panama 0 - 2 England</p>
 <p>Croatia 2 - 1 Ghana</p>
 <p>Colombia 0 - 0 Portugal</p>
