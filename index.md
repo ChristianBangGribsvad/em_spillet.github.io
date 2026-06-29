@@ -74,6 +74,7 @@ title: WC Prediction Game 2026
 <div class="next-matches">
 <p>Brazil vs Japan &mdash; Mon 29 June, 19:00</p>
 <p>Germany vs Paraguay &mdash; Mon 29 June, 22:30</p>
+<p>Netherlands vs Morocco &mdash; Tue 30 June, 03:00</p>
 </div>
 
 # Yesterday's Results
