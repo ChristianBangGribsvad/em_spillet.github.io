@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Germany vs Paraguay &mdash; Mon 29 June, 22:30</p>
 <p>Netherlands vs Morocco &mdash; Tue 30 June, 03:00</p>
 <p>Ivory Coast vs Norway &mdash; Tue 30 June, 19:00</p>
 </div>
