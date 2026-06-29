@@ -80,7 +80,7 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>South Africa 0 - 1 Canada</p>
+<p><em>No results yet.</em></p>
 </div>
 
 # Team vs Team
