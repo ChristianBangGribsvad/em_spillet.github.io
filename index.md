@@ -74,6 +74,7 @@ title: WC Prediction Game 2026
 <div class="next-matches">
 <p>Netherlands vs Morocco &mdash; Tue 30 June, 03:00</p>
 <p>Ivory Coast vs Norway &mdash; Tue 30 June, 19:00</p>
+<p>France vs Sweden &mdash; Tue 30 June, 23:00</p>
 </div>
 
 # Yesterday's Results
