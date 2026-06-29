@@ -80,8 +80,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Jordan 1 - 3 Argentina</p>
-<p>Algeria 3 - 3 Austria</p>
 <p>South Africa 0 - 1 Canada</p>
 </div>
 
