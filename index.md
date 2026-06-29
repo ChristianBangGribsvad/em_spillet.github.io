@@ -81,6 +81,7 @@ title: WC Prediction Game 2026
 
 <div class="yesterdays-results">
 <p>Brazil 2 - 1 Japan</p>
+<p>Germany 5 - 6 Paraguay</p>
 </div>
 
 # Team vs Team
