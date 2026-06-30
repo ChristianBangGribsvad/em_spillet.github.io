@@ -75,6 +75,7 @@ title: WC Prediction Game 2026
 <p>Ivory Coast vs Norway &mdash; Tue 30 June, 19:00</p>
 <p>France vs Sweden &mdash; Tue 30 June, 23:00</p>
 <p>Mexico vs Ecuador &mdash; Wed 01 July, 03:00</p>
+<p>England vs Congo DR &mdash; Wed 01 July, 18:00</p>
 </div>
 
 # Yesterday's Results
