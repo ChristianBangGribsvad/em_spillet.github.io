@@ -82,6 +82,7 @@ title: WC Prediction Game 2026
 <div class="yesterdays-results">
 <p>Netherlands 3 - 4 Morocco</p>
 <p>Ivory Coast 1 - 2 Norway</p>
+<p>France 3 - 0 Sweden</p>
 </div>
 
 # Team vs Team
