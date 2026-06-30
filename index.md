@@ -82,7 +82,7 @@ title: WC Prediction Game 2026
 <div class="yesterdays-results">
 <p>Brazil 2 - 1 Japan</p>
 <p>Germany 4 - 5 Paraguay</p>
-<p>Netherlands 4 - 4 Morocco</p>
+<p>Netherlands 3 - 4 Morocco</p>
 </div>
 
 # Team vs Team
