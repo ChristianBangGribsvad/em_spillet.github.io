@@ -75,12 +75,12 @@ title: WC Prediction Game 2026
 <p>France vs Sweden &mdash; Tue 30 June, 23:00</p>
 <p>Mexico vs Ecuador &mdash; Wed 01 July, 03:00</p>
 <p>England vs Congo DR &mdash; Wed 01 July, 18:00</p>
+<p>Belgium vs Senegal &mdash; Wed 01 July, 22:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Germany 4 - 5 Paraguay</p>
 <p>Netherlands 3 - 4 Morocco</p>
 <p>Ivory Coast 1 - 2 Norway</p>
 </div>
