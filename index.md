@@ -74,6 +74,7 @@ title: WC Prediction Game 2026
 <div class="next-matches">
 <p>Belgium vs Senegal &mdash; Wed 01 July, 22:00</p>
 <p>United States vs Bosnia-Herzegovina &mdash; Thu 02 July, 02:00</p>
+<p>Spain vs Austria &mdash; Thu 02 July, 21:00</p>
 </div>
 
 # Yesterday's Results
