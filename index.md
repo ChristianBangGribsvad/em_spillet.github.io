@@ -74,6 +74,7 @@ title: WC Prediction Game 2026
 <div class="next-matches">
 <p>United States vs Bosnia-Herzegovina &mdash; Thu 02 July, 02:00</p>
 <p>Spain vs Austria &mdash; Thu 02 July, 21:00</p>
+<p>Portugal vs Croatia &mdash; Fri 03 July, 01:00</p>
 </div>
 
 # Yesterday's Results
@@ -81,6 +82,7 @@ title: WC Prediction Game 2026
 <div class="yesterdays-results">
 <p>Mexico 2 - 0 Ecuador</p>
 <p>England 2 - 1 Congo DR</p>
+<p>Belgium 3 - 2 Senegal</p>
 </div>
 
 # Team vs Team
