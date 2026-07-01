@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Mexico vs Ecuador &mdash; Wed 01 July, 03:00</p>
 <p>England vs Congo DR &mdash; Wed 01 July, 18:00</p>
 <p>Belgium vs Senegal &mdash; Wed 01 July, 22:00</p>
 <p>United States vs Bosnia-Herzegovina &mdash; Thu 02 July, 02:00</p>
@@ -81,7 +80,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Netherlands 3 - 4 Morocco</p>
 <p>Ivory Coast 1 - 2 Norway</p>
 <p>France 3 - 0 Sweden</p>
 </div>
