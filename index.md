@@ -81,6 +81,7 @@ title: WC Prediction Game 2026
 <div class="yesterdays-results">
 <p>France 3 - 0 Sweden</p>
 <p>Mexico 2 - 0 Ecuador</p>
+<p>England 2 - 1 Congo DR</p>
 </div>
 
 # Team vs Team
