@@ -75,6 +75,7 @@ title: WC Prediction Game 2026
 <p>Mexico vs Ecuador &mdash; Wed 01 July, 03:00</p>
 <p>England vs Congo DR &mdash; Wed 01 July, 18:00</p>
 <p>Belgium vs Senegal &mdash; Wed 01 July, 22:00</p>
+<p>United States vs Bosnia-Herzegovina &mdash; Thu 02 July, 02:00</p>
 </div>
 
 # Yesterday's Results
