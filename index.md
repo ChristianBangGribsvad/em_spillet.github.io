@@ -81,6 +81,7 @@ title: WC Prediction Game 2026
 <div class="yesterdays-results">
 <p>England 2 - 1 Congo DR</p>
 <p>Belgium 3 - 2 Senegal</p>
+<p>United States 2 - 0 Bosnia-Herzegovina</p>
 </div>
 
 # Team vs Team
