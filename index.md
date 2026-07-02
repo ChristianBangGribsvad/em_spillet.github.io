@@ -75,6 +75,7 @@ title: WC Prediction Game 2026
 <p>Portugal vs Croatia &mdash; Fri 03 July, 01:00</p>
 <p>Switzerland vs Algeria &mdash; Fri 03 July, 05:00</p>
 <p>Australia vs Egypt &mdash; Fri 03 July, 20:00</p>
+<p>Argentina vs Cape Verde Islands &mdash; Sat 04 July, 00:00</p>
 </div>
 
 # Yesterday's Results
