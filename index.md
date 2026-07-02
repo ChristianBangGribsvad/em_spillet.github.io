@@ -79,7 +79,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Mexico 2 - 0 Ecuador</p>
 <p>England 2 - 1 Congo DR</p>
 <p>Belgium 3 - 2 Senegal</p>
 </div>
