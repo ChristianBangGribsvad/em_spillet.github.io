@@ -74,6 +74,7 @@ title: WC Prediction Game 2026
 <div class="next-matches">
 <p>Spain vs Austria &mdash; Thu 02 July, 21:00</p>
 <p>Portugal vs Croatia &mdash; Fri 03 July, 01:00</p>
+<p>Switzerland vs Algeria &mdash; Fri 03 July, 05:00</p>
 </div>
 
 # Yesterday's Results
