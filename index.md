@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Argentina vs Cape Verde Islands &mdash; Sat 04 July, 00:00</p>
 <p>Colombia vs Ghana &mdash; Sat 04 July, 03:30</p>
 <p>Canada vs Morocco &mdash; Sat 04 July, 19:00</p>
 <p>Paraguay vs France &mdash; Sat 04 July, 23:00</p>
