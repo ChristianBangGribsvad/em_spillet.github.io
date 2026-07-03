@@ -80,7 +80,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>United States 2 - 0 Bosnia-Herzegovina</p>
 <p>Spain 3 - 0 Austria</p>
 </div>
 
