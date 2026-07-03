@@ -82,6 +82,7 @@ title: WC Prediction Game 2026
 <div class="yesterdays-results">
 <p>Spain 3 - 0 Austria</p>
 <p>Portugal 2 - 1 Croatia</p>
+<p>Switzerland 2 - 0 Algeria</p>
 </div>
 
 # Team vs Team
