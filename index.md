@@ -75,12 +75,14 @@ title: WC Prediction Game 2026
 <p>Switzerland vs Algeria &mdash; Fri 03 July, 05:00</p>
 <p>Australia vs Egypt &mdash; Fri 03 July, 20:00</p>
 <p>Argentina vs Cape Verde Islands &mdash; Sat 04 July, 00:00</p>
+<p>Colombia vs Ghana &mdash; Sat 04 July, 03:30</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
 <p>Spain 3 - 0 Austria</p>
+<p>Portugal 2 - 1 Croatia</p>
 </div>
 
 # Team vs Team
