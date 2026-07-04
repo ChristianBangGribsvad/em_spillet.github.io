@@ -78,7 +78,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Argentina 3 - 2 Cape Verde Islands</p>
 <p>Colombia 1 - 0 Ghana</p>
 <p>Canada 0 - 3 Morocco</p>
 </div>
