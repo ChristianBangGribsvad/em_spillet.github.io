@@ -82,6 +82,7 @@ title: WC Prediction Game 2026
 <div class="yesterdays-results">
 <p>Switzerland 2 - 0 Algeria</p>
 <p>Australia 3 - 5 Egypt</p>
+<p>Argentina 3 - 2 Cape Verde Islands</p>
 </div>
 
 # Team vs Team
