@@ -80,6 +80,7 @@ title: WC Prediction Game 2026
 <div class="yesterdays-results">
 <p>Colombia 1 - 0 Ghana</p>
 <p>Canada 0 - 3 Morocco</p>
+<p>Paraguay 0 - 1 France</p>
 </div>
 
 # Team vs Team
