@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Paraguay vs France &mdash; Sat 04 July, 23:00</p>
 <p>Brazil vs Norway &mdash; Sun 05 July, 22:00</p>
 </div>
 
