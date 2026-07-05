@@ -79,7 +79,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Canada 0 - 3 Morocco</p>
 <p>Paraguay 0 - 1 France</p>
 </div>
 
