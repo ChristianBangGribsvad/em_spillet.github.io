@@ -79,7 +79,7 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p><em>No results yet.</em></p>
+<p>Brazil 1 - 2 Norway</p>
 </div>
 
 # Team vs Team
