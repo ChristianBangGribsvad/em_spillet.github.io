@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Mexico vs England &mdash; Mon 06 July, 03:00</p>
 <p>Portugal vs Spain &mdash; Mon 06 July, 21:00</p>
 <p>United States vs Belgium &mdash; Tue 07 July, 02:00</p>
 </div>
