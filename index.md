@@ -72,7 +72,7 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Switzerland vs Colombia &mdash; Tue 07 July, 22:00</p>
+<p><em>No matches scheduled in the next 24 hours.</em></p>
 </div>
 
 # Yesterday's Results
