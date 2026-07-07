@@ -80,6 +80,7 @@ title: WC Prediction Game 2026
 <div class="yesterdays-results">
 <p>Portugal 0 - 1 Spain</p>
 <p>United States 1 - 4 Belgium</p>
+<p>Argentina 3 - 2 Egypt</p>
 </div>
 
 # Team vs Team
