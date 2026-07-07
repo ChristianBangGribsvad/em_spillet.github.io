@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>Argentina vs Egypt &mdash; Tue 07 July, 18:00</p>
 <p>Switzerland vs Colombia &mdash; Tue 07 July, 22:00</p>
 </div>
 
