@@ -79,7 +79,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Mexico 2 - 3 England</p>
 <p>Portugal 0 - 1 Spain</p>
 </div>
 
