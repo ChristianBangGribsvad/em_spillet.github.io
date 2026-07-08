@@ -72,13 +72,13 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p><em>No matches scheduled in the next 24 hours.</em></p>
+<p>France vs Morocco &mdash; Thu 09 July, 22:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Switzerland 4 - 3 Colombia</p>
+<p><em>No results yet.</em></p>
 </div>
 
 # Team vs Team
