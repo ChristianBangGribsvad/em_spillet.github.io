@@ -78,7 +78,6 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>Argentina 3 - 2 Egypt</p>
 <p>Switzerland 4 - 3 Colombia</p>
 </div>
 
