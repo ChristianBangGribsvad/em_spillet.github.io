@@ -72,7 +72,6 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>France vs Morocco &mdash; Thu 09 July, 22:00</p>
 <p>Spain vs Belgium &mdash; Fri 10 July, 21:00</p>
 </div>
 
