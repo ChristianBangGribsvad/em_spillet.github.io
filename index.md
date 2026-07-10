@@ -72,13 +72,13 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p><em>No matches scheduled in the next 24 hours.</em></p>
+<p>Norway vs England &mdash; Sat 11 July, 23:00</p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p><em>No results yet.</em></p>
+<p>Spain 2 - 1 Belgium</p>
 </div>
 
 # Team vs Team
