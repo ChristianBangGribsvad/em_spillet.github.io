@@ -73,6 +73,7 @@ title: WC Prediction Game 2026
 
 <div class="next-matches">
 <p>Norway vs England &mdash; Sat 11 July, 23:00</p>
+<p>Argentina vs Switzerland &mdash; Sun 12 July, 03:00</p>
 </div>
 
 # Yesterday's Results
