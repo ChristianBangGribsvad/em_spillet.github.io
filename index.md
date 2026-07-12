@@ -79,6 +79,7 @@ title: WC Prediction Game 2026
 
 <div class="yesterdays-results">
 <p>Norway 1 - 2 England</p>
+<p>Argentina 3 - 1 Switzerland</p>
 </div>
 
 # Team vs Team
