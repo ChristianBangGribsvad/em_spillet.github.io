@@ -72,7 +72,7 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p><em>No matches scheduled in the next 24 hours.</em></p>
+<p>France vs Spain &mdash; Tue 14 July, 21:00</p>
 </div>
 
 # Yesterday's Results
