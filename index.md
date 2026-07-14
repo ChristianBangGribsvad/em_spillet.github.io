@@ -78,7 +78,7 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p><em>No results yet.</em></p>
+<p>France 0 - 2 Spain</p>
 </div>
 
 # Team vs Team
