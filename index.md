@@ -78,7 +78,7 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p><em>No results yet.</em></p>
+<p>England 1 - 2 Argentina</p>
 </div>
 
 # Team vs Team
