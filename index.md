@@ -72,13 +72,13 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p>England vs Argentina &mdash; Wed 15 July, 21:00</p>
+<p><em>No matches scheduled in the next 24 hours.</em></p>
 </div>
 
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>France 0 - 2 Spain</p>
+<p><em>No results yet.</em></p>
 </div>
 
 # Team vs Team
