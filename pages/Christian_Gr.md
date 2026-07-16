@@ -7,7 +7,7 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Danica Ejendomme</span><span class="pmeta-team">Frederiksborg Gymnasium</span><span class="pmeta-team">Friends and Family</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#12th out of 40 players across the game</span><span class="stat-sub">You beat 70% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#13th out of 40 players across the game</span><span class="stat-sub">You beat 68% of all players</span></div></div>
 <div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">82 pts last round</span><span class="stat-sub">+3 pts vs global avg (79 pts) &middot; Position unchanged &middot; 12th out of 40 total players</span></div></div>
 </div>
 ## Your score vs averages
