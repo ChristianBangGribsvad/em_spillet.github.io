@@ -72,7 +72,7 @@ title: WC Prediction Game 2026
 # Next Matches
 
 <div class="next-matches">
-<p><em>No matches scheduled in the next 24 hours.</em></p>
+<p>France vs England &mdash; Sat 18 July, 23:00</p>
 </div>
 
 # Yesterday's Results
