@@ -73,6 +73,7 @@ title: WC Prediction Game 2026
 
 <div class="next-matches">
 <p>France vs England &mdash; Sat 18 July, 23:00</p>
+<p>Spain vs Argentina &mdash; Sun 19 July, 21:00</p>
 </div>
 
 # Yesterday's Results
