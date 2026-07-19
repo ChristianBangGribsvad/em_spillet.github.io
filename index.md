@@ -78,7 +78,7 @@ title: WC Prediction Game 2026
 # Yesterday's Results
 
 <div class="yesterdays-results">
-<p>France 4 - 6 England</p>
+<p><em>No results yet.</em></p>
 </div>
 
 # Team vs Team
