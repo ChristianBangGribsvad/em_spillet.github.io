@@ -221,10 +221,10 @@ if __name__ == "__main__":
     logger.info("Pipeline started")
 
     #### Fill out when final is finished
-    topscorer       = []
-    topscorer_goals = None  # e.g. 5  ← integer, NOT a string
-    finale_loser    = None  # e.g. "France"
-    finale_winner   = None  # e.g. "Brazil"
+    topscorer       = ["Kylian Mbappe"]
+    topscorer_goals = 10  # integer, NOT a string
+    finale_loser    = "Argentina"
+    finale_winner   = "Spain"
 
     try:
         raw = fetch_raw_matches()
