@@ -7,8 +7,8 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Buzzanova</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#24th out of 40 players across the game</span><span class="stat-sub">You beat 40% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">74 pts last round</span><span class="stat-sub">-5 pts vs global avg (79 pts) &middot; Moved down 4 places &middot; 24th out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#27th out of 40 players across the game</span><span class="stat-sub">You beat 32% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon">⏳</span><div class="stat-body"><span class="stat-main">Last round</span><span class="stat-sub">Available after two scoring updates</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Noah_El");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27", "2026-06-28"], "datasets": [{"label": "Your score", "data": [NaN, NaN, 0.0, 25.0, 54.0, 71.0, 103.0, 135.0, 160.0, 187.0, 221.0, 228.0, 257.0, 286.0, 333.0, 395.0, 437.0, 511.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 17.0, 12.8, 31.7, 48.0, 59.3, 83.5, 111.3, 135.8, 159.5, 190.5, 206.0, 237.0, 276.5, 325.8, 404.0, 451.2, 528.0], "borderColor": "#7c6c0e", "backgroundColor": "rgba(124,108,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 230.9, 271.5, 309.7, 388.8, 428.8, 507.8], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-07-21"], "datasets": [{"label": "Your score", "data": [511.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [553.0], "borderColor": "#7c6c0e", "backgroundColor": "rgba(124,108,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [529.0], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -206,10 +206,10 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Special Predictions</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Final winner</span><span class="pred-guess">Portugal</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Final loser</span><span class="pred-guess">England</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Top scorer</span><span class="pred-guess">Harry Kane</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Scorer goals</span><span class="pred-guess">8</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Final winner</span><span class="pred-guess">Portugal</span><span class="pred-result">Spain</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Final loser</span><span class="pred-guess">England</span><span class="pred-result">Argentina</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Top scorer</span><span class="pred-guess">Harry Kane</span><span class="pred-result">Kylian Mbappe</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Scorer goals</span><span class="pred-guess">8</span><span class="pred-result">10</span><span class="pts-badge">0</span></div>
 </div>
 </div>
 

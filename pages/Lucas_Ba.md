@@ -7,8 +7,8 @@ layout: default
 <div class="participant-meta"><span class="pmeta-team">Danica Ejendomme</span></div>
 
 <div class="stat-cards">
-<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#23rd out of 40 players across the game</span><span class="stat-sub">You beat 42% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-up">↑</span><div class="stat-body"><span class="stat-main">94 pts last round</span><span class="stat-sub">+15 pts vs global avg (79 pts) &middot; Moved up 2 places &middot; 23rd out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#22nd out of 40 players across the game</span><span class="stat-sub">You beat 45% of all players</span></div></div>
+<div class="stat-card"><span class="stat-icon">⏳</span><div class="stat-body"><span class="stat-main">Last round</span><span class="stat-sub">Available after two scoring updates</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Lucas_Ba");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27", "2026-06-28"], "datasets": [{"label": "Your score", "data": [0.0, 12.0, 24.0, 41.0, 60.0, 67.0, 87.0, 104.0, 119.0, 134.0, 156.0, 178.0, 205.0, 237.0, 287.0, 379.0, 419.0, 513.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 7.8, 21.4, 43.4, 58.4, 71.2, 81.2, 112.0, 123.8, 141.8, 170.2, 190.4, 214.0, 248.0, 284.4, 352.8, 388.0, 461.2], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 230.9, 271.5, 309.7, 388.8, 428.8, 507.8], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-07-21"], "datasets": [{"label": "Your score", "data": [538.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [471.2], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [529.0], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -58,9 +58,9 @@ new Chart(el,{
 ## Your predictions
 
 <div class="pred-table">
-<div class="pred-breakdown">Group matches: <strong>358 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>155 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>0 pts</strong></div>
+<div class="pred-breakdown">Group matches: <strong>358 pts</strong> &nbsp;&middot;&nbsp; Group winners: <strong>155 pts</strong> &nbsp;&middot;&nbsp; Special predictions: <strong>25 pts</strong></div>
 <div class="pred-badge-summary">💎&thinsp;&times;1 &nbsp;&middot;&nbsp; 🔮&thinsp;&times;1 &nbsp;&middot;&nbsp; 💀&thinsp;&times;7</div>
-<div class="pred-total">Total &nbsp;<span class="pred-total-pts">513 pts</span></div>
+<div class="pred-total">Total &nbsp;<span class="pred-total-pts">538 pts</span></div>
 <div class="pred-col-header"><span>Match</span><span>Your pick</span><span>Result</span><span>Pts</span></div>
 <div class="pred-section">
 <div class="pred-section-header">Group A</div>
@@ -205,10 +205,10 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Special Predictions</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Final winner</span><span class="pred-guess">France</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Final loser</span><span class="pred-guess">Spain</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Top scorer</span><span class="pred-guess">Kylian Mbappe</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Scorer goals</span><span class="pred-guess">8</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Final winner</span><span class="pred-guess">France</span><span class="pred-result">Spain</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-5"><span class="pred-match">Final loser</span><span class="pred-guess">Spain</span><span class="pred-result">Argentina</span><span class="pts-badge">5</span></div>
+<div class="pred-row pts-15"><span class="pred-match">Top scorer</span><span class="pred-guess">Kylian Mbappe</span><span class="pred-result">Kylian Mbappe</span><span class="pts-badge">20</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Scorer goals</span><span class="pred-guess">8</span><span class="pred-result">10</span><span class="pts-badge">0</span></div>
 </div>
 </div>
 

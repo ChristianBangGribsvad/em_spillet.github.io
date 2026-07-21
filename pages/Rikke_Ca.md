@@ -8,7 +8,7 @@ layout: default
 
 <div class="stat-cards">
 <div class="stat-card"><span class="stat-icon">🏆</span><div class="stat-body"><span class="stat-main">#40th out of 40 players across the game</span><span class="stat-sub">You beat 0% of all players</span></div></div>
-<div class="stat-card"><span class="stat-icon stat-down">↓</span><div class="stat-body"><span class="stat-main">49 pts last round</span><span class="stat-sub">-30 pts vs global avg (79 pts) &middot; Moved down 2 places &middot; 40th out of 40 total players</span></div></div>
+<div class="stat-card"><span class="stat-icon">⏳</span><div class="stat-body"><span class="stat-main">Last round</span><span class="stat-sub">Available after two scoring updates</span></div></div>
 </div>
 ## Your score vs averages
 
@@ -18,7 +18,7 @@ layout: default
 <script>
 (function(){
 var el=document.getElementById("personal-Rikke_Ca");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27", "2026-06-28"], "datasets": [{"label": "Your score", "data": [0.0, 0.0, 20.0, 55.0, 65.0, 70.0, 64.0, 86.0, 88.0, 120.0, 157.0, 192.0, 214.0, 225.0, 263.0, 303.0, 330.0, 379.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [0.0, 7.8, 21.4, 43.4, 58.4, 71.2, 81.2, 112.0, 123.8, 141.8, 170.2, 190.4, 214.0, 248.0, 284.4, 352.8, 388.0, 461.2], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [0.0, 12.0, 23.8, 41.7, 55.8, 71.0, 87.2, 118.4, 135.2, 157.6, 186.5, 202.1, 230.9, 271.5, 309.7, 388.8, 428.8, 507.8], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
+var data={"labels": ["2026-07-21"], "datasets": [{"label": "Your score", "data": [379.0], "borderColor": "#1e40af", "backgroundColor": "rgba(30,64,175,0.08)", "borderWidth": 3, "tension": 0.3, "pointRadius": 6, "pointHoverRadius": 9, "fill": true, "order": 1}, {"label": "Team average", "data": [471.2], "borderColor": "#2d7c0e", "backgroundColor": "rgba(45,124,14,0.04)", "borderWidth": 1.5, "borderDash": [3, 3], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 2}, {"label": "Global average", "data": [529.0], "borderColor": "rgba(0,0,0,0.28)", "backgroundColor": "rgba(0,0,0,0.02)", "borderWidth": 1.5, "borderDash": [5, 5], "tension": 0.3, "pointRadius": 3, "pointHoverRadius": 5, "fill": false, "order": 3}]};
 var hl=null;
 data.datasets.forEach(function(ds){ds._c=ds.borderColor;ds._b=ds.backgroundColor;ds._w=ds.borderWidth||2;});
 new Chart(el,{
@@ -215,10 +215,10 @@ new Chart(el,{
 </div>
 <div class="pred-section">
 <div class="pred-section-header">Special Predictions</div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Final winner</span><span class="pred-guess">Portugal</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Final loser</span><span class="pred-guess">United States</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Top scorer</span><span class="pred-guess">Nick Woltemade</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
-<div class="pred-row pts-unplayed"><span class="pred-match">Scorer goals</span><span class="pred-guess">6</span><span class="pred-result">&mdash;</span><span class="pts-badge">&mdash;</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Final winner</span><span class="pred-guess">Portugal</span><span class="pred-result">Spain</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Final loser</span><span class="pred-guess">United States</span><span class="pred-result">Argentina</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Top scorer</span><span class="pred-guess">Nick Woltemade</span><span class="pred-result">Kylian Mbappe</span><span class="pts-badge">0</span></div>
+<div class="pred-row pts-0"><span class="pred-match">Scorer goals</span><span class="pred-guess">6</span><span class="pred-result">10</span><span class="pts-badge">0</span></div>
 </div>
 </div>
 

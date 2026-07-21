@@ -16,14 +16,14 @@ team_color: "#0e7c4d"
 - [Sebastian Lefmann](./Sebastian_Le.html)
 
 <div class="team-standings">
-<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./sexy_os.html">sexy ossi</a></span><span class="ts-pts">622 pts</span></div>
-<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Bjarke_Ha.html">Bjarke Haugan</a></span><span class="ts-pts">589 pts</span></div>
-<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Oscar_En.html">Oscar Engberg</a></span><span class="ts-pts">553 pts</span></div>
-<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Sarah_Me.html">Sarah Melberg</a></span><span class="ts-pts">551 pts</span></div>
-<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">547 pts</span></div>
-<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./Joachim_Gl.html">Joachim Glenthøj</a></span><span class="ts-pts">534 pts</span></div>
-<div class="ts-row "><span class="ts-pos">7</span><span class="ts-name"><a href="./Sebastian_Le.html">Sebastian Lefmann</a></span><span class="ts-pts">526 pts</span></div>
-<div class="ts-row "><span class="ts-pos">8</span><span class="ts-name"><a href="./Matias_Bu.html">Matias Bundgaard-Nielsen</a></span><span class="ts-pts">445 pts</span></div>
+<div class="ts-row ts-gold"><span class="ts-pos">🥇</span><span class="ts-name"><a href="./sexy_os.html">sexy ossi</a></span><span class="ts-pts">642 pts</span></div>
+<div class="ts-row ts-silver"><span class="ts-pos">🥈</span><span class="ts-name"><a href="./Bjarke_Ha.html">Bjarke Haugan</a></span><span class="ts-pts">634 pts</span></div>
+<div class="ts-row ts-bronze"><span class="ts-pos">🥉</span><span class="ts-name"><a href="./Oscar_En.html">Oscar Engberg</a></span><span class="ts-pts">598 pts</span></div>
+<div class="ts-row "><span class="ts-pos">4</span><span class="ts-name"><a href="./Sarah_Me.html">Sarah Melberg</a></span><span class="ts-pts">576 pts</span></div>
+<div class="ts-row "><span class="ts-pos">5</span><span class="ts-name"><a href="./Christian_Gr.html">Christian Gribsvad</a></span><span class="ts-pts">572 pts</span></div>
+<div class="ts-row "><span class="ts-pos">6</span><span class="ts-name"><a href="./Joachim_Gl.html">Joachim Glenthøj</a></span><span class="ts-pts">559 pts</span></div>
+<div class="ts-row "><span class="ts-pos">7</span><span class="ts-name"><a href="./Sebastian_Le.html">Sebastian Lefmann</a></span><span class="ts-pts">541 pts</span></div>
+<div class="ts-row "><span class="ts-pos">8</span><span class="ts-name"><a href="./Matias_Bu.html">Matias Bundgaard-Nielsen</a></span><span class="ts-pts">490 pts</span></div>
 </div>
 
 ## Score progression
@@ -38,7 +38,7 @@ team_color: "#0e7c4d"
 (function(){
 var el=document.getElementById("chart-Frederiksborg_Gymnasium");
 var btn=document.getElementById("chart-Frederiksborg_Gymnasium-toggle");
-var data={"labels": ["2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27", "2026-06-28"], "datasets": [{"label": "sexy ossi", "data": [0.0, 17.0, 42.0, 59.0, 72.0, 102.0, 129.0, 176.0, 191.0, 213.0, 252.0, 277.0, 327.0, 394.0, 411.0, 493.0, 537.0, 622.0], "borderColor": "#a71b84", "backgroundColor": "rgba(167,27,132,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Joachim Glenth\u00f8j", "data": [0.0, 30.0, 37.0, 67.0, 75.0, 82.0, 100.0, 131.0, 156.0, 188.0, 220.0, 237.0, 262.0, 301.0, 338.0, 402.0, 442.0, 534.0], "borderColor": "#61a71b", "backgroundColor": "rgba(97,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah Melberg", "data": [0.0, 10.0, 20.0, 29.0, 40.0, 65.0, 87.0, 118.0, 130.0, 160.0, 189.0, 206.0, 236.0, 280.0, 342.0, 424.0, 466.0, 551.0], "borderColor": "#1b3ea7", "backgroundColor": "rgba(27,62,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Bjarke Haugan", "data": [0.0, 20.0, 25.0, 42.0, 68.0, 80.0, 105.0, 145.0, 170.0, 192.0, 226.0, 243.0, 268.0, 320.0, 372.0, 481.0, 517.0, 589.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Christian Gribsvad", "data": [0.0, 12.0, 14.0, 31.0, 42.0, 67.0, 92.0, 119.0, 144.0, 166.0, 195.0, 212.0, 242.0, 289.0, 318.0, 425.0, 465.0, 547.0], "borderColor": "#a7841b", "backgroundColor": "rgba(167,132,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Oscar Engberg", "data": [0.0, 25.0, 37.0, 52.0, 63.0, 75.0, 98.0, 125.0, 152.0, 171.0, 208.0, 220.0, 247.0, 294.0, 339.0, 421.0, 461.0, 553.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Matias Bundgaard-Nielsen", "data": [0.0, 25.0, 65.0, 89.0, 108.0, 135.0, 132.0, 179.0, 184.0, 203.0, 223.0, 237.0, 249.0, 277.0, 289.0, 342.0, 376.0, 445.0], "borderColor": "#1ba73e", "backgroundColor": "rgba(27,167,62,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sebastian Lefmann", "data": [0.0, 7.0, 19.0, 34.0, 52.0, 67.0, 90.0, 124.0, 149.0, 173.0, 202.0, 212.0, 247.0, 279.0, 306.0, 390.0, 442.0, 526.0], "borderColor": "#611ba7", "backgroundColor": "rgba(97,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
+var data={"labels": ["2026-07-21"], "datasets": [{"label": "sexy ossi", "data": [642.0], "borderColor": "#a71b84", "backgroundColor": "rgba(167,27,132,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Joachim Glenth\u00f8j", "data": [559.0], "borderColor": "#61a71b", "backgroundColor": "rgba(97,167,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sarah Melberg", "data": [576.0], "borderColor": "#1b3ea7", "backgroundColor": "rgba(27,62,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Bjarke Haugan", "data": [634.0], "borderColor": "#a71b1b", "backgroundColor": "rgba(167,27,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Christian Gribsvad", "data": [572.0], "borderColor": "#a7841b", "backgroundColor": "rgba(167,132,27,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Oscar Engberg", "data": [598.0], "borderColor": "#1ba7a7", "backgroundColor": "rgba(27,167,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Matias Bundgaard-Nielsen", "data": [490.0], "borderColor": "#1ba73e", "backgroundColor": "rgba(27,167,62,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}, {"label": "Sebastian Lefmann", "data": [541.0], "borderColor": "#611ba7", "backgroundColor": "rgba(97,27,167,0.08)", "tension": 0.3, "pointRadius": 5, "pointHoverRadius": 8, "borderWidth": 2.5, "fill": true}]};
 var N=data.datasets.length;
 
 /* store original colours for highlight/reset */
@@ -122,35 +122,6 @@ btn.addEventListener("click",function(){
 
 ## Points earned — latest round
 
-<div class="chart-wrapper" style="height:486px">
-<canvas id="bar-Frederiksborg_Gymnasium"></canvas>
-</div>
-<script>
-(function(){
-var d={"labels": ["Joachim Glenth\u00f8j", "Oscar Engberg", "Sarah Melberg", "sexy ossi", "Sebastian Lefmann", "Christian Gribsvad", "Bjarke Haugan", "Matias Bundgaard-Nielsen"], "values": [92.0, 92.0, 85.0, 85.0, 84.0, 82.0, 72.0, 69.0], "colors": ["#61a71b", "#1ba7a7", "#1b3ea7", "#a71b84", "#611ba7", "#a7841b", "#a71b1b", "#1ba73e"], "title": "Points earned \u2192 2026-06-27 to 2026-06-28"};
-new Chart(document.getElementById("bar-Frederiksborg_Gymnasium"),{
-  type:"bar",
-  data:{
-    labels:d.labels,
-    datasets:[{data:d.values,backgroundColor:d.colors,borderRadius:5,borderWidth:0}]
-  },
-  options:{
-    indexAxis:"y",responsive:true,maintainAspectRatio:false,
-    plugins:{
-      legend:{display:false},
-      title:{display:true,text:d.title,color:"#666",
-             font:{family:"Inter,system-ui,sans-serif",size:11},padding:{bottom:6}},
-      tooltip:{callbacks:{label:function(c){return " "+Math.round(c.raw)+" pts";}}}
-    },
-    scales:{
-      x:{beginAtZero:true,
-         title:{display:true,text:"Points earned",font:{size:11}},
-         grid:{color:"rgba(0,0,0,0.05)"}},
-      y:{grid:{display:false},ticks:{font:{family:"Inter,system-ui,sans-serif",size:11}}}
-    }
-  }
-});
-})()
-</script>
+<p class="chart-placeholder"><em>Best round chart appears after the first two scoring updates.</em></p>
 
 [← Back to standings](../)

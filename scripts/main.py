@@ -132,7 +132,14 @@ def run_pipeline(results, today, raw=None,
         for group in user_df.at[0, "Which team(s) do you belong to?"].split(";"):
             group = group.strip()
             gfile = f"data/group_dfs/{group}"
-            df_grp = pd.read_pickle(gfile) if os.path.isfile(gfile) else pd.DataFrame()
+            if os.path.isfile(gfile):
+                try:
+                    df_grp = pd.read_pickle(gfile)
+                except Exception as e:
+                    logger.warning(f"[WARN] Could not read {gfile}: {e} — starting fresh")
+                    df_grp = pd.DataFrame()
+            else:
+                df_grp = pd.DataFrame()
 
             if (not df_grp.empty and user in df_grp.columns
                     and df_grp[user].iloc[-1] == user_total_float):
@@ -189,7 +196,11 @@ def run_pipeline(results, today, raw=None,
     if "group_avg" not in os.listdir("data/"):
         df_group_avg = pd.DataFrame()
     else:
-        df_group_avg = pd.read_pickle("data/group_avg")
+        try:
+            df_group_avg = pd.read_pickle("data/group_avg")
+        except Exception as e:
+            logger.warning(f"[WARN] Could not read data/group_avg: {e} — starting fresh")
+            df_group_avg = pd.DataFrame()
 
     for group in os.listdir("data/group_dfs"):
         if group.startswith('.'):
@@ -220,6 +231,12 @@ def run_pipeline(results, today, raw=None,
 if __name__ == "__main__":
     logger.info("Pipeline started")
 
+    # CLI: allow forcing a full pipeline run even when results haven't changed
+    import argparse
+    parser = argparse.ArgumentParser(description='Run the WC predictions pipeline')
+    parser.add_argument('--force', action='store_true', help='Force full pipeline run even if results unchanged')
+    args = parser.parse_args()
+
     #### Fill out when final is finished
     topscorer       = ["Kylian Mbappe"]
     topscorer_goals = 10  # integer, NOT a string
@@ -243,7 +260,7 @@ if __name__ == "__main__":
     except FileNotFoundError:
         prev_results = [[], None]
 
-    if prev_results[0] != results:
+    if args.force or prev_results[0] != results:
         prev_finished = sum(1 for _, score in prev_results[0] if "None" not in str(score))
         logger.info(f"[CHANGE] {prev_finished} → {finished_count} finished — running full pipeline")
         save_results(cwd + f"/results/data_{n_file+1}.pickle", [results, today])
